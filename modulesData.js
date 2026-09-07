@@ -1,99 +1,93 @@
 window.COURSE_CONFIG = {
-  courseTitle: "SEJARAH INDONESIA XII",
+  courseTitle: "SEJARAH INDONESIA XII — ERA ORDE LAMA (1950–1965)",
   subjectName: "Sejarah Indonesia",
-  gradeLevel: "Fase F (Kelas 12)",
+  gradeLevel: "Fase F (Kelas XII)",
   defaultToken: "idem",
   masterPin: "cornelcktc",
-  shortBadge: "HIST",
-  description: "Platform pembelajaran digital mandiri & inkuiri sejarah. Memahami perjuangan fisik dan diplomasi dalam mempertahankan kemerdekaan Indonesia (1945–1949) secara terstruktur."
+  shortBadge: "ORLA",
+  description: "Platform pembelajaran digital mandiri & inkuiri sejarah. Menganalisis dinamika politik dan ekonomi era Demokrasi Liberal & Terpimpin (1950–1965), ancaman disintegrasi bangsa, serta diplomasi politik luar negeri Bebas Aktif secara terstruktur."
 };
 window.MODULE_CONFIG = window.COURSE_CONFIG;
 
 window.modulesData = {
   "1A": {
-    heroImage: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=80",
-    templateData: {
+    "heroImage": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=80",
+    "templateData": {
       "nav-kicker": "LAB SEJARAH INTERAKTIF — UNIT 1A",
-      "nav-brand": "Sub-Modul 1A — Proklamasi Kemerdekaan & Dinamika Awal Kemerdekaan (1945)",
+      "nav-brand": "Sub-Modul 1A — Eksperimen Demokrasi Parlementer & Instabilitas Kabinet (1950–1955)",
       "materi-tab-label": "1. Jejak Materi 1A",
       "kuis-tab-label": "2. Tantangan Kuis 1A",
-      "hero-kicker": "KURIKULUM MERDEKA — FASE F (KELAS XII) | INDONESIA PADA MASA REVOLUSI (1945–1949)",
-      "hero-title": "Detik-Detik Proklamasi & Fondasi Kedaulatan Negara 1945",
-      "hero-description": "Dinamika kekosongan kekuasaan (vacuum of power), benturan strategi Rengasdengklok, perumusan di rumah Laksamana Maeda, hingga gerak cepat Sidang PPKI meletakkan konstitusi, kepemimpinan nasional, pembagian wilayah, dan embrio tentara kebangsaan.",
+      "hero-kicker": "KURIKULUM MERDEKA — FASE F (KELAS XII) | INDONESIA PADA MASA ORDE LAMA (1950–1965)",
+      "hero-title": "Eksperimen Demokrasi Parlementer & Rapuhnya Stabilitas Kabinet (1950–1955)",
+      "hero-description": "Penelusuran kritis terhadap pembubaran Republik Indonesia Serikat (RIS), penerapan Undang-Undang Dasar Sementara (UUDS) 1950, kompetisi sistem multi-partai, pergantian tujuh kabinet dalam sembilan tahun, serta benturan kebijakan ekonomi pasca-kolonial.",
       "hero-note-title": "PANDUAN BELAJAR SUB-MODUL 1A",
-      "hero-note-text": "Telusuri Jejak 01 hingga 06 secara berurutan. Analisis dilema strategis Golongan Muda vs Golongan Tua, diplomasi Rengasdengklok, penandatanganan naskah, serta konsolidasi kilat instrumen negara oleh PPKI!",
+      "hero-note-text": "Pelajari Jejak 01 hingga 06 secara berurutan. Analisis mengapa mosi tidak percaya parlemen begitu mudah menjatuhkan perdana menteri, bagaimana perwira militer bereaksi terhadap intervensi politisi sipil, dan mengapa Program Benteng gagal melahirkan borjuasi pribumi yang mandiri.",
       "overview-kicker": "PETA KONSEP SUB-MODUL 1A",
-      "overview-title": "Empat Pilar Fondasi Kedaulatan Awal Republik Indonesia",
-      "overview-text": "Peta jalan pembentukan kedaulatan awal Republik Indonesia melintasi empat pilar kausalitas sejarah:",
-      "map-card-one-title": "1. Vacuum of Power (14 Agustus 1945)",
-      "map-card-one-text": "Kekalahan Perang Pasifik memicu penyerahan tanpa syarat Jepang, membuka celah krisis kekosongan kekuasaan.",
-      "map-card-two-title": "2. Rengasdengklok & Rumah Maeda",
-      "map-card-two-text": "Penyelamatan Soekarno-Hatta oleh pemuda dan penjaminan Achmad Soebardjo berujung perumusan naskah di rumah Laksamana Maeda.",
-      "map-card-three-title": "3. Proklamasi 17 Agustus 1945",
-      "map-card-three-text": "Pembacaan teks merdeka di Pegangsaan Timur 56 dan penyebaran berani berita kemerdekaan via radio ke seluruh dunia.",
-      "map-card-four-title": "4. Konsolidasi Konstitusi PPKI",
-      "map-card-four-text": "Sidang PPKI mengesahkan UUD 1945, Presiden/Wapres, 8 provinsi, 12 kementerian, hingga embrio BKR.",
-
-      "lesson-one-kicker": "JEJAK 01 — DARI JANJI KOISO KE RENGASDENGKLOK",
-      "lesson-one-title": "Kekosongan Kekuasaan (Vacuum of Power) & Peristiwa Rengasdengklok",
-      "lesson-one-text": "Kekalahan telak militer Jepang di Perang Pasifik mendorong Perdana Menteri Kuniaki Koiso merilis janji kemerdekaan pada 7 September 1944 demi menggalang simpati rakyat Nusantara. Pembentukan BPUPKI dan PPKI merupakan bagian dari skenario Jepang. Namun, penjatuhan bom atom di Hiroshima (6 Agustus) dan Nagasaki (9 Agustus) menghancurkan mesin perang kekaisaran. Pada 14 Agustus 1945, Kaisar Hirohito menyerah tanpa syarat kepada Sekutu. Momen ini menciptakan krisis kekosongan kekuasaan (vacuum of power) di Indonesia, di mana Sekutu belum mendarat sementara posisi tentara Jepang mendadak lumpuh secara politik.",
-      "lesson-one-text-two": "Sutan Sjahrir yang memantau siaran radio gelap luar negeri langsung mendesak Soekarno-Hatta agar memproklamasikan kemerdekaan secara mandiri. Namun, Golongan Tua memilih bertindak cermat: mereka ingin memusyawarahkan proklamasi melalui rapat PPKI agar tidak memicu pertumpahan darah dengan tentara Jepang yang masih memegang senjata lengkap. Sebaliknya, Golongan Muda menolak keras jalur PPKI karena tidak ingin proklamasi dicap dunia internasional sebagai 'hadiah' fasisme Jepang. Perbedaan pandangan strategis ini mendorong Golongan Muda mengambil tindakan aksi cepat:",
-      "lesson-one-point-a-title": "Peristiwa Rengasdengklok (16 Agustus 1945 Dini Hari)",
-      "lesson-one-point-a-text": "Pada pukul 04.00 WIB, kelompok pemuda di bawah pimpinan Shodanco Singgih membawa Soekarno dan Hatta ke Rengasdengklok (kediaman Djiaw Kie Siong). Pemilihan Rengasdengklok sangat strategis: daerah ini merupakan markas komando PETA yang terisolasi dari jalur patroli utama tentara Jepang di Jakarta serta terlindung dari risiko intervensi militer Angkatan Darat Jepang (Rikugun).",
-      "lesson-one-point-b-title": "Jaminan Achmad Soebardjo & Kompromi Kebangsaan",
-      "lesson-one-point-b-text": "Di Jakarta, Achmad Soebardjo bertindak sebagai penengah dan berunding secara alot dengan Wikana. Soebardjo menjaminkan nyawa pribadinya bahwa Proklamasi Kemerdekaan akan dilaksanakan di Jakarta paling lambat pada 17 Agustus 1945 sebelum pukul 12.00 WIB. Jaminan ini melunakkan ketegangan politik, sehingga Soekarno-Hatta segera dijemput kembali ke Jakarta untuk merumuskan naskah proklamasi di tempat yang aman.",
-
-      "lesson-two-kicker": "JEJAK 02 — RUMAH MAEDA & KETIKAN SAYUTI MELIK",
-      "lesson-two-title": "Merumuskan Naskah Proklamasi di Rumah Laksamana Maeda",
-      "lesson-two-text": "Pengalaman di Rengasdengklok meyakinkan Soekarno-Hatta bahwa kemerdekaan harus segera dideklarasikan tanpa menunda waktu. Namun, deklarasi kedaulatan membutuhkan naskah hukum yang kuat. Pada dini hari 17 Agustus 1945, rombongan menuju kediaman Laksamana Muda Tadashi Maeda di Jalan Meiji Dori (sekarang Jl. Imam Bonjol No. 1). Rumah ini dipilih secara khusus karena berstatus properti Angkatan Laut Jepang (Kaigun) yang memiliki hak ekstrateritorial dan imunitas dari campur tangan Angkatan Darat Jepang (Rikugun) yang bersikap keras.",
-      "lesson-two-list-a": "<b>1. Konsep Tulisan Tangan Soekarno:</b> Dirumuskan di ruang makan bersama Soekarno, Hatta, dan Achmad Soebardjo. Kalimat pertama usulan Soebardjo ('Kami bangsa Indonesia dengan ini menyatakan kemerdekaan Indonesia') menegaskan kehendak bebas, sedangkan kalimat kedua usulan Hatta mengatur teknis pemindahan kekuasaan.",
-      "lesson-two-list-b": "<b>2. Usulan Sukarni & Kedaulatan Rakyat:</b> Sukarni menyarankan agar naskah tidak ditandatangani oleh seluruh hadirin layaknya Deklarasi Kemerdekaan Amerika Serikat, melainkan cukup ditandatangani oleh Soekarno dan Hatta 'Atas nama bangsa Indonesia' guna mempertegas kepemimpinan nasional yang solid.",
-      "lesson-two-list-c": "<b>3. Ketikan & Perubahan Redaksional Sayuti Melik:</b> Sayuti Melik mengetik teks proklamasi sambil menyempurnakan 3 ejaan redaksional: kata 'tempoh' diubah menjadi 'tempo', frasa 'wakil-wakil bangsa Indonesia' diganti 'Atas nama bangsa Indonesia', serta penyesuaian format tanggal penulisan.",
-      "lesson-two-list-d": "<b>4. Penanggalan Tahun Showa 2605:</b> Naskah resmi mencantumkan penanggalan 'Djakarta, 17-8-05' yang merujuk pada tahun kalender resmi Jepang Showa ke-2605 (1945 Masehi), sebuah penanda transisi hukum pada detik-detik pengalihan kedaulatan.",
-      "lesson-two-text-two": "Setelah naskah selesai diketik dan ditandatangani menjelang waktu subuh, tantangan besar berikutnya muncul: di mana dan bagaimana pengumuman kemerdekaan ini dibacakan secara aman tanpa memicu bentrokan bersenjata dengan garrison tentara Jepang?",
-
-      "lesson-three-kicker": "JEJAK 03 — DETIK-DETIK PROKLAMASI & RADIO GELAP",
-      "lesson-three-title": "Upacara 17 Agustus 1945 & Penyebaran Berita Kemerdekaan",
-      "lesson-three-text": "Rencana awal pembacaan proklamasi di Lapangan Ikada dibatalkan karena lokasi tersebut sudah dikepung oleh tank dan pasukan bersenjata tentara Jepang. Demi keselamatan warga, tempat upacara dialihkan ke halaman kediaman Soekarno di Jalan Pegangsaan Timur No. 56, Jakarta Pusat:",
-      "thinker-comte-name": "1. Pembacaan Teks Proklamasi (Pukul 10.00 WIB)",
-      "thinker-comte-text": "Tepat hari Jumat, 17 Agustus 1945 pukul 10.00 WIB, Ir. Soekarno didampingi Drs. Mohammad Hatta membacakan teks Proklamasi dengan singkat dan khidmat di hadapan ratusan pejuang.",
-      "thinker-durkheim-name": "2. Pengibaran Sang Saka Merah Putih",
-      "thinker-durkheim-text": "Bendera Merah Putih yang dijahit tangan oleh Ibu Fatmawati dikibarkan oleh Latief Hendraningrat dan Suhud di atas tiang bambu sederhana, diiringi lagu Indonesia Raya secara spontaneously.",
-      "thinker-marx-name": "3. Aksi Berani Penyebaran Radio Gelap",
-      "thinker-marx-text": "Jusuf Ronodipuro dan Waidan Palenewen di stasiun radio Hoso Kanri Kyoku nekat menembus penjagaan tentara Jepang untuk menyiarkan siaran berita Proklamasi via pemancar tersembunyi dan radiogram morse.",
-      "thinker-weber-name": "4. Respon Spontan di Seluruh Nusantara",
-      "thinker-weber-text": "Berita kemerdekaan menyebar cepat ke berbagai pelosok daerah, memicu aksi pengibaran bendera, pengambilalihan kantor birokrasi, dan pelucutan senjata tentara Jepang secara serentak.",
-      "lesson-three-text-two": "Proklamasi telah dikumandangkan di Pegangsaan Timur No. 56, namun Republik yang baru berdiri satu hari ini belum memiliki UUD formal, Presiden yang dipilih sah, maupun struktur wilayah administrasi menurut syarat hukum internasional!",
-
-      "lesson-four-kicker": "JEJAK 04 — SIDANG PPKI (18, 19, 22 AGUSTUS 1945)",
-      "lesson-four-title": "PPKI Meletakkan Fondasi Negara dalam Hitungan Hari",
-      "lesson-four-text": "Satu hari setelah proklamasi, bangsa ini belum punya konstitusi. PPKI mengemban tugas berat tersebut. Untuk memenuhi syarat formal negara berdaulat sesuai Konvensi Montevideo, PPKI bergerak cepat menggelar tiga sidang maraton:",
-      "lesson-four-text-two": "Langkah-langkah konstitusional ini mengubah klaim kemerdekaan di atas kertas menjadi sebuah negara hukum yang berfungsi nyata dalam tata kelola pemerintahan.",
-      "method-a-title": "Sidang I PPKI (18 Agustus 1945)",
-      "method-a-text": "Mengesahkan UUD 1945 (termasuk kompromi kebangsaan mengubah 7 kata Piagam Jakarta demi menjaga persatuan wilayah Indonesia Timur), serta memilih Ir. Soekarno sebagai Presiden dan Drs. Mohammad Hatta sebagai Wakil Presiden secara aklamasi atas usul Otto Iskandardinata.",
-      "method-b-title": "Sidang II PPKI (19 Agustus 1945)",
-      "method-b-text": "Dengan konstitusi di tangan, pemerintah RI bergerak cepat. Keesokan harinya, 19 Agustus, mereka membagi Indonesia ke dalam 8 provinsi (Sumatra, Jawa Barat, Jawa Tengah, Jawa Timur, Borneo, Sulawesi, Maluku, Sunda Kecil) dan membentuk 12 kementerian—fondasi birokrasi negara baru.",
-      "method-c-title": "Sidang III PPKI (22 Agustus 1945)",
-      "method-c-text": "Membentuk Komite Nasional Indonesia Pusat (KNIP) dan Daerah sebagai lembaga legislatif transisi, merancang PNI, serta mengesahkan pembentukan Badan Keamanan Rakyat (BKR).",
-
-      "lesson-five-kicker": "JEJAK 05 — EMBRIO TENTARA KEBANGSAAN",
-      "lesson-five-title": "Dari Badan Keamanan Rakyat (BKR) Menuju TKR",
-      "lesson-five-text": "Mengapa tidak langsung membentuk tentara? Ketika didirikan pada 22 Agustus 1945, BKR sengaja tidak dibentuk sebagai militer resmi. Pemerintah menyadari ancaman besar: pembentukan tentara akan memancing serangan langsung dari Jepang yang masih bersenjata dan Sekutu yang akan mendarat. BKR adalah taktik diplomasi untuk menjaga keamanan tanpa memprovokasi musuh.",
-      "object-material-title": "1. Pembentukan BKR (22 Agustus 1945)",
-      "object-material-text": "BKR bertugas mengamankan keselamatan umum di daerah dengan menghimpun para pemuda mantan anggota PETA, Heiho, KNIL, dan laskar pejuang tanpa seragam resmi militer.",
-      "object-formal-title": "2. Maklumat Pembentukan TKR (5 Oktober 1945)",
-      "object-formal-text": "Saat ancaman pendaratan Sekutu (AFNEI) dan NICA kian nyata serta mulai melakukan teror penembakan, Pemerintah merilis Maklumat Resmi meresmikan Tentara Keamanan Rakyat (TKR) dengan Oerip Soemohardjo membangun markas besar militer di Yogyakarta. Penggalangan TKR ini melengkapi pilar pertahanan fisik Republik dalam menghadapi agresi asing.",
-
+      "overview-title": "Empat Akar Masalah Instabilitas Demokrasi Parlementer",
+      "overview-text": "Struktur politik dan ekonomi Indonesia kurun 1950–1955 dibentuk oleh empat faktor struktural yang saling berkelindan:",
+      "map-card-one-title": "1. Pembubaran RIS & Kompromi UUDS 1950",
+      "map-card-one-text": "Desakan rakyat membubarkan negara bagian boneka Belanda bermuara pada kesepakatan kembali ke bentuk kesatuan dengan konstitusi sementara yang membatasi wewenang presiden.",
+      "map-card-two-title": "2. Fragmentasi Parlemen Maklumat No. X",
+      "map-card-two-text": "Warisan Maklumat Wakil Presiden 3 November 1945 melahirkan puluhan partai politik tanpa ada satu pun fraksi yang menguasai mayoritas mutlak di parlemen.",
+      "map-card-three-title": "3. Budaya Mosi Tidak Percaya",
+      "map-card-three-text": "Koalisi rapuh antara Masyumi, PNI, dan partai gurem menyebabkan usia rata-rata kabinet hanya bertahan 12 hingga 14 bulan.",
+      "map-card-four-title": "4. Struktur Ekonomi Ganda (Dual Economy)",
+      "map-card-four-text": "Beban utang KMB sebesar 4,3 miliar gulden dan dominasi perusahaan perkebunan/perbankan Belanda membatasi ruang gerak ekonomi nasional.",
+      "lesson-one-kicker": "JEJAK 01 — DARI RIS KEMBALI KE NEGARA KESATUAN",
+      "lesson-one-title": "Pembubaran Republik Indonesia Serikat & Pemberlakuan UUDS 1950",
+      "lesson-one-text": "Konferensi Meja Bundar (KMB) 1949 memaksa Indonesia menerima bentuk federasi Republik Indonesia Serikat (RIS) yang terdiri atas 16 negara bagian dan daerah otonom. Bentuk federal ini dipandang mayoritas rakyat sebagai strategi Belanda untuk memecah belah persatuan bangsa. Sejak awal 1950, demonstrasi rakyat menuntut pembubaran negara-negara bagian seperti Negara Pasundan, Negara Madura, dan Negara Jawa Timur meluas. Parlemen daerah satu per satu menyerahkan mandatnya untuk bergabung kembali dengan Republik Indonesia Yogyakarta.",
+      "lesson-one-text-two": "Perdana Menteri RIS Mohammad Hatta bersama Presiden Republik Indonesia Assaat menandatangani Piagam Persetujuan pada 19 Mei 1950. Kesepakatan ini menetapkan pembentukan kembali Negara Kesatuan Republik Indonesia (NKRI) yang diproklamasikan tepat pada peringatan lima tahun kemerdekaan, 17 Agustus 1950. Namun, negara baru ini tidak kembali menggunakan UUD 1945, melainkan memberlakukan Undang-Undang Dasar Sementara (UUDS) 1950 yang mengadopsi sistem parlementer gaya Eropa Barat.",
+      "lesson-one-point-a-title": "Pergeseran Peran Kepala Negara",
+      "lesson-one-point-a-text": "UUDS 1950 menetapkan Presiden Ir. Sukarno hanya berstatus sebagai kepala negara seremonial, sedangkan wewenang eksekutif pemerintahan sehari-hari berada penuh di tangan Perdana Menteri dan kabinet yang bertanggung jawab kepada Dewan Perwakilan Rakyat Sementara (DPRS).",
+      "lesson-one-point-b-title": "Sifat Sementara Konstitusi",
+      "lesson-one-point-b-text": "Pasal 134 UUDS 1950 mewajibkan penyelenggaraan pemilihan umum secepat mungkin untuk memilih anggota Dewan Konstituante yang bertugas menyusun undang-undang dasar definitif pengganti UUDS 1950.",
+      "lesson-two-kicker": "JEJAK 02 — FRAGMENTASI PARLEMEN & KOALISI RAPUH",
+      "lesson-two-title": "Mosi Tidak Percaya Parlemen Menumbangkan Pemerintahan",
+      "lesson-two-text": "Penerapan sistem parlementer menuntut adanya partai mayoritas yang stabil di lembaga legislatif. Kondisi parlemen Indonesia saat itu justru terfragmentasi ke dalam lebih dari tiga puluh partai politik dan faksi independen. Tidak adanya partai pemenang mutlak memaksa kabinet dibentuk atas dasar kompromi koalisi antara dua kekuatan terbesar, yaitu Partai Nasional Indonesia (PNI) yang berhaluan nasionalis sekuler dan Masyumi yang berhaluan Islam modernis.",
+      "lesson-two-list-a": "<b>1. Kabinet Natsir (Sep 1950 – Mar 1951):</b> Mohammad Natsir memprioritaskan konsolidasi birokrasi dan keamanan dalam negeri, namun jatuh akibat mosi Hadikusumo dari PNI terkait pembekuan Dewan Perwakilan Rakyat Daerah (DPRD).",
+      "lesson-two-list-b": "<b>2. Kabinet Sukiman (Apr 1951 – Feb 1952):</b> Sukiman Wirjosandjojo diguncang krisis hubungan luar negeri setelah menandatangani bantuan timbal balik keamanan (Mutual Security Act/MSA) dengan Amerika Serikat yang dinilai melanggar prinsip bebas aktif.",
+      "lesson-two-list-c": "<b>3. Kabinet Wilopo (Apr 1952 – Jun 1953):</b> Kabinet zaken ini meletakkan pondasi pemilu, namun tumbang menyusul bentrokan berdarah Peristiwa Tanjung Morawa di Sumatra Utara terkait sengketa redistribusi tanah perkebunan asing.",
+      "lesson-two-list-d": "<b>4. Kabinet Ali Sastroamidjojo I (Jul 1953 – Jul 1955):</b> Koalisi PNI dan partai Islam non-Masyumi berhasil menyelenggarakan Konferensi Asia Afrika, tetapi jatuh akibat sengketa pengangkatan KSAD dengan kalangan militer.",
+      "lesson-two-text-two": "Setiap kali terjadi perselisihan antarfaksi koalisi, partai penentang segera melayangkan mosi tidak percaya ke meja parlemen. Akibatnya, rata-rata masa kerja kabinet terhenti sebelum program pembangunan dapat dirasakan masyarakat.",
+      "lesson-three-kicker": "JEJAK 03 — DILEMA STRUKTUR EKONOMI DUALISTIK",
+      "lesson-three-title": "Upaya Menciptakan Borjuasi Pribumi di Bawah Bayang-Bayang Utang KMB",
+      "lesson-three-text": "Kedaulatan politik yang diperoleh tahun 1950 tidak otomatis disertai kemandirian ekonomi. Struktur ekonomi Indonesia bersifat dualistik: sektor modern seperti perbankan, perkapalan dagang (KPM), dan perkebunan ekspor masih dikuasai konglomerasi Belanda (The Big Five), sedangkan mayoritas rakyat pribumi hanya bergerak di sektor pertanian subsisten atau perdagangan eceran bermodal minim. Para menteri ekonomi era parlementer merancang berbagai terobosan moneter dan perdagangan:",
+      "thinker-comte-name": "1. Gunting Sjafruddin (1950)",
+      "thinker-comte-text": "Menkeu Sjafruddin memotong nilai uang kertas Rp5 ke atas menjadi dua bagian untuk memangkas jumlah uang beredar dan menambal defisit kas negara.",
+      "thinker-durkheim-name": "2. Program Benteng (1950–1953)",
+      "thinker-durkheim-text": "Menteri Sumitro membatasi lisensi impor khusus pengusaha pribumi, namun disalahgunakan dalam praktik kongkalikong jual-beli lisensi 'Ali-Baba'.",
+      "thinker-marx-name": "3. Nasionalisasi Bank Sentral (1951)",
+      "thinker-marx-text": "Pemerintah membeli saham De Javasche Bank dan mengesahkan UU Pokok BI 1953, mengubah fungsinya menjadi bank sentral berdaulat milik negara.",
+      "thinker-weber-name": "4. Sistem Ali-Baba (Kabinet Ali I)",
+      "thinker-weber-text": "Menko Iskaq Tjokrohadisurjo mewajibkan perusahaan asing bermitra dan melatih pengusaha pribumi guna mempercepat alih keahlian manajerial.",
+      "lesson-three-text-two": "Kebijakan-kebijakan tersebut belum mampu merombak ketimpangan mendasar karena anjloknya harga komoditas karet pasca Perang Korea 1953 menguras cadangan devisa.",
+      "lesson-four-kicker": "JEJAK 04 — FRIKSI INSTITUSI PERTAHANAN",
+      "lesson-four-title": "Reorganisasi Angkatan Perang dan Demonstrasi Meriam di Istana",
+      "lesson-four-text": "Kerapuhan kabinet parlementer turut merambah institusi militer. Pimpinan Angkatan Darat, dipelopori Kolonel A.H. Nasution (KSAD) dan T.B. Simatupang (Kepala Staf Angkatan Perang), berniat merestrukturisasi angkatan bersenjata melalui program Rasionalisasi dan Reorganisasi (Re-Ra) untuk merampingkan prajurit dan memprioritaskan perwira berpendidikan profesional standar KNIL/PETA.",
+      "lesson-four-text-two": "Rencana perampingan ini ditentang perwira eks-laskar rakyat. Politisi sipil di DPRS memanfaatkan friksi ini untuk mengkritik kepemimpinan Nasution secara terbuka.",
+      "method-a-title": "1. Reaksi Keras Markas Besar",
+      "method-a-text": "Pimpinan tentara memandang kritik parlemen sebagai campur tangan politisi sipil yang merusak disiplin militer dan menurunkan wibawa angkatan bersenjata.",
+      "method-b-title": "2. Peristiwa 17 Oktober 1952",
+      "method-b-text": "Pasukan tentara bersama massa demonstran mendatangi Istana Merdeka dengan menghadapkan moncong meriam dan tank ke arah istana, mendesak Sukarno membubarkan parlemen sipil.",
+      "method-c-title": "3. Sikap Tegas Sukarno",
+      "method-c-text": "Sukarno menolak tuntutan militer karena menolak menjadi diktator, lalu mencopot Nasution dari KSAD, menandai retakan awal hubungan militer dan elite politik sipil.",
+      "lesson-five-kicker": "JEJAK 05 — KETIMPANGAN SPASIAL",
+      "lesson-five-title": "Polarisasi Alokasi Anggaran antara Pusat dan Luar Jawa",
+      "lesson-five-text": "Instabilitas politik di ibu kota Jakarta melumpuhkan perhatian pemerintah pusat terhadap percepatan pembangunan infrastruktur di luar Jawa. Wilayah seperti Sumatra, Sulawesi, dan Kalimantan merupakan penghasil devisa ekspor terbesar republik melalui komoditas perkebunan karet, minyak bumi, dan kopra. Namun, porsi devisa yang dikembalikan pemerintah pusat untuk pembangunan jalan, jembatan, pelabuhan, dan fasilitas kesehatan di daerah sangat minim dibandingkan anggaran yang terserap di Pulau Jawa.",
+      "object-material-title": "1. Penyelundupan Barter Komoditas",
+      "object-material-text": "Komandan militer teritorial di Sumatra dan Sulawesi memfasilitasi perdagangan barter langsung dengan Singapura tanpa izin Jakarta guna membiayai logistik pasukan dan perbaikan fasilitas daerah.",
+      "object-formal-title": "2. Benih Krisis Integrasi Nasional",
+      "object-formal-text": "Pemerintah pusat menganggap barter sebagai penyelundupan ilegal, sementara tokoh daerah memandangnya sebagai tindakan darurat akibat kelalaian kabinet parlementer yang sibuk berebut kekuasaan.",
       "lesson-six-kicker": "JEJAK 06 — SINTESIS & REFLEKSI 1A",
-      "lesson-six-title": "Makna & Refleksi Kecepatan Pematangan Gagasan Kemerdekaan",
-      "lesson-six-text": "Dinamika peristiwa 14–22 Agustus 1945 membuktikan bahwa ketegangan antara Golongan Muda dan Golongan Tua bukanlah permusuhan destruktif, melainkan sinergi antara semangat pemuda memanfaatkan momentum dan ketelitian kepemimpinan nasional mengamankan kepastian hukum.",
-      "lesson-six-text-two": "Kecepatan menyusun konstitusi, kepala negara, 8 provinsi, 12 kementerian, dan embrio tentara dalam hitungan hari merupakan hasil pematangan ideologis puluhan tahun pergerakan nasional yang siap dieksekusi saat krisis.",
-      "lesson-six-quote": "\"Fondasi negara sudah diletakkan. Tapi di luar tembok sidang, ancaman belum pergi. Belanda, Sekutu, dan ketidakpastian menanti.\"",
+      "lesson-six-title": "Kebebasan Politik Tanpa Kematangan Konsensus Kelembagaan",
+      "lesson-six-text": "Eksperimen Demokrasi Parlementer membuktikan bahwa kebebasan berekspresi, kebebasan pers, dan pluralisme partai politik berkembang pesat di Indonesia pasca-kemerdekaan. Tidak ada tokoh oposisi yang dipenjara tanpa proses pengadilan independen, dan dinamika perdebatan pemikiran berlangsung terbuka di ruang publik.",
+      "lesson-six-text-two": "Kelemahan mendasarnya terletak pada ketidakmampuan elite partai menempatkan kepentingan stabilitas nasional di atas rivalitas faksi. Jatuh bangun kabinet dalam tempo singkat menyebabkan administrasi negara lumpuh. Seluruh elite politik dan rakyat kemudian menyandarkan harapan terakhir mereka pada pemilihan umum pertama.",
+      "lesson-six-quote": "\"Parlemen yang tidak berakar pada mandat langsung rakyat dari kotak suara akan selalu goyah dihantam badai kompromi faksi.\"",
       "reflection-kicker": "OUTRO BRIDGE & REFLEKSI SUB-MODUL 1A",
-      "reflection-title": "Jembatan Menuju Sub-Modul 1B: Menguji Kedaulatan di Medan Fisik",
-      "reflection-text": "Fondasi hukum dan kelembagaan negara telah berdiri kokoh melalui sidang kilat PPKI pada 18–22 Agustus 1945. Namun, fondasi tersebut langsung diuji ketika Sekutu mendarat bersama NICA yang berambisi menegakkan kembali penjajahan. Ujian senjata pertama pecah di kota-kota pelabuhan utama Jawa, menuntut kesiapan militer dan keberanian rakyat pada palagan Surabaya serta Ambarawa (Sub-Modul 1B).",
+      "reflection-title": "Jembatan Menuju Sub-Modul 1B: Menguji Mandat Rakyat pada Kotak Suara 1955",
+      "reflection-text": "Kerapuhan kabinet parlementer melahirkan keyakinan luas bahwa ketidakstabilan politik bersumber dari DPRS yang berstatus sementara dan belum dipilih langsung oleh rakyat. Harapan untuk menyelamatkan demokrasi diletakkan pada penyelenggaraan Pemilu pertama 1955. Di tengah persiapan pemungutan suara nasional tersebut, Indonesia berhasil mencuri perhatian dunia dengan menyelenggarakan Konferensi Asia Afrika di Bandung (Sub-Modul 1B).",
       "challenge-kicker": "ASESMEN SUB-MODUL 1A",
-      "challenge-title": "Siap Menguji Pemahaman Dinamika Awal Kemerdekaan?",
+      "challenge-title": "Siap Menguji Pemahaman Demokrasi Parlementer?",
       "challenge-text": "Jawab 15 tantangan kuis interaktif HOTS yang dirancang khusus untuk menguji penalaran sejarah Sub-Modul 1A.",
       "start-quiz-button": "Mulai Kuis Sub-Modul 1A →",
       "quiz-kicker": "SUB-MODUL 1A — ASESMEN INTERAKTIF",
@@ -106,1769 +100,1743 @@ window.modulesData = {
       "result-title": "Analisis Hasil Penguasaan Sub-Modul 1A",
       "result-text": "Ulas kembali jawabanmu dan pahami penjelasan sejarah di bawah setiap soal.",
       "retry-quiz-button": "Coba Lagi / Acak Soal 1A",
-      "footer-text": "© Lab Sejarah Interaktif — Sub-Modul 1A: Proklamasi & Dinamika Awal 1945. Kurikulum Merdeka Fase F."
+      "footer-text": "© Lab Sejarah Interaktif — Sub-Modul 1A: Eksperimen Demokrasi Parlementer 1950–1955. Kurikulum Merdeka Fase F."
     },
-    quizData: [
+    "quizData": [
       {
-        type: "single",
-        stimulus: "Pada tanggal 15 Agustus 1945, berita kekalahan Jepang atas pasukan Sekutu menyebar secara tertutup di Jakarta setelah pengeboman atom di Hiroshima dan Nagasaki. Tokoh pemuda seperti Sutan Sjahrir, Chaerul Saleh, dan Wikana mendesak Soekarno dan Mohammad Hatta untuk segera memproklamasikan kemerdekaan tanpa menunggu Panitia Persiapan Kemerdekaan Indonesia (PPKI). Namun, Golongan Tua berpendapat bahwa proklamasi harus dibicarakan secara sah dalam rapat PPKI agar tidak memicu bentrok berdarah dengan tentara Jepang yang masih bersenjata lengkap. Perbedaan strategi antara Golongan Muda yang menginginkan proklamasi independen dan Golongan Tua yang mengutamakan legalitas serta keselamatan politik ini memuncak pada Peristiwa Rengasdengklok.",
-        question: "Berdasarkan analisis kausalitas sejarah di atas, faktor utama yang mendasari penolakan Golongan Muda terhadap keterlibatan PPKI dalam pelaksanaan Proklamasi Kemerdekaan adalah...",
-        options: [
-          "A. Kekhawatiran bahwa Sekutu akan membubarkan PPKI karena dianggap badan ilegal buatan Jepang",
-          "B. Anggapan bahwa PPKI adalah badan bentukan Jepang sehingga proklamasi dapat dicap oleh dunia internasional sebagai hadiah fasisme Jepang",
-          "C. Keinginan Golongan Muda untuk mengambil alih kepemimpinan nasional dari tangan Soekarno dan Hatta",
-          "D. Penolakan tentara Jepang di Jakarta untuk memberikan izin penggunaan gedung pembacaan teks proklamasi",
-          "E. Adanya janji dari Perdana Menteri Kuniaki Koiso bahwa kemerdekaan Indonesia akan diberikan pada akhir Agustus 1945"
+        "type": "single",
+        "stimulus": "Hasil Konferensi Meja Bundar (KMB) 1949 memaksa Indonesia menerima bentuk federasi Republik Indonesia Serikat (RIS) yang terdiri atas 16 negara bagian dan daerah otonom. Mayoritas rakyat dan pemimpin daerah memandang federasi tersebut sebagai instrumen politik divide et impera Belanda untuk memecah belah persatuan. Sejak awal 1950, parlemen negara-negara bagian seperti Negara Pasundan, Negara Madura, dan Negara Jawa Timur satu per satu membubarkan diri dan menyerahkan mandat kekuasaannya kembali kepada Republik Indonesia Yogyakarta. Puncaknya, pada 19 Mei 1950, Perdana Menteri RIS Mohammad Hatta dan Presiden RI Assaat menandatangani Piagam Persetujuan pembentukan kembali negara kesatuan.",
+        "question": "Berdasarkan analisis dinamika politik ketatanegaraan tersebut, alasan utama mayoritas negara bagian RIS memilih membubarkan diri dan melebur kembali ke dalam Republik Indonesia adalah...",
+        "options": [
+          "A. Kegagalan pemerintah RIS membayar beban utang luar negeri warisan Hindia Belanda",
+          "B. Ketiadaan legitimasi kultural dan politik rakyat terhadap negara bagian bentukan Belanda",
+          "C. Desakan militer Angkatan Perang Republik Indonesia Serikat (APRIS) yang mengancam para pemimpin daerah",
+          "D. Keinginan para bangsawan daerah untuk memperoleh kedudukan tetap di birokrasi pemerintahan pusat",
+          "E. Perintah langsung dari Dewan Keamanan PBB untuk segera membubarkan struktur federasi"
         ],
-        answer: 1,
-        explanation: "Golongan Muda menolak keterlibatan PPKI karena PPKI dibentuk oleh Panglima Tentara Jepang Kawasan Selatan (Marsekal Terauchi). Pemuda khawatir jika proklamasi dilakukan melalui PPKI, Sekutu dan dunia internasional akan menganggap kemerdekaan Indonesia sebagai hadiah fasisme Jepang."
+        "answer": 1,
+        "explanation": "Negara-negara bagian bentukan Hubertus van Mook tidak memiliki akar legitimasi politik dan dukungan sosiologis dari rakyat di daerah. Rakyat menganggap negara federal sebagai boneka Belanda yang bertujuan melemahkan kedaulatan kemerdekaan 17 Agustus 1945, sehingga timbul gerakan spontan dari parlemen daerah untuk membubarkan diri dan melebur ke dalam Republik Indonesia."
       },
       {
-        type: "single",
-        stimulus: "Pasca-pembacaan Teks Proklamasi pada 17 Agustus 1945, Indonesia secara de facto mengikrarkan kemerdekaannya, namun secara ketatanegaraan belum memiliki konstitusi formal, presiden resmi, maupun pembagian wilayah administrasi. Pada tanggal 18 Agustus 1945, PPKI menggelar sidang pertama di Pejambon, Jakarta. Salah satu agenda krusial adalah pembahasan Piagam Jakarta (Jakarta Charter), di mana utusan dari Indonesia Timur mengajukan keberatan terhadap tujuh kata pada Sila Pertama Pancasila. Demi menjaga keutuhan integrasi nasional bangsa yang baru berusia satu hari, para tokoh Islam bersikap legowo untuk menghapus tujuh kata tersebut.",
-        question: "Makna strategis dari keputusan kompromi perubahan Sila Pertama Pancasila dalam Sidang PPKI 18 Agustus 1945 bagi eksistensi Negara Kesatuan Republik Indonesia adalah...",
-        options: [
-          "A. Menunjukkan dominasi Golongan Muda dalam menekan kehendak tokoh-tokoh keagamaan",
-          "B. Membuktikan bahwa hukum kolonial Belanda masih berlaku dalam sistem ketatanegaraan Indonesia",
-          "C. Mencegah potensi disintegrasi wilayah Indonesia Timur dan mengukuhkan pilar kebhinekaan dalam dasar negara",
-          "D. Mengabulkan tuntutan Sekutu sebagai syarat pengakuan kedaulatan de jure pertama",
-          "E. Mengubah bentuk negara Indonesia dari kesatuan menjadi federasi berbasis keagamaan"
+        "type": "single",
+        "stimulus": "Pemberlakuan Undang-Undang Dasar Sementara (UUDS) 1950 sejak 17 Agustus 1950 mengubah struktur ketatanegaraan Indonesia dari sistem presidensial menjadi sistem parlementer. Dalam sistem ini, tanggung jawab eksekutif sehari-hari berada di tangan Perdana Menteri dan para menteri yang bertanggung jawab kepada Dewan Perwakilan Rakyat Sementara (DPRS). Sementara itu, kedudukan Ir. Sukarno sebagai Presiden diposisikan terutama sebagai kepala negara yang bersifat simbolis dan pemersatu bangsa. Keputusan-keputusan eksekutif presiden wajib mendapatkan tanda tangan tandingan (counter-signature) dari perdana menteri atau menteri yang bersangkutan.",
+        "question": "Konsekuensi ketatanegaraan dari pergeseran fungsi Presiden menjadi kepala negara seremonial menurut UUDS 1950 adalah...",
+        "options": [
+          "A. Presiden tidak dapat diberhentikan maupun dimintai pertanggungjawaban politik oleh parlemen atas jalannya pemerintahan",
+          "B. Parlemen kehilangan hak untuk mengajukan mosi tidak percaya kepada kabinet yang dibentuk",
+          "C. Seluruh perumusan kebijakan luar negeri dialihkan sepenuhnya kepada wewenang Angkatan Bersenjata",
+          "D. Presiden memiliki kekuasaan mutlak untuk membubarkan DPRS apabila kabinet mengalami kegagalan",
+          "E. Perdana menteri wajib tunduk pada dekrit presiden dalam setiap pengambilan keputusan strategis"
         ],
-        answer: 2,
-        explanation: "Penghapusan tujuh kata dalam Piagam Jakarta diubah menjadi 'Ketuhanan Yang Maha Esa' mencegah ancaman pemisahan diri (disintegrasi) wilayah Indonesia Timur yang mayoritas non-Muslim, sehingga NKRI berdiri kokoh atas fondasi kebangsaan yang inklusif."
+        "answer": 0,
+        "explanation": "Dalam doktrin hukum tata negara parlementer (the king can do no wrong), kepala negara tidak dapat diganggu gugat (inviolable). Presiden tidak memikul tanggung jawab politik atas kebijakan eksekutif di hadapan parlemen; pihak yang memikul tanggung jawab penuh dan dapat dijatuhkan oleh DPRS sewaktu-waktu adalah Perdana Menteri beserta jajaran menteri kabinet."
       },
       {
-        type: "single",
-        stimulus: "Pada tanggal 19 Agustus 1945, PPKI melanjutkan sidangnya untuk menentukan struktur pemerintahan daerah dan kementerian Republik Indonesia. Dalam sidang tersebut, disepakati pembagian wilayah Indonesia menjadi 8 provinsi utama yang masing-masing dipimpin oleh seorang Gubernur. Selain itu, dibentuk pula 12 kementerian departemen untuk menjalankan roda pemerintahan nasional. Keputusan ini diambil secara cepat di tengah kondisi Jakarta yang masih dibayangi patroli tentara Jepang dan potensi kedatangan pasukan Sekutu.",
-        question: "Evaluasi atas pembentukan 8 provinsi dan 12 kementerian dalam Sidang PPKI kedua menunjukkan bahwa pemerintah RI saat itu bertujuan untuk...",
-        options: [
-          "A. Menandingi struktur organisasi militer Kido Butai Jepang yang tersebar di pulau-pulau utama",
-          "B. Memenuhi syarat formal hukum internasional tentang keberadaan wilayah dan pemerintahan yang berdaulat",
-          "C. Mempersiapkan penggabungan wilayah Indonesia ke dalam Persemakmuran Kerajaan Inggris",
-          "D. Membatasi kekuasaan Presiden Soekarno agar tidak mengarah pada kediktatoran militer",
-          "E. Mengakomodasi kepentingan ekonomi tuan tanah dan bekas pejabat birokrasi kolonial NICA"
+        "type": "single",
+        "stimulus": "Pada 3 November 1945, Wakil Presiden Mohammad Hatta menandatangani Maklumat Pemerintah No. X yang menganjurkan pembentukan partai-partai politik seluas-luasnya. Maklumat ini awalnya diterbitkan untuk membuktikan kepada Sekutu bahwa Indonesia adalah negara demokratis yang menghargai pluralisme, bukan rezim fasis satu partai bentukan pendudukan Jepang. Ketika sistem parlementer diterapkan pada 1950, warisan maklumat ini melahirkan lebih dari tiga puluh partai politik dan organisasi massa yang menduduki kursi parlemen DPRS tanpa ada satu pun partai yang memiliki mayoritas mutlak.",
+        "question": "Hubungan kausalitas antara Maklumat 3 November 1945 dengan instabilitas kabinet era 1950–1955 adalah...",
+        "options": [
+          "A. Partai politik menolak mengirimkan wakilnya ke dalam jajaran kabinet pemerintahan",
+          "B. Terjadinya polarisasi parlemen yang mengharuskan pembentukan koalisi rapuh dan mudah retak akibat persaingan faksi",
+          "C. Munculnya dominasi mutlak partai komunis yang membekukan fungsi kontrol lembaga legislatif",
+          "D. Terhentinya kebebasan pers dan berserikat bagi masyarakat sipil di kawasan pedesaan",
+          "E. Pembatalan seluruh hasil perundingan internasional oleh partai-partai oposisi"
         ],
-        answer: 1,
-        explanation: "Menurut Konvensi Montevideo, syarat negara berdaulat meliputi rakyat, wilayah pasti, pemerintahan berdaulat, dan kemampuan berhubungan dengan negara lain. Pembentukan 8 provinsi dan 12 kementerian bertujuan membuktikan kepada dunia internasional bahwa RI memenuhi kriteria negara hukum yang berfungsi nyata."
+        "answer": 1,
+        "explanation": "Sistem multi-partai ekstrem tanpa ambang batas parlemen memecah kekuatan legislatif. Tidak adanya partai yang meraih lebih dari 50% kursi memaksa setiap kabinet dibentuk atas dasar koalisi kompromistis (terutama antara PNI dan Masyumi). Ketika terjadi perbedaan kepentingan mengenai kursi menteri atau kebijakan daerah, partai mitra koalisi segera menarik dukungannya, memicu kejatuhan kabinet."
       },
       {
-        type: "single",
-        stimulus: "Pada akhir September 1945, pasukan Sekutu yang tergabung dalam AFNEI (Allied Forces Netherlands East Indies) di bawah komando Letnan Jenderal Sir Philip Christison mendarat di Jakarta. Tugas resmi AFNEI adalah melucuti senjata tentara Jepang dan mengembalikan tawanan perang Sekutu (APWI). Namun, pendaratan AFNEI memicu kemarahan rakyat Indonesia karena diikuti oleh pendaratan NICA (Netherlands Indies Civil Administration) yang secara terang-terangan bermaksud mengembalikan kekuasaan kolonial Belanda di Indonesia dengan membagikan senjata kepada bekas tentara KNIL.",
-        question: "Analisis terhadap dinamika kedatangan AFNEI yang memboncengi NICA menyimpulkan bahwa terjadinya bentrok bersenjata di berbagai daerah disebabkan oleh...",
-        options: [
-          "A. Penolakan AFNEI untuk mengakui kepemimpinan Panglima Besar Jenderal Soedirman",
-          "B. Penyalahgunaan mandat perdamaian Sekutu oleh NICA yang mencoba menegakkan kembali kedaulatan kolonial",
-          "C. Keinginan pemerintah RI untuk merebut pertambangan minyak milik Inggris di Sumatra",
-          "D. Pelanggaran batas wilayah laut yang dilakukan oleh kapal-kapal perang Sekutu di Teluk Jakarta",
-          "E. Adanya instruksi langsung dari Markas PBB di New York untuk membubarkan Republik Indonesia"
+        "type": "single",
+        "stimulus": "Selama kurun waktu sembilan tahun berlakunya UUDS 1950, Indonesia mengalami pergantian tujuh kabinet: Natsir, Sukiman, Wilopo, Ali Sastroamidjojo I, Burhanuddin Harahap, Ali Sastroamidjojo II, dan Djuanda. Rata-rata usia kerja setiap kabinet hanya bertahan antara 12 hingga 15 bulan. Fenomena ini berakar pada mudahnya partai-partai oposisi di DPRS melayangkan mosi tidak percaya terhadap kebijakan kabinet yang sedang berjalan, sering kali dipicu oleh perselisihan penempatan posisi pejabat birokrasi dan perbedaan kepentingan faksional.",
+        "question": "Dampak jangka panjang yang ditimbulkan oleh tingginya frekuensi mosi tidak percaya parlemen terhadap tata kelola negara adalah...",
+        "options": [
+          "A. Terpeliharanya kesinambungan program pembangunan ekonomi dan industrialisasi nasional",
+          "B. Menguatnya independensi lembaga peradilan dari intervensi elite partai politik",
+          "C. Lumpuhnya birokrasi pemerintahan karena pejabat kementerian kerap berganti sebelum program kerja terealisasi",
+          "D. Meningkatnya kepercayaan pemodal asing untuk menanamkan modal jangka panjang di Indonesia",
+          "E. Berkurangnya beban anggaran belanja negara untuk operasional pejabat tinggi negara"
         ],
-        answer: 1,
-        explanation: "Konflik bersenjata meletus karena NICA menumpang pada misi damai AFNEI dan mencoba menegakkan kembali kekuasaan kolonial Hindia Belanda dengan memenjarakan pejuang dan membagikan senjata kepada eks tawanan KNIL."
+        "answer": 2,
+        "explanation": "Usia kabinet yang sangat pendek merusak kontinuitas administrasi negara. Rencana pembangunan jangka panjang terbengkalai karena setiap pergantian perdana menteri selalu diikuti pergantian menteri, perombakan pejabat eselon, dan pembatalan kebijakan kabinet pendahulunya, sehingga energi birokrasi habis untuk urusan peralihan kekuasaan."
       },
       {
-        type: "single",
-        stimulus: "Insiden Bendera di Hotel Yamato Surabaya pada 19 September 1945 menjadi salah satu pemantik utama revolusi fisik. Sekelompok orang Belanda di bawah pimpinan Mr. Ploegman mengibarkan bendera Merah-Putih-Biru di puncak hotel tanpa persetujuan pemerintah RI di Surabaya. Aksi ini memicu kemarahan para pemuda Surabaya yang mendatangi hotel dan menuntut penurunan bendera tersebut. Setelah perundingan gagal dan memicu tembakan, pemuda Surabaya memanjat menara hotel, merobek bagian warna biru bendera Belanda, dan mengibarkan kembali warna Merah-Putih.",
-        question: "Tindakan pemuda Surabaya merobek warna biru bendera Belanda di Hotel Yamato secara simbolis dan filosofis merepresentasikan...",
-        options: [
-          "A. Penolakan total rakyat terhadap segala bentuk restorasi kekuasaan kolonial Belanda di tanah air",
-          "B. Strategi militer untuk memancing pertempuran terbuka dengan pasukan Sekutu di pelabuhan Tanjung Perak",
-          "C. Tuntutan agar Belanda membayar ganti rugi atas kerusakan ekonomi pasca-Perang Pasifik",
-          "D. Upaya menarik perhatian Palang Merah Internasional terhadap kondisi tawanan perang di Surabaya",
-          "E. Bekerja samanya pemuda Surabaya dengan tentara Jepang untuk mengusir konsulat asing"
+        "type": "single",
+        "stimulus": "Kabinet Natsir (September 1950 – Maret 1951) dipimpin oleh Mohammad Natsir dari Partai Masyumi dengan mengedepankan kabinet zaken yang berintegritas tinggi. Namun, kabinet ini segera menghadapi perlawanan sengit dari Partai Nasional Indonesia (PNI) yang memilih berada di luar pemerintahan. Pada awal 1951, PNI melalui ketuanya, Hadikusumo, mengajukan mosi di parlemen yang menuntut pemerintah mencabut Peraturan Pemerintah No. 39 Tahun 1950 mengenai pembentukan Dewan Perwakilan Rakyat Daerah (DPRD) Sementara, dengan tuduhan peraturan tersebut menguntungkan Masyumi di daerah.",
+        "question": "Faktor mendasar yang memaksa Mohammad Natsir mengembalikan mandat kepemimpinannya kepada Presiden Sukarno adalah...",
+        "options": [
+          "A. Kemenangan Mosi Hadikusumo di parlemen yang menyebabkan hilangnya legitimasi politik kabinet di DPRS",
+          "B. Kegagalan total operasi penumpasan gerakan separatis bersenjata di Jawa Barat",
+          "C. Penolakan serikat buruh kereta api untuk menghentikan aksi mogok kerja massal",
+          "D. Terjadinya krisis moneter akibat anjloknya harga komoditas karet di pasar internasional",
+          "E. Perpecahan antara Natsir dan Panglima Besar Angkatan Darat terkait anggaran militer"
         ],
-        answer: 0,
-        explanation: "Aksi merobek warna biru hingga menyisakan Merah-Putih adalah bentuk penegasan kedaulatan nasional yang radikal: penolakan mutlak atas kembalinya penjajahan Belanda."
+        "answer": 0,
+        "explanation": "Diterimanya Mosi Hadikusumo oleh DPRS membuktikan bahwa Kabinet Natsir telah kehilangan dukungan mayoritas di lembaga legislatif. Secara etika dan konvensi ketatanegaraan sistem parlementer, perdana menteri yang kebijakannya ditolak parlemen wajib mengundurkan diri dan mengembalikan mandat pemerintahan kepada kepala negara."
       },
       {
-        type: "single",
-        stimulus: "Pada tanggal 16 Oktober 1945, Wakil Presiden Mohammad Hatta mengeluarkan Maklumat No. X yang memberikan kekuasaan legislatif kepada Komite Nasional Indonesia Pusat (KNIP) sebelum terbentuknya DPR dan MPR hasil pemilu. Selanjutnya, pada 14 November 1945, dikeluarkan Maklumat Pemerintah yang mengubah sistem kabinet dari Presidensial menjadi Parlementer, di mana Sutan Sjahrir diangkat sebagai Perdana Menteri pertama. Perubahan sistem politik yang sangat drastis ini dirancang oleh Sutan Sjahrir dan BP-KNIP di tengah ancaman militer Sekutu.",
-        question: "Alasan geopolitik diplomasi yang paling rasional di balik keputusan Perdana Menteri Sutan Sjahrir mengubah sistem pemerintahan Presidensial menjadi Parlementer adalah...",
-        options: [
-          "A. Mengurangi kewenangan Soekarno yang dianggap Sekutu terlalu condong kepada Blok Timur",
-          "B. Memenuhi tuntutan tentara Jepang agar pemerintahan Indonesia dipimpin oleh tokoh non-militer",
-          "C. Mematahkan propaganda Belanda di PBB bahwa Republik Indonesia adalah negara boneka buatan fasis Jepang",
-          "D. Mempercepat proses integrasi ekonomi Indonesia ke dalam sistem pasar bebas Barat",
-          "E. Mencegah terjadinya kudeta militer yang dirancang oleh eks perwira PETA dan KNIL"
+        "type": "single",
+        "stimulus": "Kabinet Sukiman-Suwirjo (April 1951 – Februari 1952) merupakan koalisi antara Masyumi dan PNI. Stabilitas kabinet ini mendadak runtuh ketika terungkap bahwa Menteri Luar Negeri Achmad Soebardjo menandatangani nota kesepahaman rahasia bantuan ekonomi dan militer dengan Duta Besar Amerika Serikat Merle Cochran. Perjanjian tersebut terikat pada ketentuan Mutual Security Act (MSA) tahun 1951 yang mewajibkan negara penerima bantuan memberikan kontribusi bagi pertahanan 'dunia bebas' yang dipimpin Washington.",
+        "question": "Alasan utama penandatanganan nota kesepahaman MSA memicu kecaman keras dari parlemen dan publik Indonesia adalah...",
+        "options": [
+          "A. Bantuan militer Amerika Serikat dinilai terlalu sedikit dibandingkan bantuan Uni Soviet",
+          "B. Persyaratan kerja sama MSA dinilai mengikat Indonesia pada blok militer Barat dan menciderai prinsip politik luar negeri bebas aktif",
+          "C. Amerika Serikat menolak mengirimkan armada perangnya untuk membantu pembebasan Irian Barat",
+          "D. Dana bantuan tersebut wajib disalurkan secara eksklusif kepada perusahaan-perusahaan swasta Belanda",
+          "E. Perjanjian tersebut ditandatangani tanpa melibatkan persetujuan dari pimpinan militer Angkatan Darat"
         ],
-        answer: 2,
-        explanation: "Belanda mempropagandakan di dunia internasional bahwa RI adalah negara fasis buatan Jepang. Mengubah sistem ke Parlementer dengan Sutan Sjahrir (tokoh sosialis-demokrat anti-fasis) membuktikan pada Sekutu dan PBB bahwa RI adalah negara demokratis yang sah."
+        "answer": 1,
+        "explanation": "Ketentuan dalam pasal-pasal MSA mewajibkan negara penerima bantuan mendukung strategi pertahanan Blok Barat melawan pengaruh komunisme. Hal ini dinilai parlemen dan elite politik melanggar doktrin dasar politik luar negeri Indonesia 'Mendayung di Antara Dua Karang' (Bebas Aktif), sehingga memicu mosi kecaman yang memaksa Menlu Soebardjo dan Perdana Menteri Sukiman mengundurkan diri."
       },
       {
-        type: "single",
-        stimulus: "Pada 22 Agustus 1945, PPKI memutuskan pembentukan Badan Keamanan Rakyat (BKR) yang bertugas menjaga keselamatan dan keamanan umum di daerah. Pemerintah secara sengaja tidak langsung mendirikan tentara nasional resmi. Hal ini memicu kekecewaan di kalangan mantan perwira PETA dan KNIL. Namun, pada 5 Oktober 1945, Presiden Soekarno akhirnya mengeluarkan maklumat resmi pembentukan Tentara Keamanan Rakyat (TKR) dan mengangkat Oerip Soemohardjo untuk menyusun struktur markas besar militer di Yogyakarta.",
-        question: "Pertimbangan utama pemerintah Indonesia menunda pembentukan tentara nasional resmi pada Agustus 1945 dan baru meresmikannya menjadi TKR pada Oktober 1945 adalah...",
-        options: [
-          "A. Belum tersedianya anggaran negara untuk membayar gaji prajurit militer profesional",
-          "B. Kekhawatiran bahwa pembentukan tentara nasional awal akan memicu reaksi militer agresif dari pasukan Jepang dan Sekutu",
-          "C. Adanya pertentangan internal antara perwira lulusan PETA dengan perwira lulusan akademi militer KNIL",
-          "D. Keinginan Presiden Soekarno untuk menyerahkan pertahanan negara sepenuhnya kepada laskar rakyat",
-          "E. Larangan tertulis dari Komisi Tiga Negara PBB mengenai pembentukan angkatan bersenjata di negara baru"
+        "type": "single",
+        "stimulus": "Kabinet Wilopo (April 1952 – Juni 1953) berusaha menata perekonomian pasca-perang dengan mengembalikan tanah perkebunan milik pengusaha asing yang dikuasai secara ilegal oleh warga selama masa revolusi. Pada 16 Maret 1953, aparat kepolisian yang mengawal traktor pemerintah meratakan tanah perkebunan tembakau Deli Planters Vereeniging (DPV) di Tanjung Morawa, Sumatra Utara, terlibat bentrokan bersenjata dengan para petani penggarap liar. Insiden tersebut mengakibatkan lima orang petani tewas tertembak.",
+        "question": "Peristiwa Tanjung Morawa berujung pada jatuhnya Kabinet Wilopo terutama karena...",
+        "options": [
+          "A. Pemerintah Belanda melancarkan agresi militer sebagai balasan atas tertembaknya warga negara Belanda",
+          "B. Serikat Tani Indonesia menolak membayar pajak sewa tanah kepada pemerintah pusat",
+          "C. Munculnya mosi tidak percaya dari kubu Serikat Tani Indonesia (Sakti) di parlemen yang didukung PKI dan faksi oposisi",
+          "D. Presiden Sukarno secara sepihak memecat Perdana Menteri Wilopo dari keanggotaan PNI",
+          "E. Wilayah Sumatra Utara menyatakan memisahkan diri dari kedaulatan Republik Indonesia"
         ],
-        answer: 1,
-        explanation: "Pada Agustus 1945, kedudukan RI sangat rentan. Pembentukan tentara nasional awal dikhawatirkan memancing provokasi militer Jepang dan Sekutu. Setelah ancaman AFNEI/NICA nyata pada Oktober 1945, TKR resmi dibentuk."
+        "answer": 2,
+        "explanation": "Insiden Tanjung Morawa dimanfaatkan partai oposisi dan PKI melalui organisasi sayap taninya (BTI) untuk melancarkan serangan politik. Anggota parlemen Sidik Kertapati dari Sarekat Tani Indonesia mengajukan mosi tidak percaya terhadap Menteri Dalam Negeri Roem dan kebijakan agraria kabinet. Merasa kehilangan legitimasi moral dan dukungan politik koalisi, Wilopo memilih mengembalikan mandatnya kepada Presiden."
       },
       {
-        type: "single",
-        stimulus: "Pada awal Oktober 1945, para pemuda di Yogyakarta yang tergabung dalam BKR dan Komite Nasional melakukan aksi penggerebekan terhadap Markas Tentara Jepang Kido Butai di Kotabaru. Pertempuran sengit meletus selama beberapa hari hingga akhirnya komandan Jepang menyerahkan ribuan pucuk senjata api, amunisi, dan kendaraan tempur kepada pihak pejuang Indonesia. Aksi serupa terjadi di Surabaya, Bandung, dan Bukittinggi.",
-        question: "Dampak taktis terbesar dari keberhasilan perampasan senjata militer Jepang di Kotabaru dan kota-kota lain bagi perjuangan mempertahankan kemerdekaan adalah...",
-        options: [
-          "A. Menghentikan seluruh niat Sekutu untuk mendaratkan pasukannya di Pulau Jawa",
-          "B. Memungkinkan Indonesia menjual senjata tersebut untuk mendanai diplomasi luar negeri",
-          "C. Menyediakan modal persenjataan vital bagi TKR dan laskar rakyat saat menghadapi perang terbuka lawan AFNEI/NICA",
-          "D. Memaksa Kaisar Hirohito menandatangani surat pengakuan kedaulatan atas Republik Indonesia",
-          "E. Menyebabkan pembubaran organisasi BKR dan pembentukan pasukan perdamaian PBB"
+        "type": "single",
+        "stimulus": "Kabinet Ali Sastroamidjojo I (Juli 1953 – Juli 1955) mencatat prestasi gemilang dengan menyelenggarakan Konferensi Asia Afrika di Bandung. Di dalam negeri, kabinet ini menghadapi ketegangan akut dengan institusi militer. Ketika jabatan Kepala Staf Angkatan Darat (KSAD) kosong, Menteri Pertahanan Iwa Kusumasumantri menunjuk Kolonel Bambang Utoyo sebagai KSAD baru. Korps perwira Angkatan Darat memboikot upacara pelantikan pada 27 Juni 1955: korps musik militer menolak memainkan lagu kebangsaan dan para perwira tidak hadir di lapangan upacara.",
+        "question": "Penyebab mendasar kalangan perwira Angkatan Darat memboikot pelantikan Bambang Utoyo adalah...",
+        "options": [
+          "A. Bambang Utoyo bukan merupakan perwira militer aktif melainkan tokoh sipil partai politik",
+          "B. Penolakan militer terhadap intervensi politisi sipil yang mengabaikan norma senioritas dan hierarki internal angkatan perang",
+          "C. Dugaan bahwa Bambang Utoyo terlibat dalam upaya kudeta militer Peristiwa 17 Oktober 1952",
+          "D. Tuntutan militer agar anggaran pertahanan dialihkan sepenuhnya untuk pembelian senjata dari Uni Soviet",
+          "E. Keinginan para perwira agar jabatan KSAD dirangkap langsung oleh Perdana Menteri Ali Sastroamidjojo"
         ],
-        answer: 2,
-        explanation: "Senjata rampasan dari Jepang menjadi modal utama pertahanan TKR dan rakyat saat menghadapi pertempuran berskala besar lawan Sekutu dan NICA."
+        "answer": 1,
+        "explanation": "Pimpinan Angkatan Darat memiliki piagam internal (Piagam Yogyakarta 1955) yang menetapkan bahwa pengangkatan KSAD harus mempertimbangkan prestasi, senioritas, dan disetujui para panglima teritorial. Tindakan Menhan yang memaksakan figur pilihannya dinilai sebagai campur tangan politisi sipil yang memecah belah korps tentara, memicu krisis politik yang berujung runtuhnya Kabinet Ali I."
       },
       {
-        type: "single",
-        stimulus: "Dalam Konferensi TKR di Yogyakarta pada tanggal 12 November 1945, digelar pemilihan Panglima Besar TKR untuk pertama kalinya. Konferensi ini dihadiri oleh para komandan divisi dan komandan resimen dari seluruh Jawa dan Sumatra. Dalam pemungutan suara yang berlangsung demokratis, Kolonel Soedirman (Komandan Divisi V Banyumas) terpilih mengalahkan Oerip Soemohardjo (mantan Perwira KNIL).",
-        question: "Terpilihnya Kolonel Soedirman sebagai Panglima Besar TKR pertama dalam Konferensi TKR 12 November 1945 mencerminkan karakter kepemimpinan militer Indonesia yang...",
-        options: [
-          "A. Ditentukan secara mutlak oleh penunjukan politik Presiden Soekarno",
-          "B. Mengutamakan kepemimpinan yang lahir dari aspirasi internal prajurit dan kedekatan dengan akar rumput perjuangan rakyat",
-          "C. Menundukkan pertahanan militer di bawah instruksi panglima Sekutu",
-          "D. Didominasi oleh pengaruh perwira-perwira senior lulusan akademi militer kolonial Belanda",
-          "E. Menolak segala bentuk kompromi politik dalam perundingan diplomasi meja hijau"
+        "type": "single",
+        "stimulus": "Pada 20 Maret 1950, Menteri Keuangan Sjafruddin Prawiranegara mengambil langkah moneter berani yang dikenal sebagai kebijakan 'Gunting Sjafruddin'. Semua uang kertas bertuliskan De Javasche Bank dan NICA pecahan Rp5,00 ke atas digunting menjadi dua bagian secara harfiah. Bagian kiri tetap berlaku sebagai alat pembayaran yang sah dengan nilai separuh dari nilai nominal aslinya. Sementara itu, potongan bagian kanan dinyatakan tidak berlaku sebagai uang tunai, melainkan wajib ditukarkan dengan surat obligasi pinjaman nasional jangka panjang 30 tahun berbunga 3% per tahun.",
+        "question": "Tujuan utama pemerintah menerapkan kebijakan sanering moneter melalui pemotongan fisik uang kertas tersebut adalah...",
+        "options": [
+          "A. Mengganti mata uang rupiah dengan mata uang gulden Belanda untuk memudahkan perdagangan",
+          "B. Mengurangi jumlah uang yang beredar guna mengendalikan laju inflasi dan menambal defisit kas negara",
+          "C. Menghapuskan kepemilikan tabungan para pengusaha swasta non-pribumi di perbankan nasional",
+          "D. Menarik seluruh peredaran uang logam dari pasar tradisional pedesaan",
+          "E. Membiayai pembangunan jaringan rel kereta api baru di Pulau Sumatra"
         ],
-        answer: 1,
-        explanation: "Soedirman terpilih melalui konsensus demokratis para komandan divisi/resimen TKR, mencerminkan kepemimpinan yang mengakar pada prajurit dan perlawanan rakyat."
+        "answer": 1,
+        "explanation": "Pascaperang kemerdekaan, jumlah uang beredar melimpah akibat beredarnya berbagai mata uang (uang NICA, uang Jepang, dan ORI), memicu inflasi parah sementara kas negara kosong. Dengan memotong nilai uang menjadi 50%, separuh likuiditas diserap negara sebagai pinjaman obligasi, sehingga jumlah uang beredar berkurang drastis dan pemerintah memperoleh dana segar menutupi defisit anggaran."
       },
       {
-        type: "single",
-        stimulus: "Guna menyebarluaskan berita proklamasi ke seluruh penjuru Nusantara dan luar negeri, para pemuda di Radio Hoso Kyoku Jakarta (seperti Jusuf Ronodipuro) nekat menembus penjagaan ketat tentara Jepang untuk mengudara. Berita proklamasi disiarkan menggunakan bahasa Indonesia dan Inggris, serta dikirim via kode morse oleh para radiogram kapal. Akibatnya, dalam waktu singkat berita kemerdekaan mencapai Sumatra, Sulawesi, Maluku, hingga diterima oleh media internasional di Australia dan India.",
-        question: "Manakah pernyataan yang paling tepat menggambarkan dampak strategis dari aksi penyebaran berita proklamasi oleh para pemuda radio bagi perjuangan nasional?",
-        options: [
-          "A. Memaksa tentara Jepang di seluruh Indonesia menyerahkan seluruh aset pembangunannya tanpa perlawanan",
-          "B. Memicu gelombang dukungan massa secara spontan di berbagai daerah untuk mengambil alih kantor-kantor pemerintahan dari tangan Jepang",
-          "C. Membatalkan rencana pendaratan pasukan Sekutu AFNEI di pelabuhan-pelabuhan utama Indonesia",
-          "D. Menyebabkan penangkapan massal terhadap seluruh anggota PPKI oleh Polisi Militer Kempeitai Jepang",
-          "E. Mengubah struktur konstitusi Indonesia dari UUD 1945 menjadi hukum darurat perang"
+        "type": "single",
+        "stimulus": "Untuk mengubah struktur ekonomi kolonial menjadi ekonomi nasional, Menteri Perdagangan Sumitro Djojohadikusumo merancang Program Benteng (1950–1953). Program ini memberikan hak monopoli impor barang-barang tertentu serta fasilitas kredit perbankan lunak khusus kepada pengusaha pribumi. Di lapangan, kebijakan ini justru memunculkan kongkalikong yang dikenal sebagai fenomena 'Ali-Baba': pengusaha pribumi ('Ali') yang memegang lisensi impor hanya bertindak sebagai perantara fiktif, kemudian menjual lisensi tersebut dengan harga tinggi kepada pengusaha non-pribumi bermodal kuat ('Baba') tanpa menjalankan usaha riil.",
+        "question": "Faktor struktural yang menyebabkan kegagalan Program Benteng dalam melahirkan borjuasi pribumi yang mandiri adalah...",
+        "options": [
+          "A. Tingginya bea masuk barang ekspor yang ditetapkan oleh pemerintah kolonial Belanda",
+          "B. Ketiadaan modal awal, minimnya keahlian manajerial, dan mentalitas mencari rente (rent-seeking) di kalangan penerima lisensi",
+          "C. Boikot perdagangan yang dilancarkan oleh serikat buruh pelabuhan di Tanjung Priok",
+          "D. Larangan dari Bank Indonesia bagi pengusaha pribumi untuk meminjam modal kerja",
+          "E. Penurunan drastis permintaan barang-barang impor oleh masyarakat perkotaan"
         ],
-        answer: 1,
-        explanation: "Penyebaran berita proklamasi via radio membakar semangat daerah secara spontan untuk melakukan aksi konsolidasi, pengibaran bendera, dan pelucutan senjata Jepang."
+        "answer": 1,
+        "explanation": "Banyak pengusaha pribumi yang menerima lisensi Benteng tidak memiliki pengalaman bisnis, jaringan distribusi, dan disiplin manajerial. Alih-alih menginvestasikan kredit untuk membangun industri perdagangan, sebagian besar penerima fasilitas memanfaatkan kedekatan dengan elite partai penguasa untuk mencari keuntungan cepat (rent-seeking) dengan memperjualbelikan lisensi impor kepada pengusaha mapan."
       },
       {
-        type: "single",
-        stimulus: "Pada 3 November 1945, Pemerintah RI mengeluarkan Maklumat Pemerintah yang ditandatangani oleh Wakil Presiden Mohammad Hatta. Maklumat ini berisi dorongan bagi masyarakat untuk membentuk partai-partai politik sebanyak-banyaknya sebagai persiapan penyelenggaraan Pemilu pada Januari 1946. Dalam waktu singkat, lahirlah berbagai partai politik seperti Masyumi, PNI, PKI, PSI, dan Parkindo.",
-        question: "Tujuan utama diterbitkannya Maklumat Pemerintah 3 November 1945 di tengah situasi ancaman agresi asing adalah...",
-        options: [
-          "A. Menunjukkan kepada dunia internasional bahwa Indonesia adalah negara demokrasi yang menganut sistem multipartai",
-          "B. Memperlemah posisi Presiden Soekarno dalam mengendalikan lembaga eksekutif",
-          "C. Menggalang dana kampanye militer untuk membiayai pembelian senjata dari Uni Soviet",
-          "D. Menggantikan peran TKR dalam mempertahankan keamanan daerah di bawah kendali partai",
-          "E. Mengabulkan syarat mutlak dari Kerajaan Belanda agar mau diajak berunding di Linggarjati"
+        "type": "single",
+        "stimulus": "Salah satu klausul dalam KMB 1949 yang dirasakan sangat membatasi kedaulatan fiskal Indonesia adalah kedudukan De Javasche Bank (DJB) sebagai bank sirkulasi yang berstatus perseroan terbatas swasta milik pemegang saham Belanda. Kebijakan moneter dan nilai tukar mata uang tidak dapat ditentukan secara bebas oleh pemerintah RI tanpa persetujuan bank tersebut. Menanggapi anomali ini, pemerintah pada 1951 membentuk Panitia Nasionalisasi De Javasche Bank yang bertugas membeli saham DJB dari para pemiliknya di bursa Amsterdam.",
+        "question": "Makna strategis pengesahan Undang-Undang Pokok Bank Indonesia pada 1 Juli 1953 bagi perekonomian nasional adalah...",
+        "options": [
+          "A. Pengalihan kepemilikan seluruh bank swasta di Indonesia menjadi badan usaha milik daerah",
+          "B. Terwujudnya bank sentral berdaulat milik negara yang bertugas mengatur peredaran uang dan mengarahkan kebijakan moneter nasional",
+          "C. Penghapusan kewajiban pembayaran devisa impor untuk seluruh komoditas primer",
+          "D. Pembatasan transaksi perdagangan luar negeri hanya dengan mata uang gulden",
+          "E. Penutupan seluruh cabang perbankan asing yang beroperasi di wilayah kedaulatan RI"
         ],
-        answer: 0,
-        explanation: "Maklumat 3 November 1945 bertujuan membuktikan pada dunia internasional bahwa RI adalah negara demokrasi multipartai yang sehat, bukan kediktatoran berpartai tunggal."
+        "answer": 1,
+        "explanation": "Nasionalisasi DJB menjadi Bank Indonesia (BI) mentransformasikan lembaga perbankan peninggalan kolonial menjadi bank sentral milik negara. Langkah ini memberi wewenang penuh kepada pemerintah Indonesia untuk mencetak uang, mengendalikan suku bunga, dan menyusun kebijakan moneter demi kepentingan pembangunan ekonomi nasional tanpa dikendalikan pemodal asing."
       },
       {
-        type: "single",
-        stimulus: "Pada akhir Oktober 1945, terjadi bentrokan antara rakyat dan pejuang di Jakarta menghadapi tindakan serdadu NICA yang sering melakukan teror malam dan penembakan misterius. Kondisi keamanan Jakarta yang semakin tidak kondusif serta ancaman penangkapan terhadap Presiden dan Para Menteri mendorong pemerintah mengambil keputusan memindahkan Ibu Kota Negara dari Jakarta ke Yogyakarta pada 4 Januari 1946 atas undangan Sri Sultan Hamengkubuwono IX.",
-        question: "Keputusan pemindahan Ibu Kota RI dari Jakarta ke Yogyakarta pada Januari 1946 secara kausalitas didasari oleh pertimbangan...",
-        options: [
-          "A. Keinginan Presiden Soekarno untuk menggabungkan wilayah RI dengan Kerajaan Belanda",
-          "B. Yogyakarta memiliki jaminan keamanan politik, dukungan penuh Sultan HB IX, dan posisi geografis yang strategis untuk pertahanan",
-          "C. Adanya desakan dari PBB agar pusat pemerintahan Indonesia dijauhkan dari kawasan pantai",
-          "D. Terjadinya bencana alam banjir besar yang melumpuhkan seluruh sarana transportasi di Jakarta",
-          "E. Penolakan warga Jakarta terhadap kehadiran tentara TKR di markas-markas pusat"
+        "type": "single",
+        "stimulus": "Berdasarkan naskah persetujuan ekonomi dan keuangan KMB di Den Haag 1949, Indonesia diwajibkan menanggung beban utang pemerintah Hindia Belanda sebesar 4,3 miliar gulden. Selain itu, Indonesia terikat kewajiban untuk menjamin hak milik, izin konsesi, dan pengalihan keuntungan (repatriasi laba) bagi perusahaan-perusahaan perkebunan, pertambangan, dan perbankan Belanda. Hingga pertengahan 1950-an, sektor ekspor komoditas utama masih dikuasai oleh lima konglomerasi dagang raksasa Belanda (The Big Five), seperti Jacobson van den Berg dan Internatio.",
+        "question": "Kondisi ekonomi tersebut membuktikan bahwa pada era Demokrasi Parlementer, Indonesia berada dalam situasi...",
+        "options": [
+          "A. Kemandirian ekonomi agraris yang berhasil melepaskan diri dari ketergantungan modal Barat",
+          "B. Kedaulatan politik formal yang belum diiringi kedaulatan ekonomi riil akibat keterikatan struktur pasca-kolonial",
+          "C. Keberhasilan industrialisasi berat yang menyaingi kekuatan ekonomi negara-negara tetangga",
+          "D. Dominasi penanaman modal asing yang berasal dari negara-negara Blok Timur",
+          "E. Surplus anggaran belanja negara yang ditopang oleh penerimaan dividen perusahaan multinasional"
         ],
-        answer: 1,
-        explanation: "Jakarta tidak aman karena teror Sekutu/NICA. Yogyakarta dipilih karena dukungan terbuka Sri Sultan HB IX & Paku Alam VIII serta lokasi strategis Jawa Tengah untuk benteng pertahanan."
+        "answer": 1,
+        "explanation": "Meskipun pengakuan kedaulatan politik telah tercapai pada 1949, perekonomian Indonesia masih terkungkung dalam struktur kolonial. Sebagian besar devisa hasil ekspor terserap untuk mencicil utang KMB dan dialirkan ke luar negeri oleh perusahaan Belanda (The Big Five), membatasi ruang gerak kabinet parlementer untuk membiayai program kesejahteraan rakyat pribumi."
       },
       {
-        type: "data_sufficiency",
-        stimulus: "Seorang sejarawan mengkaji efektivitas diplomasi awal Kabinet Sjahrir I dalam menghadapi kedatangan pasukan AFNEI pada Oktober 1945.<br><br>DATA SEJARAH:<br>(1) PM Sutan Sjahrir berhasil mengadakan pertemuan resmi dengan Panglima AFNEI Letjen Sir Philip Christison.<br>(2) Sir Philip Christison secara terbuka mengimbau agar NICA tidak mencampuri urusan pemerintahan de facto RI di Jawa.",
-        question: "Berdasarkan kriteria kecukupan data di atas, apakah Data (1) dan Data (2) dapat membuktikan keberhasilan diplomasi awal RI?",
-        options: [
-          "A. Data (1) dan Data (2) BERSAMA-SAMA cukup untuk membuktikan pengakuan de facto Sekutu terhadap pemerintah RI",
-          "B. Data (1) SAJA cukup, sedangkan Data (2) tidak relevan dengan diplomasi",
-          "C. Data (2) SAJA cukup tanpa memerlukan Data (1)",
-          "D. Data (1) dan Data (2) tidak cukup karena AFNEI kemudian tetap membantu Belanda",
-          "E. Kedua data saling bertentangan sehingga tidak dapat dipergunakan sebagai fakta sejarah"
+        "type": "single",
+        "stimulus": "Kerapuhan sistem parlementer memicu kekecewaan di kalangan perwira tinggi Markas Besar Angkatan Darat. Pimpinan tentara di bawah KSAD Kolonel A.H. Nasution dan T.B. Simatupang berupaya memodernisasi angkatan perang melalui program Rasionalisasi dan Reorganisasi (Re-Ra), namun rencana ini mendapat penolakan keras dari politisi di DPRS yang memihak faksi perwira eks-laskar. Pada pagi hari 17 Oktober 1952, pasukan tentara bersama ribuan demonstran mendatangi Istana Merdeka dengan menghadapkan moncong meriam dan tank tempur ke arah kediaman Presiden, menuntut pembubaran parlemen yang dinilai korup.",
+        "question": "Sikap yang diambil oleh Presiden Sukarno dalam menghadapi tekanan militer pada Peristiwa 17 Oktober 1952 adalah...",
+        "options": [
+          "A. Mengabulkan tuntutan militer dengan segera membubarkan DPRS dan membentuk junta militer",
+          "B. Mengumumkan pengunduran dirinya sebagai Presiden dan menyerahkan kekuasaan kepada Nasution",
+          "C. Menolak membubarkan parlemen karena menolak menjadi seorang diktator militer, lalu mencopot Nasution dari jabatan KSAD",
+          "D. Memerintahkan Angkatan Udara melancarkan serangan udara terhadap markas komando Angkatan Darat",
+          "E. Meminta perlindungan diplomatik kepada kedutaan besar negara asing di Jakarta"
         ],
-        answer: 0,
-        explanation: "Data 1 menunjukkan kontak diplomasi langsung dan Data 2 menunjukkan pengakuan de facto nyata dari Sekutu terhadap eksistensi pemerintahan RI."
+        "answer": 2,
+        "explanation": "Sukarno secara tegas menolak desakan perwira tentara untuk membubarkan parlemen dengan pertimbangan bahwa tindakan tersebut akan menjadikannya seorang diktator dan menghancurkan tatanan demokrasi yang baru dibangun. Akibat peristiwa ini, Nasution diberhentikan dari posisinya sebagai KSAD (sebelum diangkat kembali pada 1955), memperdalam pembelahan di tubuh korps perwira tentara."
       },
       {
-        type: "infographic",
-        stimulus: "Cermati alur kelembagaan dan pertahanan RI pasca-Proklamasi berikut:<br>1. 18 Agst 1945: UUD 1945 & Presiden/Wapres<br>2. 22 Agst 1945: Pembentukan BKR<br>3. 5 Okt 1945: Maklumat TKR<br>4. 14 Nov 1945: Kabinet Parlementer I",
-        question: "Kesimpulan kronologis yang paling tepat mengenai strategi penataan negara awal kemerdekaan adalah...",
-        options: [
-          "A. Pemerintah RI mendahulukan pembentukan militer daripada konstitusi negara",
-          "B. Penataan negara berjalan terstruktur dari peletakan konstitusi dasar, pertahanan bertahap, hingga kelincahan diplomasi politik",
-          "C. Perubahan sistem pemerintahan dilakukan atas perintah dari tentara Jepang",
-          "D. Pembentukan BKR merupakan bentuk kegagalan diplomasi di PBB",
-          "E. Seluruh kelembagaan negara dibentuk tanpa memperhitungkan ancaman militer Sekutu"
+        "type": "single",
+        "stimulus": "Komoditas ekspor seperti karet dari Sumatra dan kopra dari Sulawesi menyumbangkan lebih dari 70% dari total penerimaan devisa nasional pada awal dekade 1950-an. Namun, para pemimpin masyarakat dan perwira teritorial di daerah mengeluhkan bahwa alokasi anggaran pembangunan yang dikembalikan oleh pemerintah pusat di Jakarta sangat minim dan tidak proporsional. Merespons kelambanan birokrasi kementerian di ibu kota, para komandan militer daerah mulai memfasilitasi perdagangan barter komoditas secara langsung dengan pelabuhan bebas di Singapura dan Malaya tanpa izin kementerian perdagangan.",
+        "question": "Tindakan barter langsung oleh komando militer teritorial di luar Jawa pada hakikatnya mencerminkan...",
+        "options": [
+          "A. Upaya mendirikan negara baru yang terpisah secara hukum dari Negara Kesatuan Republik Indonesia",
+          "B. Protes terbuka terhadap ketidakadilan alokasi fiskal pusat-daerah serta ketidakmampuan kabinet parlementer menyejahterakan prajurit dan rakyat daerah",
+          "C. Kerja sama militer resmi antara pimpinan Angkatan Darat dengan tentara kolonial Inggris di Malaya",
+          "D. Penolakan daerah terhadap penggunaan mata uang rupiah sebagai alat pembayaran yang sah",
+          "E. Keinginan para panglima daerah untuk mengganti komoditas perkebunan dengan industri manufaktur modern"
         ],
-        answer: 1,
-        explanation: "Alur kronologis memperlihatkan tahapan logis: fondasi konstitusi dasar (UUD) ➔ pengamanan bertahap (BKR ➔ TKR) ➔ adaptasi diplomasi internasional (Parlementer Sjahrir)."
+        "answer": 1,
+        "explanation": "Perdagangan barter ilegal yang difasilitasi perwira militer daerah lahir dari rasa frustrasi atas sentralisme ekonomi Jakarta. Pendapatan devisa daerah terkuras untuk membiayai kementerian pusat di Jawa, sementara jalan, jembatan, asrama prajurit, dan fasilitas umum di luar Jawa rusak parah. Praktik ini merupakan ekspresi protes ekonomi yang kelak menjadi benih pergolakan bersenjata PRRI/Permesta."
       },
       {
-        type: "single",
-        stimulus: "Dinamika perjuangan pasca-Proklamasi 1945 mengajarkan betapa krusialnya kesepaduan antara elite politik diplomasi dengan kekuatan pertahanan militer dan rakyat di lapangan. Tanpa adanya persatuan dan kompromi nasional, ancaman pendudukan kembali oleh kekuatan kolonial asing tidak akan mungkin terbendung oleh negara yang baru berdiri. Konsolidasi kebangsaan ini menjadi pilar utama yang menyelamatkan Republik Indonesia dari krisis eksistensi di tengah konfrontasi global pasca-Perang Dunia II.",
-        question: "Nilai kebangsaan utama yang dapat dipetik dari perjuangan awal kemerdekaan 1945 adalah...",
-        options: [
-          "A. Mengedepankan kepentingan perorangan di atas keselamatan bersama",
-          "B. Sinergi bernalar kritis dan gotong-royong nasional dalam mempertahankan kedaulatan negara",
-          "C. Pasrah terhadap ultimatum militer kekuatan asing",
-          "D. Mengabaikan kesepakatan konstitusi demi ambisi politik",
-          "E. Bersandar penuh pada pertolongan tentara luar negeri"
+        "type": "single",
+        "stimulus": "Di tengah seringnya pergantian kabinet dan instabilitas ekonomi, para sejarawan politik mencatat bahwa periode Demokrasi Parlementer 1950–1955 merupakan salah satu era paling demokratis dalam sejarah modern Indonesia. Tidak ada tokoh oposisi yang dipenjarakan tanpa putusan pengadilan yang independen, kebebasan pers dijamin secara luas tanpa ancaman pembredelan sepihak dari eksekutif, dan perdebatan pemikiran intelektual berlangsung dinamis di ruang publik.",
+        "question": "Pelajaran historis terpenting dari eksperimen Demokrasi Parlementer di Indonesia adalah bahwa kebebasan politik prosedural...",
+        "options": [
+          "A. Otomatis menjamin terciptanya pertumbuhan ekonomi yang merata bagi seluruh lapisan masyarakat",
+          "B. Wajib dibatasi secara represif oleh kekuatan militer agar tidak memicu kebebasan berserikat",
+          "C. Membutuhkan kedewasaan elite politik untuk membangun konsensus kebangsaan dan stabilitas kelembagaan agar tidak merusak efektivitas pelayanan publik",
+          "D. Merupakan sistem yang sepenuhnya bertentangan dengan hukum internasional dan Piagam PBB",
+          "E. Hanya dapat berhasil apabila seluruh partai politik dibubarkan dan diganti dengan satu partai negara"
         ],
-        answer: 1,
-        explanation: "Kunci utama pertahanan kemerdekaan 1945 adalah sinergi kepemimpinan nasional, penalaran diplomasi kritis, dan gotong royong perlawanan rakyat."
+        "answer": 2,
+        "explanation": "Demokrasi liberal di Indonesia membuktikan bahwa kebebasan sipil dan pemilu yang jujur akan kehilangan maknanya apabila elite partai terjebak dalam politik aliran sempit dan saling jegal demi kepentingan kekuasaan sesaat. Kebebasan politik harus diimbangi oleh konsensus kelembagaan yang kuat agar stabilitas pemerintahan tetap terjaga untuk melayani kepentingan rakyat."
       }
     ]
   },
   "1B": {
-    heroImage: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80",
-    templateData: {
+    "heroImage": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80",
+    "templateData": {
       "nav-kicker": "LAB SEJARAH INTERAKTIF — UNIT 1B",
-      "nav-brand": "Sub-Modul 1B — Perjuangan Fisik Mempertahankan Kemerdekaan I (Surabaya & Ambarawa)",
+      "nav-brand": "Sub-Modul 1B — Pemilu Pertama 1955 & Diplomasi Konferensi Asia Afrika (1955)",
       "materi-tab-label": "1. Jejak Materi 1B",
       "kuis-tab-label": "2. Tantangan Kuis 1B",
-      "hero-kicker": "KURIKULUM MERDEKA — FASE F (KELAS XII) | INDONESIA PADA MASA REVOLUSI (1945–1949)",
-      "hero-title": "Darah & Pekik Merdeka: Pertempuran Surabaya & Pertempuran Ambarawa",
-      "hero-description": "Dinamika konfrontasi fisik pertama Republik melawan Sekutu (AFNEI) dan NICA: dari pengibaran bendera di Hotel Yamato, tewasnya Mallaby, perlawanan total 10 November Surabaya, hingga keunggulan Taktik Supit Urang Soedirman di Ambarawa.",
+      "hero-kicker": "KURIKULUM MERDEKA — FASE F (KELAS XII) | INDONESIA PADA MASA ORDE LAMA (1950–1965)",
+      "hero-title": "Konsensus Prosedural Pemilu 1955 & Panggung Diplomasi KAA Bandung",
+      "hero-description": "Analisis kritis terhadap keberhasilan penyelenggaraan Pemilu demokratis pertama di bawah pengawasan kabinet Burhanuddin Harahap, konfigurasi empat partai besar, serta terobosan diplomasi luar negeri bebas aktif dalam Konferensi Asia Afrika di Bandung.",
       "hero-note-title": "PANDUAN BELAJAR SUB-MODUL 1B",
-      "hero-note-text": "Telusuri Jejak 01 hingga 06 secara berurutan. Analisis perobekan bendera Yamato, pidato Bung Tomo, Resolusi Jihad KH Hasyim Asy'ari, serta kepemimpinan lapangan Soedirman dalam strategi pengepungan Ambarawa!",
+      "hero-note-text": "Pelajari Jejak 01 hingga 06 secara teratur. Amati bagaimana rakyat berpartisipasi tanpa intimidasi di bilik suara, bagaimana hasil suara membagi kekuatan parlemen menjadi empat kubu besar, dan bagaimana Dasasila Bandung mengubah peta politik Perang Dingin dunia.",
       "overview-kicker": "PETA KONSEP SUB-MODUL 1B",
-      "overview-title": "Empat Tahapan Kausalitas Pertempuran Episentrum 1945",
-      "overview-text": "Konfrontasi fisik mempertahankan kemerdekaan di Jawa melintasi empat tahapan kausalitas militer dan politik:",
-      "map-card-one-title": "1. Konsolidasi TKR & Pendaratan AFNEI/NICA",
-      "map-card-one-text": "Maklumat 5 Oktober 1945 meresmikan TKR saat AFNEI mendarat disusupi provokasi NICA yang mempersenjatai KNIL.",
-      "map-card-two-title": "2. Insiden Yamato & Tragedi Internatio",
-      "map-card-two-text": "Perobekan bendera Yamato (19 Sept) memicu pertempuran Surabaya hingga tewasnya Brigjen A.W.S. Mallaby (30 Okt).",
-      "map-card-three-title": "3. Ultimatum Mansergh & Pertempuran 10 November",
-      "map-card-three-text": "Penolakan Gubernur Soerjo, pidato Bung Tomo, & Resolusi Jihad memicu perang kota 3 minggu (Hari Pahlawan).",
-      "map-card-four-title": "4. Pertempuran Ambarawa & Taktik Supit Urang",
-      "map-card-four-text": "Gugurnya Letkol Isdiman mendorong Kolonel Soedirman melancarkan taktik pengepungan ganda membebaskan Ambarawa (15 Des).",
-
-      "lesson-one-kicker": "JEJAK 01 — BKR MENUJU TKR & MISI AFNEI/NICA",
-      "lesson-one-title": "Menyiapkan Alat Pertahanan Bangsa & Kedatangan AFNEI / NICA",
-      "lesson-one-text": "Merespons ancaman keamanan yang kian nyata di berbagai daerah, Pemerintah merilis Maklumat Resmi pada 5 Oktober 1945 untuk meresmikannya menjadi Tentara Keamanan Rakyat (TKR). Pengangkatan Letjen Oerip Soemohardjo (eks perwira KNIL) sebagai Kepala Staf Umum Markas Besar TKR di Yogyakarta menandai mulainya konsolidasi militer profesional Republik.",
-      "lesson-one-text-two": "Sementara itu, berdasarkan mandat SEAC (South East Asia Command), komando Sekutu AFNEI (Allied Forces Netherlands East Indies) di bawah Letjen Sir Philip Christison mendarat di Jakarta pada 29 September 1945. Misi resmi AFNEI adalah menerima penyerahan senjata Jepang, membebaskan tawanan perang Sekutu (APWI), serta menjaga ketertiban. Namun, situasi perdamaian berubah menjadi konfrontasi akibat penyusupan pihak ketiga:",
-      "lesson-one-point-a-title": "Pengakuan De Facto 1 Oktober 1945",
-      "lesson-one-point-a-text": "Panglima AFNEI Christison sempat secara terbuka mengakui eksistensi pemerintahan RI secara de facto pada 1 Oktober 1945 dan awalnya disambut kooperatif oleh para pejabat Republik.",
-      "lesson-one-point-b-title": "Provokasi & Pengkhianatan NICA",
-      "lesson-one-point-b-text": "AFNEI ternyata memboncengi NICA (Netherlands Indies Civil Administration) pimpinan Van der Plas. NICA secara diam-diam membebaskan dan mempersenjatai kembali bekas serdadu KNIL serta melakukan teror penembakan demi menegakkan kembali kekuasaan kolonial. Sebelum TKR dikonsolidasikan secara resmi di Yogyakarta, gejolak perlawanan rakyat terhadap Sekutu dan NICA telah meletus lebih dulu di Surabaya.",
-
-      "lesson-two-kicker": "JEJAK 02 — YAMATO & TRAGEDI INTERNATIO",
-      "lesson-two-title": "Insiden Hotel Yamato (19 Sept) hingga Kematian Mallaby (30 Okt 1945)",
-      "lesson-two-text": "Surabaya menjadi pusat ketegangan revolusi. Pada 19 September 1945, sekelompok warga Belanda di bawah pimpinan W.V.Ch. Ploegman secara sepihak mengibarkan bendera Merah-Putih-Biru di puncak Hotel Yamato (Jl. Tunjungan), mengabaikan kedaulatan Republik yang baru berdiri.",
-      "lesson-two-list-a": "<b>1. Perobekan Bendera di Hotel Yamato:</b> Perundingan Residen Soedirman dengan pihak Belanda menemui jalan buntu. Pemuda Hariyono dan Kusno Wibowo nekat memanjat tiang bendera, merobek bagian warna biru, lalu mengibarkan kembali warna Merah-Putih diiringi sorak massa.",
-      "lesson-two-list-b": "<b>2. Pendaratan Brigade 49 Mallaby:</b> Pada akhir Oktober 1945, Brigade 49 AFNEI di bawah Brigjen A.W.S. Mallaby mendarat di Surabaya. Penyebaran pamflet udara yang meminta rakyat menyerahkan senjata menyulut pertempuran sengit di seluruh sudut kota.",
-      "lesson-two-list-c": "<b>3. Kedatangan Presiden Soekarno & Genjatan Senjata:</b> Presiden Soekarno bersama Mayjen Hawthorn datang ke Surabaya mengadakan perundingan damai. Hawthorn setuju menarik ultimatum dan mengakui kedudukan TKR untuk meredakan bentrokan.",
-      "lesson-two-list-d": "<b>4. Tragedi Gedung Internatio (30 Oktober 1945):</b> Saat meredakan tembak-menembak di sekitar Gedung Internatio dekat Jembatan Merah bersama anggota Kontak Biro, mobil Brigjen Mallaby meledak dan tewasnya sang jenderal Sekutu.",
-      "lesson-two-text-two": "Kematian Mallaby adalah titik balik yang fatal. Peristiwa ini mengguncang Markas Besar Sekutu, memicu kemarahan komando militer Inggris yang langsung merilis ultimatum keras, dan secara langsung menjadi penyebab utama meletusnya perang kota 10 November.",
-
-      "lesson-three-kicker": "JEJAK 03 — ULTIMATUM MANSERGH & PERANG TOTAL",
-      "lesson-three-title": "Ultimatum Mansergh & Pertempuran Dahsyat 10 November 1945",
-      "lesson-three-text": "Pasca-tewasnya Mallaby, komando Sekutu diambil alih oleh Mayor Jenderal Robert Mansergh. Pada 9 November 1945, Mansergh merilis ultimatum keras: seluruh pimpinan dan warga Surabaya bersenjata harus melapor, menyerahkan senjata dengan mengangkat tangan di atas kepala paling lambat pukul 06.00 WIB, 10 November 1945.",
-      "thinker-comte-name": "1. Penolakan Tegas Gubernur R.M. Soerjo",
-      "thinker-comte-text": "Malam sebelum tenggat waktu, Gubernur Jawa Timur R.M. Soerjo melalui siaran radio resmi secara tegas menolak ultimatum Sekutu dan menyerukan perlawanan mempertahankan kedaulatan bangsa.",
-      "thinker-durkheim-name": "2. Pekik Merdeka Bung Tomo & Resolusi Jihad",
-      "thinker-durkheim-text": "Sutomo (Bung Tomo) membakar gelora perjuangan via Radio Pemberontakan, diperkuat oleh Resolusi Jihad KH Hasyim Asy'ari (22 Oktober) yang mewajibkan seluruh santri dan rakyat mempertahankan tanah air.",
-      "thinker-marx-name": "3. Pertempuran Perang Kota 3 Minggu",
-      "thinker-marx-text": "Tepat pukul 06.00 WIB 10 November 1945, Sekutu menggempur Surabaya dari darat, laut, dan udara. Prajurit TKR, laskar rakyat, santri, dan pemuda bertahan gigih dari rumah ke rumah selama 3 minggu.",
-      "thinker-weber-name": "4. Kemenangan Moril & Hari Pahlawan",
-      "thinker-weber-text": "Meski kota Surabaya akhirnya dikuasai Sekutu secara fisik, pertahanan ini membuktikan pada dunia internasional bahwa RI didukung perlawanan rakyat yang nyata. Peristiwa ini diabadikan sebagai Hari Pahlawan.",
-      "lesson-three-text-two": "Gema perlawanan di Surabaya membuktikan ketangguhan rakyat, namun Sekutu juga melancarkan pergerakan militer di Jawa Tengah melalui pelabuhan Semarang menuju kota strategis Ambarawa!",
-
-      "lesson-four-kicker": "JEJAK 04 — PERTEMPURAN AMBARAWA & ISDIMAN",
-      "lesson-four-title": "Pendaratan Bethel di Semarang & Gugurnya Letkol Isdiman",
-      "lesson-four-text": "Pada 20 Oktober 1945, pasukan Sekutu di bawah Brigjen Bethel mendarat di Semarang dengan dalih mengurus tawanan perang (APWI). Namun, NICA melucuti polisi Indonesia dan mempersenjatai KNIL di Benteng Ambarawa, sehingga bentrokan senjata tidak terelakkan dan meletus pada 20 November 1945 di sepanjang jalur rel Magelang-Ambarawa via 3 fase penting:",
-      "method-a-title": "1. Gugurnya Letkol Isdiman (26 November 1945)",
-      "method-a-text": "Komandan Resimen TKR Purwokerto Letkol Isdiman gugur tertembak oleh serangan udara pesawat pengintai musuh saat mengkoordinasikan pertahanan garis depan di Ambarawa.",
-      "method-b-title": "2. Peralihan Komando ke Kolonel Soedirman",
-      "method-b-text": "Mendengar gugurnya Isdiman, Panglima Divisi V Banyumas Kolonel Soedirman langsung turun ke lapangan mengambil alih komando taktis pertempuran Ambarawa secara langsung.",
-      "method-c-title": "3. Pengukuhan Panglima Besar TKR",
-      "method-c-text": "Soedirman baru saja terpilih sebagai Panglima Besar TKR dalam Konferensi TKR Yogyakarta (12 November 1945), menjadikan Ambarawa sebagai ujian kepemimpinan lapangan pertamanya.",
-      "lesson-four-text-two": "Peralihan komando taktis kepada Kolonel Soedirman pasca-gugurnya Letkol Isdiman menjadi titik balik krusial yang mengarah pada penyusunan strategi pengepungan Ambarawa.",
-
-      "lesson-five-kicker": "JEJAK 05 — STRATEGI TAKTIK SUPIT URANG",
-      "lesson-five-title": "Taktik Pengepungan Supit Urang & Kemenangan 15 Desember 1945",
-      "lesson-five-text": "Pada 11 Desember 1945, Kolonel Soedirman mengumpulkan para komandan sektor dari Purwokerto, Yogyakarta, Surakarta, Salatiga, Magelang, dan Semarang untuk merancang serangan umum pamungkas.",
-      "object-material-title": "1. Serangan Umum Taktik Supit Urang (12 Des 1945 Pukul 04.30 WIB)",
-      "object-material-text": "Soedirman melancarkan Taktik Supit Urang (pengepungan ganda/capit udang). Mekanismenya: pasukan RI menjepit musuh secara serentak dari dua sayap kiri dan kanan, sementara pasukan lain memotong jalur bantuan musuh di belakang. Taktik ini berhasil mengisolasi pasukan Sekutu di Benteng Fort Willem I dan memutus total komunikasi musuh dari Semarang.",
-      "object-formal-title": "2. Kemenangan Ambarawa & Hari Juang Kartika",
-      "object-formal-text": "Setelah terkepung rapat selama 4 hari 4 malam, pasukan Sekutu terdesak dan terpaksa mundur total ke Semarang pada 15 Desember 1945. Kemenangan Ambarawa diperingati sebagai Hari Juang Kartika TNI AD, dan pada 18 Desember 1945 Soedirman resmi dilantik oleh Presiden Soekarno sebagai Jenderal Panglima Besar TKR.",
-
+      "overview-title": "Empat Tonggak Legitimasi Demokrasi dan Diplomasi 1955",
+      "overview-text": "Peristiwa penting sepanjang 1955 didorong oleh empat dinamika sejarah yang melintasi skala nasional dan internasional:",
+      "map-card-one-title": "1. Amanat UU No. 7 Tahun 1953",
+      "map-card-one-text": "Landasan hukum pemilu yang dirancang kabinet Wilopo berhasil dieksekusi secara netral oleh Panitia Pemilihan Indonesia (PPI).",
+      "map-card-two-title": "2. Konferensi Panca Negara & KAA",
+      "map-card-two-text": "Inisiatif Perdana Menteri Ali Sastroamidjojo menyatukan suara bangsa-bangsa terjajah menghadapi hegemoni Blok Barat dan Blok Timur.",
+      "map-card-three-title": "3. Partisipasi Rakyat 91,5%",
+      "map-card-three-text": "Tingginya kesadaran politik warga desa memilih anggota parlemen pada 29 September dan anggota Konstituante pada 15 Desember 1955.",
+      "map-card-four-title": "4. Konfigurasi Empat Besar (The Big Four)",
+      "map-card-four-text": "Munculnya empat pemenang utama (PNI, Masyumi, NU, PKI) yang justru merefleksikan pembelahan ideologis tajam di tingkat akar rumput.",
+      "lesson-one-kicker": "JEJAK 01 — JALAN PANJANG MENUJU BILIK SUARA",
+      "lesson-one-title": "Menuntaskan Pemilu Pertama di Tengah Ancaman Pemberontakan",
+      "lesson-one-text": "Undang-Undang No. 7 Tahun 1953 tentang Pemilihan Umum Anggota Konstituante dan Anggota DPR telah disahkan sejak masa Kabinet Wilopo. Penyelenggaraan pemilu ini sempat tertunda berulang kali akibat ketiadaan dana, perselisihan data kependudukan, serta pergantian kabinet. Rintangan terberat berasal dari faktor keamanan daerah: gerilyawan Darul Islam/Tentara Islam Indonesia (DI/TII) menguasai sebagian wilayah pedalaman Jawa Barat, Sulawesi Selatan, dan Aceh.",
+      "lesson-one-text-two": "Kabinet Burhanuddin Harahap yang dilantik pada Agustus 1955 mengambil komitmen tegas untuk tidak menunda tanggal pemungutan suara. Panitia Pemilihan Indonesia (PPI) di bawah kepemimpinan S. Hadikusumo bekerja maraton mencetak ratusan juta lembar surat suara berlogo partai dan menyalurkannya menggunakan kapal laut, pedati, hingga kurir berjalan kaki menembus medan hutan.",
+      "lesson-one-point-a-title": "Dua Putaran Pemilihan Nasional",
+      "lesson-one-point-a-text": "Pemilu 1955 diselenggarakan dalam dua tahap terpisah: tahap pertama pada 29 September 1955 untuk memilih 257 anggota DPR, dan tahap kedua pada 15 Desember 1955 untuk memilih 514 anggota Konstituante pembentuk UUD baru.",
+      "lesson-one-point-b-title": "Pembagian 16 Daerah Pemilihan",
+      "lesson-one-point-b-text": "Seluruh wilayah Indonesia dibagi menjadi 16 daerah pemilihan proporsional, termasuk daerah pemilihan Irian Barat yang dialokasikan kursi secara simbolis sebagai wujud integritas teritorial republik.",
+      "lesson-two-kicker": "JEJAK 02 — HARI PEMUNGUTAN SUARA",
+      "lesson-two-title": "Tingkat Partisipasi 91,5% Tanpa Polarisasi Kekerasan",
+      "lesson-two-text": "Meskipun angka buta aksara di kalangan penduduk dewasa saat itu masih mencapai lebih dari 50%, antusiasme masyarakat datang ke tempat pemungutan suara (TPS) mencatatkan rekor sejarah. Ketiadaan kemampuan membaca diatasi dengan pencantuman gambar lambang partai atau foto calon perorangan di kertas suara. Warga mengenakan pakaian adat atau pakaian terbaik mereka, mengantre secara tertib sejak fajar menyingsing di balai-balai desa.",
+      "lesson-two-list-a": "<b>1. Antusiasme Tinggi Pemilih:</b> Lebih dari 37,8 juta pemilih menggunakan hak pilih mereka, mencatatkan tingkat partisipasi 91,54% dari total daftar pemilih terdaftar.",
+      "lesson-two-list-b": "<b>2. Keberanian Menembus Hambatan:</b> Warga pedesaan berjalan kaki belasan kilometer melintasi perbukitan demi menyalurkan suara di balai desa terdekat.",
+      "lesson-two-list-c": "<b>3. Netralitas Pamong & Penyelenggara:</b> Panitia Pemilihan Indonesia (PPI) dan aparat kepolisian bersikap netral tanpa memanipulasi kotak suara.",
+      "lesson-two-list-d": "<b>4. Legitimasi Internasional:</b> Pengamat internasional memuji pemilu berjalan jujur, bebas dari intimidasi aparat, dan tanpa insiden kekerasan massal.",
+      "lesson-two-text-two": "Pengamat internasional mencatat pemilu berjalan jujur, mematahkan keraguan kekuatan asing terhadap kapasitas demokrasi bangsa baru di Asia.",
+      "lesson-three-kicker": "JEJAK 03 — KONFIGURASI PARLEMEN",
+      "lesson-three-title": "Polarisasi Aliran: PNI, Masyumi, Nahdlatul Ulama, dan PKI",
+      "lesson-three-text": "Perhitungan suara Pemilu 1955 melahirkan peta kekuatan politik baru yang didominasi oleh empat partai besar, mengumpulkan hampir 78% dari seluruh suara nasional. Kemenangan ini sekaligus mengukuhkan tesis Clifford Geertz tentang politik aliran (aliran ideologis) dalam masyarakat Indonesia:",
+      "thinker-comte-name": "1. PNI (8,4 Juta Suara / 57 Kursi)",
+      "thinker-comte-text": "Berbasis birokrasi priyayi dan penduduk pedesaan Jawa tengah-timur, mengusung ideologi nasionalisme sekuler Marhaenisme.",
+      "thinker-durkheim-name": "2. Masyumi (7,9 Juta Suara / 57 Kursi)",
+      "thinker-durkheim-text": "Mendominasi pemilih Muslim modernis dan saudagar di luar Jawa (Sumatra, Sulawesi, Kalimantan) dan Jawa Barat, menentang komunisme.",
+      "thinker-marx-name": "3. Nahdlatul Ulama (6,9 Juta Suara / 45 Kursi)",
+      "thinker-marx-text": "Pasca-keluar dari Masyumi 1952, NU membuktikan kekuatannya mewakili Muslim tradisionalis berbasis pesantren di Jawa Timur dan Tengah.",
+      "thinker-weber-name": "4. PKI (6,1 Juta Suara / 39 Kursi)",
+      "thinker-weber-text": "Di bawah D.N. Aidit, PKI bangkit pasca-Madiun 1948 lewat penggalangan petani miskin (BTI) dan buruh perkotaan.",
+      "lesson-three-text-two": "Hasil ini tidak menciptakan pemenang mayoritas tunggal, melainkan membagi kekuatan parlemen secara seimbang antara faksi nasionalis, Islam, dan komunis.",
+      "lesson-four-kicker": "JEJAK 04 — INISIATIF INTERNASIONAL",
+      "lesson-four-title": "Dari Konferensi Kolombo Menuju Gedung Merdeka Bandung",
+      "lesson-four-text": "Sebelum pemilu digelar, Indonesia telah mengambil inisiatif kepemimpinan di panggung dunia. Pada April 1954, Perdana Menteri Ali Sastroamidjojo menghadiri pertemuan di Kolombo bersama pemimpin India, Pakistan, Burma, dan Sailan. Ali mengusulkan penyelenggaraan konferensi tingkat tinggi bangsa-bangsa Asia dan Afrika untuk meredakan eskalasi Perang Dingin dan mempercepat dekolonisasi sisa penjajahan Barat.",
+      "lesson-four-text-two": "Gagasan ini dimatangkan dalam Konferensi Bogor pada Desember 1954 yang menyepakati Kota Bandung sebagai tuan rumah 29 negara perwakilan Asia dan Afrika.",
+      "method-a-title": "1. Penolakan Blok Barat",
+      "method-a-text": "Amerika Serikat awalnya meragukan kenetralan konferensi, terutama karena keikutsertaan Republik Rakyat Tiongkok (RRT) di bawah PM Zhou Enlai.",
+      "method-b-title": "2. Renovasi Gedung Kilat",
+      "method-b-text": "Pemerintah menyulap Gedung Societeit Concordia menjadi Gedung Merdeka dan mengganti nama Jalan Postweg menjadi Jalan Asia-Afrika di Bandung.",
+      "method-c-title": "3. Solidaritas 29 Negara",
+      "method-c-text": "Pertemuan akbar ini melibatkan negara merdeka baru yang berbeda sistem politik untuk menyatukan suara menentang kolonialisme.",
+      "lesson-five-kicker": "JEJAK 05 — MANIFESTO SOLIDARITAS DUNIA KETIGA",
+      "lesson-five-title": "Menentang Kolonialisme dan Peletak Dasar Gerakan Non-Blok",
+      "lesson-five-text": "Konferensi Asia Afrika dibuka resmi oleh Presiden Sukarno pada 18 April 1955 dengan pidato monumental berjudul 'Let a New Asia and a New Africa be Born'. Sukarno mengingatkan para delegasi bahwa kolonialisme belum mati; imperialisme hadir kembali dalam wujud kendali ekonomi, persenjataan, dan dominasi ideologi blok militer global.",
+      "object-material-title": "1. Dasasila Bandung",
+      "object-material-text": "Sepuluh prinsip hubungan internasional disepakati secara aklamasi, antara lain penghormatan kedaulatan, non-agresi, dan larangan pakta militer agresif.",
+      "object-formal-title": "2. Cikal Bakal Gerakan Non-Blok",
+      "object-formal-text": "Semangat Bandung mengobarkan dekolonisasi di Afrika (Maroko, Tunisia, Ghana) serta melandasi berdirinya Gerakan Non-Blok di Beograd 1961.",
       "lesson-six-kicker": "JEJAK 06 — SINTESIS & REFLEKSI 1B",
-      "lesson-six-title": "Sintesis Perang Rakyat Surabaya & Taktik Militer Ambarawa",
-      "lesson-six-text": "Pertempuran Surabaya memperlihatkan perang rakyat semesta yang dipicu oleh semangat nasionalisme dan dorongan keagamaan, sedangkan Pertempuran Ambarawa membuktikan kematangan taktik militer terorganisir di bawah kepemimpinan Jenderal Soedirman.",
-      "lesson-six-text-two": "Kombinasi antara perlawanan total rakyat dan keunggulan taktis militer ini berhasil menegakkan posisi tawar kedaulatan fisik Republik Indonesia sebelum melangkah ke arena perundingan diplomasi internasional.",
-      "lesson-six-quote": "\"Lebih baik kita hancur lebur daripada tidak merdeka! Senjata kita tentulah cukup untuk mempertahankan kemerdekaan!\" — Bung Tomo & Jenderal Soedirman (1945)",
+      "lesson-six-title": "Keberhasilan Diplomasi Global Berhadapan dengan Kebuntuan Domestik",
+      "lesson-six-text": "Tahun 1955 tercatat sebagai titik kulminasi reputasi Indonesia di kancah internasional. Kemampuan memimpin Konferensi Asia Afrika membuktikan prinsip politik luar negeri 'bebas aktif' mampu menjadi penyeimbang di tengah polarisasi Perang Dingin tanpa harus menjadi satelit negara adidaya.",
+      "lesson-six-text-two": "Kemegahan diplomasi luar negeri ini berbanding terbalik dengan dinamika politik di dalam negeri. Hasil Pemilu 1955 tidak mengakhiri tradisi saling jegal antarfaksi parlemen. Empat partai besar yang terpilih memiliki visi ideologis yang saling bertentangan secara diametral saat mereka duduk di majelis Konstituante.",
+      "lesson-six-quote": "\"Kotak suara berhasil menghitung kepala pemilih, namun belum mampu mempertemukan kompromi ideologis para pemimpin bangsa.\"",
       "reflection-kicker": "OUTRO BRIDGE & REFLEKSI SUB-MODUL 1B",
-      "reflection-title": "Jembatan Menuju Sub-Modul 1C: Menjalarnya Perjuangan Fisik ke Luar Jawa & Daerah",
-      "reflection-text": "Pertempuran Surabaya dan kemenangan taktis Ambarawa membuktikan daya tahan bangsa. Namun, NICA terus memperluas agresi ke berbagai penjuru pulau. Menjalarnya api revolusi dari Bandung, Medan, hingga Puputan Margarana di Bali menegaskan bahwa kedaulatan dipertahankan secara serentak oleh seluruh rakyat Nusantara (Sub-Modul 1C).",
+      "reflection-title": "Jembatan Menuju Sub-Modul 1C: Retaknya Fondasi Nasional dan Kebuntuan Konstituante",
+      "reflection-text": "Harapan bahwa Pemilu 1955 akan menciptakan kabinet yang stabil kandas ketika fraksi-fraksi di Konstituante menemui jalan buntu dalam menentukan dasar negara antara Pancasila atau Islam. Pada saat yang sama, kekecewaan daerah luar Jawa terhadap lambannya pembangunan memuncak menjadi gerakan militer PRRI dan Permesta, memicu krisis eksistensial terbesar bangsa (Sub-Modul 1C).",
       "challenge-kicker": "ASESMEN SUB-MODUL 1B",
-      "challenge-title": "Siap Menguji Pemahaman Pertempuran Surabaya & Ambarawa?",
-      "challenge-text": "Jawab 15 tantangan kuis interaktif HOTS Sub-Modul 1B.",
+      "challenge-title": "Siap Menguji Pemahaman Pemilu 1955 & KAA?",
+      "challenge-text": "Jawab 15 tantangan kuis interaktif HOTS yang dirancang khusus untuk menguji penalaran sejarah Sub-Modul 1B.",
       "start-quiz-button": "Mulai Kuis Sub-Modul 1B →",
       "quiz-kicker": "SUB-MODUL 1B — ASESMEN INTERAKTIF",
       "quiz-title": "15 Tantangan Sejarah Sub-Modul 1B",
-      "quiz-description": "Uji analisis strategi perang & ketahanan nasional.",
+      "quiz-description": "Uji analisis diakronis & kritis. Setiap soal dilengkapi pembahasan komprehensif latar belakang sejarah.",
       "score-label": "SKOR SUB-MODUL 1B",
       "progress-label": "KEMAJUAN PENGERJAAN",
       "check-quiz-button": "Periksa Jawaban Kuis",
       "result-kicker": "EVALUASI SUB-MODUL 1B",
       "result-title": "Analisis Hasil Penguasaan Sub-Modul 1B",
-      "result-text": "Ulas kembali jawabanmu dan pelajari pembahasannya.",
+      "result-text": "Ulas kembali jawabanmu dan pahami penjelasan sejarah di bawah setiap soal.",
       "retry-quiz-button": "Coba Lagi / Acak Soal 1B",
-      "footer-text": "© Lab Sejarah Interaktif — Sub-Modul 1B: Surabaya & Ambarawa. Kurikulum Merdeka Fase F."
+      "footer-text": "© Lab Sejarah Interaktif — Sub-Modul 1B: Pemilu 1955 & Diplomasi KAA. Kurikulum Merdeka Fase F."
     },
-    quizData: [
+    "quizData": [
       {
-        type: "single",
-        stimulus: "Pada 25 Oktober 1945, Brigade 49 AFNEI di bawah Brigjen A.W.S. Mallaby mendarat di Surabaya. Ketegangan memuncak saat Sekutu secara sepihak menyebarkan pamflet udara meminta rakyat menyerahkan senjata. Pada 30 Oktober 1945, bentrokan di sekitar Gedung Internatio mengakibatkan mobil Mallaby meledak dan tewasnya sang Brigadir Jenderal.",
-        question: "Dampak langsung dari tewasnya Brigjen A.W.S. Mallaby di Gedung Internatio Surabaya adalah...",
-        options: [
-          "A. Penarikan mundur seluruh pasukan Sekutu dari pelabuhan Tanjung Perak",
-          "B. Dikeluarkannya Ultimatum 10 November 1945 oleh Mayor Jenderal Robert Mansergh yang memicu perang total",
-          "C. Pembubaran organisasi NICA oleh markas PBB",
-          "D. Penandatanganan perjanjian damai antara Gubernur Suryo dan Kerajaan Inggris",
-          "E. Pembentukan Komisi Tiga Negara di Surabaya"
+        "type": "single",
+        "stimulus": "Undang-Undang No. 7 Tahun 1953 tentang Pemilihan Umum Anggota Konstituante dan Anggota Dewan Perwakilan Rakyat menjadi payung hukum perdana pesta demokrasi nasional. Meskipun persiapannya telah dirintis sejak Kabinet Wilopo dan dilanjutkan oleh Kabinet Ali I, pelaksanaan pemungutan suara berulang kali terancam diundur karena kendala ketiadaan anggaran belanja dan instabilitas keamanan di berbagai daerah. Ketika Kabinet Burhanuddin Harahap dilantik pada Agustus 1955, kabinet ini mengambil keputusan berani untuk tetap menyelenggarakan pemilu tepat waktu pada September 1955.",
+        "question": "Motivasi utama Kabinet Burhanuddin Harahap bersikeras menyelenggarakan pemungutan suara tanpa penundaan adalah...",
+        "options": [
+          "A. Keinginan menghentikan dominasi PNI dan PKI di birokrasi pemerintahan pusat",
+          "B. Tuntutan untuk memberikan legitimasi demokratis sejati bagi parlemen dan mengakhiri status sementara lembaga perwakilan rakyat",
+          "C. Desakan dari pemerintah Amerika Serikat sebagai syarat pencairan pinjaman luar negeri",
+          "D. Perintah langsung dari Majelis Umum PBB guna menuntaskan proses dekolonisasi",
+          "E. Rencana untuk membubarkan seluruh partai Islam sebelum pemilihan anggota Konstituante"
         ],
-        answer: 1,
-        explanation: "Kematian Mallaby membuat Sekutu marah dan mengeluarkan Ultimatum 10 November 1945 yang menuntut penyerahan senjata rakyat Surabaya tanpa syarat."
+        "answer": 1,
+        "explanation": "Parlemen DPRS yang menjabat sejak 1950 merupakan badan kompromi sementara yang tidak dipilih oleh rakyat melalui bilik suara. Kerapuhan kabinet disadari bersumber dari ketiadaan mandat rakyat yang sah. Menyelenggarakan pemilu tepat waktu merupakan komitmen moral untuk menghasilkan DPR dan Konstituante definitif yang memiliki legitimasi politik kuat."
       },
       {
-        type: "single",
-        stimulus: "Ultimatum 10 November 1945 meminta pimpinan dan pemuda Surabaya menyerahkan senjata di tempat-tempat yang ditentukan dengan mengangkat tangan di atas kepala. Ultimatum ini ditolak keras oleh Gubernur Suryo dan pejuang Surabaya. Melalui siaran Radio Perjuangan, Bung Tomo menyampaikan pidato berapi-api membakar semangat rakyat.",
-        question: "Peran utama pidato Bung Tomo melalui Radio Perjuangan dalam Pertempuran Surabaya 10 November 1945 adalah...",
-        options: [
-          "A. Menyampaikan instruksi militer rahasia dari Markas Besar TKR Yogyakarta",
-          "B. Menggalang persatuan emosional dan mobilisasi massa rakyat dari berbagai lapisan untuk melawan ultimatum Sekutu",
-          "C. Meminta bantuan pasukan tambahan dari tentara Uni Soviet",
-          "D. Mengumumkan pemindahan pusat pemerintahan Jawa Timur ke Malang",
-          "E. Mengajak pasukan Sekutu untuk melakukan genjatan senjata diplomasi"
+        "type": "single",
+        "stimulus": "Penyelenggaraan Pemilu 1955 menghadapi rintangan geografis dan sosial yang luar biasa. Indonesia adalah negara kepulauan luas dengan infrastruktur transportasi yang belum pulih pasca-perang kemerdekaan. Selain itu, data sensus menunjukkan angka buta aksara di kalangan penduduk dewasa masih melampaui 50%. Untuk mengatasi kendala literasi tersebut, Panitia Pemilihan Indonesia (PPI) merancang surat suara khusus yang tidak hanya mencantumkan nama partai dan nama calon, melainkan menyertakan lambang atau gambar partai secara mencolok (seperti banteng, bulan bintang, pohon beringin, dan palu arit).",
+        "question": "Penggunaan gambar dan lambang partai pada surat suara Pemilu 1955 membuktikan bahwa panitia pemilihan...",
+        "options": [
+          "A. Mengabaikan prinsip kerahasiaan suara pemilih di dalam bilik suara",
+          "B. Menyesuaikan instrumen teknis demokrasi secara inklusif dengan realitas literasi masyarakat agar seluruh warga dapat menggunakan hak pilihnya secara adil",
+          "C. Membatasi hak memilih hanya bagi penduduk yang berdomisili di kawasan perkotaan",
+          "D. Mendorong pemilih untuk memilih calon berdasarkan instruksi aparat pamong praja desa",
+          "E. Mempersulit verifikasi keabsahan surat suara pada saat proses penghitungan suara di TPS"
         ],
-        answer: 1,
-        explanation: "Pidato Bung Tomo berfungsi sebagai alat mobilisasi massa nasionalis dan religius yang menyatukan seluruh elemen rakyat dan santri berjuang mempertahankan Surabaya."
+        "answer": 1,
+        "explanation": "Penyertaan lambang gambar merupakan solusi teknis yang sangat cerdas dan inklusif. Pendekatan ini memastikan bahwa keterbatasan membaca dan menulis tidak menjadi penghalang diskriminatif bagi rakyat jelata di pelosok desa untuk menyalurkan hak politik kedaulatannya di bilik suara secara mandiri dan rahasia."
       },
       {
-        type: "single",
-        stimulus: "Pertempuran Ambarawa berawal dari pendaratan pasukan Sekutu di Semarang yang bergerak ke Magelang dan Ambarawa. Pihak Sekutu melanggar kesepakatan dengan mempersenjatai kembali eks tawanan perang Belanda. Pertempuran sengit meletus di Ambarawa dan menyebabkan gugurnya Komandan Resimen Banyumas, Letkol Isdiman.",
-        question: "Gugurnya Letkol Isdiman dalam pertempuran Ambarawa memicu tindakan langsung dari Kolonel Soedirman yaitu...",
-        options: [
-          "A. Meminta Presiden Soekarno mengambil alih negosiasi dengan Sekutu",
-          "B. Turun langsung ke garis depan Ambarawa untuk memimpin komando taktis pertempuran secara serentak",
-          "C. Menginstruksikan pengungsian seluruh warga Ambarawa ke Solo",
-          "D. Mengirimkan surat protes kepada Dewan Keamanan PBB",
-          "E. Menghentikan serangan dan bertahan di markas Purwokerto"
+        "type": "single",
+        "stimulus": "Laporan resmi Panitia Pemilihan Indonesia mencatat bahwa dari 43,1 juta penduduk yang terdaftar dalam daftar pemilih tetap, sebanyak 37,8 juta warga menggunakan hak suaranya dalam pemilihan anggota DPR pada 29 September 1955. Angka ini mencerminkan tingkat partisipasi pemilih (voter turnout) yang fantastis, mencapai 91,54%. Di berbagai pelosok daerah, rakyat berjalan kaki belasan kilometer menembus jalan setapak hutan dan mengantre sejak subuh dengan mengenakan pakaian adat terbaik tanpa tercatat insiden kerusuhan massal antarpendukung partai.",
+        "question": "Tingginya angka partisipasi pemilih dan suasana pemilu yang damai pada tahun 1955 mencerminkan bahwa masyarakat Indonesia saat itu...",
+        "options": [
+          "A. Takut terhadap ancaman hukuman pidana kurungan dari aparat penegak hukum",
+          "B. Telah memiliki kesadaran kewarganegaraan yang matang dan menaruh harapan besar pada pemilu sebagai jalan damai perbaikan nasib bangsa",
+          "C. Terpaksa hadir ke TPS karena menerima imbalan materi berupa uang tunai dari para calon legislatif",
+          "D. Diwajibkan oleh pimpinan militer untuk memilih partai pendukung kabinet yang sedang berkuasa",
+          "E. Menolak pemilu dan sengaja merusak surat suara sebagai wujud protes terhadap elite Jakarta"
         ],
-        answer: 1,
-        explanation: "Gugurnya Isdiman mendorong Kolonel Soedirman turun langsung ke lapangan memimpin strategi pertahanan Ambarawa."
+        "answer": 1,
+        "explanation": "Tingkat kehadiran 91,54% tanpa politik uang massal dan tanpa paksaan aparat mencerminkan tingginya antusiasme politik rakyat. Warga memandang pemilu sebagai sarana kedaulatan yang sakral untuk menentukan arah masa depan bangsa setelah puluhan tahun hidup di bawah penindasan penjajahan kolonial dan perang kemerdekaan."
       },
       {
-        type: "single",
-        stimulus: "Dalam Pertempuran Ambarawa, Kolonel Soedirman menerapkan Taktik Supit Urang, yaitu strategi jepitan dari dua arah untuk memutus rantai pasokan logistik dan komunikasi Sekutu dari Semarang. Pada 15 Desember 1945, Ambarawa berhasil dibebaskan total.",
-        question: "Keunggulan utama taktik Supit Urang yang diterapkan Kolonel Soedirman di Ambarawa adalah...",
-        options: [
-          "A. Mengandalkan bantuan artileri berat buatan Jepang",
-          "B. Mengisolasi pasukan musuh dengan pengepungan ganda hingga memutus bantuan dari Semarang",
-          "C. Mengulur waktu pertempuran sampai musim hujan berakhir",
-          "D. Menggunakan strategi diplomasi meja hijau di tengah pertempuran",
-          "E. Membakar seluruh benteng Fort Willem I"
+        "type": "single",
+        "stimulus": "Berbeda dengan pemilihan umum modern di era reformasi yang menyatukan pemilihan legislatif dalam satu hari, Pemilu 1955 diselenggarakan dalam dua tahapan terpisah. Tahap pertama dilangsungkan pada hari Kamis, 29 September 1955, untuk memilih 257 anggota Dewan Perwakilan Rakyat (DPR). Tahap kedua diselenggarakan sepuluh pekan kemudian, tepatnya pada hari Sabtu, 15 Desember 1955, untuk memilih 514 anggota Majelis Konstituante.",
+        "question": "Alasan mendasar diselenggarakannya pemilihan terpisah bagi anggota Konstituante pada Desember 1955 adalah...",
+        "options": [
+          "A. Konstituante memiliki mandat khusus dan terpisah dari DPR, yaitu merumuskan dan menetapkan undang-undang dasar definitif bagi Republik Indonesia",
+          "B. Dana pemilihan umum dari kas negara baru mencukupi untuk mencetak surat suara tahap kedua pada akhir tahun",
+          "C. DPR hanya bertugas untuk mengawasi kinerja lembaga peradilan agung di tingkat pusat",
+          "D. Jumlah partai politik yang mendaftar untuk pemilihan kedua mengalami penurunan drastis",
+          "E. Anggota Konstituante hanya boleh dipilih oleh perwakilan kepala desa di seluruh Indonesia"
         ],
-        answer: 1,
-        explanation: "Taktik Supit Urang berhasil menjepit posisi Sekutu dari berbagai penjuru sehingga jalur bantuan logistik dari Semarang terputus."
+        "answer": 0,
+        "explanation": "Konstitusi UUDS 1950 membedakan secara tegas antara fungsi legislasi pemerintahan sehari-hari (DPR) dengan fungsi pembentukan konstitusi tetap (pouvoir constituant). Konstituante dirancang sebagai majelis khusus pembuat UUD dengan jumlah kursi dua kali lipat anggota DPR, sehingga membutuhkan proses pemilihan dan mandat tersendiri dari rakyat."
       },
       {
-        type: "single",
-        stimulus: "Kemenangan TKR dalam membebaskan kota Ambarawa pada 15 Desember 1945 menjadi tonggak sejarah penting bagi konsolidasi militer Republik Indonesia. Pasukan TKR di bawah komando Kolonel Soedirman berhasil mendesak mundur pasukan Sekutu bersenjata modern kembali ke pelabuhan Semarang. Peristiwa bersejarah ini hingga kini diabadikan oleh institusi TNI Angkatan Darat sebagai simbol ketangguhan dan kemanunggalan prajurit dengan rakyat.",
-        question: "Peristiwa kemenangan Ambarawa 15 Desember 1945 diabadikan oleh TNI Angkatan Darat sebagai hari memperingati...",
-        options: [
-          "A. Hari Pahlawan Nasional",
-          "B. Hari Juang Kartika / Hari Infanteri",
-          "C. Hari Angkatan Bersenjata",
-          "D. Hari Kebangkitan Nasional",
-          "E. Hari Pertahanan Nusantara"
+        "type": "single",
+        "stimulus": "Penghitungan suara nasional Pemilu DPR 1955 menghasilkan perolehan suara yang terkonsentrasi pada empat partai besar dari puluhan kontestan: Partai Nasional Indonesia/PNI (8,4 juta suara; 57 kursi), Masyumi (7,9 juta suara; 57 kursi), Nahdlatul Ulama/NU (6,9 juta suara; 45 kursi), dan Partai Komunis Indonesia/PKI (6,1 juta suara; 39 kursi). Keempat partai ini berhasil menguasai hampir 78% dari seluruh kursi yang tersedia di gedung parlemen.",
+        "question": "Konfigurasi perolehan suara 'Empat Besar' tersebut menunjukkan bahwa konstelasi politik Indonesia tahun 1955 terbelah ke dalam...",
+        "options": [
+          "A. Dua kekuatan tunggal yang bersekutu menguasai seluruh perwakilan di luar Pulau Jawa",
+          "B. Tiga pilar ideologi utama (Nasionalisme sekuler, Islamisme modernis/tradisionalis, dan Marxisme/Komunisme) tanpa satu pun faksi menguasai mayoritas mutlak",
+          "C. Dominasi partai-partai kedaerahan yang menolak persatuan nasional di bawah bendera Pancasila",
+          "D. Kemenangan mutlak partai-partai sosialis binaan para intelektual perkotaan Jakarta",
+          "E. Kemenangan penuh partai bentukan para perwira militer Angkatan Darat"
         ],
-        answer: 1,
-        explanation: "Kemenangan 15 Desember 1945 di Ambarawa diperingati sebagai Hari Juang Kartika (Hari Infanteri TNI AD)."
+        "answer": 1,
+        "explanation": "Hasil Pemilu 1955 memetakan ideologi politik bangsa secara nyata. Parlemen terbagi ke dalam poros Nasionalis (PNI), Islamis (Masyumi dan NU), serta Komunis (PKI). Karena selisih perolehan kursi antarkeempat partai sangat berimbang, tidak ada partai yang sanggup membentuk kabinet tunggal tanpa berkoalisi dengan kubu ideologi lawannya."
       },
       {
-        type: "single",
-        stimulus: "Pertempuran Surabaya 10 November 1945 dan Pertempuran Ambarawa Desember 1945 membuktikan ketahanan revolusi fisik Indonesia kepada dunia internasional. Pasukan AFNEI menyadari bahwa Indonesia bukan sekadar entitas tanpa kekuatan pertahanan yang mudah ditundukkan. Realitas perlawanan sengit di lapangan ini memaksa komando tinggi Sekutu mengubah pendekatan militer mereka di Asia Tenggara.",
-        question: "Dampak geopolitik internasional dari perlawanan fisik di Surabaya dan Ambarawa adalah...",
-        options: [
-          "A. Sekutu menyerahkan seluruh wilayah Asia Tenggara kepada pemerintah RI",
-          "B. PBB dan negara internasional menyadari bahwa Republik Indonesia didukung perlawanan rakyat dan pertahanan militer yang nyata",
-          "C. Belanda langsung membatalkan niatnya menguasai Indonesia",
-          "D. Pembubaran gabungan pasukan Sekutu di seluruh kawasan Asia Pasifik",
-          "E. Pengangkatan Jenderal Soedirman sebagai panglima Sekutu di Asia Tenggara"
+        "type": "single",
+        "stimulus": "Pada April 1952, Nahdlatul Ulama (NU) mengambil keputusan bersejarah untuk keluar dari partai federasi Masyumi dan mendaftarkan diri sebagai partai politik mandiri dalam Pemilu 1955. Pemisahan ini dipicu oleh perbedaan pandangan keagamaan, perebutan posisi Menteri Agama di kabinet, serta dominasi kaum terpelajar Islam modernis kota di pucuk pimpinan Masyumi. Hasil Pemilu 1955 membuktikan kekuatan luar biasa NU yang berhasil menduduki peringkat ketiga nasional dengan meraup 45 kursi DPR, mendominasi basis massa santri pedesaan di Jawa Timur dan Jawa Tengah.",
+        "question": "Dampak politik dari pemisahan NU dari Masyumi terhadap representasi aspirasi umat Islam di parlemen adalah...",
+        "options": [
+          "A. Terjadinya penyatuan komando politik Islam di bawah kepemimpinan ulama modernis Sumatra",
+          "B. Terbelahnya kekuatan politik Islam menjadi dua kutub: kubu tradisionalis pedesaan (NU) dan kubu modernis perkotaan/luar Jawa (Masyumi)",
+          "C. Hilangnya perolehan suara partai-partai Islam di seluruh daerah pemilihan Pulau Jawa",
+          "D. Melemahnya dukungan pesantren tradisional terhadap perjuangan dasar negara berlandaskan Islam",
+          "E. Penggabungan seluruh kader Nahdlatul Ulama ke dalam fraksi Partai Nasional Indonesia"
         ],
-        answer: 1,
-        explanation: "Perlawanan di Surabaya dan Ambarawa membuktikan kepada Sekutu dan dunia bahwa RI memiliki daya tahan pertahanan dan dukungan rakyat yang nyata."
+        "answer": 1,
+        "explanation": "Keluarnya NU memecah representasi politik Islam. Masyumi mendominasi suara pemilih Muslim di luar Jawa dan perkotaan Jawa Barat dengan corak pemikiran modernis, sedangkan NU mengakar kuat pada jaringan kiai pesantren dan petani santri di perdesaan Jawa Tengah dan Jawa Timur. Pembelahan ini mengurangi peluang partai Islam meraih suara mayoritas tunggal di parlemen."
       },
       {
-        type: "single",
-        stimulus: "Di tengah bentrokan berdarah di Surabaya, Presiden Soekarno sempat datang langsung ke lokasi pertempuran untuk mengadakan genjatan senjata dengan Sekutu pada akhir Oktober 1945. Langkah diplomasi puncak ini diambil guna mencegah jatuhnya korban jiwa warga sipil yang lebih besar. Namun, genjatan senjata tersebut tidak bertahan lama akibat ketegangan dan tindakan provokasi serdadu di lapangan.",
-        question: "Penyebab utama kegagalan genjatan senjata Soekarno-Mallaby di Surabaya adalah...",
-        options: [
-          "A. Penolakan warga Surabaya terhadap kehadiran Presiden Soekarno",
-          "B. Ketidakpatuhan serdadu AFNEI/NICA di lapangan dan insiden penembakan di Gedung Internatio",
-          "C. Adanya intervensi dari militer Jepang yang memihak Sekutu",
-          "D. Keputusan Gubernur Suryo membubarkan persetujuan damai",
-          "E. Masuknya pasukan kapal perang Sekutu dari Australia"
+        "type": "single",
+        "stimulus": "Tujuh tahun setelah pemberontakan Madiun 1948 yang menewaskan tokoh-tokoh utamanya seperti Musso dan Amir Sjarifuddin, Partai Komunis Indonesia (PKI) mampu bangkit secara spektakuler pada Pemilu 1955 dengan merebut posisi empat besar (39 kursi DPR). Di bawah kepemimpinan tokoh muda D.N. Aidit, M.H. Lukman, dan Njoto, PKI meninggalkan taktik perlawanan bersenjata ilegal dan beralih ke strategi parlementer legal. Mereka menggalang dukungan jutaan petani miskin melalui Barisan Tani Indonesia (BTI) dan buruh pabrik melalui SOBSI dengan mengusung isu redistribusi tanah dan penurunan harga kebutuhan pokok.",
+        "question": "Strategi politik yang menjadi kunci kebangkitan kembali PKI pada Pemilu 1955 adalah...",
+        "options": [
+          "A. Menggalang koalisi militer rahasia dengan pasukan pemberontak DI/TII di pedalaman hutan",
+          "B. Membangun citra partai nasionalis kerakyatan yang membela kaum buruh-tani serta mendukung kepemimpinan karismatik Presiden Sukarno",
+          "C. Mendatangkan jutaan relawan bersenjata dari Uni Soviet untuk mengamankan tempat pemungutan suara",
+          "D. Menolak keikutsertaan dalam persaingan pemilu dan melancarkan pemogokan nasional di sektor perbankan",
+          "E. Meminta perlindungan diplomatik kepada pemerintah kolonial Belanda di Irian Barat"
         ],
-        answer: 1,
-        explanation: "Genjatan senjata gagal karena provokasi serdadu AFNEI/NICA yang memicu ketegangan di Gedung Internatio."
+        "answer": 1,
+        "explanation": "Aidit mereformasi PKI menjadi partai massa yang menonjolkan sentimen anti-kolonialisme dan kerakyatan. PKI secara cerdas merapat kepada Presiden Sukarno, mendukung retorika anti-imperialis presiden, dan memperjuangkan nasib konkret kaum abangan pedesaan (petani bagi-hasil), sehingga berhasil menghapus stigma pengkhianatan Madiun 1948 di mata pemilih bawah."
       },
       {
-        type: "single",
-        stimulus: "Dalam Pertempuran Ambarawa, koordinasi antar-divisi TKR dari Banyumas, Yogyakarta, Surakarta, dan Salatiga berjalan sangat rapi di bawah komando Kolonel Soedirman. Pengepungan dari berbagai penjuru dilakukan tanpa koordinasi radio canggih, melainkan bersandar pada kurir rahasia dan kepatuhan komando. Keberhasilan komunikasi taktis di lapangan ini menjadi penentu utama kemenangan Indonesia.",
-        question: "Faktor manakah yang paling menentukan keberhasilan koordinasi TKR dalam Perang Ambarawa?",
-        options: [
-          "A. Peralatan komunikasi radio modern buatan Amerika Serikat",
-          "B. Kepemimpinan Soedirman yang dihormati serta semangat persatuan para komandan sektor",
-          "C. Dukungan tentara bayaran asing",
-          "D. Penggunaan kendaraan tempur lapis baja milik Jepang",
-          "E. Bantuan dana dari Perserikatan Bangsa-Bangsa"
+        "type": "single",
+        "stimulus": "Banyak pihak berharap bahwa terselenggaranya Pemilu 1955 akan segera mengakhiri penyakit kronis jatuh-bangun kabinet. Namun, ketika Kabinet Ali Sastroamidjojo II (Masyumi-PNI-NU) terbentuk pada Maret 1956, kabinet koalisi ini hanya sanggup bertahan selama satu tahun sebelum bubar pada Maret 1957. Kabinet terpecah akibat penolakan Masyumi terhadap usul Sukarno memasukkan PKI ke dalam pemerintahan, serta penolakan Masyumi terhadap kebijakan sentralisasi fiskal pusat yang menindas daerah luar Jawa.",
+        "question": "Fakta sejarah runtuhnya Kabinet Ali II membuktikan bahwa pemilihan umum demokratis...",
+        "options": [
+          "A. Merupakan penyebab langsung meletusnya krisis moneter dan penutupan bursa komoditas",
+          "B. Tidak serta-merta melahirkan pemerintahan yang stabil apabila sistem kepartaian tetap terfragmentasi dan para elite enggan berkompromi melintasi sekat ideologis",
+          "C. Pasti selalu ditolak oleh kalangan perwira tinggi militer di seluruh dunia",
+          "D. Hanya dapat berfungsi dengan baik apabila jumlah pemilih dibatasi kurang dari sepuluh persen",
+          "E. Mengakibatkan seluruh partai politik kehilangan kursi perwakilan di lembaga legislatif"
         ],
-        answer: 1,
-        explanation: "Kepemimpinan Soedirman yang berwibawa dan dipercaya oleh seluruh komandan sektor menjadi kunci solidnya koordinasi TKR."
+        "answer": 1,
+        "explanation": "Pemilu 1955 berhasil secara prosedural, namun gagal menciptakan stabilitas pemerintahan. Sistem proporsional menghasilkan parlemen dengan kekuatan terbelah sama kuat antara kubu nasionalis, Islam, dan komunis. Tanpa adanya kedewasaan elite untuk membangun kompromi substansial, kabinet koalisi pasca-pemilu tetap rapuh dan mudah tumbang oleh friksi ideologi."
       },
       {
-        type: "single",
-        stimulus: "Keterlibatan para santri dan ulama dalam Pertempuran Surabaya tidak lepas dari dikeluarkannya Resolusi Jihad oleh KH Hasyim Asy'ari pada 22 Oktober 1945 di Surabaya. Fatwa suci ini menegaskan bahwa membela kedaulatan tanah air dari penjajahan adalah kewajiban individual (Fardhu 'Ain) bagi setiap muslim. Seruan ini membakar semangat juang puluhan ribu santri dari berbagai daerah di Jawa Timur untuk bertaruh nyawa di Surabaya.",
-        question: "Pengaruh utama Resolusi Jihad KH Hasyim Asy'ari bagi perjuangan mempertahankan Surabaya adalah...",
-        options: [
-          "A. Melarang umat beragama terlibat dalam pertempuran fisik",
-          "B. Mewajibkan umat Islam mempertahankan kemerdekaan tanah air sebagai tugas keagamaan yang suci",
-          "C. Memerintahkan pengungsian massal ke kawasan Madura",
-          "D. Menyarankan perundingan damai dengan NICA",
-          "E. Menghentikan aktivitas sekolah dan pesantren di Jawa Timur"
+        "type": "single",
+        "stimulus": "Memasuki dekade 1950-an, peta politik global dicengkeram oleh eskalasi Perang Dingin antara Blok Barat (Amerika Serikat) dan Blok Timur (Uni Soviet). Persaingan kedua adidaya ini mulai merambah kawasan Asia, ditandai oleh meletusnya Perang Korea dan pembentukan pakta militer SEATO (Southeast Asia Treaty Organization). Pada April 1954, Perdana Menteri Ali Sastroamidjojo menghadiri Konferensi Kolombo bersama para pemimpin India (Nehru), Pakistan (Ali Bogra), Burma (U Nu), dan Sailan (Kotelawala). Dalam pertemuan tersebut, Ali mengusulkan agar lima negara ini memprakarsai pertemuan akbar bangsa-bangsa Asia dan Afrika yang baru merdeka.",
+        "question": "Tujuan strategis Indonesia menginisiasi penyelenggaraan Konferensi Asia Afrika di tengah memanasnya Perang Dingin adalah...",
+        "options": [
+          "A. Menggalang pakta pertahanan militer baru guna menyerang pangkalan pertahanan Barat di Pasifik",
+          "B. Membangun solidaritas anti-kolonialisme di antara bangsa-bangsa Dunia Ketiga dan meredakan ketegangan global dengan prinsip non-blok",
+          "C. Membantu Uni Soviet menyebarkan doktrin komunisme ke seluruh kawasan benua Afrika",
+          "D. Memaksa negara-negara tetangga untuk memutuskan hubungan dagang dengan Amerika Serikat",
+          "E. Mengambil alih kepemimpinan Dewan Keamanan PBB dari tangan lima negara anggota tetap"
         ],
-        answer: 1,
-        explanation: "Resolusi Jihad 22 Oktober 1945 menegaskan bahwa mempertahankan kemerdekaan adalah kewajiban agama, membakar dorongan juang santri dan rakyat."
+        "answer": 1,
+        "explanation": "Indonesia memprakarsai KAA untuk mencegah negara-negara Asia-Afrika yang baru merdeka terseret menjadi satelit atau medan perang proksi dari Blok Barat maupun Blok Timur. KAA bertujuan membangun kekuatan moral penyeimbang dunia ketiga yang berakar pada semangat penolakan kolonialisme, rasialisme, dan pakta militer agresif."
       },
       {
-        type: "single",
-        stimulus: "Pertempuran Ambarawa melibatkan benteng kuno Fort Willem I yang dijadikan basis pertahanan logistik utama oleh pasukan Sekutu. TKR melakukan pengepungan ketat dari empat penjuru tanpa membiarkan musuh keluar mendapatkan pasokan makanan maupun amunisi. Taktik pengisolasian benteng ini melumpuhkan ketahanan tempur Sekutu dalam hitungan hari.",
-        question: "Tujuan taktis pengepungan Benteng Fort Willem I oleh TKR adalah...",
-        options: [
-          "A. Membiarkan Sekutu bertahan di Ambarawa selamanya",
-          "B. Menguras daya tahan musuh dengan memutus pasokan logistik hingga Sekutu terpaksa mundur",
-          "C. Menjual benteng tersebut kepada pihak swasta",
-          "D. Menunggu kedatangan armada udara Sekutu",
-          "E. Mengalihkan pertempuran ke daerah Solo"
+        "type": "single",
+        "stimulus": "Penyelenggaraan Konferensi Asia Afrika di Bandung sempat menghadapi penolakan keras dari negara-negara pro-Barat, seperti Filipina, Thailand, dan Turki. Mereka menolak hadir apabila Konferensi Panca Negara turut mengundang Republik Rakyat Tiongkok (RRT) yang berhaluan komunis. Namun, Perdana Menteri Ali Sastroamidjojo dan Jawaharlal Nehru bersikukuh bahwa perdamaian di Asia mustahil tercapai tanpa mengikutsertakan negara berpenduduk terbesar di Asia tersebut. Kehadiran Perdana Menteri Zhou Enlai di Bandung akhirnya terwujud dan menarik perhatian jurnalis internasional.",
+        "question": "Sikap tegas Indonesia mempertahankan undangan bagi RRT mencerminkan penerapan prinsip politik luar negeri...",
+        "options": [
+          "A. Keterikatan penuh pada aliansi ideologi negara-negara sosialis Eropa Timur",
+          "B. Bebas aktif yang inklusif, yaitu merangkul seluruh bangsa tanpa memandang perbedaan sistem politik demi perdamaian dunia",
+          "C. Isolasionisme yang menolak campur tangan negara-negara kapitalis Barat",
+          "D. Netralitas pasif yang membiarkan konflik antarbangsa diselesaikan oleh senjata",
+          "E. Tunduk pada tekanan ekonomi yang dilancarkan oleh pemerintah Beijing"
         ],
-        answer: 1,
-        explanation: "Pengepungan benteng bertujuan melumpuhkan daya tahan dan logistik Sekutu sehingga memaksa mereka mundur ke Semarang."
+        "answer": 1,
+        "explanation": "Prinsip politik luar negeri 'Bebas Aktif' bukan berarti pasif atau netral tanpa pendirian. Mengundang RRT bersama negara-negara pro-Barat membuktikan komitmen Indonesia untuk aktif mempertemukan kubu-kubu yang bersengketa di meja perundingan, membuktikan bahwa perbedaan sistem pemerintahan bukanlah halangan untuk menjalin hidup berdampingan secara damai (peaceful coexistence)."
       },
       {
-        type: "single",
-        stimulus: "Peristiwa 10 November 1945 di Surabaya memakan korban ribuan jiwa pejuang dan warga sipil akibat gempuran udara dan laut pasukan Inggris. Meskipun kota Surabaya akhirnya dikuasai Sekutu secara fisik, pertahanan Indonesia dianggap menang secara moril dan politik. Keberanian rakyat Surabaya membongkar klaim Belanda bahwa Republik Indonesia tidak didukung oleh rakyatnya.",
-        question: "Alasan mengapa Pertempuran Surabaya dianggap sebagai kemenangan moril dan politik bagi RI adalah...",
-        options: [
-          "A. Sekutu berhasil mengusir seluruh pejuang Indonesia keluar dari Jawa Timur",
-          "B. Membuktikan daya tahan nasional yang hebat dan membatalkan klaim bahwa Indonesia menyerah tanpa perlawanan",
-          "C. Belanda langsung menghentikan misi NICA di Indonesia",
-          "D. Jepang kembali memegang kekuasaan di Indonesia",
-          "E. Kota Surabaya menjadi wilayah bebas militer internasional"
+        "type": "single",
+        "stimulus": "Pada 18 April 1955, Presiden Sukarno membuka Sidang Konferensi Asia Afrika di Gedung Merdeka, Bandung, dengan pidato berbahasa Inggris bertajuk 'Let a New Asia and a New Africa be Born'. Dalam pidatonya, Sukarno menegaskan: 'Kolonialisme belum mati. Ia hanya berubah rupa. Kolonialisme modern hadir dalam bentuk penguasaan ekonomi, kendali intelektual, dan campur tangan fisik oleh kekuatan asing di dalam masyarakat kita.' Pidato ini disambut tepuk tangan riuh oleh 29 delegasi perwakilan bangsa Asia dan Afrika.",
+        "question": "Pesan inti yang disampaikan Sukarno kepada delegasi bangsa-bangsa yang hadir di Gedung Merdeka adalah...",
+        "options": [
+          "A. Bangsa-bangsa Asia dan Afrika harus segera membangun persenjataan nuklir untuk menandingi kekuatan Barat",
+          "B. Kemerdekaan politik formal belum menghapus bahaya imperialisme gaya baru (neo-kolonialisme) sehingga dibutuhkan kewaspadaan dan solidaritas bersama",
+          "C. Negara-negara Asia dan Afrika wajib memutuskan seluruh hubungan diplomasi dengan negara bekas penjajah",
+          "D. Indonesia menuntut pembayaran ganti rugi perang dari seluruh anggota delegasi yang hadir di Bandung",
+          "E. Perjuangan kemerdekaan fisik di seluruh dunia telah usai dan tidak ada lagi bangsa yang terjajah"
         ],
-        answer: 1,
-        explanation: "Pertempuran Surabaya menjadi kemenangan moril karena membongkar mitos bahwa RI adalah negara boneka yang mudah ditundukkan."
+        "answer": 1,
+        "explanation": "Sukarno mengingatkan bahwa hilangnya tentara kolonial bukan berarti berakhirnya imperialisme. Bentuk baru kolonialisme (neo-kolonialisme) hadir melalui hegemoni modal asing, jeratan utang, dominasi budaya, dan pangkalan militer asing, sehingga bangsa-bangsa merdeka baru harus bersatu memperkuat ketahanan nasionalnya."
       },
       {
-        type: "single",
-        stimulus: "Strategi pertempuran Kolonel Soedirman di Ambarawa menggunakan kombinasi taktik pertempuran frontal dan jepitan dari samping, menuntut kedisiplinan tinggi dari pasukan TKR. Kepemimpinan lapangan yang ditunjukkan Soedirman berhasil menggerakkan solidaritas lintas divisi militer daerah. Hasil pertempuran ini membuktikan bahwa strategi militer lokal mampu mengalahkan doktrin perang kolonial.",
-        question: "Nilai kepemimpinan militer yang ditunjukkan Kolonel Soedirman di Ambarawa adalah...",
-        options: [
-          "A. Menghindari risiko dengan bertindak pasif",
-          "B. Keberanian mengambil keputusan taktis lapangan dan memimpin dari garis depan",
-          "C. Menyerahkan sepenuhnya keputusan perang kepada komandan Sekutu",
-          "D. Mengutamakan diplomasi pribadi tanpa melibatkan prajurit",
-          "E. Memperpanjang pertempuran tanpa tujuan terukur"
+        "type": "single",
+        "stimulus": "Setelah melalui perdebatan intensif selama tujuh hari, pada 24 April 1955 seluruh delegasi KAA menyepakati deklarasi bersama mengenai pemajuan perdamaian dan kerja sama dunia yang dituangkan dalam Dasasila Bandung. Beberapa butir krusial di dalamnya mencakup: menghormati hak-hak dasar manusia sesuai Piagam PBB, menghormati kedaulatan dan integritas teritorial semua bangsa, menolak campur tangan dalam urusan dalam negeri negara lain, dan tidak menggunakan pakta pertahanan kolektif untuk melayani kepentingan khusus salah satu negara besar.",
+        "question": "Klausul penolakan terhadap pakta pertahanan kolektif dalam Dasasila Bandung secara eksplisit ditujukan untuk...",
+        "options": [
+          "A. Melarang pembentukan pasukan kepolisian di masing-masing negara berkembang",
+          "B. Mencegah negara-negara Asia-Afrika dijadikan alat pemenuhan kepentingan militer agresif Blok Barat (NATO/SEATO) maupun Blok Timur (Pakta Warsawa)",
+          "C. Membubarkan seluruh organisasi militer di bawah kendali markas besar PBB di New York",
+          "D. Mewajibkan negara anggota KAA untuk melucuti senjata pertahanan perbatasan mereka",
+          "E. Mengisolasi benua Asia dan Afrika dari jalur perdagangan maritim internasional"
         ],
-        answer: 1,
-        explanation: "Soedirman menunjukkan integritas kepemimpinan lapangan yang berani, disiplin, dan taktis."
+        "answer": 1,
+        "explanation": "Dasasila Bandung menolak tegas upaya negara-negara adidaya menyeret negara-negara kecil ke dalam pakta militer agresif seperti SEATO atau Pakta Warsawa. Prinsip ini melindungi independensi negara berkembang agar wilayah mereka tidak dijadikan pangkalan militer atau arena pertempuran proksi Perang Dingin."
       },
       {
-        type: "data_sufficiency",
-        stimulus: "Seorang sejarawan menguji dampak pertempuran Ambarawa terhadap reputasi TKR.<br><br>DATA SEJARAH:<br>(1) TKR berhasil memaksa pasukan Inggris mundur dari Ambarawa pada 15 Desember 1945.<br>(2) Komando Sekutu terpaksa memperhitungkan keberadaan TKR dalam perencanaan militer berikutnya.",
-        question: "Apakah Data (1) dan (2) cukup membuktikan keunggulan taktis TKR di Ambarawa?",
-        options: [
-          "A. Data (1) dan (2) BERSAMA-SAMA cukup membuktikan pengakuan atas kemampuan taktis TKR",
-          "B. Data (1) SAJA cukup",
-          "C. Data (2) SAJA cukup",
-          "D. Kedua data tidak relevan",
-          "E. Data bertentangan"
+        "type": "single",
+        "stimulus": "Penyelenggaraan KAA Bandung pada 1955 menjadi suntikan moral dan diplomatik yang sangat besar bagi bangsa-bangsa di Afrika yang saat itu masih berada di bawah cengkeraman penjajahan bangsa Eropa. Para pemimpin perjuangan kemerdekaan dari Aljazair, Tunisia, Maroko, dan Afrika Selatan hadir secara langsung di Bandung sebagai peninjau dan menjalin komunikasi intensif dengan para pemimpin dunia. Dalam tempo satu dekade pasca-KAA, gelombang dekolonisasi melanda Afrika, diawali kemerdekaan Ghana pada 1957 disusul puluhan negara lainnya pada dekade 1960-an.",
+        "question": "Korelasi historis antara Konferensi Asia Afrika 1955 dengan dinamika dekolonisasi di benua Afrika adalah...",
+        "options": [
+          "A. KAA mengirimkan pasukan bersenjata ekspedisi militer untuk merebut benteng-benteng pertahanan kolonial di Afrika",
+          "B. KAA meletakkan dasar legitimasi internasional dan menaikkan isu dekolonisasi Afrika ke panggung sidang Majelis Umum PBB",
+          "C. Negara-negara Asia membeli seluruh konsesi tambang milik penjajah Eropa di benua Afrika",
+          "D. Seluruh negara Afrika yang merdeka wajib menggabungkan sistem hukumnya dengan konstitusi Indonesia",
+          "E. KAA memaksa pemerintah kolonial Prancis dan Inggris menyerahkan seluruh wilayah jajahannya dalam tempo 24 jam"
         ],
-        answer: 0,
-        explanation: "Data 1 menunjukkan kemenangan lapangan dan Data 2 menunjukkan pengakuan musuh atas kualifikasi taktis TKR."
+        "answer": 1,
+        "explanation": "KAA memecah kebisuan politik internasional atas penderitaan rakyat Afrika. Dukungan 29 negara yang tercantum dalam komunike akhir Bandung mengangkat isu dekolonisasi dan penghapusan politik apartheid ke forum sidang resmi PBB, memberikan legitimasi moral dan tekanan diplomatik masif yang mempercepat runtuhnya kekuasaan kolonial di Afrika."
       },
       {
-        type: "infographic",
-        stimulus: "Cermati alur dua pertempuran fisik terbesar di Jawa 1945:<br>1. Surabaya (10 Nov 1945): Bung Tomo & Perlawanan Total ➔ Hari Pahlawan<br>2. Ambarawa (15 Des 1945): Soedirman & Supit Urang ➔ Hari Juang Kartika",
-        question: "Kesimpulan analisis dari kedua pertempuran tersebut adalah...",
-        options: [
-          "A. Perjuangan fisik awal kemerdekaan menjadi pilar utama penegakan kedaulatan RI di mata internasional",
-          "B. Kedua pertempuran berakhir dengan kekalahan total Republik Indonesia",
-          "C. TKR tidak berperan dalam Pertempuran Surabaya dan Ambarawa",
-          "D. Sekutu berhasil menguasai seluruh Pulau Jawa tanpa perlawanan",
-          "E. Indonesia menyerahkan kedaulatan kepada NICA pasca-Ambarawa"
+        "type": "single",
+        "stimulus": "Semangat yang lahir dari Gedung Merdeka Bandung pada 1955 diteruskan oleh para pemimpin negara pemrakarsa. Enam tahun berselang, Presiden Sukarno (Indonesia), Presiden Josip Broz Tito (Yugoslavia), Presiden Gamal Abdel Nasser (Mesir), Perdana Menteri Jawaharlal Nehru (India), dan Presiden Kwame Nkrumah (Ghana) menyelenggarakan Konferensi Tingkat Tinggi di Beograd pada September 1961 yang secara resmi mendeklarasikan berdirinya Gerakan Non-Blok (Non-Aligned Movement).",
+        "question": "Keterkaitan langsung antara Konferensi Asia Afrika 1955 dengan Konferensi Beograd 1961 adalah bahwa Dasasila Bandung...",
+        "options": [
+          "A. Digantikan secara total oleh piagam militer bersama negara-negara Amerika Latin",
+          "B. Menjadi landasan filosofis dan asas moral bagi pembentukan Gerakan Non-Blok dalam menjaga kenetralan global dari tarikan dua blok adidaya",
+          "C. Menginstruksikan seluruh anggotanya untuk membentuk aliansi ekonomi mata uang tunggal",
+          "D. Mewajibkan negara non-blok untuk membubarkan angkatan bersenjata masing-masing",
+          "E. Menolak keikutsertaan negara-negara berdaulat dari kawasan benua Eropa"
         ],
-        answer: 0,
-        explanation: "Kedua pertempuran menegaskan bahwa pertahanan fisik rakyat dan TKR menjadi benteng utama kemerdekaan."
+        "answer": 1,
+        "explanation": "Dasasila Bandung merupakan cetak biru ideologis bagi Gerakan Non-Blok. KTT Beograd 1961 mengadopsi prinsip-prinsip KAA—terutama penolakan terhadap pakta militer, penghormatan kedaulatan, dan kerja sama damai—lalu memperluas jangkauannya dari forum regional Asia-Afrika menjadi gerakan politik global lintas benua yang mencakup negara-negara non-blok di Eropa (Yugoslavia) dan Amerika Latin (Kuba)."
       },
       {
-        type: "single",
-        stimulus: "Pengorbanan para pejuang dalam Pertempuran Surabaya dan Ambarawa memberikan warisan keteladanan yang mendalam bagi generasi muda saat ini. Keberanian menolak intimidasi asing serta kesediaan berkorban jiwa raga membentuk jati diri bangsa yang merdeka. Nilai-nilai perjuangan 1945 ini menjadi kompas moral dalam menjaga keutuhan Negara Kesatuan Republik Indonesia.",
-        question: "Keteladanan utama dari para pejuang Revolusi Fisik 1945 yang relevan bagi siswa adalah...",
-        options: [
-          "A. Menerima segala tekanan tanpa daya kritis",
-          "B. Semangat pantang menyerah dan keteguhan membela kedaulatan bangsa",
-          "C. Mengutamakan kepentingan perorangan di atas persatuan",
-          "D. Menolak kerja sama internasional secara total",
-          "E. Menyerahkan keputusan masa depan kepada negara lain"
+        "type": "single",
+        "stimulus": "Tahun 1955 sering disebut oleh sejarawan sebagai tahun keemasan sekaligus awal dari krisis eksistensial Republik Indonesia. Di panggung diplomasi internasional, Indonesia berhasil menempatkan dirinya sebagai mercusuar peradaban bangsa-bangsa terjajah melalui KAA Bandung. Di bidang demokrasi, Indonesia sukses menyelenggarakan pemilu pertama yang jujur dan tertib. Namun, parlemen dan Konstituante hasil pemilu tersebut justru segera terjebak dalam perang urat saraf ideologis yang memicu kelumpuhan pembuatan undang-undang dasar baru dan ancaman perpecahan bangsa.",
+        "question": "Paradoks historis yang tercermin dari dinamika peristiwa sepanjang tahun 1955 adalah...",
+        "options": [
+          "A. Keberhasilan militer merebut Irian Barat dibarengi kekalahan diplomasi di meja sidang PBB",
+          "B. Tingginya pengakuan dan wibawa diplomasi internasional Indonesia berbanding terbalik dengan ketidakmampuan elite politik di dalam negeri menyelesaikan polarisasi ideologi dan ketimpangan pusat-daerah",
+          "C. Kemenangan mutlak partai-partai komunis di pemilu yang dibarengi penolakan rakyat terhadap pemikiran Karl Marx",
+          "D. Penurunan drastis partisipasi pemilih di TPS yang dibarengi kenaikan tajam pendapatan per kapita warga desa",
+          "E. Terjalinnya persatuan erat antara seluruh partai politik yang berujung pada pembubaran sepihak institusi militer"
         ],
-        answer: 1,
-        explanation: "Warisan utama pejuang 1945 adalah jiwa pantang menyerah dan keberanian mempertahankan kedaulatan."
+        "answer": 1,
+        "explanation": "Tahun 1955 menghadirkan ironi besar. Di luar negeri, kepemimpinan Indonesia dipuja sebagai pembawa damai dunia. Namun di dalam negeri, keberhasilan menyelenggarakan pemilu tidak diikuti oleh kemauan para elite politik untuk meredakan fanatisme aliran. Kebuntuan Konstituante dan kekecewaan daerah luar Jawa pasca-1955 justru mempercepat runtuhnya demokrasi parlementer menuju darurat militer dan Demokrasi Terpimpin."
       }
     ]
   },
   "1C": {
-    heroImage: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
-    templateData: {
+    "heroImage": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80",
+    "templateData": {
       "nav-kicker": "LAB SEJARAH INTERAKTIF — UNIT 1C",
-      "nav-brand": "Sub-Modul 1C — Perjuangan Fisik Mempertahankan Kemerdekaan II (Bandung, Medan, Bali, Semarang)",
+      "nav-brand": "Sub-Modul 1C — Krisis Konstituante & Ancaman Disintegrasi Bangsa (1956–1958)",
       "materi-tab-label": "1. Jejak Materi 1C",
       "kuis-tab-label": "2. Tantangan Kuis 1C",
-      "hero-kicker": "KURIKULUM MERDEKA — FASE F (KELAS XII) | GELORA PERJUANGAN NUSANTARA",
-      "hero-title": "Api Revolusi di Berbagai Pelosok Nusantara",
-      "hero-description": "Eskalasi perlawanan fisik di luar episentrum utama: dari Pertempuran 5 Hari Semarang, strategi membumihanguskan Bandung Lautan Api, insiden batas wilayah Medan Area, hingga tradisi kehormatan Puputan Margarana I Gusti Ngurah Rai di Bali.",
+      "hero-kicker": "KURIKULUM MERDEKA — FASE F (KELAS XII) | INDONESIA PADA MASA ORDE LAMA (1950–1965)",
+      "hero-title": "Polarisasi Ideologi, Krisis Daerah, & Retaknya Fondasi Nasional (1956–1958)",
+      "hero-description": "Eksplorasi kritis kebuntuan perdebatan dasar negara di Majelis Konstituante, pengunduran diri Mohammad Hatta yang mengakhiri dwitunggal, pembentukan dewan-dewan militer daerah, hingga meletusnya pergolakan bersenjata PRRI/Permesta dan penumpasan DI/TII.",
       "hero-note-title": "PANDUAN BELAJAR SUB-MODUL 1C",
-      "hero-note-text": "Telusuri Jejak 01 hingga 06 secara berurutan. Pelajari heroisme dr. Kariadi di Semarang, keputusan musyawarah taktis Nasution di Bandung, patok sepihak Medan Area, serta penolakan kompromi NIT oleh Ngurah Rai!",
+      "hero-note-text": "Pelajari Jejak 01 hingga 06 secara sistematis. Analisis mengapa mekanisme kuorum 2/3 di Konstituante mengunci perdebatan dasar negara, bagaimana kecemburuan fiskal memicu pembangkangan militer daerah, dan bagaimana keterlibatan kekuatan intelijen asing memperkeruh konflik bersenjata domestik.",
       "overview-kicker": "PETA KONSEP SUB-MODUL 1C",
-      "overview-title": "Gelombang Perlawanan Fisik Kebhinekaan Daerah",
-      "overview-text": "Gelombang perlawanan mempertahankan kedaulatan membakar empat poros utama Nusantara secara serentak:",
-      "map-card-one-title": "1. Semarang (Jawa Tengah)",
-      "map-card-one-text": "Pertempuran 5 Hari melancarkan pelucutan tentara Jepang Kido Butai yang mengorbankan jiwa dr. Kariadi.",
-      "map-card-two-title": "2. Bandung (Jawa Barat)",
-      "map-card-two-text": "Musyawarah taktis Nasution membumihanguskan Bandung Selatan demi membendung pangkalan Sekutu/NICA.",
-      "map-card-three-title": "3. Medan Area (Sumatra Utara)",
-      "map-card-three-text": "Perlawanan pemuda merespons perobekan Merah Putih di Jalan Bali dan patok sepihak Fixed Boundaries.",
-      "map-card-four-title": "4. Puputan Margarana (Bali)",
-      "map-card-four-text": "Perang habis-habisan Pasukan Ciung Wanara I Gusti Ngurah Rai menolak pembentukan negara boneka NIT.",
-
-      "lesson-one-kicker": "JEJAK 01 — 5 HARI DI SEMARANG",
-      "lesson-one-title": "Gugurnya dr. Kariadi & Perlawanan Melawan Kido Butai",
-      "lesson-one-text": "Pada 15–20 Oktober 1945, ketegangan meluap di Semarang ketika pasukan Batalyon Kido Butai Jepang menolak menyerahkan senjata kepada pemuda BKR dan tawanan Jepang kabur di pabrik gula Sekuyu.",
-      "lesson-one-text-two": "Krisis mencapai puncaknya ketika muncul desas-desus bahwa cadangan air minum rakyat di reservoir Siranda Candi telah diracun oleh pasukan Jepang. Kepala Laboratorium Pusat Rumah Sakit Purusara, dr. Kariadi, secara berani memutuskan untuk memeriksa sumber air tersebut demi keselamatan publik:",
-      "lesson-one-point-a-title": "1. Heroisme Pengorbanan dr. Kariadi",
-      "lesson-one-point-a-text": "Saat berada dalam perjalanan menuju Siranda Candi, mobil dr. Kariadi dicegat dan ia ditembak mati oleh tentara Jepang. Gugurnya dr. Kariadi memicu kemarahan besar warga dan membakar pertempuran sengit selama 5 hari 5 malam di seluruh pelosok kota Semarang.",
-      "lesson-one-point-b-title": "2. Simbolik Monumen Tugu Muda",
-      "lesson-one-point-b-text": "Pertempuran ini diabadikan melalui pembangunan Monumen Tugu Muda di Semarang sebagai simbol dedikasi dr. Kariadi. Gelora perlawanan pelucutan senjata di Jawa Tengah ini dengan cepat menyebar ke Jawa Barat, tempat Sekutu melancarkan tekanan militer yang tak kalah sengit.",
-
-      "lesson-two-kicker": "JEJAK 02 — BANDUNG LAUTAN API",
-      "lesson-two-title": "Strategi Musyawarah Bumi Hangus (23 Maret 1946)",
-      "lesson-two-text": "Menghadapi ultimatum Sekutu yang memerintahkan pengosongan Bandung Selatan, Komandan Divisi III TRI Kolonel A.H. Nasution menggelar musyawarah bersama MP3. Demi mencegah kota dijadikan pangkalan militer Sekutu/NICA, dirumuskanlah keputusan taktis Scorched Earth (Bumi Hangus) via 4 aksi utama:",
-      "lesson-two-list-a": "<b>1. Pengungsian Massal 200.000 Penduduk:</b> Sebanyak 200.000 warga Bandung secara sadar membakar rumah mereka sendiri sebelum mengungsi ke pegunungan selatan dengan tertib.",
-      "lesson-two-list-b": "<b>2. Aksi Heroik Mohammad Toha di Dayeuhkolot:</b> Pemuda Mohammad Toha dan Ramdan nekat menerobos sistem pertahanan musuh untuk meledakkan gudang amunisi besar milik Sekutu di Dayeuhkolot hingga gugur sebagai pahlawan.",
-      "lesson-two-list-c": "<b>3. Pembumihangusan Bangunan Vital:</b> Gedung-gedung penting dan fasilitas strategis dibakar total pada malam 23 Maret 1946, mengubah Bandung Selatan menjadi lautan api merah membara.",
-      "lesson-two-list-d": "<b>4. Makna Strategis & Filosofis:</b> Membuktikan bahwa kekayaan harta benda dan fisik kota tidak ada artinya jika dibandingkan dengan kehormatan dan kedaulatan tanah air.",
-      "lesson-two-text-two": "Sementara Bandung menyala menjadi lautan api pada malam 23 Maret 1946, di Sumatra Utara perlawanan fisik berdarah sedang berkecamuk. Di Medan, penghinaan terhadap simbol negara menyulut konflik yang tak kalah keras.",
-
-      "lesson-three-kicker": "JEJAK 03 — PERJUANGAN MEDAN AREA",
-      "lesson-three-title": "Insiden Lencana Jalan Bali & Fixed Boundaries Medan Area",
-      "lesson-three-text": "Pada 9 Oktober 1945, pasukan Sekutu di bawah Brigjen T.E.D. Kelly mendarat di Medan diboncengi NICA. Medan adalah pintu masuk Sumatra Utara yang kaya hasil perkebunan tembakau dan karet — wilayah ini sangat vital bagi pemulihan ekonomi kolonial Belanda. Itulah mengapa NICA bergerak lebih agresif di Medan dibanding daerah lain: mereka ingin menguasai kembali sentra ekonomi ini sebelum struktur pemerintahan RI di Sumatra menguat. Ketegangan berdarah kemudian tersulut bukan oleh pertempuran militer besar, melainkan oleh sebuah penghinaan langsung terhadap simbol kedaulatan Republik:",
-      "thinker-comte-name": "1. Penghinaan Simbol Negara di Jalan Bali (13 Okt 1945)",
-      "thinker-comte-text": "Seorang penghuni hotel NICA merampas dan menginjak-injak lencana Merah Putih milik pemuda Indonesia, menyulut bentrokan bersenjata pertama di Jalan Bali, Medan.",
-      "thinker-durkheim-name": "2. Pemasangan Papan Sepihak Fixed Boundaries",
-      "thinker-durkheim-text": "Pada 1 Desember 1945, Sekutu memasang papan pembatas sepihak bertuliskan 'Fixed Medan Area Boundaries' di pinggiran kota untuk mengisolasi dan membatasi gerak pejuang Republik.",
-      "thinker-marx-name": "3. Pembentukan Komando Markas Medan Area",
-      "thinker-marx-text": "Pemuda pejuang merespons dengan membentuk Komando Markas Medan Area untuk menggalang solidaritas dan mengorganisir pasukan gerilya lintas wilayah Sumatra Utara.",
-      "thinker-weber-name": "4. Pertempuran Gerilya Perbaungan & Tebing Tinggi",
-      "thinker-weber-text": "Perlawanan bersenjata meluas hingga ke Perbaungan dan Tebing Tinggi, membuktikan ketahanan gerilya rakyat Sumatra Utara dalam mempertahankan kedaulatan ekonomi dan wilayah Republik.",
-
-      "lesson-four-kicker": "JEJAK 04 — PUPUTAN MARGARANA BALI",
-      "lesson-four-title": "Perang Habis-habisan I Gusti Ngurah Rai di Bali",
-      "lesson-four-text": "Belanda berencana memecah belah kedaulatan RI dengan mendirikan Negara Indonesia Timur (NIT). Ketika Kolonel Belanda Konig membujuk Letkol I Gusti Ngurah Rai untuk bekerja sama, Ngurah Rai menolak tegas dan memilih konfrontasi militer penentu via 3 momen bersejarah:",
-      "method-a-title": "1. Surat Balasan Kedaulatan Ngurah Rai",
-      "method-a-text": "Ngurah Rai menulis: 'Bali bukan tempat untuk perundingan kompromi penjajah. Selama darah Merah-Putih masih mengalir, perjuangan akan berlanjut!'",
-      "method-b-title": "2. Pertempuran Margarana (20 November 1946)",
-      "method-b-text": "Di Desa Margarana (Tabanan), Ngurah Rai menginstruksikan perintah 'Puputan' (perang habis-habisan sampai gugur) bersama 96 prajurit Pasukan Ciung Wanara melawan gempuran darat-udara Belanda.",
-      "method-c-title": "3. Nilai Kehormatan Tradisi Puputan",
-      "method-c-text": "Seluruh 96 prajurit gugur sebagai martir kedaulatan, menjadikan Puputan Margarana sebagai simbol kehormatan tertinggi dan penolakan mutlak atas politik pecah belah Belanda.",
-      "lesson-four-text-two": "Pengorbanan suci 96 prajurit Pasukan Ciung Wanara dalam Puputan Margarana menggagalkan taktik Belanda untuk mengklaim bahwa rakyat Bali mendukung pembentukan Negara Indonesia Timur.",
-
-      "lesson-five-kicker": "JEJAK 05 — INTEGRASI PERJUANGAN DAERAH",
-      "lesson-five-title": "Dampak Geopolitik Perlawanan Daerah bagi Keutuhan NKRI",
-      "lesson-five-text": "Aksi perlawanan berskala besar dari Sumatra, Jawa, hingga Bali membuktikan kepada Dewan Keamanan PBB dan dunia bahwa semangat revolusi fisik tidak terbatas di pusat pemerintahan saja, melainkan berakar di segenap pelosok Nusantara.",
-      "object-material-title": "1. Runtuhnya Politik Devide et Impera Belanda",
-      "object-material-text": "Taktik adu domba Belanda menciptakan negara-negara boneka terbukti gagal total karena kesetiaan rakyat daerah yang teguh membela kemerdekaan Indonesia.",
-      "object-formal-title": "2. Konsolidasi Struktur TNI & Laskar Daerah",
-      "object-formal-text": "Pengalaman tempur daerah mempercepat integrasi berbagai laskar rakyat independen ke dalam struktur komando resmi Tentara Republik Indonesia (TRI).",
-
-      "lesson-six-kicker": "JEJAK 06 — SINTESIS 1C",
-      "lesson-six-title": "Sintesis Sub-Modul 1C: Kebhinekaan Perjuangan Nasional",
-      "lesson-six-text": "Perlawanan di Semarang, Bandung, Medan, dan Bali menegaskan bahwa kemerdekaan Indonesia bukanlah hasil perjuangan satu kelompok atau satu pulau saja, melainkan kebhinekaan perjuangan seluruh rakyat Nusantara.",
-      "lesson-six-text-two": "Pengorbanan jiwa raga para pahlawan daerah menjadi fondasi persatuan yang tak tergoyahkan dalam menghadapi tekanan militer dan diplomasi penjajah.",
-      "lesson-six-quote": "\"Bali bukan tempat untuk perundingan kompromi penjajah! Kemerdekaan Indonesia adalah harga mati!\" — I Gusti Ngurah Rai (1946)",
+      "overview-title": "Empat Sumber Benturan Krisis Keutuhan Bangsa",
+      "overview-text": "Eskalasi ancaman disintegrasi nasional kurun waktu 1956–1958 dipicu oleh perpaduan empat persoalan mendasar:",
+      "map-card-one-title": "1. Jalan Buntu Majelis Konstituante",
+      "map-card-one-text": "Blok Pancasila dan Blok Islam terkunci dalam perdebatan dasar negara tanpa ada pihak yang sanggup memenuhi ambang batas 2/3 suara.",
+      "map-card-two-title": "2. Berakhirnya Dwitunggal Sukarno-Hatta",
+      "map-card-two-text": "Mohammad Hatta meletakkan jabatan Wakil Presiden pada 1 Desember 1956 akibat perbedaan prinsip mendasar mengenai arah demokrasi dan tata kelola negara.",
+      "map-card-three-title": "3. Protes Fiskal & Dewan Militer Daerah",
+      "map-card-three-text": "Para panglima teritorial di Sumatra dan Sulawesi mengambil alih kekuasaan sipil lokal untuk memprotes pemusatan alokasi ekonomi di Jawa.",
+      "map-card-four-title": "4. Internasionalisasi Konflik Domestik",
+      "map-card-four-text": "Deklarasi PRRI/Permesta mendapat dukungan persenjataan dan dana rahasia dari Amerika Serikat melalui operasi intelijen CIA di tengah rivalitas Perang Dingin.",
+      "lesson-one-kicker": "JEJAK 01 — JALAN BUNTU GEDUNG MERDEKA",
+      "lesson-one-title": "Polarisasi Blok Pancasila Melawan Blok Islam di Meja Sidang",
+      "lesson-one-text": "Anggota Dewan Konstituante hasil Pemilu 1955 memulai sidang perdananya di Bandung pada November 1956 dengan tugas merumuskan undang-undang dasar definitif. Perdebatan segera mengerucut pada persoalan paling sensitif: penetapan dasar filsafat negara. Fraksi-fraksi terbelah menjadi dua kekuatan yang berimbang. Blok Pancasila (didukung PNI, PKI, Parkindo, Partai Katolik, dan partai-partai kecil) memperoleh sekitar 53% kursi, sedangkan Blok Islam (dimotori Masyumi, Nahdlatul Ulama, PSII, dan Perti) menghimpun sekitar 44% kursi.",
+      "lesson-one-text-two": "Pasal 137 UUDS 1950 mewajibkan rancangan undang-undang dasar baru disetujui sekurang-kurangnya oleh dua pertiga dari jumlah anggota yang hadir. Ketentuan ini menjadi jebakan prosedural. Blok Islam bersikukuh menuntut Islam sebagai dasar negara berdasarkan rumusan Piagam Jakarta, sementara Blok Pancasila menolak setiap upaya pengubahan dasar negara yang inklusif bagi seluruh golongan agama dan etnis.",
+      "lesson-one-point-a-title": "Pemungutan Suara Berulang Tanpa Hasil",
+      "lesson-one-point-a-text": "Sidang berkali-kali menggelar pemungutan suara resmi sepanjang 1957 hingga awal 1959. Hasilnya selalu berujung pada angka yang sama: kubu Pancasila meraih suara terbanyak, tetapi tidak pernah sanggup menembus syarat kuorum dua pertiga yang diwajibkan konstitusi.",
+      "lesson-one-point-b-title": "Boikot dan Reses Parlemen",
+      "lesson-one-point-b-text": "Kebuntuan berkepanjangan memicu keputusasaan politik. Sejumlah fraksi mulai memboikot sidang dengan tidak hadir, sehingga majelis tidak lagi mampu mengambil keputusan hukum apa pun untuk menyelamatkan negara dari kekosongan konstitusi tetap.",
+      "lesson-two-kicker": "JEJAK 02 — RETAKNYA KEPEMIMPINAN NASIONAL",
+      "lesson-two-title": "Pengunduran Diri Mohammad Hatta Mengubah Peta Politik",
+      "lesson-two-text": "Sejak masa pergerakan nasional hingga proklamasi, Ir. Sukarno dan Drs. Mohammad Hatta dipandang sebagai dwitunggal pemersatu. Sukarno merepresentasikan corak kepemimpinan karismatik Jawa yang mengedepankan mobilisasi massa, sedangkan Hatta merepresentasikan keteraturan administratif berdisiplin tinggi khas Minangkabau yang berakar kuat pada nilai-nilai demokrasi konstitusional.",
+      "lesson-two-list-a": "<b>1. Beda Pandangan Sistem Partai:</b> Sukarno mengusulkan pembubaran partai dan membentuk Demokrasi Terpimpin, sedangkan Hatta berpendirian penertiban partai harus melalui hukum tanpa menghapus demokrasi parlementer.",
+      "lesson-two-list-b": "<b>2. Penolakan Keterlibatan PKI:</b> Hatta menentang keras rencana Sukarno memasukkan PKI ke kabinet pemerintahan mengingat catatan pemberontakan Madiun 1948 yang membahayakan negara.",
+      "lesson-two-list-c": "<b>3. Protes Sentralisasi Fiskal:</b> Hatta menolak pemusatan kekuasaan ekonomi di Jakarta yang mengabaikan hak otonomi daerah penghasil devisa di luar Jawa.",
+      "lesson-two-list-d": "<b>4. Peletakan Jabatan 1 Des 1956:</b> Hatta resmi mundur setelah DPR hasil Pemilu 1955 terbentuk, memicu keresahan luar biasa terutama di kalangan masyarakat Sumatra dan Sulawesi.",
+      "lesson-two-text-two": "Kepergian Hatta dari struktur eksekutif meruntuhkan keseimbangan psikologis antara pusat dan daerah, mempercepat lahirnya aksi pembangkangan bersenjata dari perwira teritorial.",
+      "lesson-three-kicker": "JEJAK 03 — PEMBANGKANGAN PANGLIMA TERITORIAL",
+      "lesson-three-title": "Pengambilalihan Otoritas Sipil di Sumatra dan Sulawesi",
+      "lesson-three-text": "Kekecewaan terhadap kepemimpinan Jakarta yang dinilai terombang-ambing oleh perselisihan partai mendorong para perwira militer daerah membentuk wadah tandingan. Mereka menganggap pemerintah pusat menelantarkan kesejahteraan prajurit serta mengabaikan perbaikan jalan, rumah sakit, dan sekolah di daerah penghasil devisa.",
+      "thinker-comte-name": "1. Dewan Banteng (Sumatra Tengah)",
+      "thinker-comte-text": "Diproklamasikan di Padang pada 20 Des 1956 oleh Letkol Ahmad Husein, mengambil alih kendali pemerintahan sipil dari Gubernur Ruslan Muljohardjo.",
+      "thinker-durkheim-name": "2. Dewan Gajah (Sumatra Utara)",
+      "thinker-durkheim-text": "Dibentuk di Medan pada 22 Des 1956 oleh Kolonel Maludin Simbolon, memutuskan hubungan komando militer dengan Markas Besar Jakarta.",
+      "thinker-marx-name": "3. Dewan Garuda (Sumatra Selatan)",
+      "thinker-marx-text": "Diproklamasikan Januari 1957 oleh Letkol Barlian, menuntut pembagian hasil tambang minyak bumi dan karet secara adil bagi kemakmuran daerah.",
+      "thinker-weber-name": "4. Dewan Manguni / Permesta (Sulawesi)",
+      "thinker-weber-text": "Dideklarasikan di Manado Februari 1957 oleh Mayor H.N. Ventje Sumual, mewadahi aspirasi Indonesia Timur menolak hegemoni politik Jawa.",
+      "lesson-three-text-two": "Pemerintah pusat berupaya meredam pergolakan melalui Munas September 1957 di Jakarta, namun butir kesepakatan damai gagal diwujudkan akibat penolakan otonomi penuh komando militer.",
+      "lesson-four-kicker": "JEJAK 04 — PERANG SAUDARA & INTELIJEN ASING",
+      "lesson-four-title": "Proklamasi Pemerintah Revolusioner dan Insiden Tertembaknya Pesawat CIA",
+      "lesson-four-text": "Pada 15 Februari 1958 di Padang, Letkol Ahmad Husein memproklamasikan berdirinya Pemerintah Revolusioner Republik Indonesia (PRRI) dengan Sjafruddin Prawiranegara sebagai Perdana Menteri. Tokoh teras Masyumi dan PSI seperti Mohammad Natsir, Burhanuddin Harahap, dan Sumitro Djojohadikusumo bergabung ke Padang setelah keselamatan fisik mereka di Jakarta terancam. Dua hari berserikat, Permesta di Manado menyatakan bergabung dengan PRRI.",
+      "lesson-four-text-two": "Gerakan PRRI/Permesta menegaskan bukan gerakan separatis, melainkan menuntut pembersihan kabinet Jakarta dari anasir komunis serta pengembalian mandat dwitunggal Sukarno-Hatta. Jakarta merespons tegas melalui operasi militer gabungan.",
+      "method-a-title": "1. Bantuan Senjata Rahasia CIA",
+      "method-a-text": "Pemerintahan Eisenhower memandang PRRI/Permesta sebagai penahan komunisme di Asia Tenggara. CIA memasok senjata, amunisi, dan dana jutaan dolar via pangkalan Subic Bay dan Clark Air Base Filipina.",
+      "method-b-title": "2. Tertembaknya Allan Pope (18 Mei 1958)",
+      "method-b-text": "Pesawat pembom B-26 pilot bayaran CIA Allan Pope ditembak jatuh oleh KRI Sawega dan P-51 Mustang TNI AU di Ambon. Pope tertangkap hidup-hidup beserta dokumen dinas militer AS.",
+      "method-c-title": "3. Berbaliknya Diplomasi Washington",
+      "method-c-text": "Bukti tak terbantahkan ini memaksa AS menghentikan seluruh bantuan rahasianya kepada pemberontak dan berbalik menawarkan bantuan pangan dan senjata kepada TNI-AD.",
+      "lesson-five-kicker": "JEJAK 05 — ANCAMAN TEOKRASI BERSENJATA",
+      "lesson-five-title": "Gerilya Panjang Menolak Negara Sekuler dari Pedalaman Hutan",
+      "lesson-five-text": "Di luar pergolakan PRRI/Permesta, stabilitas kedaulatan negara terus diguncang oleh gerakan Darul Islam/Tentara Islam Indonesia (DI/TII). Gerakan ini bermula sejak 7 Agustus 1949 ketika S.M. Kartosuwiryo memproklamasikan Negara Islam Indonesia (NII) di Tasikmalaya sebagai penolakan atas Perjanjian Renville yang dinilai menyerahkan Jawa Barat kepada Belanda.",
+      "object-material-title": "1. Jawa Barat & Taktik Pagar Betis",
+      "object-material-text": "Basis utama NII bertahan belasan tahun di hutan Gunung Geber sebelum ditumpas TNI Divisi Siliwangi melalui Operasi Brata Yudha dan Pagar Betis pada Juni 1962.",
+      "object-formal-title": "2. Jalur Damai Otonomi Khusus Aceh",
+      "object-formal-text": "Pemberontakan DI/TII Daud Beureueh di Aceh diselesaikan secara damai lewat Musyawarah Kerukunan 1957 yang menganugerahkan status Daerah Istimewa dengan otonomi syariat Islam, adat, dan pendidikan.",
+      "lesson-six-kicker": "JEJAK 06 — SINTESIS & REFLEKSI 1C",
+      "lesson-six-title": "Keadaan Darurat Perang Mengubah Keseimbangan Politik Sipil-Militer",
+      "lesson-six-text": "Runtutan krisis Konstituante, pembangkangan daerah, dan gerilya bersenjata menempatkan eksistensi NKRI pada titik terendah. Menghadapi ancaman perpecahan tersebut, Perdana Menteri Djuanda bersama Presiden Sukarno memberlakukan status Keadaan Darurat Perang (Staat van Oorlog en Beleg / SOB) pada 14 Maret 1957.",
+      "lesson-six-text-two": "Pemberlakuan undang-undang darurat perang ini memberikan wewenang yudisial, administratif, dan keamanan yang sangat luas kepada perwira tentara Angkatan Darat di bawah pimpinan Jenderal A.H. Nasution. Militer tidak lagi sekadar menjadi alat pertahanan, melainkan bertransformasi menjadi kekuatan politik mandiri yang siap menggusur supremasi parlemen sipil.",
+      "lesson-six-quote": "\"Ketika parlemen lumpuh oleh kebuntuan ideologis dan daerah mengangkat senjata, hukum darurat perang membuka jalan bagi tentara melangkah ke pusat kendali kekuasaan negara.\"",
       "reflection-kicker": "OUTRO BRIDGE & REFLEKSI SUB-MODUL 1C",
-      "reflection-title": "Jembatan Menuju Sub-Modul 1D: Dari Front Senjata ke Meja Perundingan",
-      "reflection-text": "Gelombang perlawanan fisik di berbagai daerah membuktikan tekad rakyat, tetapi perlawanan senjata tanpa legitimasi hukum internasional rentan dipatahkan. Menyadari hal ini, para pemimpin Republik membuka front perjuangan kedua: meja perundingan diplomasi yang sarat pertarungan hukum internasional, dimulai dari Linggarjati hingga Renville (Sub-Modul 1D).",
+      "reflection-title": "Jembatan Menuju Sub-Modul 1D: Jalan Keluar Dekrit dan Lahirnya Demokrasi Terpimpin",
+      "reflection-text": "Ketidakmampuan Konstituante menghasilkan undang-undang dasar baru serta ancaman disintegrasi daerah memaksa Presiden Sukarno mengambil langkah radikal. Didukung penuh oleh pimpinan Angkatan Darat, Sukarno memutuskan memotong kebuntuan hukum ketatanegaraan melalui terbitnya Dekrit Presiden 5 Juli 1959 yang membubarkan parlemen dan memberlakukan kembali UUD 1945 (Sub-Modul 1D).",
       "challenge-kicker": "ASESMEN SUB-MODUL 1C",
-      "challenge-title": "Siap Menguji Pemahaman Perjuangan Daerah?",
-      "challenge-text": "Jawab 15 tantangan kuis interaktif HOTS Sub-Modul 1C.",
+      "challenge-title": "Siap Menguji Pemahaman Krisis Konstituante & Disintegrasi?",
+      "challenge-text": "Jawab 15 tantangan kuis interaktif HOTS yang dirancang khusus untuk menguji penalaran sejarah Sub-Modul 1C.",
       "start-quiz-button": "Mulai Kuis Sub-Modul 1C →",
       "quiz-kicker": "SUB-MODUL 1C — ASESMEN INTERAKTIF",
       "quiz-title": "15 Tantangan Sejarah Sub-Modul 1C",
-      "quiz-description": "Uji analisis perjuangan daerah di Semarang, Bandung, Medan, & Bali.",
+      "quiz-description": "Uji analisis diakronis & kritis. Setiap soal dilengkapi pembahasan komprehensif latar belakang sejarah.",
       "score-label": "SKOR SUB-MODUL 1C",
       "progress-label": "KEMAJUAN PENGERJAAN",
       "check-quiz-button": "Periksa Jawaban Kuis",
       "result-kicker": "EVALUASI SUB-MODUL 1C",
       "result-title": "Analisis Hasil Penguasaan Sub-Modul 1C",
-      "result-text": "Ulas kembali jawabanmu dan pelajari pembahasannya.",
+      "result-text": "Ulas kembali jawabanmu dan pahami penjelasan sejarah di bawah setiap soal.",
       "retry-quiz-button": "Coba Lagi / Acak Soal 1C",
-      "footer-text": "© Lab Sejarah Interaktif — Sub-Modul 1C: Bandung, Medan, Bali, Semarang. Kurikulum Merdeka Fase F."
+      "footer-text": "© Lab Sejarah Interaktif — Sub-Modul 1C: Krisis Konstituante & Disintegrasi. Kurikulum Merdeka Fase F."
     },
-    quizData: [
+    "quizData": [
       {
-        type: "single",
-        stimulus: "Pertempuran 5 Hari di Semarang (15-20 Oktober 1945) dipicu oleh penolakan tentara Jepang Kido Butai menyerahkan senjata. Ketegangan berdarah pecah setelah dr. Kariadi ditembak saat hendak memeriksa ketersediaan air minum bagi warga Semarang.",
-        question: "Dampak dari gugurnya dr. Kariadi terhadap perjuangan pemuda Semarang adalah...",
-        options: [
-          "A. Pemuda Semarang menyerah kepada tentara Kido Butai",
-          "B. Memicu perlawanan fisik total selama 5 hari mengusir tentara Jepang dari Semarang",
-          "C. Pembubaran organisasi BKR Semarang",
-          "D. Pemindahan pusat pemerintahan Jawa Tengah ke Surakarta",
-          "E. Pembentukan pasukan perdamaian bersama tentara Jepang"
+        "type": "single",
+        "stimulus": "Sejak memulai persidangan di Gedung Merdeka Bandung pada November 1956, Majelis Konstituante hasil Pemilu 1955 terjebak dalam perdebatan ideologis yang sengit. Fraksi-fraksi di majelis terbelah ke dalam dua kubu utama yang saling berhadapan: Blok Pancasila (dipelopori PNI, PKI, Parkindo, dan Partai Katolik dengan total sekitar 53% kursi) dan Blok Islam (dimotori Masyumi, Nahdlatul Ulama, PSII, dan Perti dengan total sekitar 44% kursi). Blok Islam memperjuangkan Islam sebagai dasar negara dengan merujuk Piagam Jakarta, sementara Blok Pancasila berpendirian bahwa Pancasila merupakan satu-satunya dasar falsafah yang mampu merangkul keberagaman etnis dan agama di Indonesia.",
+        "question": "Faktor utama yang menyebabkan perdebatan mengenai dasar falsafah negara di Konstituante tidak pernah mencapai titik temu adalah...",
+        "options": [
+          "A. Intervensi bersenjata dari tentara Belanda yang masih menduduki sebagian wilayah Jawa Barat",
+          "B. Adanya perbedaan pandangan filosofis mendasar yang memandang kompromi ideologis sebagai pengkhianatan terhadap keyakinan konstituen masing-masing",
+          "C. Boikot pembiayaan sidang yang dilakukan oleh Kementerian Keuangan Republik Indonesia",
+          "D. Penolakan dari seluruh fraksi partai politik terhadap naskah Pembukaan UUD 1945",
+          "E. Ketiadaan tokoh-tokoh hukum tata negara senior dalam keanggotaan majelis Konstituante"
         ],
-        answer: 1,
-        explanation: "Gugurnya dr. Kariadi membakar kemarahan pemuda Semarang sehingga memicu Pertempuran 5 Hari melawan pasukan Kido Butai Jepang."
+        "answer": 1,
+        "explanation": "Perdebatan di Konstituante bukan sekadar sengketa pasal teknis perundang-undangan, melainkan benturan pandangan hidup (weltanschauung). Kedua blok memandang dasar negara sebagai prinsip eksistensial yang mutlak. Blok Islam memandangnya sebagai amanah aqidah umat mayoritas, sedangkan Blok Pancasila memandangnya sebagai fondasi kebangsaan inklusif, sehingga kedua pihak menolak berkompromi melunakkan pendirian politiknya."
       },
       {
-        type: "single",
-        stimulus: "Menanggapi ultimatum Sekutu pada Maret 1946 agar Bandung Selatan dikosongkan, Komandan Divisi III TRI Kolonel A.H. Nasution mengambil keputusan taktis membakar kota Bandung sebelum mengundurkan diri ke selatan.",
-        question: "Alasan utama penerapan strategi Bumi Hangus (Bandung Lautan Api) oleh Kolonel A.H. Nasution adalah...",
-        options: [
-          "A. Mencegah Sekutu dan NICA memanfaatkan infrastruktur serta markas vital di Bandung",
-          "B. Memenuhi permintaan bantuan persenjataan dari tentara Belanda",
-          "C. Mempercepat proses negosiasi Perjanjian Linggarjati",
-          "D. Menghukum warga Bandung yang menolak mengungsi",
-          "E. Mengikuti perintah langsung dari markas Sekutu di Jakarta"
+        "type": "single",
+        "stimulus": "Pasal 137 Undang-Undang Dasar Sementara (UUDS) 1950 menetapkan aturan ketat bahwa rancangan undang-undang dasar baru sah apabila disetujui oleh sekurang-kurangnya dua pertiga dari jumlah anggota yang hadir, dan sidang baru dapat mengambil keputusan jika dihadiri oleh sekurang-kurangnya dua pertiga dari total seluruh anggota Konstituante. Dalam berbagai pemungutan suara resmi yang digelar sepanjang 1957 hingga 1959, Blok Pancasila selalu meraih suara mayoritas (sekitar 53%–55%), namun perolehan tersebut tidak pernah mampu menembus batas kuorum 66,6% (dua pertiga) yang disyaratkan konstitusi.",
+        "question": "Konsekuensi yuridis-politik dari ketentuan kuorum Pasal 137 UUDS 1950 terhadap kelangsungan tugas Konstituante adalah...",
+        "options": [
+          "A. Konstituante otomatis dibubarkan oleh Mahkamah Agung setelah tiga bulan bersidang",
+          "B. Terjadinya kebuntuan kelembagaan (institutional deadlock) permanen di mana majelis tidak dapat menetapkan UUD baru maupun mempertahankan UUDS 1950",
+          "C. Seluruh kewenangan perumusan UUD dialihkan kepada pimpinan Dewan Perwakilan Rakyat di Jakarta",
+          "D. Fraksi minoritas dipaksa secara hukum untuk keluar dari keanggotaan parlemen",
+          "E. Pemerintah Belanda berhak membatalkan kedaulatan de jure Negara Kesatuan Republik Indonesia"
         ],
-        answer: 0,
-        explanation: "Strategi Bumi Hangus bertujuan mencegah kota Bandung dimanfaatkan oleh pasukan Sekutu dan NICA sebagai markas militer strategis."
+        "answer": 1,
+        "explanation": "Persyaratan kuorum 2/3 suara yang sangat tinggi menjadi bumerang ketika kekuatan politik terbelah nyaris berimbang (53% vs 44%). Tidak ada satu pun blok yang memiliki kekuatan untuk memaksakan rancangannya secara legal, sehingga lembaga pembuat UUD terjebak dalam kelumpuhan keputusan hukum yang membahayakan kesinambungan ketatanegaraan."
       },
       {
-        type: "single",
-        stimulus: "Puncak perlawanan Bandung Lautan Api diwarnai aksi heroik Mohammad Toha dan Ramdan di desa Dayeuhkolot. Kedua pemuda menerobos penjagaan ketat musuh untuk meledakkan gudang amunisi besar milik Sekutu.",
-        question: "Makna strategis aksi pemuda Mohammad Toha meledakkan gudang amunisi Dayeuhkolot adalah...",
-        options: [
-          "A. Melumpuhkan pasokan amunisi utama Sekutu di wilayah Bandung",
-          "B. Memaksa Sekutu menghentikan seluruh aktivitas penerbangan di Jawa",
-          "C. Menyebabkan pengangkatan Mohammad Toha sebagai komandan TRI",
-          "D. Mengakhiri seluruh perang fisik di wilayah Jawa Barat",
-          "E. Mengawali perundingan diplomasi Renville"
+        "type": "single",
+        "stimulus": "Pada 1 Desember 1956, Drs. Mohammad Hatta resmi meletakkan jabatannya sebagai Wakil Presiden Republik Indonesia setelah DPR hasil Pemilu 1955 dilantik. Hatta mengambil langkah ini karena perbedaan prinsipil yang tidak terdamaikan lagi dengan Presiden Sukarno, terutama mengenai rencana pembubaran partai politik, gagasan Demokrasi Terpimpin, serta penolakannya terhadap pengaruh PKI di lingkaran istana. Pengunduran diri Hatta mengakhiri institusi Dwi Tunggal yang telah memimpin bangsa sejak detik-detik Proklamasi 1945.",
+        "question": "Dampak psikologis dan politik paling mendalam dari mundurnya Bung Hatta bagi masyarakat di luar Pulau Jawa adalah...",
+        "options": [
+          "A. Berkurangnya pasokan bahan pangan pokok dari Pulau Jawa ke wilayah Sumatra dan Sulawesi",
+          "B. Menguatnya rasa keterasingan politik daerah luar Jawa karena kehilangan representasi kepemimpinan nasional yang berintegritas dan peduli otonomi daerah",
+          "C. Terhentinya seluruh kegiatan ekspor komoditas perkebunan dari pelabuhan-pelabuhan di Sumatra",
+          "D. Penolakan serentak dari masyarakat daerah terhadap seluruh kurikulum pendidikan nasional",
+          "E. Pembubaran seluruh kantor cabang perbankan nasional di luar Pulau Jawa"
         ],
-        answer: 0,
-        explanation: "Ledakan gudang amunisi Dayeuhkolot melumpuhkan pasokan amunisi Sekutu di Bandung Selatan secara signifikan."
+        "answer": 1,
+        "explanation": "Bung Hatta dipandang oleh masyarakat dan perwira daerah luar Jawa (khususnya Sumatra dan Sulawesi) sebagai figur penyeimbang yang menjaga prinsip administrasi hukum, otonomi fiskal, dan moderasi politik. Kepergian Hatta dari tampuk kekuasaan eksekutif memicu kecemasan bahwa pemerintah pusat di Jakarta akan semakin dikuasai oleh sentralisme birokrasi Jawa dan politik radikal sayap kiri."
       },
       {
-        type: "single",
-        stimulus: "Di Medan pada 13 Oktober 1945, serdadu NICA mencopot dan menginjak-injak lencana Merah Putih milik seorang warga. Aksi menghina simbol negara ini memicu pertempuran Medan Area dan dipasangnya papan Fixed Boundaries oleh Sekutu.",
-        question: "Tindakan Sekutu memasang patok 'Fixed Boundaries Medan Area' bertujuan untuk...",
-        options: [
-          "A. Menandai wilayah kekuasaan bebas bagi warga sipil Medan",
-          "B. Membatasi ruang gerak pejuang dan mengepung pusat pertahanan Republik di Medan",
-          "C. Membagikan bantuan pangan dari PBB kepada rakyat Medan",
-          "D. Mempersiapkan pendirian markas besar pertahanan TKR",
-          "E. Mengembalikan tanah perkebunan kepada petani lokal"
+        "type": "single",
+        "stimulus": "Pada 20 Desember 1956, Letnan Kolonel Ahmad Husein, Komandan Resimen Infanteri 4 Tentara dan Teritorium I Bukit Barisan, memproklamasikan berdirinya Dewan Banteng di Padang. Dewan ini mengambil alih kendali pemerintahan sipil daerah dari Gubernur Ruslan Muljohardjo. Pembentukan dewan militer ini didukung penuh oleh para tokoh partai lokal, ulama, dan kaum cerdik pandai Minangkabau. Mereka menegaskan bahwa tindakan ini bukan pemberontakan separatis untuk mendirikan negara merdeka, melainkan aksi darurat menuntut perbaikan nasib daerah.",
+        "question": "Tuntutan utama yang melatarbelakangi pengambilalihan otoritas pemerintahan sipil oleh Dewan Banteng adalah...",
+        "options": [
+          "A. Tuntutan pembubaran Tentara Nasional Indonesia dan penarikan seluruh pasukan ke Jawa",
+          "B. Tuntutan otonomi daerah yang riil, pembagian alokasi keuangan yang adil bagi pembangunan infrastruktur, dan pemulihan kedudukan Dwi Tunggal Sukarno-Hatta",
+          "C. Desakan agar bahasa daerah dijadikan sebagai bahasa resmi kenegaraan menggantikan Bahasa Indonesia",
+          "D. Permintaan bantuan militer kepada pasukan persemakmuran Inggris di Singapura",
+          "E. Penolakan terhadap pelaksanaan hasil Pemilihan Umum 1955 di wilayah Sumatra Barat"
         ],
-        answer: 1,
-        explanation: "Patok Fixed Boundaries dipasang Sekutu secara sepihak untuk membatasi dan mengisolasi ruang gerak pejuang Indonesia di Medan."
+        "answer": 1,
+        "explanation": "Dewan Banteng lahir dari kekecewaan atas penelantaran daerah oleh kabinet Jakarta. Sumatra Tengah merupakan penyumbang devisa ekspor besar, namun jalan-jalan raya hancur, sekolah terbengkalai, dan asrama tentara tidak layak huni. Dewan menuntut desentralisasi fiskal, perbaikan kesejahteraan daerah, serta kembalinya Hatta ke tampuk pimpinan nasional untuk memperbaiki manajemen pemerintahan."
       },
       {
-        type: "single",
-        stimulus: "Dalam Puputan Margarana pada 20 November 1946 di Bali, Letkol I Gusti Ngurah Rai menolak tawaran Belanda untuk mendirikan Negara Indonesia Timur (NIT). Ia bersama 96 anggota Pasukan Ciung Wanara bertempur hingga gugur.",
-        question: "Sikap I Gusti Ngurah Rai menolak ajakan kompromi Belanda menunjukkan bahwa...",
-        options: [
-          "A. Bali menolak bergabung dengan Republik Indonesia",
-          "B. Teguhnya prinsip bahwa Bali merupakan bagian tak terpisahkan dari kedaulatan NKRI",
-          "C. Keinginan Ngurah Rai mendirikan kerajaan independen di Bali",
-          "D. Adanya instruksi dari Jepang untuk melanjutkan perang",
-          "E. Kegagalan diplomasi perundingan Linggarjati"
+        "type": "single",
+        "stimulus": "Langkah berani Dewan Banteng di Sumatra Barat segera memicu efek domino di berbagai komando teritorial luar Jawa. Di Medan, Kolonel Maludin Simbolon membentuk Dewan Gajah pada 22 Desember 1956; di Palembang, Letkol Barlian mendirikan Dewan Garuda pada Januari 1957; dan di Manado, Mayor H.N. Ventje Sumual memproklamasikan Piagam Perjuangan Semesta (Permesta) bersama pembentukan Dewan Manguni pada Februari 1957. Seluruh dewan ini secara sepihak membekukan penyetoran pendapatan devisa ekspor ke kas pemerintah pusat di Jakarta.",
+        "question": "Kesamaan motif struktural yang mendasari pembentukan dewan-dewan militer di Sumatra dan Sulawesi tersebut adalah...",
+        "options": [
+          "A. Keinginan mengembalikan sistem pemerintahan federal seperti era Republik Indonesia Serikat (RIS)",
+          "B. Solidaritas korps perwira teritorial dalam memprotes ketimpangan alokasi pembangunan dan sentralisme kekuasaan partai-partai politik di ibu kota",
+          "C. Penolakan terhadap dasar negara Pancasila untuk digantikan dengan hukum adat daerah setempat",
+          "D. Rencana melancarkan invasi bersenjata gabungan untuk merebut pangkalan militer di Surabaya",
+          "E. Desakan para perwira untuk menyerahkan administrasi pelabuhan dagang kepada maskapai asing"
         ],
-        answer: 1,
-        explanation: "Puputan Margarana membuktikan teguhnya komitmen I Gusti Ngurah Rai dan rakyat Bali mempertahankan kedaulatan NKRI dari taktik adu domba Belanda."
+        "answer": 1,
+        "explanation": "Gerakan dewan militer daerah memperlihatkan krisis kepemimpinan nasional. Para perwira teritorial yang dulunya berjuang dalam perang kemerdekaan merasa pemerintah pusat di Jakarta hanya sibuk berebut kursi kabinet parlementer sambil menghisap kekayaan alam daerah tanpa memberikan anggaran timbal balik yang layak bagi pembangunan daerah dan prajuritnya."
       },
       {
-        stimulus: "Bentrokan di Medan melahirkan pembentukan Komando Markas Medan Area oleh para pemuda pejuang untuk menyatukan laskar-laskar perlawanan di Sumatra Utara. Pembentukan komando ini dipicu oleh aksi provokatif Sekutu dan NICA yang membatasi wilayah pergerakan pejuang. Melalui persatuan komando ini, koordinasi taktis perlawanan gerilya di sekitar kota Medan menjadi lebih solid dan terorganisir.",
-        question: "Fungsi utama pembentukan Komando Markas Medan Area adalah...",
-        options: [
-          "A. Mengkoordinasikan perlawanan gerilya bersenjata rakyat Sumatra Utara melawan Sekutu dan NICA",
-          "B. Membantu Sekutu melucuti senjata tentara Jepang",
-          "C. Mengurus pengiriman rempah-rempah ke luar negeri",
-          "D. Membekukan organisasi partai politik lokal",
-          "E. Mendirikan pemerintahan federasi di Sumatra"
+        "type": "single",
+        "stimulus": "Menyadari ancaman perpecahan nasional kian nyata, Perdana Menteri Djuanda memprakarsai penyelenggaraan Musyawarah Nasional (Munas) pada 10–14 September 1957 di Gedung Prajurit, Jakarta. Munas mempertemukan kembali Presiden Sukarno, mantan Wakil Presiden Mohammad Hatta, para menteri kabinet, serta para tokoh dan panglima militer daerah yang bergolak. Pertemuan ini melahirkan pernyataan bersama yang menegaskan komitmen Sukarno-Hatta untuk tetap bersatu menjaga keutuhan proklamasi, serta merekomendasikan pemulihan keamanan dan desentralisasi daerah.",
+        "question": "Faktor yang menyebabkan piagam kesepakatan Munas 1957 gagal mencegah meletusnya perang saudara di lapangan adalah...",
+        "options": [
+          "A. Penolakan seluruh delegasi daerah untuk menghadiri upacara penutupan Munas di Istana Negara",
+          "B. Terjadinya Tragedi Cikini (percobaan pembunuhan Sukarno) yang memperuncing kecurigaan politik, serta keengganan Markas Besar AD mencabut tuntutan perwira daerah",
+          "C. Keputusan pemerintah pusat membekukan seluruh izin penerbangan komersial ke luar Jawa",
+          "D. Penangkapan Mohammad Hatta oleh kepolisian militer sesaat setelah Munas berakhir",
+          "E. Masuknya armada kapal perang Uni Soviet ke Teluk Jakarta untuk mengintimidasi delegasi Munas"
         ],
-        answer: 0,
-        explanation: "Komando Markas Medan Area berfungsi menyatukan komando gerilya seluruh laskar pejuang di Sumatra Utara."
+        "answer": 1,
+        "explanation": "Peluang damai pasca-Munas hancur ketika pada 30 November 1957 terjadi Peristiwa Cikini (granat dilemparkan ke rombongan Presiden Sukarno). Insiden ini memperkeras sikap elite Jakarta terhadap kaum pembangkang. Selain itu, pimpinan militer pusat menolak tuntutan perwira daerah untuk merombak pimpinan staf Angkatan Darat, sehingga jalan musyawarah tertutup dan eskalasi militer tak terhindarkan."
       },
       {
-        type: "single",
-        stimulus: "Pertempuran 5 Hari di Semarang diabadikan oleh pemerintah Indonesia dengan mendirikan monumen Tugu Muda di pusat kota Semarang. Monumen ini menjadi simbol peringatan atas keberanian para pemuda dan rakyat Semarang dalam menghadapi aksi militer Kido Butai Jepang. Pengorbanan dr. Kariadi yang gugur saat meneliti pasokan air minum warga menjadi jiwa utama dari monumen bersejarah tersebut.",
-        question: "Makna didirikannya Tugu Muda Semarang bagi generasi penerus adalah...",
-        options: [
-          "A. Mengenang perlawanan heroik pemuda Semarang membela kemerdekaan dan pengorbanan dr. Kariadi",
-          "B. Merayakan kemenangan pasukan militer Jepang",
-          "C. Menandai markas besar pasukan Sekutu di Jawa Tengah",
-          "D. Mengingat lokasi pusat perdagangan kolonial Belanda",
-          "E. Memperingati pembentukan organisasi PBB"
+        "type": "single",
+        "stimulus": "Setelah batas waktu ultimatum 5x24 jam yang diajukan Letkol Ahmad Husein kepada Kabinet Djuanda diabaikan oleh Jakarta, pada 15 Februari 1958 di Padang diumumkan pembentukan Pemerintah Revolusioner Republik Indonesia (PRRI). Sjafruddin Prawiranegara (tokoh Masyumi dan mantan Presiden PDRI 1948) ditunjuk sebagai Perdana Menteri. Tokoh-tokoh teras nasional seperti Mohammad Natsir, Burhanuddin Harahap, dan Sumitro Djojohadikusumo bergabung ke Padang setelah mengalami intimidasi dan teror fisik terhadap keselamatan keluarga mereka di Jakarta.",
+        "question": "Berdasarkan pernyataan resmi para pemimpinnya, hakikat berdirinya PRRI adalah...",
+        "options": [
+          "A. Gerakan separatis bersenjata yang bertujuan memisahkan Pulau Sumatra dari kedaulatan NKRI",
+          "B. Pembentukan pemerintahan tandingan guna menyelamatkan negara dari bahaya komunisme dan mengembalikan kepemimpinan nasional ke jalur konstitusional",
+          "C. Aksi militer untuk mengembalikan kekuasaan kolonial Kerajaan Belanda atas wilayah Hindia Timur",
+          "D. Upaya mendirikan negara monarki Islam di bawah pimpinan para sultan Sumatra",
+          "E. Gerakan buruh tambang minyak untuk menuntut kenaikan upah kepada perusahaan asing"
         ],
-        answer: 0,
-        explanation: "Tugu Muda didirikan sebagai monumen peringatan atas heroisme pemuda Semarang dan gugurnya dr. Kariadi."
+        "answer": 1,
+        "explanation": "Para tokoh PRRI menolak dicap sebagai kaum separatis. Dalam proklamasinya, PRRI menegaskan diri sebagai pemerintah tandingan moral di dalam bingkai Republik Indonesia untuk menggantikan Kabinet Djuanda yang dinilai inkonstitusional dan membuka jalan bagi PKI, serta mendesak Sukarno kembali memposisikan diri sebagai presiden konstitusional."
       },
       {
-        type: "single",
-        stimulus: "Keputusan membakar kota dalam Peristiwa Bandung Lautan Api menunjukkan bahwa pejuang Indonesia rela mengorbankan harta benda demi kedaulatan yang lebih besar. Strategi bumi hangus ini diambil agar gedung-gedung vital dan markas pertahanan tidak jatuh ke tangan tentara Sekutu dan NICA. Pengorbanan fisik kota Bandung membuktikan betapa nilai kemerdekaan tidak dapat dinilai dengan materiil apapun.",
-        question: "Nilai filosofis tertinggi dari peristiwa Bandung Lautan Api adalah...",
-        options: [
-          "A. Menghargai harta benda di atas keselamatan kedaulatan negara",
-          "B. Rela berkorban materiil demi menjaga kehormatan dan kedaulatan bangsa dari penjajahan",
-          "C. Pasrah menghadapi keunggulan senjata musuh",
-          "D. Menolak melakukan strategi pengungsian",
-          "E. Mengandalkan pertolongan pasukan asing"
+        "type": "single",
+        "stimulus": "Dua hari setelah proklamasi PRRI di Padang, tepatnya pada 17 Februari 1958, Mayor H.N. Ventje Sumual di Manado menyatakan bahwa Komando Piagam Perjuangan Semesta (Permesta) memutuskan hubungan kerja sama dengan pemerintah pusat di Jakarta dan menyatakan bergabung secara militer serta administratif di bawah naungan PRRI. Langkah ini menciptakan dua front pertempuran bersenjata sekaligus yang membentang dari belahan barat (Sumatra) hingga belahan timur (Sulawesi Utara dan Maluku Utara) kepulauan Indonesia.",
+        "question": "Dampak strategis penggabungan Permesta ke dalam PRRI bagi pemerintah pusat di Jakarta adalah...",
+        "options": [
+          "A. Pemerintah pusat segera menyerahkan kekuasaan eksekutif kepada Sjafruddin Prawiranegara",
+          "B. Ancaman perpecahan teritorial menjadi krisis eksistensial berskala nasional yang memaksa TNI menggelar operasi gabungan lintas matra terbesar dalam sejarahnya",
+          "C. Penutupan seluruh selat pelayaran internasional di perairan Indonesia oleh Dewan Keamanan PBB",
+          "D. Ditariknya seluruh pasukan marinir dan penerjun payung dari kepulauan Maluku",
+          "E. Terjadinya kekosongan kepemimpinan di Markas Besar Angkatan Darat di Jakarta"
         ],
-        answer: 1,
-        explanation: "Bandung Lautan Api melambangkan kerelaan berkorban harta benda demi mempertahankan prinsip kebebasan bangsa."
+        "answer": 1,
+        "explanation": "Penyatuan front Sumatra dan Sulawesi mengubah pembangkangan perwira lokal menjadi ancaman perang saudara berskala penuh. Pemerintah pusat dan pimpinan TNI-AD di bawah Jenderal A.H. Nasution tidak memiliki pilihan kompromi lagi selain melancarkan operasi militer gabungan skala penuh (darat, laut, udara) untuk mencegah kehancuran Republik Indonesia."
       },
       {
-        type: "single",
-        stimulus: "Upaya Belanda mendirikan Negara Indonesia Timur (NIT) merupakan bagian dari strategi devide et impera untuk memecah belah persatuan Indonesia. Belanda berusaha menciptakan negara-negara boneka federal di luar Pulau Jawa untuk mengisolasi kedudukan Republik Indonesia. Namun, aksi perlawanan Puputan Margarana yang dipimpin I Gusti Ngurah Rai di Bali dengan tegas meruntuhkan legitimasi klaim Belanda tersebut.",
-        question: "Perlawanan Puputan Margarana di Bali secara langsung menggagalkan upaya Belanda untuk...",
-        options: [
-          "A. Menjadikan Bali sebagai wilayah terisolasi dari dunia luar",
-          "B. Legitimasi murni pembentukan Negara Indonesia Timur tanpa perlawanan rakyat",
-          "C. Menguasai pertambangan minyak di Jawa Tengah",
-          "D. Mengurangi kekuatan angkatan laut Sekutu",
-          "E. Menghapus tradisi kebudayaan lokal Bali"
+        "type": "single",
+        "stimulus": "Pemerintahan Presiden Amerika Serikat Dwight D. Eisenhower dan Menteri Luar Negeri John Foster Dulles memandang kecenderungan politik Sukarno yang mendekat ke negara-negara Blok Timur sebagai ancaman fatal bagi strategi pembendungan komunisme di Asia Tenggara. Melalui Badan Intelijen Pusat (Central Intelligence Agency / CIA), Washington melancarkan operasi rahasia bersandi Operation Haik untuk membantu PRRI/Permesta. Ribuan ton senjata modern, amunisi artileri, peralatan komunikasi radio, dan dana jutaan dolar diselundupkan melalui pangkalan militer AS di Subic Bay dan Clark Air Base (Filipina) serta pangkalan udara di Taiwan.",
+        "question": "Kepentingan geopolitik utama Amerika Serikat memberikan bantuan persenjataan kepada kaum pemberontak PRRI/Permesta adalah...",
+        "options": [
+          "A. Keinginan menguasai perkebunan kelapa sawit di kawasan pedalaman Sumatra Barat",
+          "B. Menekan Presiden Sukarno agar membatasi pengaruh PKI serta menciptakan kekuatan anti-komunis yang sanggup mengimbangi poros Jakarta-Moskow",
+          "C. Membantu Belanda merebut kembali kendali kedaulatan atas kepulauan Maluku",
+          "D. Menghentikan perdagangan komoditas timah antara Indonesia dan Republik Rakyat Tiongkok",
+          "E. Menjadikan Pulau Sulawesi sebagai negara bagian baru di bawah kekuasaan Amerika Serikat"
         ],
-        answer: 1,
-        explanation: "Puputan Margarana membongkar klaim Belanda bahwa rakyat Bali mendukung penuh pembentukan NIT."
+        "answer": 1,
+        "explanation": "Dalam kalkulasi Perang Dingin Gedung Putih, Indonesia di bawah Sukarno dikhawatirkan jatuh ke tangan komunis seperti halnya Tiongkok dan Vietnam Utara. Bantuan rahasia CIA ditujukan untuk melemahkan posisi politik Sukarno dan memperkuat faksi anti-komunis daerah agar Jakarta terpaksa meninggalkan kebijakan luar negeri radikal dan menyingkirkan PKI."
       },
       {
-        type: "single",
-        stimulus: "Perjuangan di Semarang, Bandung, Medan, dan Bali menunjukkan kebhinekaan bentuk perlawanan rakyat di berbagai daerah Nusantara. Dari taktik pertempuran kota, bumi hangus, gerilya daerah, hingga perang puputan habis-habisan, semuanya berpusat pada satu tujuan luhur. Kebulatan tekad nasional ini menegaskan bahwa kemerdekaan Indonesia adalah hasil perjuangan seluruh komponen bangsa.",
-        question: "Kesimpulan umum dari perlawanan fisik di berbagai daerah tersebut adalah...",
-        options: [
-          "A. Perjuangan kemerdekaan hanya berpusat di ibu kota Jakarta",
-          "B. Seluruh daerah Nusantara bersatu padu melakukan perlawanan fisik mempertahankan kemerdekaan RI",
-          "C. Daerah-daerah di luar Jawa menolak bergabung dengan RI",
-          "D. Sekutu berhasil memadamkan seluruh perlawanan daerah",
-          "E. Rakyat daerah lebih menyukai pemerintahan kolonial NICA"
+        "type": "single",
+        "stimulus": "Pada 18 Mei 1958, sebuah pesawat pengebom B-26 Invader tanpa tanda pengenal milik Angkatan Udara Revolusioner Permesta (AUREV) membom pangkalan militer dan kapal perang TNI di Ambon. Tembakan meriam artileri pertahanan udara dari kapal perang KRI Sawega dan kejaran pesawat tempur P-51 Mustang TNI AU pimpinan Kapten Udara Ignatius Dewanto berhasil menembak jatuh pesawat tersebut di atas perairan laut Ambon. Sang pilot melompat menggunakan parasut dan berhasil ditangkap hidup-hidup oleh prajurit marinir Indonesia. Pilot tersebut ternyata bernama Allan Lawrence Pope, seorang perwira intelijen bayaran CIA berkebangsaan Amerika Serikat.",
+        "question": "Dampak diplomatik tak terbantahkan dari penangkapan Allan Pope beserta dokumen penerbangan resminya adalah...",
+        "options": [
+          "A. Amerika Serikat secara terbuka mendeklarasikan perang terbuka terhadap Republik Indonesia",
+          "B. Terbongkarnya campur tangan ilegal intelijen AS yang memaksa Washington menghentikan seluruh bantuan rahasia kepada PRRI/Permesta dan berbalik mendekati Sukarno",
+          "C. Dihapusnya seluruh pangkalan militer Amerika Serikat di kawasan Asia Tenggara",
+          "D. Penyerahan pilot Allan Pope kepada Mahkamah Pidana Internasional di Den Haag",
+          "E. Keputusan Indonesia untuk segera memutuskan hubungan diplomatik dengan seluruh negara anggota PBB"
         ],
-        answer: 1,
-        explanation: "Perjuangan di Semarang, Bandung, Medan, dan Bali membuktikan kebulatan tekad berskala nasional dari seluruh rakyat Nusantara."
+        "answer": 1,
+        "explanation": "Penangkapan Allan Pope dengan bukti kartu identitas militer AS menjadi aib diplomatik besar bagi pemerintahan Eisenhower. Amerika Serikat tidak dapat lagi menyangkal keterlibatannya. Untuk memperbaiki hubungan diplomatik dengan Jakarta dan mencegah Sukarno jatuh sepenuhnya ke pelukan Uni Soviet, AS seketika menghentikan seluruh bantuan senjata kepada PRRI/Permesta dan mulai menawarkan bantuan beras serta persenjataan kepada TNI-AD."
       },
       {
-        type: "single",
-        stimulus: "Insiden di Hotel Medan pada 13 Oktober 1945 membakar kemarahan rakyat karena lencana Merah Putih diinjak-injak oleh serdadu NICA. Penghinaan terhadap lambang kedaulatan negara tersebut memicu perlawanan fisik secara mendadak di seluruh penjuru kota Medan. Peristiwa ini membuktikan betapa kehormatan bendera dan lencana negara menjadi harga diri bangsa yang tidak boleh direndahkan.",
-        question: "Pelajaran penting dari insiden penghinaan simbol negara di Medan adalah...",
-        options: [
-          "A. Simbol negara merupakan kehormatan bangsa yang wajib dibela oleh seluruh warga negara",
-          "B. Simbol negara tidak memiliki makna dalam perjuangan",
-          "C. Rakyat sebaiknya menyembunyikan identitas kebangsaan",
-          "D. Penghinaan simbol negara dapat dibiarkan tanpa tindakan",
-          "E. Penggunaan bendera Merah Putih dilarang oleh pemerintah"
+        "type": "single",
+        "stimulus": "Pimpinan Angkatan Darat Jenderal A.H. Nasution bertindak cepat dengan melancarkan serangkaian operasi militer gabungan lintas matra untuk merebut kembali wilayah-wilayah yang dikuasai PRRI/Permesta. Operasi Tegas dipimpin Letkol Kaharuddin Nasution di Riau untuk mengamankan ladang minyak Caltex; Operasi 17 Agustus dipimpin Kolonel Ahmad Yani mendaratkan pasukan di Padang; Operasi Saptamarga dipimpin Brigjen Djatikusumo di Sumatra Utara; dan Operasi Merdeka dipimpin Letkol Rukminto Hendraningrat di Sulawesi Utara. Pasukan pemerintah berhasil mematahkan pertahanan utama pemberontak dalam tempo hitungan bulan.",
+        "question": "Faktor taktis yang memungkinkan pasukan TNI mengalahkan kekuatan PRRI/Permesta dalam pertempuran kota secara cepat adalah...",
+        "options": [
+          "A. Bantuan pasukan infanteri dari tentara persemakmuran Inggris di perbatasan Malaya",
+          "B. Keunggulan mutlak TNI dalam penguasaan armada kapal perang, mobilitas pasukan lintas udara, dan minimnya integrasi komando taktis di antara pasukan pemberontak",
+          "C. Penolakan rakyat di Sumatra dan Sulawesi untuk membeli produk pangan impor",
+          "D. Penyerahan diri secara sukarela dari seluruh pimpinan partai politik pendukung PRRI",
+          "E. Dilarangnya penggunaan pesawat tempur oleh pimpinan dewan-dewan militer daerah"
         ],
-        answer: 0,
-        explanation: "Insiden Medan menegaskan bahwa simbol negara adalah kehormatan kedaulatan bangsa yang wajib dijaga."
+        "answer": 1,
+        "explanation": "TNI memegang supremasi matra laut dan matra udara secara mutlak. Pendaratan kilat pasukan Para-Komando (RPKAD) dan Marinir (KKO) di pelabuhan Padang dan Manado melumpuhkan konsolidasi pemberontak sebelum mereka sempat mengorganisasi perlawanan rimba yang efektif. Selain itu, pimpinan PRRI dan Permesta terpisah secara geografis ribuan mil tanpa jalur komunikasi logistik terpadu."
       },
       {
-        type: "single",
-        stimulus: "Kolonel A.H. Nasution bermusyawarah intensif dengan pimpinan MP3 (Majelis Persatuan Perjuangan Priangan) sebelum mengeluarkan perintah bumi hangus Bandung. Langkah musyawarah ini diambil agar seluruh fraksi pejuang dan rakyat priangan memahami alasan taktis pengungsian. Sinergi antara komando militer dan pimpinan sipil ini menjamin proses pembumihangusan berjalan tertib dan terorganisir.",
-        question: "Proses pengambilan keputusan bumi hangus Bandung mencerminkan kepemimpinan militer yang...",
-        options: [
-          "A. Otoriter tanpa mendengar aspirasi pejuang",
-          "B. Demokrasi taktis dengan melibat musyawarah bersama pimpinan perjuangan rakyat",
-          "C. Tunduk pada perintah jenderal Sekutu",
-          "D. Menghindari tanggung jawab komando",
-          "E. Mengutamakan kepentingan golongan tertentu"
+        "type": "single",
+        "stimulus": "Pemberontakan Darul Islam/Tentara Islam Indonesia (DI/TII) di Jawa Barat berakar pada penolakan Sekarmadji Maridjan Kartosuwiryo terhadap penandatanganan Perjanjian Renville pada Januari 1948. Perjanjian tersebut mewajibkan seluruh pasukan TNI (Divisi Siliwangi) mengosongkan kantong-kantong gerilya Jawa Barat dan melakukan long march hijrah ke wilayah Republik di Yogyakarta. Kartosuwiryo bersama ribuan laskar Hizbullah dan Sabilillah menolak mematuhi perintah hijrah tersebut karena menganggap pemerintah RI telah menyerahkan tanah Jawa Barat kepada penjajah Belanda. Pada 7 Agustus 1949, Kartosuwiryo memproklamasikan berdirinya Negara Islam Indonesia (NII).",
+        "question": "Hubungan sebab-akibat antara Perjanjian Renville dengan meletusnya pemberontakan NII Kartosuwiryo adalah...",
+        "options": [
+          "A. Belanda mendanai pembentukan Negara Islam Indonesia untuk melawan tentara Sekutu",
+          "B. Kekosongan kekuasaan (vacuum of power) militer RI di Jawa Barat akibat hijrahnya Divisi Siliwangi dimanfaatkan Kartosuwiryo untuk mendirikan basis kekuasaan teokrasi mandiri",
+          "C. Pasukan Divisi Siliwangi menyatakan bergabung di bawah komando militer Kartosuwiryo",
+          "D. Pemerintah RI di Yogyakarta memerintahkan pembentukan laskar bersenjata di wilayah pedalaman",
+          "E. Perjanjian Renville mewajibkan penerapan syariat Islam di seluruh wilayah kekuasaan Republik"
         ],
-        answer: 1,
-        explanation: "Keputusan bumi hangus diambil melalui musyawarah taktis antara pimpinan militer TRI dan pimpinan perjuangan rakyat."
+        "answer": 1,
+        "explanation": "Kepatuhan TNI mengosongkan Jawa Barat meninggalkan kekosongan kekuasaan pertahanan. Kartosuwiryo menganggap pemerintah Republik di Yogyakarta telah berkhianat dan kehilangan hak atas tanah Jawa Barat. Laskar Hizbullah dan Sabilillah kemudian mengambil alih penguasaan wilayah pedalaman pegunungan, membentuk struktur pemerintahan NII yang kelak menolak mengakui kembalinya Divisi Siliwangi pasca-KMB 1949."
       },
       {
-        type: "data_sufficiency",
-        stimulus: "Seorang peneliti mengkaji dampak strategi bumi hangus di Bandung.<br><br>DATA SEJARAH:<br>(1) Sekutu tidak dapat menggunakan bangunan vital Bandung Selatan sebagai markas.<br>(2) Pasukan TRI berhasil mengundurkan diri dengan utuh ke wilayah selatan untuk menyusun gerilya.",
-        question: "Apakah Data (1) dan (2) cukup membuktikan keberhasilan taktis bumi hangus Bandung?",
-        options: [
-          "A. Data (1) dan (2) BERSAMA-SAMA cukup membuktikan keberhasilan taktis bumi hangus",
-          "B. Data (1) SAJA cukup",
-          "C. Data (2) SAJA cukup",
-          "D. Kedua data tidak relevan",
-          "E. Data bertentangan"
+        "type": "single",
+        "stimulus": "Gerilya DI/TII di Jawa Barat bertahan selama lebih dari satu dekade karena mereka menguasai jalur-jalur logistik di kawasan pegunungan terjal (Gunung Geber, Gunung Salak, dan Gunung Gede) serta kerap melancarkan teror pembakaran desa dan perampokan hasil panen petani di malam hari. Untuk memutus ketergantungan gerilyawan terhadap sumber logistik desa, Panglima Kodam VI/Siliwangi Kolonel R.A. Kosasih dan Mayjen Ibrahim Adjie menerapkan strategi Pagar Betis melalui Operasi Brata Yudha pada awal dekade 1960-an.",
+        "question": "Prinsip kerja strategi militer Pagar Betis dalam menumpas sisa-sisa pasukan DI/TII Kartosuwiryo adalah...",
+        "options": [
+          "A. Pengeboman karpet secara terus-menerus menggunakan pesawat tempur canggih bantuan Uni Soviet",
+          "B. Pengerahan puluhan ribu rakyat sipil yang berjalan berbaris rapat bersama prajurit TNI untuk mengepung dan mempersempit ruang gerak gerilyawan dari lereng bukit hingga puncak gunung",
+          "C. Pembelian hasil panen padi petani desa dengan harga sepuluh kali lipat oleh dinas logistik militer",
+          "D. Membangun tembok beton tinggi di sepanjang perbatasan Provinsi Jawa Barat dan Jawa Tengah",
+          "E. Menyerahkan administrasi hukum desa kepada para perwira intelijen kejaksaan militer"
         ],
-        answer: 0,
-        explanation: "Data 1 membuktikan penggagalan rencana musuh dan Data 2 membuktikan penyelamatan kekuatan taktis militer RI."
+        "answer": 1,
+        "explanation": "Taktik Pagar Betis memadukan operasi militer dengan mobilisasi massa rakyat. Puluhan ribu warga desa bersama prajurit TNI membentuk formasi pagar hidup (berbaris rapat) menyisir lereng-lereng gunung dari segala penjuru pada siang hari dan berkemah di malam hari. Taktik ini memutus pasokan makanan dari desa dan mempersempit tempat persembunyian hingga akhirnya Kartosuwiryo tertangkap dalam kondisi sakit di Gunung Geber pada 4 Juni 1962."
       },
       {
-        type: "infographic",
-        stimulus: "Cermati perbandingan strategi perjuangan daerah:<br>1. Bandung: Bumi Hangus ➔ Pengorbanan aset fisik<br>2. Bali: Puputan Margarana ➔ Perang habis-habisan sampai gugur",
-        question: "Kesamaan prinsip dari kedua strategi perlawanan di atas adalah...",
-        options: [
-          "A. Menolak penyerahan kedaulatan tanah air kepada pihak penjajah dengan cara apapun",
-          "B. Bekerja sama dengan pasukan NICA",
-          "C. Meminta bantuan perlindungan tentara Jepang",
-          "D. Menyerahkan wilayah kepada pemerintahan federasi NIT",
-          "E. Menghentikan seluruh perjuangan fisik"
+        "type": "single",
+        "stimulus": "Pemberontakan DI/TII di luar Pulau Jawa memiliki karakteristik dan latar belakang lokal yang khas. Di Sulawesi Selatan, Letkol Kahar Muzakkar memimpin pembangkangan bersenjata sejak 1952 setelah permintaannya agar seluruh anggota laskar Komando Gerilya Sulawesi Selatan (KGSS) dimasukkan ke dalam Korps Cadangan Nasional ditolak pemerintah pusat yang hanya menerima anggota yang lolos uji kesehatan dan penyaringan administrasi. Di Kalimantan Selatan, Ibnu Hadjar yang merupakan mantan letnan dua TNI membentuk gerakan Kesatuan Rakyat Indonesia yang Tertindas (KRIYT) pada 1950 karena kecewa terhadap kebijakan rasionalisasi tentara yang mendemobilisasi para pejuang gerilya lokal.",
+        "question": "Akar persoalan mendasar yang melahirkan pemberontakan bersenjata di Sulawesi Selatan dan Kalimantan Selatan tersebut adalah...",
+        "options": [
+          "A. Keinginan para pemimpin laskar untuk menjual senjata militer kepada pengusaha asing",
+          "B. Kekecewaan para mantan pejuang laskar gerilya kemerdekaan terhadap kebijakan demobilisasi dan penyaringan korps militer reguler yang dinilai tidak menghargai jasa perjuangan mereka",
+          "C. Perintah dari pimpinan Masyumi di Jakarta untuk membubarkan seluruh batalyon Angkatan Darat",
+          "D. Masuknya pasukan mariner asing ke perairan pedalaman sungai Barito dan sungai Mahakam",
+          "E. Penolakan warga pedalaman terhadap penggunaan seragam resmi kemiliteran"
         ],
-        answer: 0,
-        explanation: "Baik Bumi Hangus Bandung maupun Puputan Bali dilandasi prinsip mutlak menolak penyerahan kedaulatan tanah air kepada penjajah."
+        "answer": 1,
+        "explanation": "Kebijakan Re-Ra (Rasionalisasi dan Reorganisasi) militer pasca-1950 menuntut profesionalisme tentara reguler dengan standar ketat. Ribuan pejuang laskar rakyat merasa disingkirkan dan direndahkan oleh birokrasi militer Jakarta setelah mengorbankan jiwa raga selama perang gerilya kemerdekaan. Kekecewaan psikologis dan status sosial ini mendorong Kahar Muzakkar dan Ibnu Hadjar mengangkat senjata dan kemudian berafiliasi dengan NII Kartosuwiryo."
       },
       {
-        type: "single",
-        stimulus: "Keteladanan para pahlawan daerah seperti dr. Kariadi, Moh. Toha, dan I Gusti Ngurah Rai memberikan inspirasi mendalam bagi Profil Pelajar Pancasila. Keberanian dan kerelaan mereka mengorbankan jiwa raga demi kedaulatan tanah air menjadi cermin karakter bernalar kritis dan berkebinekaan global. Generasi muda masa kini dituntut melanjutkan warisan perjuangan tersebut dalam bentuk karya dan prestasi nyata.",
-        question: "Nilai kebangsaan utama yang dapat diterapkan siswa dari perjuangan daerah ini adalah...",
-        options: [
-          "A. Menumbuhkan rasa cinta tanah air, keberanian membela kebenaran, dan jiwa rela berkorban",
-          "B. Memprioritaskan keuntungan pribadi di atas kepentingan umum",
-          "C. Mengabaikan persatuan antar daerah",
-          "D. Pasrah menghadapi tantangan masa depan",
-          "E. Menolak mempelajari sejarah perjuangan bangsa"
+        "type": "single",
+        "stimulus": "Pada 21 September 1953, mantan Gubernur Militer Aceh Teungku Muhammad Daud Beureueh menyatakan Aceh bergabung dengan Negara Islam Indonesia Kartosuwiryo. Pemberontakan ini meletus akibat kekecewaan elite ulama Persatuan Ulama Seluruh Aceh (PUSA) atas kebijakan pemerintah pusat yang menurunkan status Aceh dari provinsi mandiri menjadi daerah keresidenan di bawah Provinsi Sumatra Utara. Berbeda dengan penumpasan berdarah di Jawa Barat dan Sulawesi Selatan, pemerintah pusat di bawah Perdana Menteri Ali Sastroamidjojo dan Wakil Perdana Menteri Mr. Hardi memilih mengutamakan jalur negosiasi sosiokultural melalui Musyawarah Kerukunan Rakyat Aceh pada Desember 1962.",
+        "question": "Konsensus politik yang berhasil mengakhiri perlawanan bersenjata DI/TII di Aceh secara damai adalah...",
+        "options": [
+          "A. Penyerahan kekuasaan militer daerah kepada pasukan khusus bentukan Perserikatan Bangsa-Bangsa",
+          "B. Keputusan pemerintah pusat memberikan status Daerah Istimewa bagi Provinsi Aceh dengan hak otonomi luas di bidang agama, adat-istiadat, dan pendidikan",
+          "C. Pembagian separuh pendapatan minyak bumi Aceh secara langsung kepada keluarga Daud Beureueh",
+          "D. Pembubaran seluruh sekolah negeri dan universitas umum di wilayah Keresidenan Aceh",
+          "E. Pemindahan ibu kota Republik Indonesia dari Jakarta ke Banda Aceh untuk sementara waktu"
         ],
-        answer: 0,
-        explanation: "Keteladanan pahlawan daerah menginspirasi cinta tanah air, keberanian membela kebenaran, dan jiwa rela berkorban."
+        "answer": 1,
+        "explanation": "Pemerintah pusat menyadari bahwa pemberontakan Aceh berakar pada luka martabat dan identitas sejarah rakyat Aceh yang merasa dikhianati setelah pengorbanan besar mereka membiayai perjuangan kemerdekaan RI. Pendekatan persuasif Mr. Hardi membuahkan Keputusan Perdana Menteri No. 1/Misi/1959 yang memulihkan Aceh sebagai provinsi berstatus Daerah Istimewa dengan kewenangan otonom mengelola syariat Islam, lembaga adat, dan pendidikan lokal, mengakhiri perlawanan secara terhormat."
       }
     ]
   },
   "1D": {
-    heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
-    templateData: {
+    "heroImage": "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80",
+    "templateData": {
       "nav-kicker": "LAB SEJARAH INTERAKTIF — UNIT 1D",
-      "nav-brand": "Sub-Modul 1D — Perjuangan Diplomasi I (Linggarjati & Renville)",
+      "nav-brand": "Sub-Modul 1D — Dekrit Presiden 5 Juli 1959 & Fondasi Demokrasi Terpimpin (1959–1961)",
       "materi-tab-label": "1. Jejak Materi 1D",
       "kuis-tab-label": "2. Tantangan Kuis 1D",
-      "hero-kicker": "KURIKULUM MERDEKA — FASE F (KELAS XII) | STRATEGI MEJA PERUNDINGAN",
-      "hero-title": "Diplomasi Perjuangan: Perjanjian Linggarjati & Perjanjian Renville",
-      "hero-description": "Perjuangan mempertahankan kemerdekaan dilancarkan melalui strategi dwitunggal: konfrontasi fisik dan meja perundingan. Pelajari bagaimana Linggarjati dan Renville membentuk konstelasi geopolitik Indonesia serta dampak Garis Van Mook dan Hijrah Siliwangi.",
+      "hero-kicker": "KURIKULUM MERDEKA — FASE F (KELAS XII) | INDONESIA PADA MASA ORDE LAMA (1950–1965)",
+      "hero-title": "Dekrit Presiden 5 Juli 1959 & Fondasi Kekuasaan Demokrasi Terpimpin (1959–1961)",
+      "hero-description": "Analisis kritis proses transisi politik dari demokrasi parlementer menuju Demokrasi Terpimpin: Konsepsi Presiden 1957, dukungan militer atas berlakunya hukum darurat ketatanegaraan, pembacaan Dekrit 5 Juli 1959, pembubaran Masyumi-PSI, hingga penetapan Manipol-USDEK sebagai haluan negara.",
       "hero-note-title": "PANDUAN BELAJAR SUB-MODUL 1D",
-      "hero-note-text": "Telusuri Jejak 01 hingga 06 secara berurutan. Analisis taktik pengakuan de facto Sjahrir, Agresi Militer I (Operasi Product), mediasi KTN PBB, hingga konsekuensi teritorial Garis Van Mook dan Peristiwa Hijrah Siliwangi!",
+      "hero-note-text": "Pelajari Jejak 01 hingga 06 secara teratur. Amati mengapa Sukarno menganggap demokrasi liberal tidak sesuai dengan kepribadian bangsa, bagaimana tentara memanfaatkan Dekrit untuk mengamankan posisi dalam politik nasional, dan bagaimana doktrin Manipol-USDEK diwajibkan ke seluruh sendi birokrasi dan pendidikan.",
       "overview-kicker": "PETA KONSEP SUB-MODUL 1D",
-      "overview-title": "Empat Pilar Dinamika Diplomasi Awal Revolusi",
-      "overview-text": "Peta jalan perjuangan diplomasi awal revolusi terdiri dari empat tahapan kausalitas geopolitik:",
-      "map-card-one-title": "1. Perjanjian Linggarjati (1946–1947)",
-      "map-card-one-text": "Pengakuan de facto Jawa-Sumatra-Madura via PM Sutan Sjahrir yang menjadi landasan hukum pertama RI di PBB.",
-      "map-card-two-title": "2. Agresi Militer Belanda I (21 Juli 1947)",
-      "map-card-two-text": "Pelanggaran sepihak Van Mook (Operasi Product) merebut kawasan ekonomi vital RI hingga memicu respon PBB.",
-      "map-card-three-title": "3. Mediasi Komisi Tiga Negara (KTN)",
-      "map-card-three-text": "Intervensi PBB mengutus KTN (Australia, Belgia, AS) untuk menghentikan perang dan memediasi sengketa di USS Renville.",
-      "map-card-four-title": "4. Perjanjian Renville & Garis Van Mook",
-      "map-card-four-text": "Tekanan diplomasi di atas kapal perang yang berujung penyempitan wilayah RI, Hijrah Siliwangi, dan jatuhnya kabinet.",
-
-      "lesson-one-kicker": "JEJAK 01 — PERJANJIAN LINGGARJATI",
-      "lesson-one-title": "Pengakuan De Facto & Naskah Linggarjati (1946–1947)",
-      "lesson-one-text": "Perundingan Linggarjati berlangsung di kaki Gunung Ciremai, Desa Linggarjati, Cirebon pada 10–15 November 1946 dan diparaf resmi pada 25 Maret 1947. Delegasi Indonesia dipimpin oleh Perdana Menteri Sutan Sjahrir, sedangkan pihak Belanda dipimpin oleh Prof. Willem Schermerhorn dengan penengah diplomat Inggris Lord Killearn.",
-      "lesson-one-text-two": "Sjahrir menerapkan taktik diplomasi bertahap: ia bersedia menerima bentuk kompromi negara federasi demi mengamankan kepastian hukum kedaulatan di mata dunia internasional:",
-      "lesson-one-point-a-title": "1. Pengakuan De Facto Teritorial",
-      "lesson-one-point-a-text": "Belanda secara resmi mengakui kekuasaan de facto Republik Indonesia atas Pulau Jawa, Sumatra, dan Madura. Pasukan Belanda harus ditarik dari wilayah-wilayah ini secara bertahap.",
-      "lesson-one-point-b-title": "2. Rencana Pembentukan RIS & Uni",
-      "lesson-one-point-b-text": "Pemerintah RI dan Belanda sepakat bekerja sama membentuk Negara Republik Indonesia Serikat (RIS) dan Uni Indonesia-Belanda paling lambat 1 Januari 1949. Penandatanganan Linggarjati mendudukkan kedaulatan RI sejajar dengan Belanda di forum dunia.",
-
-      "lesson-two-kicker": "JEJAK 02 — AGRESI MILITER I",
-      "lesson-two-title": "Operasi Product & Pengkhianatan Belanda (21 Juli 1947)",
-      "lesson-two-text": "Hanya beberapa bulan pasca-penandatanganan Linggarjati, Gubernur Jenderal H.J. van Mook menyatakan sepihak bahwa Belanda tidak lagi terikat naskah perjanjian. Pada 21 Juli 1947, Belanda melancarkan Agresi Militer I (Operasi Product) dengan mengerahkan pesawat tempur dan tank lapis baja via 4 fokus utama:",
-      "lesson-two-list-a": "<b>1. Sasaran Utama Ekonomi Vital:</b> Belanda memprioritaskan perebutan perkebunan teh, gula, dan karet di Jawa Barat, Jawa Timur, serta kilang minyak strategis di Sumatra Utara dan Palembang demi mengatasi kebangkrutan ekonomi pasca-PD II.",
-      "lesson-two-list-b": "<b>2. Respons Perang Gerilya Tentara RI:</b> Jenderal Soedirman menginstruksikan pasukan TNI mengundurkan diri dari pertempuran terbuka dan menerapkan taktik gerilya di pedesaan untuk menguras energi musuh.",
-      "lesson-two-list-c": "<b>3. Pengaduan Internasional Australia & India:</b> Pemerintah Australia dan India secara resmi membawa aksi agresi Belanda ini ke sidang Dewan Keamanan PBB karena dinilai mengancam perdamaian dunia.",
-      "lesson-two-list-d": "<b>4. Moratorium & Resolusi PBB:</b> Dewan Keamanan PBB merilis resolusi penghentian tembak-menembak dan membentuk badan pengawas khusus untuk menengahi sengketa.",
-      "lesson-two-text-two": "Eskalasi militer Belanda di Jawa dan Sumatra ini memicu kemarahan internasional. Respon PBB yang membentuk Komisi Tiga Negara (KTN) membawa pertikaian ini ke perundingan puncak di atas kapal perang USS Renville.",
-
-      "lesson-three-kicker": "JEJAK 03 — PERAN KTN PBB",
-      "lesson-three-title": "Komisi Tiga Negara (KTN) & Perundingan USS Renville",
-      "lesson-three-text": "Untuk mengawal gencatan senjata, PBB mendirikan Committee of Good Offices for Indonesia yang populer dengan sebutan Komisi Tiga Negara (KTN). Komposisi diplomat KTN mencerminkan keterwakilan berimbang dari pihak yang bertikai:",
-      "thinker-comte-name": "1. Richard Kirby (Utusan Australia)",
-      "thinker-comte-text": "Dipilih oleh pihak Indonesia karena Australia sangat mendukung hak menentukan nasib sendiri bagi bangsa Indonesia.",
-      "thinker-durkheim-name": "2. Paul van Zeeland (Utusan Belgia)",
-      "thinker-durkheim-text": "Dipilih oleh pihak Kerajaan Belanda untuk mewakili kepentingan negara-negara Eropa Barat.",
-      "thinker-marx-name": "3. Frank Graham (Utusan Amerika Serikat)",
-      "thinker-marx-text": "Dipilih bersama oleh Indonesia dan Belanda sebagai pihak penengah yang bersifat netral.",
-      "thinker-weber-name": "4. Netralitas Kapal Perang USS Renville",
-      "thinker-weber-text": "Proses diplomasi disepakati berlangsung di atas kapal perang AL Amerika Serikat, USS Renville, yang berlabuh di perairan Teluk Jakarta (8 Des 1947). Di tempat netral inilah delegasi Indonesia dan Belanda berhadapan dalam perundingan yang amat menentukan.",
-
-      "lesson-four-kicker": "JEJAK 04 — PERJANJIAN RENVILLE",
-      "lesson-four-title": "Garis Van Mook & Hijrah Divisi Siliwangi (17 Januari 1948)",
-      "lesson-four-text": "Perjanjian Renville ditandatangani pada 17 Januari 1948 oleh PM Amir Sjarifuddin (Delegasi RI) dan Abdulkadir Widjojoatmodjo (Delegasi Belanda). Di bawah ancaman militer Belanda, Indonesia terpaksa menerima klausul syarat amat berat yang merubah peta politik secara dramatis:",
-      "method-a-title": "1. Penetapan Garis Demarkasi Van Mook",
-      "method-a-text": "Belanda memaksakan garis buatan yang menghubungkan posisi-posisi terdepan militernya, memotong wilayah kedaulatan RI di Jawa dan Sumatra hingga tersisa sebagian kecil Jawa Tengah, Yogyakarta, dan Sumatra.",
-      "method-b-title": "2. Peristiwa Hijrah Divisi Siliwangi",
-      "method-b-text": "Pasukan TNI harus mengosongkan daerah kantong gerilya di belakang Garis Van Mook. Sebanyak 35.000 prajurit Divisi Siliwangi berjalan kaki (hijrah) dari Jawa Barat menuju wilayah pusat Republik di Yogyakarta dan Jawa Tengah.",
-      "method-c-title": "3. Krisis Politik & Jatuhnya Kabinet",
-      "method-c-text": "Penandatanganan Renville memicu kemarahan publik dan penolakan keras fraksi oposisi, yang berujung pada pengembalian mandat Kabinet Amir Sjarifuddin kepada Presiden Soekarno.",
-      "lesson-four-text-two": "Konsekuensi tragis Perjanjian Renville memicu gelombang kekecewaan rakyat dan krisis politik hebat di ibu kota Yogyakarta, yang akhirnya memaksa PM Amir Sjarifuddin mengembalikan mandatnya kepada Presiden Soekarno.",
-
-      "lesson-five-kicker": "JEJAK 05 — EVALUASI DIPLOMASI I",
-      "lesson-five-title": "Analisis Pasang Surut Strategi Diplomasi Meja Hijau",
-      "lesson-five-text": "Rangkaian perundingan Linggarjati dan Renville memberikan pelajaran berharga mengenai dinamika hukum geopolitik internasional:",
-      "object-material-title": "1. Keuntungan Legitimasi Internasional PBB",
-      "object-material-text": "Meskipun teritorial terdesak, perjuangan diplomasi berhasil mengangkat sengketa Indonesia-Belanda menjadi agenda tetap Dewan Keamanan PBB dan meraih simpati dunia.",
-      "object-formal-title": "2. Kerugian Penyempitan Teritorial & Ekonomi",
-      "object-formal-text": "Penetapan Garis Van Mook memicu penyempitan teritorial drastis dan membendung lalu lintas ekonomi akibat blokade kelautan Belanda.",
-
-      "lesson-six-kicker": "JEJAK 06 — SINTESIS 1D",
-      "lesson-six-title": "Sintesis Sub-Modul 1D: Pasang Surut Meja Perundingan",
-      "lesson-six-text": "Dua perundingan ini mengajarkan satu hal mutlak: meja diplomasi sama kejamnya dengan medan perang. Linggarjati dan Renville memaksa para diplomat bermanuver di tengah gempuran militer musuh.",
-      "lesson-six-text-two": "Garis Van Mook memang merampas wilayah, tapi pengorbanan puluhan ribu prajurit Siliwangi yang hijrah berhasil menyelamatkan aset terpenting Republik: kekuatan militer untuk melawan balik di masa depan.",
-      "lesson-six-quote": "\"Diplomasi tanpa kekuatan militer di lapangan adalah seperti musik tanpa instrumen!\" — Sutan Sjahrir (1947)",
+      "overview-title": "Empat Pilar Penataan Ulang Arsitektur Kekuasaan Negara",
+      "overview-text": "Transformasi sistem ketatanegaraan Indonesia tahun 1959 digerakkan oleh empat dinamika struktural:",
+      "map-card-one-title": "1. Konsepsi Presiden 21 Februari 1957",
+      "map-card-one-text": "Gagasan awal Sukarno mengganti demokrasi liberal Barat dengan sistem gotong royong terpadu dan pembentukan Dewan Nasional.",
+      "map-card-two-title": "2. Anjuran KSAD & Hukum Darurat Tata Negara",
+      "map-card-two-text": "Jenderal A.H. Nasution mengusulkan pemberlakuan kembali UUD 1945 via dekrit untuk mengatasi kebuntuan sidang Konstituante.",
+      "map-card-three-title": "3. Tiga Diktum Dekrit 5 Juli 1959",
+      "map-card-three-text": "Pembubaran Konstituante, penetapan kembali UUD 1945 (membatalkan UUDS 1950), dan pembentukan MPRS serta DPAS dalam tempo sesingkatnya.",
+      "map-card-four-title": "4. Doktrin Ideologi Manipol-USDEK",
+      "map-card-four-text": "Penetapan pidato kenegaraan 17 Agustus 1959 sebagai Garis-Garis Besar Haluan Negara yang mengikat seluruh lembaga eksekutif, legislatif, dan yudikatif.",
+      "lesson-one-kicker": "JEJAK 01 — ASAL MULA DEMOKRASI TERPIMPIN",
+      "lesson-one-title": "Kritik Sukarno Terhadap Demokrasi Liberal ala Barat",
+      "lesson-one-text": "Pada 21 Februari 1957, Presiden Sukarno mengundang seluruh pemimpin partai politik ke Istana Merdeka untuk memaparkan pidato bertajuk 'Menyelamatkan Republik Indonesia'. Pidato ini memuat gagasan yang dikenal luas sebagai Konsepsi Presiden 1957. Sukarno menyatakan secara terbuka bahwa demokrasi parlementer yang diterapkan sejak 1950 telah gagal membawa stabilitas politik dan keadilan sosial bagi rakyat. Sukarno menilai sistem multipartai liberal ala Barat tidak cocok dengan kepribadian bangsa Indonesia yang berakar pada tradisi musyawarah mufakat dan gotong royong.",
+      "lesson-one-text-two": "Dalam konsepsi tersebut, Sukarno mengajukan dua usulan mendasar: pertama, pembentukan Kabinet Gotong Royong yang mengikutsertakan seluruh partai pemenang pemilu (termasuk PKI) yang diibaratkan sebagai 'kabinet berkaki empat'; kedua, pembentukan Dewan Nasional yang beranggotakan wakil-wakil golongan fungsional (buruh, tani, seniman, pemuda, pemuka agama, cendekiawan, dan angkatan bersenjata) untuk mendampingi kabinet.",
+      "lesson-one-point-a-title": "Penolakan Keras Partai-Partai Islam",
+      "lesson-one-point-a-text": "Masyumi, Partai Katolik, dan Parkindo menolak keras pembentukan kabinet berkaki empat karena menentang keikutsertaan PKI dalam pemerintahan. Mereka memandang Dewan Nasional sebagai lembaga ekstrakonstitusional yang mengebiri wewenang parlemen hasil pemilu.",
+      "lesson-one-point-b-title": "Mandat Darurat Kabinet Karya",
+      "lesson-one-point-b-text": "Akibat penolakan partai politik, Sukarno menunjuk tokoh teknokrat non-partai, Ir. Djuanda Kartawidjaja, untuk memimpin Kabinet Zaken (Kabinet Karya) pada 9 April 1957 dengan program kerja mempercepat pengembalian Irian Barat dan meredakan pemberontakan daerah.",
+      "lesson-two-kicker": "JEJAK 02 — KEBUNTUAN HUKUM TATA NEGARA",
+      "lesson-two-title": "Tiga Kali Pemungutan Suara Menemui Titik Buntu",
+      "lesson-two-text": "Menyaksikan perdebatan di Konstituante yang tidak kunjung selesai, Perdana Menteri Djuanda bersama KSAD Jenderal A.H. Nasution mendesak Presiden Sukarno agar mengusulkan pemberlakuan kembali Undang-Undang Dasar 1945. Pada 22 April 1959, Sukarno berpidato di depan sidang Konstituante di Bandung dengan seruan resmi: 'Resepika Kembali ke UUD 1945'.",
+      "lesson-two-list-a": "<b>1. Voting Pertama (30 Mei 1959):</b> 269 suara mendukung kembali ke UUD 1945, 199 suara menolak. Gagal mencapai kuorum 2/3 (minimal 312 suara).",
+      "lesson-two-list-b": "<b>2. Voting Kedua (1 Juni 1959):</b> 264 suara mendukung, 204 menolak. Kuorum tetap tidak terpenuhi akibat penolakan fraksi Islam.",
+      "lesson-two-list-c": "<b>3. Voting Ketiga (2 Juni 1959):</b> 263 suara mendukung, 203 menolak. Usulan pemerintah kembali kandas secara konstitusional.",
+      "lesson-two-list-d": "<b>4. Reses Permanen:</b> Anggota Konstituante menyatakan reses dan menolak hadir, menciptakan kevakuman hukum tata negara mutlak.",
+      "lesson-two-text-two": "Mayoritas fraksi Islam menolak kembali ke naskah asli UUD 1945 apabila Piagam Jakarta tidak dijadikan pembukaan konstitusi dengan kekuatan hukum mengikat.",
+      "lesson-three-kicker": "JEJAK 03 — INTERVENSI HUKUM DARURAT",
+      "lesson-three-title": "Pembacaan Dekrit di Hadapan Ribuan Rakyat di Istana Merdeka",
+      "lesson-three-text": "Menghadapi kebuntuan tersebut, KSAD Jenderal Nasution selaku Penguasa Perang Pusat mengeluarkan Surat Keputusan No. Peperpu/040/1959 pada 3 Juni 1959 yang melarang seluruh kegiatan politik dan rapat-rapat umum di seluruh wilayah Indonesia demi mencegah meletusnya bentrokan fisik antarmassa partai. Nasution meyakinkan Sukarno bahwa penerbitan dekrit presiden secara sepihak sah menurut prinsip hukum darurat negara (staatsnoodrecht).",
+      "thinker-comte-name": "1. Landasan Staatsnoodrecht",
+      "thinker-comte-text": "Hukum darurat tata negara membenarkan kepala negara bertindak di luar aturan biasa demi menyelamatkan eksistensi republik dari kehancuran total.",
+      "thinker-durkheim-name": "2. Diktum I: Pembubaran Konstituante",
+      "thinker-durkheim-text": "Menyatakan pembubaran Majelis Konstituante hasil Pemilu 1955 karena gagal menuntaskan pembuatan UUD baru.",
+      "thinker-marx-name": "3. Diktum II: Berlakunya UUD 1945",
+      "thinker-marx-text": "Menetapkan UUD 1945 berlaku kembali bagi segenap bangsa Indonesia dan mencabut berlakunya UUDS 1950 terhitung sejak 5 Juli 1959.",
+      "thinker-weber-name": "4. Diktum III: Pembentukan Lembaga Sementara",
+      "thinker-weber-text": "Menginstruksikan pembentukan Majelis Permusyawaratan Rakyat Sementara (MPRS) dan Dewan Pertimbangan Agung Sementara (DPAS) dalam tempo sesingkatnya.",
+      "lesson-three-text-two": "Dekrit dibacakan Sukarno pada Minggu sore, 5 Juli 1959 pukul 17.00 WIB di Istana Merdeka di hadapan ribuan rakyat yang menyambutnya dengan sorak gegap gempita.",
+      "lesson-four-kicker": "JEJAK 04 — REORGANISASI KELEMBAGAAN NEGARA",
+      "lesson-four-title": "Pembubaran DPR Hasil Pemilu dan Penggusuran Partai Oposisi",
+      "lesson-four-text": "Pemberlakuan kembali UUD 1945 mengubah sistem pemerintahan Indonesia secara drastis dari parlementer menjadi presidensial. Jabatan Perdana Menteri ditiadakan; Presiden Sukarno merangkap sekaligus sebagai kepala negara dan kepala pemerintahan eksekutif. Sukarno membentuk Kabinet Kerja I pada 9 Juli 1959 dengan Djuanda menjabat sebagai Menteri Pertama.",
+      "lesson-four-text-two": "DPR hasil Pemilu 1955 awalnya dipertahankan, namun hubungan membeku ketika DPR menolak mengesahkan RAPBN 1960 yang diajukan pemerintah akibat pembengkakan belanja militer.",
+      "method-a-title": "1. Pembubaran DPR Hasil Pemilu (Maret 1960)",
+      "method-a-text": "Melalui Penpres No. 3 Tahun 1960, Sukarno membubarkan DPR hasil Pemilu 1955 dengan dalih parlemen tidak mencerminkan semangat gotong royong UUD 1945.",
+      "method-b-title": "2. Pembentukan DPR-GR",
+      "method-b-text": "Pemerintah membentuk DPR-Gotong Royong beranggotakan 283 orang yang ditunjuk langsung oleh Presiden, mewakili partai yang patuh dan golongan karya.",
+      "method-c-title": "3. Pembubaran Masyumi & PSI (Agustus 1960)",
+      "method-c-text": "Pemerintah membubarkan dua partai oposisi terbesar atas tuduhan pimpinannya terlibat dalam PRRI/Permesta dan menolak mengutuk aksi perlawanan tersebut.",
+      "lesson-five-kicker": "JEJAK 05 — PENETAPAN HALUAN TUNGGAL REVOLUSI",
+      "lesson-five-title": "Pidato 17 Agustus 1959 Diangkat Sebagai Garis-Garis Besar Haluan Negara",
+      "lesson-five-text": "Untuk mengisi kekosongan arah ideologis pasca-dekrit, Sukarno menyampaikan pidato kenegaraan pada peringatan kemerdekaan 17 Agustus 1959 yang diberi judul 'Penemuan Kembali Revolusi Kita' (The Rediscovery of Our Revolution). Dewan Pertimbangan Agung Sementara (DPAS) yang dipimpin Roeslan Abdulgani merumuskan intisari pidato tersebut menjadi manifesto politik yang disingkat sebagai Manipol-USDEK.",
+      "object-material-title": "1. Lima Pilar USDEK",
+      "object-material-text": "U (UUD 1945), S (Sosialisme Indonesia), D (Demokrasi Terpimpin), E (Ekonomi Terpimpin), dan K (Kepribadian Indonesia). Menolak eksploitasi modal Barat dan budaya borjuis.",
+      "object-formal-title": "2. Wajib Indoktrinasi Nasional",
+      "object-formal-text": "Melalui Ketetapan MPRS No. I/MPRS/1960, Manipol-USDEK disahkan menjadi GBHN yang wajib diajarkan kepada seluruh pegawai negeri, prajurit militer, dosen, dan pelajar.",
+      "lesson-six-kicker": "JEJAK 06 — SINTESIS & REFLEKSI 1D",
+      "lesson-six-title": "Lahirnya Struktur Politik Baru di Bawah Kepemimpinan Sukarno",
+      "lesson-six-text": "Penerbitan Dekrit 5 Juli 1959 dan pembentukan lembaga-lembaga sementara berhasil mengakhiri siklus instabilitas pergantian kabinet era parlementer. Otoritas eksekutif kini terkonsolidasi penuh di tangan Presiden Sukarno. Pada puncaknya, Sidang Umum MPRS tahun 1963 mengukuhkan status kepemimpinan ini melalui Ketetapan MPRS No. III/MPRS/1963 yang mengangkat Ir. Sukarno sebagai Presiden Seumur Hidup.",
+      "lesson-six-text-two": "Konsolidasi kekuasaan ini melahirkan segitiga kekuatan politik yang rapuh. Sukarno bertindak sebagai figur pemersatu dan penyeimbang tertinggi, menempatkan dirinya di antara dua kekuatan riil yang saling bersaing ketat memperebutkan pengaruh di lapangan: TNI Angkatan Darat dan PKI.",
+      "lesson-six-quote": "\"Dekrit 5 Juli mengembalikan kepastian hukum konstitusi, namun pemusatan kekuasaan tanpa mekanisme kontrol penyeimbang membawa negara ke pusaran persaingan politik tiga kutub.\"",
       "reflection-kicker": "OUTRO BRIDGE & REFLEKSI SUB-MODUL 1D",
-      "reflection-title": "Jembatan Menuju Sub-Modul 1E: Krisis Eksistensial Agresi Militer II",
-      "reflection-text": "Perjanjian Renville menyempitkan wilayah Republik dan memicu krisis politik internal. Belanda mengira Republik telah lumpuh, lalu melancarkan Agresi Militer II untuk memusnahkan kepemimpinan nasional. Di titik kritis inilah, kedaulatan diselamatkan secara gemilang oleh Triumvirat pertahanan: PDRI di hutan Sumatra, perang gerilya Soedirman, dan Serangan Umum 1 Maret 1949 (Sub-Modul 1E).",
+      "reflection-title": "Jembatan Menuju Sub-Modul 1E: Diplomasi Radikal, Trikora, dan Dwikora",
+      "reflection-text": "Terkonsolidasinya kekuasaan Demokrasi Terpimpin di dalam negeri memberikan rasa percaya diri tinggi bagi Presiden Sukarno untuk melancarkan kebijakan luar negeri yang agresif dan revolusioner. Sukarno mengarahkan seluruh energi politik dan persenjataan modern yang baru dibeli dari Uni Soviet untuk membebaskan Irian Barat lewat Operasi Trikora, disusul konfrontasi militer Dwikora menentang pembentukan Federasi Malaysia (Sub-Modul 1E).",
       "challenge-kicker": "ASESMEN SUB-MODUL 1D",
-      "challenge-title": "Siap Menguji Pemahaman Diplomasi Linggarjati & Renville?",
-      "challenge-text": "Jawab 15 tantangan kuis interaktif HOTS Sub-Modul 1D.",
+      "challenge-title": "Siap Menguji Pemahaman Dekrit 5 Juli 1959 & Demokrasi Terpimpin?",
+      "challenge-text": "Jawab 15 tantangan kuis interaktif HOTS yang dirancang khusus untuk menguji penalaran sejarah Sub-Modul 1D.",
       "start-quiz-button": "Mulai Kuis Sub-Modul 1D →",
       "quiz-kicker": "SUB-MODUL 1D — ASESMEN INTERAKTIF",
       "quiz-title": "15 Tantangan Sejarah Sub-Modul 1D",
-      "quiz-description": "Uji analisis perundingan diplomasi & dampak politiknya.",
+      "quiz-description": "Uji analisis diakronis & kritis. Setiap soal dilengkapi pembahasan komprehensif latar belakang sejarah.",
       "score-label": "SKOR SUB-MODUL 1D",
       "progress-label": "KEMAJUAN PENGERJAAN",
       "check-quiz-button": "Periksa Jawaban Kuis",
       "result-kicker": "EVALUASI SUB-MODUL 1D",
       "result-title": "Analisis Hasil Penguasaan Sub-Modul 1D",
-      "result-text": "Ulas kembali jawabanmu dan pelajari pembahasannya.",
+      "result-text": "Ulas kembali jawabanmu dan pahami penjelasan sejarah di bawah setiap soal.",
       "retry-quiz-button": "Coba Lagi / Acak Soal 1D",
-      "footer-text": "© Lab Sejarah Interaktif — Sub-Modul 1D: Linggarjati & Renville. Kurikulum Merdeka Fase F."
+      "footer-text": "© Lab Sejarah Interaktif — Sub-Modul 1D: Dekrit 1959 & Demokrasi Terpimpin. Kurikulum Merdeka Fase F."
     },
-    quizData: [
+    "quizData": [
       {
-        type: "single",
-        stimulus: "Perjanjian Linggarjati yang ditandatangani pada Maret 1947 menghasilkan pengakuan de facto atas wilayah Republik Indonesia yang meliputi Jawa, Sumatra, dan Madura. Delegasi Indonesia dipimpin secara cerdik oleh Perdana Menteri Sutan Sjahrir yang mengutamakan pengakuan internasional bertahap. Meskipun teritorial yang diakui terbatas, perjanjian ini menjadi landasan hukum pertama yang mendudukkan posisi Indonesia sejajar dengan Kerajaan Belanda di arena diplomasi dunia.",
-        question: "Dampak positif utama dari pengakuan de facto dalam Perjanjian Linggarjati bagi Republik Indonesia adalah...",
-        options: [
-          "A. Belanda mengundurkan seluruh pasukannya dari Asia Tenggara",
-          "B. Memperoleh pengakuan resmi internasional atas keberadaan pemerintahan RI di pulau-pulau utama",
-          "C. Pembubaran organisasi NICA secara mendadak",
-          "D. Penyerahan langsung wilayah Irian Barat kepada Indonesia",
-          "E. Pembentukan gabungan angkatan militer RI-Belanda"
+        "type": "single",
+        "stimulus": "Pada malam 21 Februari 1957, Presiden Sukarno mengumpulkan para menteri, pimpinan partai politik, dan perwira tinggi militer di Istana Merdeka untuk memaparkan pidato bersejarah bertajuk 'Menyelamatkan Republik Indonesia'. Dalam pidato tersebut, Sukarno menegaskan bahwa sistem demokrasi parlementer gaya Barat telah terbukti merusak persatuan dan menyuburkan pertentangan antarfaksi. Sebagai alternatif, Sukarno mengusulkan pembentukan Kabinet Gotong Royong yang beranggotakan seluruh partai pemenang pemilu (dikenal sebagai 'kabinet berkaki empat': PNI, Masyumi, NU, dan PKI) serta pembentukan Dewan Nasional.",
+        "question": "Gagasan mendasar yang diajukan Sukarno dalam Konsepsi Presiden 1957 bertujuan untuk...",
+        "options": [
+          "A. Menyerahkan kepemimpinan pemerintahan kepada pimpinan jenderal Angkatan Darat",
+          "B. Mengganti sistem demokrasi oposisi liberal dengan musyawarah mufakat yang melibatkan seluruh elemen ideologi bangsa di bawah bimbingan kepemimpinan nasional",
+          "C. Menghapuskan seluruh fungsi lembaga peradilan umum di tingkat kabupaten",
+          "D. Mengembalikan sistem monarki konstitusional di bawah dinas kepresidenan turun-temurun",
+          "E. Membatalkan seluruh hasil perundingan internasional yang telah disepakati sejak 1945"
         ],
-        answer: 1,
-        explanation: "Pengakuan de facto Linggarjati memperkokoh kedudukan internasional RI atas Jawa, Sumatra, dan Madura."
+        "answer": 1,
+        "explanation": "Sukarno berpandangan bahwa demokrasi Barat mengagungkan prinsip oposisi 50% plus satu yang memecah belah bangsa Indonesia yang majemuk. Konsepsi 1957 menawarkan sistem gotong royong terpadu di mana seluruh golongan politik besar (termasuk komunis yang selama ini dikucilkan oleh partai Islam) duduk bersama dalam satu meja pemerintahan demi stabilitas negara."
       },
       {
-        type: "single",
-        stimulus: "Meskipun Perjanjian Linggarjati telah disepakati bersama, Kerajaan Belanda melanggar komitmen tersebut dengan melancarkan Agresi Militer I pada 21 Juli 1947. Operasi militer yang diberi nama Operasi Product ini mengerahkan kekuatan darat dan udara untuk menerobos wilayah Republik di Jawa dan Sumatra. Tujuan utama serangan serentak ini adalah merebut kembali kawasan perkebunan kaya dan kilang minyak guna memulihkan perekonomian Belanda yang hancur pasca-Perang Dunia II.",
-        question: "Tujuan ekonomi utama Belanda melancarkan Agresi Militer I adalah...",
-        options: [
-          "A. Menguasai kawasan perkebunan teh, tebu, dan pertambangan minyak untuk memulihkan ekonomi Belanda pasca-Perang Dunia II",
-          "B. Membantu rakyat Indonesia membangun infrastruktur jalan raya",
-          "C. Melindungi fasilitas militer milik Jepang",
-          "D. Memindahkan ibu kota Belanda ke Jakarta",
-          "E. Menghentikan perdagangan rempah-rempah dengan Australia"
+        "type": "single",
+        "stimulus": "Salah satu pilar utama dalam Konsepsi Presiden 1957 adalah pembentukan Dewan Nasional yang resmi dilantik pada Juli 1957 di bawah pimpinan langsung Presiden Sukarno dengan Roeslan Abdulgani sebagai wakil ketua. Anggota dewan ini tidak dipilih berdasarkan afiliasi partai politik, melainkan merepresentasikan golongan-golongan fungsional dalam masyarakat (golongan karya), seperti wakil buruh, tani, pemuda, wanita, cendekiawan, seniman, pemuka agama, serta perwira angkatan bersenjata.",
+        "question": "Keberadaan Dewan Nasional dipandang sebagai ancaman serius oleh partai-partai politik era parlementer karena...",
+        "options": [
+          "A. Dewan Nasional berwenang mencetak uang baru tanpa persetujuan Bank Indonesia",
+          "B. Menjadi lembaga tandingan ekstrakonstitusional yang mengebiri wewenang dan pengaruh politik parlemen (DPR) hasil pemilihan umum",
+          "C. Seluruh anggotanya merupakan warga negara asing yang ditunjuk oleh Blok Timur",
+          "D. Bertugas mengadili para pemimpin partai politik yang menolak ajaran Marhaenisme",
+          "E. Mengambil alih komando persenjataan dari markas staf Angkatan Perang"
         ],
-        answer: 0,
-        explanation: "Agresi Militer I (Operasi Product) bertujuan menguasai objek ekonomi vital perkebunan dan tambang minyak di Jawa & Sumatra."
+        "answer": 1,
+        "explanation": "Partai-partai politik (khususnya Masyumi dan PSI) menolak Dewan Nasional karena keberadaan lembaga ini tidak diatur dalam UUDS 1950. Dewan Nasional menjadi sarana bagi Presiden Sukarno dan kelompok militer untuk memotong jalur wewenang parlemen sipil dan mengarahkan kebijakan negara langsung dari istana melalui kelompok fungsional."
       },
       {
-        type: "single",
-        stimulus: "Tindakan Agresi Militer Belanda I menarik perhatian dan simpati luas dari masyarakat internasional. Negara Australia dan India secara aktif membawa pelanggaran perdamaian ini ke sidang Dewan Keamanan PBB di Lake Success. Sebagai respon cepat, PBB membentuk Komisi Tiga Negara (KTN) yang bertugas menengahi pertikaian dan mengawasi gencatan senjata antara pihak Indonesia dan Belanda.",
-        question: "Komposisi Komisi Tiga Negara (KTN) yang dibentuk PBB terdiri dari negara-negara pilihan yaitu...",
-        options: [
-          "A. Inggris (pilihan RI), Prancis (pilihan Belanda), dan Uni Soviet (netral)",
-          "B. Australia (pilihan RI), Belgia (pilihan Belanda), dan Amerika Serikat (pihak netral)",
-          "C. India (pilihan RI), Jerman (pilihan Belanda), dan Jepang (netral)",
-          "D. Mesir (pilihan RI), Italia (pilihan Belanda), dan Tiongkok (netral)",
-          "E. Amerika Serikat (pilihan RI), Australia (pilihan Belanda), dan Belgia (netral)"
+        "type": "single",
+        "stimulus": "Menyusul jatuhnya Kabinet Ali Sastroamidjojo II akibat pengunduran diri menteri-menteri Masyumi pada Maret 1957, Presiden Sukarno menunjuk dirinya sendiri sebagai 'Warga Negara Sukarno' untuk membentuk kabinet ekstra-parlementer yang dinamakan Kabinet Karya (Kabinet Zaken). Dipimpin oleh Ir. Djuanda Kartawidjaja sebagai Perdana Menteri, kabinet ini beranggotakan para ahli teknokrat non-partai dengan lima program pokok (Panca Karya): membentuk Dewan Nasional, menormalisasi keadaan republik, mempercepat pembatalan KMB, membebaskan Irian Barat, dan mempercepat pembangunan daerah.",
+        "question": "Makna ketatanegaraan dari penunjukan Kabinet Karya oleh Presiden Sukarno adalah...",
+        "options": [
+          "A. Terwujudnya tatanan monarki absolut di bawah kendali keluarga kepresidenan",
+          "B. Pergeseran de facto dari supremasi parlemen menuju supremasi lembaga kepresidenan dalam menentukan susunan pemerintahan",
+          "C. Pembubaran seluruh kementerian dan penyerahan urusan sipil kepada pamong praja",
+          "D. Penyerahan kedaulatan wilayah laut Nusantara kepada perusahaan pelayaran internasional",
+          "E. Penghapusan hak pilih warga negara dalam pemilihan kepala daerah"
         ],
-        answer: 1,
-        explanation: "KTN terdiri atas Australia (pilihan RI), Belgia (pilihan Belanda), dan Amerika Serikat (pihak netral pilihan bersama)."
+        "answer": 1,
+        "explanation": "Pembentukan Kabinet Djuanda menandai runtuhnya konvensi parlementer UUDS 1950. Biasanya, perdana menteri ditunjuk oleh formatur yang disetujui fraksi mayoritas parlemen. Dengan menunjuk kabinet zaken pilihannya sendiri tanpa bergantung pada restu partai-partai di DPR, Sukarno secara nyata mulai mengambil alih kendali eksekutif tertinggi ke tangannya."
       },
       {
-        type: "single",
-        stimulus: "Perjanjian Renville pada Januari 1948 menyepakati penetapan garis demarkasi buatan yang dikenal sebagai Garis Van Mook. Penetapan garis sepihak ini memotong wilayah kedaulatan Republik Indonesia secara drastis di Pulau Jawa dan Sumatra. Akibatnya, daerah kantong gerilya yang berhasil dipertahankan pejuang harus dikosongkan dan diserahkan kepada pendudukan militer Belanda.",
-        question: "Dampak teritorial paling merugikan bagi Indonesia dari penetapan Garis Van Mook adalah...",
-        options: [
-          "A. Wilayah RI meluas hingga ke Kalimantan dan Sulawesi",
-          "B. Wilayah kedaulatan RI menyempit dan pasukan TNI harus ditarik dari kantong-kantong gerilya",
-          "C. Pembatalan seluruh hasil sidang PPKI 1945",
-          "D. Penyerahan ibu kota Yogyakarta kepada tentara Inggris",
-          "E. Pembubaran organisasi Komisi Tiga Negara"
+        "type": "single",
+        "stimulus": "Pada 14 Maret 1957, Perdana Menteri Ali Sastroamidjojo mengembalikan mandat pemerintahannya kepada Presiden. Pada hari yang sama, Presiden Sukarno mengeluarkan keputusan bersejarah menyatakan seluruh wilayah Indonesia berada dalam status Keadaan Darurat Perang (Staat van Oorlog en Beleg / SOB) berdasarkan undang-undang keadaan bahaya warisan kolonial. Pemberlakuan status SOB ini menempatkan Kepala Staf Angkatan Darat (KSAD) Mayor Jenderal A.H. Nasution sebagai Penguasa Perang Pusat (Peperpu) dengan wewenang luar biasa atas ketertiban umum.",
+        "question": "Dampak politik paling radikal dari pemberlakuan status SOB bagi posisi institusi militer di Indonesia adalah...",
+        "options": [
+          "A. Pembubaran seluruh batalyon infanteri di luar Pulau Jawa",
+          "B. Legitimasi yuridis bagi militer untuk memasuki panggung politik sipil, mengendalikan media massa, serta mengamankan aset-aset ekonomi negara",
+          "C. Kewajiban bagi seluruh perwira tentara untuk melepaskan seragam dan bergabung dengan partai politik",
+          "D. Pembatasan wewenang tentara hanya di dalam lingkungan markas garnisun",
+          "E. Penyerahan komando keamanan ibu kota Jakarta kepada kepolisian internasional"
         ],
-        answer: 1,
-        explanation: "Garis Van Mook memangkas teritorial RI dan memicu Peristiwa Hijrah Siliwangi keluar dari Jawa Barat."
+        "answer": 1,
+        "explanation": "Hukum darurat perang (SOB) menjadi gerbang emas masuknya militer ke ranah kekuasaan politik dan ekonomi praktis. Peperpu berhak melarang rapat politik, menyensor surat kabar, menangkap politisi tanpa surat pengadilan biasa, serta mengambil alih pengelolaan perusahaan-perusahaan perkebunan dan perbankan Belanda yang dinasionalisasi pada akhir 1957."
       },
       {
-        type: "single",
-        stimulus: "Sebagai konsekuensi mematuhi Perjanjian Renville, Divisi Siliwangi terpaksa ditarik mundur dari kantong-kantong gerilya Jawa Barat menuju wilayah pusat Republik di Yogyakarta. Ribuan prajurit beserta keluarga mereka berjalan kaki melintasi ratusan kilometer medan berat dalam peristiwa bersejarah yang dikenal sebagai Hijrah Siliwangi. Pengungsian militer berskala besar ini membuktikan kepatuhan tinggi TNI terhadap keputusan diplomasi pemerintah pusat.",
-        question: "Sebab utama dilakukannya Peristiwa Hijrah Divisi Siliwangi pada awal tahun 1948 adalah...",
-        options: [
-          "A. Perintah langsung dari panglima Sekutu untuk membubarkan TNI",
-          "B. Kepatuhan pemerintah RI terhadap klausul Perjanjian Renville mengenai batas Garis Van Mook",
-          "C. Kekalahan total TNI dalam pertempuran di Bandung",
-          "D. Keinginan pasukan Siliwangi bergabung dengan militer Belanda",
-          "E. Penolakan rakyat Jawa Barat terhadap kepemimpinan TNI"
+        "type": "single",
+        "stimulus": "Menyaksikan sidang Majelis Konstituante di Bandung yang berlarut-larut tanpa menghasilkan undang-undang dasar baru, pimpinan Angkatan Darat Jenderal Nasution meyakinkan Sukarno bahwa satu-satunya jalan menyelamatkan keutuhan bangsa adalah kembali ke UUD 1945. Pada 22 April 1959, Presiden Sukarno menyampaikan pidato resmi di hadapan sidang paripurna Konstituante yang berjudul 'Res Publica! Sekali Lagi Res Publica!'. Sukarno menganjurkan secara resmi agar Konstituante menetapkan kembali UUD 1945 sebagai undang-undang dasar tetap tanpa perubahan naskah.",
+        "question": "Argumen utama Sukarno menganjurkan kembali ke UUD 1945 di hadapan anggota Konstituante adalah bahwa UUD 1945...",
+        "options": [
+          "A. Memberikan wewenang kepada Mahkamah Agung untuk membubarkan seluruh organisasi keagamaan",
+          "B. Merupakan dokumen revolusi yang mencerminkan kepribadian bangsa, menjamin stabilitas pemerintahan presidensial, dan menjadi landasan kokoh Demokrasi Terpimpin",
+          "C. Mewajibkan pembentukan negara federasi yang memisahkan urusan pulau-pulau besar",
+          "D. Diterima tanpa syarat oleh pemerintah Kerajaan Belanda dan Perserikatan Bangsa-Bangsa",
+          "E. Menghapuskan kedudukan Tentara Nasional Indonesia dalam struktur kenegaraan"
         ],
-        answer: 1,
-        explanation: "Hijrah Siliwangi dilakukan demi mematuhi klausul Perjanjian Renville yang mengharuskan pengosongan kantong gerilya di belakang Garis Van Mook."
+        "answer": 1,
+        "explanation": "Sukarno menilai UUD 1945 memiliki 'jiwa revolusioner' yang hilang dalam UUDS 1950. Sistem presidensial dalam UUD 1945 menjamin kepala eksekutif memegang masa jabatan pasti selama lima tahun tanpa ancaman dijatuhkan oleh mosi tidak percaya parlemen, memberikan landasan hukum bagi kepemimpinan terpusat untuk menuntaskan revolusi nasional."
       },
       {
-        type: "single",
-        stimulus: "Hasil Perjanjian Renville yang dinilai amat merugikan wilayah teritorial negara memicu gelombang kekecewaan dan krisis politik internal di Yogyakarta. Kelompok oposisi dan fraksi politik melancarkan kritik tajam terhadap delegasi perunding atas kekalahan teritorial yang dialami. Tekanan politik berat ini akhirnya memaksa Kabinet Amir Sjarifuddin menyerahkan kembali mandat kepemimpinannya kepada Presiden.",
-        question: "Kabinet RI yang jatuh akibat perdebatan dan penolakan publik atas hasil Perjanjian Renville adalah...",
-        options: [
-          "A. Kabinet Sutan Sjahrir",
-          "B. Kabinet Amir Sjarifuddin",
-          "C. Kabinet Hatta I",
-          "D. Kabinet Ali Sastroamidjojo",
-          "E. Kabinet Natsir"
+        "type": "single",
+        "stimulus": "Merespons anjuran Presiden Sukarno, Konstituante menggelar pemungutan suara maraton untuk memutuskan apakah majelis menerima kembali UUD 1945. Terjadi tiga kali pemungutan suara terbuka: pada 30 Mei 1959 (269 mendukung, 199 menolak); pada 1 Juni 1959 (264 mendukung, 204 menolak); dan pada 2 Juni 1959 (263 mendukung, 203 menolak). Untuk memenuhi syarat kuorum dua pertiga, diperlukan sekurang-kurangnya 312 suara setuju. Fraksi-fraksi Islam bersikukuh menolak jika naskah Piagam Jakarta tidak dimasukkan ke dalam Pembukaan UUD 1945 dengan kekuatan hukum yang mengikat.",
+        "question": "Situasi ketatanegaraan yang tercipta pasca-kegagalan voting ketiga pada 2 Juni 1959 adalah...",
+        "options": [
+          "A. Anggota Konstituante secara bulat menyetujui pembentukan konstitusi monarki federal",
+          "B. Sebagian besar fraksi menyatakan reses dan menolak menghadiri sidang berikutnya, menciptakan kekosongan kepastian hukum tata negara (vacuum of constitutional law)",
+          "C. DPRS di Jakarta langsung mengambil alih mandat penulisan konstitusi dalam tempo tiga hari",
+          "D. Perdana Menteri Djuanda menyatakan pengunduran dirinya dan membubarkan kabinet",
+          "E. Belanda secara otomatis mengambil kembali hak kedaulatan atas kepulauan Nusantara"
         ],
-        answer: 1,
-        explanation: "Kabinet Amir Sjarifuddin jatuh pasca-penandatanganan Perjanjian Renville karena dianggap merugikan teritorial negara."
+        "answer": 1,
+        "explanation": "Setelah voting ketiga kandas, para anggota Konstituante menyatakan mogok bersidang (reses tanpa batas waktu). Lembaga pembuat UUD tidak lagi sanggup memenuhi tugas mandat pemilu, sementara UUDS 1950 berstatus sementara dan ditolak oleh presiden serta militer. Negara berada dalam krisis kevakuman konstitusi yang mengancam ketertiban umum."
       },
       {
-        type: "single",
-        stimulus: "Diplomasi PM Sutan Sjahrir dalam Perjanjian Linggarjati mengedepankan taktik kompromi pembentukan negara federasi Republik Indonesia Serikat (RIS). Langkah ini diambil dengan perhitungan bahwa bentuk federasi akan diterima oleh Belanda dan forum internasional tanpa mengorbankan pilar kemerdekaan. Fleksibilitas diplomasi Sjahrir terbukti berhasil menggeser persepsi dunia bahwa Indonesia siap berdemokrasi secara modern.",
-        question: "Alasan PM Sutan Sjahrir bersedia menerima konsep bentuk negara RIS dalam Linggarjati adalah...",
-        options: [
-          "A. Menolak bentuk NKRI sejak awal",
-          "B. Menggunakan RIS sebagai batu loncatan diplomasi untuk memperoleh pengakuan kedaulatan de facto dari Belanda dan dunia",
-          "C. Tunduk pada tekanan militer Jepang",
-          "D. Keinginan membubarkan UUD 1945",
-          "E. Memenuhi janji kepada komandan AFNEI"
+        "type": "single",
+        "stimulus": "Menyusul kebuntuan pemungutan suara di Konstituante dan kekhawatiran meletusnya bentrokan fisik di jalanan antara massa pendukung Pancasila dan massa pendukung Islam, KSAD Jenderal A.H. Nasution selaku Penguasa Perang Pusat bertindak cepat. Pada 3 Juni 1959, Nasution mengeluarkan Surat Perintah No. Peperpu/040/1959 yang melarang seluruh bentuk kegiatan politik, rapat umum, arak-arakan, dan demonstrasi di seluruh wilayah Republik Indonesia.",
+        "question": "Tujuan taktis Jenderal Nasution menerbitkan larangan kegiatan politik tersebut adalah...",
+        "options": [
+          "A. Membantu partai komunis melakukan konsolidasi persenjataan di kawasan pedesaan Jawa",
+          "B. Mencegah eskalasi kerusuhan massal di masyarakat serta mengunci situasi stabilitas keamanan guna membuka jalan bagi Presiden Sukarno menerbitkan dekrit",
+          "C. Menghentikan seluruh siaran radio Republik Indonesia dan surat kabar swasta secara permanen",
+          "D. Memaksa Presiden Sukarno menyerahkan mandat kepresidenan kepada Dewan Perwakilan Rakyat",
+          "E. Mengamankan aset-aset perbankan milik pengusaha swasta non-pribumi di Jakarta"
         ],
-        answer: 1,
-        explanation: "Sjahrir menggunakan konsep RIS sebagai taktik diplomasi bertahap demi meraih pengakuan internasional atas kedaulatan Indonesia."
+        "answer": 1,
+        "explanation": "Keputusan Peperpu No. 040/1959 membekukan ruang gerak partai-partai politik yang sedang bersengketa. Dengan melarang demonstrasi dan perdebatan publik, Nasution menciptakan kondisi keamanan yang terkendali, sekaligus memberikan tekanan psikologis bahwa jalan keluar satu-satunya bagi kebuntuan nasional adalah tindakan tegas kepala negara melalui dekrit."
       },
       {
-        type: "single",
-        stimulus: "Perundingan Renville dilaksanakan di atas kapal perang milik Angkatan Laut Amerika Serikat, USS Renville, yang berlabuh di perairan Teluk Jakarta. Pemilihan lokasi unik ini disepakati oleh Komisi Tiga Negara PBB guna menjamin keamanan dan netralitas proses negosiasi. Di atas kapal perang tersebut, perdebatan sengit mengenai batas teritorial berlangsung di bawah pengawasan ketat diplomat dunia.",
-        question: "Alasan pemilihan kapal perang USS Renville sebagai lokasi perundingan diplomasi adalah...",
-        options: [
-          "A. Jakarta telah dikuasai sepenuhnya oleh tentara Jepang",
-          "B. Kapal perang AS dianggap sebagai tempat netral yang aman bagi kedua pihak yang bertikai di bawah pengawasan KTN",
-          "C. Permintaan khusus dari Perdana Menteri Belanda",
-          "D. Menghindari gangguan cuaca musim hujan di daratan",
-          "E. Keinginan Indonesia menyelenggarakan pesta laut"
+        "type": "single",
+        "stimulus": "Penerbitan dekrit oleh seorang kepala negara untuk membubarkan majelis perwakilan rakyat yang dipilih secara sah dalam pemilu tidak diatur dalam pasal-pasal UUDS 1950. Untuk melegitimasi tindakan luar biasa tersebut di mata hukum ketatanegaraan, para penasihat hukum kepresidenan dan pimpinan militer mengacu pada doktrin hukum darurat negara atau staatsnoodrecht. Doktrin ini menyatakan bahwa dalam kondisi krisis eksistensial yang mengancam keselamatan bangsa (noodbreekt wet / keadaan darurat mematahkan undang-undang biasa), kepala negara berhak mengambil tindakan penyelamatan di luar konstitusi tertulis.",
+        "question": "Berdasarkan doktrin staatsnoodrecht, Dekrit Presiden 5 Juli 1959 dipandang sah secara hukum karena...",
+        "options": [
+          "A. Telah disetujui secara tertulis oleh seluruh pimpinan partai politik di parlemen",
+          "B. Bertujuan menyelamatkan eksistensi negara dan persatuan bangsa dari ancaman kekosongan hukum akibat kegagalan total Konstituante",
+          "C. Dikeluarkan atas perintah langsung Mahkamah Internasional di Den Haag",
+          "D. Merupakan amanat dari piagam perjanjian penyerahan kedaulatan KMB 1949",
+          "E. Memperoleh dukungan dana hibah dari negara-negara Blok Barat"
         ],
-        answer: 1,
-        explanation: "USS Renville dipilih karena lokasi netral milik Amerika Serikat di bawah pengawasan Komisi Tiga Negara PBB."
+        "answer": 1,
+        "explanation": "Asas staatsnoodrecht bersandar pada adagium klasik salus populi suprema lex esto (keselamatan rakyat dan negara adalah hukum tertinggi). Dekrit dibenarkan secara hukum tata negara darurat karena saluran konstitusional normal (Konstituante) telah lumpuh total, sehingga tindakan sepihak presiden diperlukan untuk mencegah anarki dan disintegrasi bangsa."
       },
       {
-        type: "single",
-        stimulus: "Pasca-peluncuran Agresi Militer I, Dewan Keamanan PBB mengesahkan resolusi penting yang memerintahkan penghentian pertikaian senjata (ceasefire) antara Indonesia dan Belanda. Perintah internasional ini memaksa pasukan militer Belanda menghentikan laju penyerbuannya di Jawa dan Sumatra. Keputusan PBB ini secara efektif menyelamatkan posisi Republik Indonesia dari ancaman kejatuhan total.",
-        question: "Dampak dari perintah gencatan senjata PBB pasca-Agresi I adalah...",
-        options: [
-          "A. Belanda menghentikan Operasi Product dan menyetujui mediasi PBB via KTN",
-          "B. Pembubaran seluruh pasukan militer Indonesia",
-          "C. Penyerahan pemerintahan RI kepada KTN",
-          "D. Masuknya tentara Uni Soviet ke Jawa",
-          "E. Pembatalan seluruh hasil sidang PPKI"
+        "type": "single",
+        "stimulus": "Pada hari Minggu, 5 Juli 1959 pukul 17.00 WIB, Presiden Sukarno membacakan Dekrit Presiden di hadapan ribuan rakyat dan pejabat di halaman Istana Merdeka, Jakarta. Dekrit bersejarah ini memuat konsiderans menimbang kebuntuan Konstituante dan piagam penetapan yang memuat tiga keputusan pokok yang mengubah haluan sejarah bangsa secara dramatis.",
+        "question": "Tiga diktum utama yang tercantum dalam naskah resmi Dekrit Presiden 5 Juli 1959 adalah...",
+        "options": [
+          "A. Pembubaran seluruh partai politik, penarikan mata uang rupiah, dan pembentukan junta militer",
+          "B. Pembubaran Konstituante, berlakunya kembali UUD 1945 serta tidak berlakunya lagi UUDS 1950, dan pembentukan MPRS serta DPAS dalam waktu sesingkat-singkatnya",
+          "C. Pembubaran kabinet parlementer, pengangkatan wakil presiden baru, dan penyerahan kedaulatan Irian Barat",
+          "D. Penyelenggaraan pemilu ulang, pembekuan rekening bank swasta, dan pemutusan hubungan diplomatik dengan PBB",
+          "E. Pembentukan negara federasi, pengesahan Piagam Jakarta, dan penunjukan perdana menteri seumur hidup"
         ],
-        answer: 0,
-        explanation: "Gencatan senjata PBB menghentikan pergerakan militer Belanda dan memaksa Belanda masuk ke meja perundingan Renville."
+        "answer": 1,
+        "explanation": "Tiga diktum mutlak Dekrit 5 Juli 1959 adalah: (1) Membubarkan Majelis Konstituante; (2) Menetapkan berlakunya kembali UUD 1945 bagi segenap tumpah darah Indonesia dan tidak berlakunya lagi UUDS 1950; (3) Membentuk Majelis Permusyawaratan Rakyat Sementara (MPRS) dan Dewan Pertimbangan Agung Sementara (DPAS) dalam waktu sesingkat-singkatnya."
       },
       {
-        type: "single",
-        stimulus: "Penetapan Garis Van Mook secara ketat mengisolasi wilayah Republik Indonesia yang tersisa di Jawa Tengah dan Yogyakarta. Pasukan Belanda memberlakukan blokade lalu lintas barang, obat-obatan, dan pasokan bahan pangan menuju wilayah Republik. Taktik perintangan ekonomi ini dirancang untuk menciptakan kelaparan dan penderitaan agar rakyat Indonesia mendesak pemerintahannya untuk menyerah.",
-        question: "Taktik Belanda memberlakukan blokade ekonomi pasca-Renville bertujuan untuk...",
-        options: [
-          "A. Membantu stabilitas mata uang ORI",
-          "B. Melumpuhkan perekonomian RI agar rakyat terdesak dan menyerah kepada NICA",
-          "C. Mendorong ekspor hasil pertanian Indonesia",
-          "D. Membangun pasar bebas di Yogyakarta",
-          "E. Mengurangi inflasi di Jawa Barat"
+        "type": "single",
+        "stimulus": "Sebagai pelaksanaan diktum ketiga Dekrit 5 Juli 1959, Presiden Sukarno menerbitkan Penetapan Presiden No. 2 Tahun 1959 tentang Pembentukan Majelis Permusyawaratan Rakyat Sementara (MPRS) dan Penetapan Presiden No. 3 Tahun 1959 tentang Pembentukan Dewan Pertimbangan Agung Sementara (DPAS). Berbeda dengan mekanisme pemilihan umum demokratis, seluruh anggota MPRS (terdiri dari anggota DPR ditambah utusan daerah dan golongan karya) serta anggota DPAS diangkat dan diberhentikan langsung oleh Presiden Sukarno dengan syarat setia pada manifesto kepresidenan.",
+        "question": "Konsekuensi dari pengangkatan anggota MPRS dan DPAS langsung oleh Presiden adalah...",
+        "options": [
+          "A. Berfungsinya kembali mekanisme saling mengawasi (checks and balances) antarcabang kekuasaan negara",
+          "B. Hilangnya independensi lembaga legislatif dan perwakilan rakyat karena kedudukannya menjadi bawahan (subordinat) dari kekuasaan eksekutif Presiden",
+          "C. Pengalihan seluruh wewenang penyusunan anggaran negara kepada Mahkamah Agung",
+          "D. Terjadinya penguatan otonomi daerah di seluruh pelosok luar Pulau Jawa",
+          "E. Larangan bagi perwira militer untuk menduduki jabatan politik di lembaga tinggi negara"
         ],
-        answer: 1,
-        explanation: "Blokade ekonomi Belanda bertujuan menekan dan melumpuhkan daya tahan ekonomi Republik dari dalam."
+        "answer": 1,
+        "explanation": "Menurut naskah asli UUD 1945, MPR adalah lembaga tertinggi negara pemegang kedaulatan rakyat yang mengangkat Presiden. Namun, dalam praktik Demokrasi Terpimpin, keadaannya terbalik: Presidenlah yang mengangkat anggota MPRS dan menentukan ketuanya (Chairul Saleh). Hal ini meruntuhkan prinsip kedaulatan rakyat dan memusatkan seluruh kendali lembaga negara di bawah titah Presiden."
       },
       {
-        type: "single",
-        stimulus: "Di tengah perjalanan Peristiwa Hijrah Siliwangi, ribuan prajurit TNI berjalan kaki menembus hutan dan desa-desa di Pulau Jawa. Warga desa di sepanjang rute pengungsian secara spontan memberikan bantuan makanan, tempat berteduh, dan menyembunyikan prajurit dari patroli musuh. Sambutan hangat warga desa ini memperlihatkan betapa manunggalnya ikatan batin antara prajurit TNI dan rakyatnya.",
-        question: "Makna sosial dari Peristiwa Hijrah Siliwangi bagi kemanunggalan TNI dan rakyat adalah...",
-        options: [
-          "A. Membuktikan ikatan solidaritas dan kebersamaan antara rakyat dan prajurit TNI di sepanjang jalur perjuangan",
-          "B. Menunjukkan keterasingan prajurit TNI dari warga desa",
-          "C. Memacu perpecahan antar suku di Jawa Barat dan Jawa Tengah",
-          "D. Mengurangi jumlah anggota pasukan Divisi Siliwangi",
-          "E. Menandai berakhirnya dukungan rakyat pada RI"
+        "type": "single",
+        "stimulus": "DPR hasil Pemilihan Umum 1955 awalnya tetap dipertahankan pasca-Dekrit 5 Juli 1959 untuk menjalankan fungsi pembuatan undang-undang. Ketegangan memuncak pada Februari 1960 ketika DPR menolak mengesahkan Rancangan Anggaran Pendapatan dan Belanja Negara (RAPBN) tahun 1960 yang diajukan pemerintah. Fraksi-fraksi oposisi (terutama Masyumi dan PSI) mengkritik keras pembengkakan anggaran militer dan proyek-proyek politik non-produktif. Menanggapi penolakan anggaran tersebut, pada 5 Maret 1960 Presiden Sukarno menerbitkan Penetapan Presiden No. 3 Tahun 1960 yang membubarkan DPR hasil Pemilu 1955.",
+        "question": "Tindakan Presiden membubarkan DPR hasil pemilu dinilai sebagai pelanggaran konstitusional terhadap UUD 1945 karena...",
+        "options": [
+          "A. Presiden tidak memiliki kewenangan mengusulkan rancangan anggaran belanja negara",
+          "B. UUD 1945 secara tegas menetapkan bahwa kedudukan Presiden dan DPR adalah sejajar, dan Presiden tidak dapat membubarkan DPR",
+          "C. DPR berhak mengangkat perdana menteri baru tanpa berkonsultasi dengan presiden",
+          "D. Seluruh anggota DPR berstatus sebagai pegawai negeri sipil aktif di kementerian",
+          "E. Penolakan anggaran wajib diselesaikan melalui pemungutan suara ulang di tingkat kabupaten"
         ],
-        answer: 0,
-        explanation: "Hijrah Siliwangi mempererat kemanunggalan TNI dan rakyat yang memberi bantuan logistik di sepanjang rute perjalanan."
+        "answer": 1,
+        "explanation": "Penjelasan UUD 1945 menyatakan secara eksplisit bahwa Presiden harus mendapatkan persetujuan DPR dalam membuat undang-undang dan menetapkan anggaran. Presiden tidak dapat membubarkan DPR (DPR tidak dapat dibubarkan oleh Presiden). Tindakan Sukarno membubarkan DPR yang menolak anggarannya merupakan wujud nyata pemusatan kekuasaan otokratis yang menyimpang dari konstitusi."
       },
       {
-        type: "single",
-        stimulus: "Penolakan keras dari kelompok oposisi Persatuan Perjuangan terhadap kompromi Perjanjian Linggarjati menunjukkan tingginya dinamika kebebasan berpendapat di masa awal republik. Perdebatan sengit di parlemen mengenai batas teritorial dan strategi perundingan mewarnai iklim politik nasional. Pengalaman ini membuktikan bahwa perbedaan strategi diplomasi adalah dinamika wajar dalam menjaga kedaulatan bangsa.",
-        question: "Pelajaran kebangsaan dari perdebatan hasil perundingan Linggarjati dan Renville adalah...",
-        options: [
-          "A. Perbedaan strategi diplomasi adalah hal wajar dalam demokrasi sepanjang bermuara pada keselamatan kedaulatan bangsa",
-          "B. Setiap perundingan harus ditolak tanpa dipelajari",
-          "C. Diplomasi tidak memiliki peranan dalam revolusi",
-          "D. Keputusan Perdana Menteri tidak boleh dikritik",
-          "E. Partai politik dilarang memberikan pandangan"
+        "type": "single",
+        "stimulus": "Sebagai pengganti DPR hasil pemilu yang telah dibubarkan, Presiden Sukarno membentuk Dewan Perwakilan Rakyat Gotong Royong (DPR-GR) melalui Peraturan Presiden No. 4 Tahun 1960. Sebanyak 283 anggota DPR-GR ditunjuk langsung oleh Presiden, mewakili partai-partai politik yang menyetujui manifesto politik Sukarno (PNI, NU, PKI) serta wakil-wakil golongan karya (termasuk tentara dan polisi). Partai oposisi Masyumi dan PSI sama sekali tidak diberikan kursi dalam lembaga baru ini.",
+        "question": "Perubahan mendasar fungsi parlemen setelah pembentukan DPR-GR adalah...",
+        "options": [
+          "A. Parlemen memiliki hak mutlak untuk memecat menteri-menteri yang tidak disukai",
+          "B. Parlemen berubah fungsi dari lembaga legislatif pengawas pemerintah menjadi badan pelaksana teknis yang wajib mendukung seluruh ketetapan Presiden tanpa oposisi",
+          "C. Meningkatnya intensitas perdebatan pemikiran kritis di ruang sidang komisi parlemen",
+          "D. Parlemen memegang komando operasional atas seluruh operasi intelijen kepolisian",
+          "E. Seluruh anggota parlemen wajib berlatar belakang pendidikan militer reguler"
         ],
-        answer: 0,
-        explanation: "Dinamika perdebatan diplomasi memperlihatkan kedewasaan demokrasi politik dalam mencari jalan terbaik bagi kedaulatan negara."
+        "answer": 1,
+        "explanation": "Tata tertib DPR-GR meniadakan mekanisme voting oposisi. Segala keputusan diambil berdasarkan asas musyawarah untuk mufakat di bawah bimbingan amanat Presiden. Pimpinan DPR-GR bahkan diangkat dengan status setingkat menteri kabinet, menempatkan parlemen sebagai kepanjangan tangan eksekutif yang kehilangan fungsi kontrol independennya."
       },
       {
-        type: "data_sufficiency",
-        stimulus: "Seorang sejarawan menilai dampak perundingan Renville.<br><br>DATA SEJARAH:<br>(1) Wilayah kedaulatan RI menyempit akibat Garis Van Mook.<br>(2) Isu kemerdekaan Indonesia makin mendapat perhatian intensif Dewan Keamanan PBB.",
-        question: "Apakah Data (1) dan (2) cukup membuktikan sifat dualisme dampak Perjanjian Renville?",
-        options: [
-          "A. Data (1) dan (2) BERSAMA-SAMA cukup membuktikan dualisme kerugian teritorial dan keuntungan diplomasi PBB",
-          "B. Data (1) SAJA cukup",
-          "C. Data (2) SAJA cukup",
-          "D. Kedua data bertentangan",
-          "E. Data tidak relevan"
+        "type": "single",
+        "stimulus": "Pada 17 Agustus 1960, Presiden Sukarno mengumumkan pembubaran dua partai politik besar di Indonesia: Partai Masyumi dan Partai Sosialis Indonesia (PSI). Pembubaran ini dikukuhkan melalui Keputusan Presiden No. 200 dan No. 201 Tahun 1960 yang berlandaskan pada Penetapan Presiden No. 7 Tahun 1959 tentang Syarat-Syarat dan Penyederhanaan Kepartaian. Pemerintah menuduh pimpinan Masyumi dan PSI terlibat dalam pemberontakan bersenjata PRRI/Permesta serta menolak mengutuk aksi perlawanan daerah tersebut.",
+        "question": "Konsekuensi politik dari pembubaran Masyumi dan PSI terhadap tatanan demokrasi di Indonesia adalah...",
+        "options": [
+          "A. Menguatnya kembali kekuatan oposisi liberal di dalam jajaran parlemen DPR-GR",
+          "B. Lenyapnya kekuatan penyeimbang politik yang kritis terhadap kekuasaan Presiden dan menguatnya pengaruh politik Partai Komunis Indonesia (PKI)",
+          "C. Bergabungnya seluruh kader Masyumi ke dalam struktur kepengurusan Partai Komunis Indonesia",
+          "D. Dibatalkannya seluruh undang-undang agraria yang telah disahkan sejak tahun 1950",
+          "E. Terjadinya penurunan jumlah anggaran belanja pertahanan dan keamanan nasional"
         ],
-        answer: 0,
-        explanation: "Data 1 menunjukkan kerugian fisik teritorial dan Data 2 menunjukkan keuntungan legitiamsi diplomasi internasional."
+        "answer": 1,
+        "explanation": "Masyumi dan PSI adalah pilar oposisi intelektual paling vokal menentang otoritarianisme Sukarno dan penyusupan pengaruh komunis. Pembubaran kedua partai ini menyingkirkan lawan politik terberat PKI dari panggung legal, melapangkan jalan bagi PKI untuk mendominasi birokrasi, media massa, dan ormas-ormas di bawah lindungan retorika revolusioner Sukarno."
       },
       {
-        type: "infographic",
-        stimulus: "Cermati alur dua perundingan awal:<br>1. Linggarjati (1947): De Facto Jawa, Sumatra, Madura ➔ Agresi Militer I<br>2. Renville (1948): Garis Van Mook & Hijrah Siliwangi ➔ Jatuhnya Kabinet Amir",
-        question: "Kesimpulan analisis kronologis dari alur di atas adalah...",
-        options: [
-          "A. Perjuangan diplomasi awal dipenuhi pasang surut akibat kecurangan Belanda yang dilawan dengan fleksibilitas politik dan pertahanan gerilya",
-          "B. Indonesia selalu memenangi seluruh klaim teritorial di meja perundingan",
-          "C. Belanda mematuhi seluruh isi perjanjian diplomasi",
-          "D. PBB membubarkan Republik Indonesia pasca-Renville",
-          "E. TNI berhenti melakukan perlawanan pasca-Linggarjati"
+        "type": "single",
+        "stimulus": "Pada peringatan kemerdekaan 17 Agustus 1959, Presiden Sukarno menyampaikan pidato kenegaraan berjudul 'Penemuan Kembali Revolusi Kita'. Dewan Pertimbangan Agung Sementara (DPAS) di bawah pimpinan Roeslan Abdulgani merumuskan intisari pidato tersebut menjadi Manipol-USDEK (Manifesto Politik - UUD 1945, Sosialisme Indonesia, Demokrasi Terpimpin, Ekonomi Terpimpin, dan Kepribadian Indonesia). Melalui Ketetapan MPRS No. I/MPRS/1960, Manipol-USDEK diresmikan sebagai Garis-Garis Besar Haluan Negara (GBHN).",
+        "question": "Dampak pemberlakuan Manipol-USDEK terhadap kehidupan intelektual, pers, dan pendidikan nasional adalah...",
+        "options": [
+          "A. Diberikannya kebebasan tanpa batas bagi media massa untuk mengkritik kepemimpinan kabinet",
+          "B. Kewajiban indoktrinasi politik di mana seluruh kurikulum sekolah, karya seni, dan pers wajib tunduk serta mempropagandakan ajaran Manipol-USDEK di bawah ancaman pembredelan",
+          "C. Dihapuskannya mata pelajaran sejarah dan kewarganegaraan di seluruh tingkat sekolah",
+          "D. Penutupan seluruh percetakan buku yang dimiliki oleh pemerintah daerah",
+          "E. Larangan bagi mahasiswa untuk mendirikan organisasi pergerakan kepemudaan"
         ],
-        answer: 0,
-        explanation: "Diplomasi awal penuh tantangan akibat kecurangan Belanda, namun RI mampu bertahan berkat fleksibilitas politik dan ketahanan gerilya."
+        "answer": 1,
+        "explanation": "Manipol-USDEK dijadikan doktrin tunggal negara yang bersifat mutlak. Surat kabar yang menolak memuat teks Manipol dibredel (seperti harian Indonesia Raya dan Pedoman). Seniman yang tidak beraliran realisme sosialis Lekra dicap 'kontra-revolusi', dan seluruh pegawai negeri serta pelajar wajib mengikuti penataran indoktrinasi Manipol sebagai ukuran kesetiaan terhadap negara."
       },
       {
-        type: "single",
-        stimulus: "Keteguhan para diplomat Indonesia seperti Sutan Sjahrir dan Moh. Hatta di meja perundingan memberikan warisan keteladanan penting mengenai kecerdasan berdiplomasi. Dalam situasi terdesak sekalipun, mereka tetap berpikiran tenang dan menggunakan hukum internasional untuk membela hak kedaulatan bangsa. Perjuangan diplomasi meja hijau ini membuktikan bahwa kecerdasan bernalar sama pentingnya dengan keberanian perang di lapangan.",
-        question: "Nilai kebangsaan utama dari perjuangan diplomasi Linggarjati dan Renville adalah...",
-        options: [
-          "A. Pentingnya menguasai kecerdasan berdiplomasi, ketenangan berpikir, dan keteguhan prinsip dalam membela kedaulatan bangsa",
-          "B. Menerima apapun syarat yang diajukan musuh",
-          "C. Mengabaikan aturan hukum internasional",
-          "D. Menolak berkomunikasi dengan pihak luar",
-          "E. Mengutamakan emosi dalam perundingan"
+        "type": "single",
+        "stimulus": "Puncak dari pemusatan kekuasaan era Demokrasi Terpimpin tercapai pada Sidang Umum MPRS di Bandung tahun 1963. Melalui Ketetapan MPRS No. III/MPRS/1963, MPRS menetapkan Ir. Sukarno sebagai Presiden Seumur Hidup sekaligus Pemimpin Besar Revolusi. Personifikasi kekuasaan ini menciptakan struktur politik segitiga (triangle balance of power): Presiden Sukarno berdiri di puncak kekuasaan sebagai pemegang mandat revolusi dan penengah tertinggi, diapit oleh dua kekuatan riil bersenjata dan massa yang saling bermusuhan di bawahnya, yaitu Tentara Nasional Indonesia Angkatan Darat (TNI-AD) dan Partai Komunis Indonesia (PKI).",
+        "question": "Kelemahan paling berbahaya dari sistem politik segitiga kekuasaan Demokrasi Terpimpin tersebut adalah...",
+        "options": [
+          "A. Anggaran pertahanan negara dialihkan sepenuhnya untuk membayar utang luar negeri kepada bank-bank swasta Eropa",
+          "B. Keseimbangan politik nasional sangat bergantung secara rapuh pada figur fisik pribadi Sukarno, sehingga jika terjadi gangguan terhadap kepemimpinannya, benturan berdarah antara militer dan PKI tak terhindarkan",
+          "C. TNI-AD dan PKI menyepakati peleburan organisasi militer dan partai menjadi satu komando",
+          "D. Seluruh diplomat asing dilarang membuka kantor perwakilan resmi di wilayah Indonesia",
+          "E. Terjadinya pengalihan kekuasaan secara damai setiap lima tahun sekali melalui pemilihan umum"
         ],
-        answer: 0,
-        explanation: "Diplomasi Linggarjati dan Renville mengajarkan pentingnya kecerdasan, ketenangan berpikir, dan keteguhan prinsip membela negara."
+        "answer": 1,
+        "explanation": "Demokrasi Terpimpin tidak membangun kelembagaan demokratis yang berkelanjutan, melainkan bergantung semata pada karisma pribadi Bung Karno. TNI-AD dan PKI menahan diri dari perang terbuka hanya karena menghormati dan berlindung di balik otoritas Sukarno. Akibatnya, ketika kesehatan Sukarno memburuk pada 1965, ketegangan di antara kedua faksi ini meledak menjadi peristiwa berdarah Gerakan 30 September yang meruntuhkan seluruh tatanan Orde Lama."
       }
     ]
   },
   "1E": {
-    heroImage: "https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=1200&q=80",
-    templateData: {
+    "heroImage": "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=1200&q=80",
+    "templateData": {
       "nav-kicker": "LAB SEJARAH INTERAKTIF — UNIT 1E",
-      "nav-brand": "Sub-Modul 1E — Agresi Militer Belanda II, PDRI, & Serangan Umum 1 Maret 1949",
+      "nav-brand": "Sub-Modul 1E — Pembebasan Irian Barat & Konfrontasi Dwikora (1961–1965)",
       "materi-tab-label": "1. Jejak Materi 1E",
       "kuis-tab-label": "2. Tantangan Kuis 1E",
-      "hero-kicker": "KURIKULUM MERDEKA — FASE F (KELAS XII) | KRISIS EKSISTENSIAL NEGERI",
-      "hero-title": "Ujian Terberat Republik: PDRI, Perang Gerilya, & Serangan 1 Maret",
-      "hero-description": "Saat ibu kota Yogyakarta jatuh dan Soekarno-Hatta ditawan, kedaulatan negara diselamatkan oleh triumvirat perlawanan: Pemerintah Darurat Republik Indonesia (PDRI) di Bukittinggi, Perang Gerilya Jenderal Soedirman, dan Serangan Umum 1 Maret 1949.",
+      "hero-kicker": "KURIKULUM MERDEKA — FASE F (KELAS XII) | INDONESIA PADA MASA ORDE LAMA (1950–1965)",
+      "hero-title": "Diplomasi Radikal, Konfrontasi Militer, & Politik Poros Internasional (1961–1965)",
+      "hero-description": "Penelusuran kritis operasi militer Trikora membebaskan Irian Barat, pembelian persenjataan masif Uni Soviet, Pertempuran Laut Aru, kompromi Persetujuan New York 1962, Konfrontasi Dwikora menolak Federasi Malaysia, pembentukan poros Jakarta-Peking, hingga keputusan keluar dari Perserikatan Bangsa-Bangsa.",
       "hero-note-title": "PANDUAN BELAJAR SUB-MODUL 1E",
-      "hero-note-text": "Telusuri Jejak 01 hingga 06 secara berurutan. Pelajari Operasi Kraai di Maguwo, penyerahan mandat negara kepada Sjafruddin Prawiranegara, taktik Wehrkreise Soedirman-Soeharto, siaran Radio Wonosari, hingga ancaman penutupan dana Marshall Plan AS!",
+      "hero-note-text": "Pelajari Jejak 01 hingga 06 secara berurutan. Analisis mengapa jalur diplomasi PBB selama satu dekade mengalami kegagalan, bagaimana kehadiran kapal penjelajah KRI Irian memaksa Amerika Serikat menekan Belanda, dan mengapa penentangan terhadap pembentukan Malaysia membawa Indonesia keluar dari PBB.",
       "overview-kicker": "PETA KONSEP SUB-MODUL 1E",
-      "overview-title": "Triumvirat Penyelamat Kedaulatan Negara 1948–1949",
-      "overview-text": "Agresi Militer II Belanda bertujuan menghancurkan Republik, namun eksistensi negara berhasil diselamatkan oleh tiga pilar perlawanan (Triumvirat):",
-      "map-card-one-title": "Pemicu: Agresi Militer II (19 Des 1948)",
-      "map-card-one-text": "Operasi Kraai Belanda menduduki Yogyakarta dan menawan Soekarno-Hatta untuk mempropagandakan bahwa RI telah musnah.",
-      "map-card-two-title": "1. PDRI Bukittinggi (Pilar Hukum)",
-      "map-card-two-text": "Sjafruddin Prawiranegara memproklamasikan PDRI di rimba Sumatra untuk menjamin keberlanjutan kedaulatan hukum dan eksekutif negara.",
-      "map-card-three-title": "2. Gerilya Soedirman (Pilar Militer)",
-      "map-card-three-text": "Jenderal Soedirman memimpin perang gerilya 1.000 km ditandu, membuktikan keberadaan fisik TNI di pedesaan Jawa.",
-      "map-card-four-title": "3. Serangan 1 Maret (Pilar Politik-Diplomasi)",
-      "map-card-four-text": "Strategi Sultan HB IX & Letkol Soeharto menguasai Jogja 6 jam, memicu siaran Radio Wonosari yang menskakmat propaganda Belanda di PBB.",
-
-      "lesson-one-kicker": "JEJAK 01 — AGRESI MILITER II",
-      "lesson-one-title": "Operasi Kraai & Penawanan Pemimpin Nasional",
-      "lesson-one-text": "Pada Minggu pagi 19 Desember 1948, Belanda melancarkan Agresi Militer II (Operasi Kraai) tanpa deklarasi perang resmi. Pasukan khusus baret merah Korps Speciale Troepen (KST) memuntahkan tembakan dan menerjunkan ribuan prajurit di Pangkalan Udara Maguwo Yogyakarta.",
-      "lesson-one-text-two": "Belanda mengepung ibu kota dan menawan Presiden Soekarno, Wakil Presiden merangkap Perdana Menteri Moh. Hatta, serta penasihat delegasi Sutan Sjahrir. Namun, sebelum ditawan dalam Sidang Kabinet Darurat, Presiden Soekarno secara cerdik merumuskan kawat telegram mandat darurat kembar:",
-      "lesson-one-point-a-title": "1. Mandat Utama kepada Sjafruddin Prawiranegara",
-      "lesson-one-point-a-text": "Presiden memerintahkan Menteri Kemakmuran Sjafruddin Prawiranegara yang berada di Bukittinggi untuk membentuk Pemerintah Darurat Republik Indonesia (PDRI) di Sumatra.",
-      "lesson-one-point-b-title": "2. Mandat Cadangan kepada Maramis & Palar",
-      "lesson-one-point-b-text": "Sebagai langkah antisipasi jika PDRI di Bukittinggi gagal, mandat dialihkan kepada A.A. Maramis, L.N. Palar, dan Dr. Soedarsono untuk mendirikan Pemerintah Pengasingan RI di New Delhi, India. Pengiriman mandat kembar ini membuktikan kecerdasan hukum Soekarno sebelum ditawan.",
-
-      "lesson-two-kicker": "JEJAK 02 — BERDIRINYA PDRI",
-      "lesson-two-title": "Sjafruddin Prawiranegara & Eksistensi PDRI Bukittinggi (22 Des 1948)",
-      "lesson-two-text": "Menerima kabar penangkapan Soekarno-Hatta, Sjafruddin Prawiranegara bersama Gubernur Sumatra Mr. T.M. Hasan bertindak cepat. Pada 22 Desember 1948 di Halaban, Sumatra Barat, Sjafruddin memproklamasikan berdirinya Pemerintah Darurat Republik Indonesia (PDRI). Langkah ketatanegaraan ini menyelamatkan Indonesia dari kepunahan hukum via 4 aksi strategis:",
-      "lesson-two-list-a": "<b>1. Pemerintahan Darurat Bergerak:</b> Kabinet PDRI secara konstan berpindah markas di dalam hutan rimba Sumatra untuk menghindar dari kejaran intelijen dan pemboman pesawat Belanda.",
-      "lesson-two-list-b": "<b>2. Suara Diplomasi Internasional:</b> Menginstruksikan L.N. Palar di Dewan Keamanan PBB dan A.A. Maramis di New Delhi untuk terus menyuarakkan eksistensi RI kepada dunia.",
-      "lesson-two-list-c": "<b>3. Penumbangan Propaganda Musuh:</b> Mematahkan klaim bohong Belanda di forum PBB bahwa 'Republik Indonesia telah musnah dan tidak memiliki pemerintahan sah'.",
-      "lesson-two-list-d": "<b>4. Pengakuan Legitimasi Konstitusional:</b> Menjalankan fungsi eksekutif, menerbitkan Mawar PDRI, dan mengkoordinasikan perjuangan pertahanan nasional.",
-      "lesson-two-text-two": "Keberhasilan PDRI menjaga kedaulatan hukum dari hutan Sumatra disempurnakan oleh perlawanan fisik di lapangan: TNI di bawah komando Panglima Besar Jenderal Soedirman menolak menyerah dan memulai perang gerilya di Jawa.",
-
-      "lesson-three-kicker": "JEJAK 03 — PERANG GERILYA SOEDIRMAN",
-      "lesson-three-title": "Sishankamrata & Kepemimpinan Gerilya Jenderal Soedirman",
-      "lesson-three-text": "Ketika pimpinan sipil di Yogyakarta ditawan, Panglima Besar Jenderal Soedirman yang menderita paru-paru tersisa satu memilih meninggalkan rumah sakit dan memimpin Perang Gerilya. Bersama prajurit TNI dan rakyat pedesaan, Soedirman menegaskan bahwa kedaulatan negara berada di ujung senapan perlawanan:",
-      "thinker-comte-name": "1. Rute Gerilya Ditandu 1.000 Kilometer",
-      "thinker-comte-text": "Menempuh perjalanan 1.000 km ditandu prajurit melintasi rute perbukitan dan hutan di Jawa Tengah hingga Jawa Timur selama 7 bulan.",
-      "thinker-durkheim-name": "2. Penerapan Sistem Wehrkreise",
-      "thinker-durkheim-text": "Kolonel A.H. Nasution merancang sistem kantong pertahanan (Wehrkreise) yang membagi Jawa menjadi wilayah militer otonom yang lincah melancarkan penyerbuan gerilya.",
-      "thinker-marx-name": "3. Kemanunggalan TNI dan Rakyat",
-      "thinker-marx-text": "Rakyat pedesaan secara sukarela memberikan pasokan logistik pangan, menyembunyikan pasukan, dan menjadi kurir rahasia yang melahirkan doktrin Sishankamrata.",
-      "thinker-weber-name": "4. Simbol Moralitas Perjuangan",
-      "thinker-weber-text": "Keteguhan Soedirman menjadi obor moral yang meyakinkan pejuang bahwa Republik masih berdiri tegak. Namun, perlawanan gerilya di pedesaan butuh satu gebrakan spektakuler di tengah kota untuk meyakinkan dunia internasional bahwa TNI tidak hancur.",
-
-      "lesson-four-kicker": "JEJAK 04 — SERANGAN UMUM 1 MARET",
-      "lesson-four-title": "Operasi Menguasai Yogyakarta 6 Jam (1 Maret 1949)",
-      "lesson-four-text": "Menghadapi propaganda Belanda di media asing yang mengklaim TNI telah musnah, Sri Sultan Hamengkubuwono IX mengusulkan ide penyerbuan terbuka berskala besar ke ibu kota Yogyakarta. Gagasan diplomasi militer ini disetujui Komando Gerilya dan dieksekusi secara gemilang oleh komandan Wehrkreise III, Letkol Soeharto, pada 1 Maret 1949 pukul 06.00 WIB:",
-      "method-a-title": "1. Pendudukan Yogyakarta 6 Jam",
-      "method-a-text": "Pasukan TNI dan laskar rakyat menyerbu dari 4 penjuru kota, menguasai pusat kota Yogyakarta secara mutlak dari pukul 06.00 hingga 12.00 WIB.",
-      "method-b-title": "2. Transmisi Geopolitik Radio Wonosari",
-      "method-b-text": "Bagaimana dunia bisa tahu? Berita kemenangan ini disiarkan berantai secara rahasia: dari pemancar radio gerilya di Wonosari, ditangkap oleh PDRI di Bukittinggi Sumatra, diteruskan ke stasiun radio di Rangoon Birma (Myanmar), ke New Delhi, hingga memukul telak delegasi Belanda di PBB New York.",
-      "method-c-title": "3. Skakmat Propaganda Belanda di PBB",
-      "method-c-text": "Membuktikan kepada Dewan Keamanan PBB bahwa kekuatan militer dan komando TNI masih utuh serta sanggup melancarkan serangan ofensif.",
-      "lesson-four-text-two": "Serangan Umum 1 Maret 1949 berhasil mencapai tujuan utamanya: bukan untuk menduduki kota secara permanen, melainkan mengirimkan sinyal politik dahsyat ke meja perundingan PBB bahwa klaim kemenangan Belanda adalah kebohongan publik.",
-
-      "lesson-five-kicker": "JEJAK 05 — DAMPAK RESOLUSI PBB",
-      "lesson-five-title": "Kekalahan Diplomasi Belanda & Tekanan Marshall Plan AS",
-      "lesson-five-text": "Terbongkarnya propaganda Belanda di forum PBB akibat Serangan 1 Maret memicu gelombang balik geopolitik yang menghancurkan posisi diplomasi Belanda:",
-      "object-material-title": "1. Ancaman Pembekuan Dana Marshall Plan AS",
-      "object-material-text": "Pemerintah Amerika Serikat murka karena dana hibah rekonstruksi Marshall Plan disalahgunakan Belanda untuk perang kolonial, dan mengancam membekukan seluruh bantuan ekonomi.",
-      "object-formal-title": "2. Resolusi Tegas Dewan Keamanan PBB",
-      "object-formal-text": "DK PBB menerbitkan resolusi keras menuntut Belanda menghentikan agresi militer, membebaskan Soekarno-Hatta, dan mengembalikan pemerintah RI ke Yogyakarta.",
-
-      "lesson-six-kicker": "JEJAK 06 — SINTESIS 1E",
-      "lesson-six-title": "Sintesis Sub-Modul 1E: Puncak Ketahanan Nasional",
-      "lesson-six-text": "Bayangkan: ibu kota jatuh, presiden ditawan, dan Belanda mengumumkan ke dunia bahwa Republik Indonesia sudah tidak ada. Tapi ternyata mereka salah. Tiga kekuatan tersembunyi bangkit bersamaan — PDRI yang berjuang dari balik hutan Sumatra menjaga api legitimasi hukum, Soedirman yang memimpin gerilya dari atas tandu di pedalaman Jawa, dan Serangan Umum 1 Maret yang meninju propaganda Belanda tepat di wajahnya.",
-      "lesson-six-text-two": "Ketiga kekuatan inilah yang membalikkan keadaan: Belanda terdesak di lapangan dan dipermalukan di forum PBB. Agresi II yang dirancang sebagai pukulan akhir bagi Republik justru menjadi awal kehancuran posisi kolonial Belanda secara permanen di mata dunia.",
-      "lesson-six-quote": "\"Pemerintah RI boleh ditawan, tetapi Republik Indonesia tidak pernah musnah selama rakyat dan prajuritnya masih berjuang!\" — Sjafruddin Prawiranegara (1948)",
+      "overview-title": "Empat Pilar Pergeseran Politik Luar Negeri ke Jalur Radikal",
+      "overview-text": "Ekskalasi aksi militer dan diplomasi ofensif Indonesia kurun 1961–1965 didorong oleh empat faktor geopolitik utama:",
+      "map-card-one-title": "1. Pengingkaran Klausul KMB",
+      "map-card-one-text": "Keengganan Belanda menyerahkan Irian Barat dalam batas waktu satu tahun setelah KMB memaksa Indonesia beralih dari jalur perundingan ke konfrontasi fisik.",
+      "map-card-two-title": "2. Bantuan Alutsista Uni Soviet",
+      "map-card-two-text": "Pembelian armada kapal selam, pesawat pengebom strategis Tu-16, dan kapal penjelajah kelas Sverdlov menjadikan TNI kekuatan militer terkuat di belahan bumi selatan.",
+      "map-card-three-title": "3. Proyek Nekolim Federasi Malaysia",
+      "map-card-three-text": "Pembentukan Malaysia pada 1963 ditentang Sukarno karena dinilai sebagai pangkalan militer boneka Inggris yang mengepung kedaulatan Nusantara.",
+      "map-card-four-title": "4. Doktrin Global Oldefos vs Nefos",
+      "map-card-four-text": "Sukarno membagi kekuatan dunia menjadi kekuatan lama kolonialis imperialis (Oldefos) berhadapan dengan kekuatan bangsa berkembang yang bangkit (Nefos).",
+      "lesson-one-kicker": "JEJAK 01 — DIPLOMASI DAMAI MENEMUI JALAN BUNTU",
+      "lesson-one-title": "Satu Dekade Negosiasi Tanpa Hasil Melawan Sikap Keras Den Haag",
+      "lesson-one-text": "Pasal 2 Piagam Penyerahan Kedaulatan KMB 1949 menetapkan bahwa status politik Irian Barat akan diselesaikan melalui perundingan bilateral antara Indonesia dan Belanda dalam jangka waktu satu tahun. Namun, hingga akhir tahun 1950, Kerajaan Belanda secara sepihak menolak menyerahkan wilayah tersebut dengan alasan suku-suku Papua bukan merupakan bagian dari ras Melayu. Belanda kemudian memasukkan wilayah Irian Barat (Nederlands Nieuw-Guinea) ke dalam konstitusi kerajaannya pada 1952.",
+      "lesson-one-text-two": "Selama periode 1954 hingga 1957, delegasi Indonesia di bawah berbagai kabinet parlementer membawa sengketa ini ke Majelis Umum PBB. Upaya mencari resolusi damai selalu kandas: voting dukungan untuk Indonesia tidak pernah menembus kuorum dua pertiga suara akibat pemboikotan blok negara-negara Barat sekutu Belanda di NATO.",
+      "lesson-one-point-a-title": "Pembatalan Sepihak Hubungan KMB",
+      "lesson-one-point-a-text": "Menyadari jalur diplomasi parlementer buntu, kabinet Burhanuddin Harahap secara sepihak membatalkan seluruh isi perjanjian KMB pada 1956, disusul nasionalisasi massal perusahaan-perusahaan perkebunan dan perbankan Belanda pada Desember 1957.",
+      "lesson-one-point-b-title": "Pembentukan Komite Papua Bentukan Belanda",
+      "lesson-one-point-b-text": "Belanda mempercepat skenario pembentukan negara boneka Papua dengan membentuk Dewan Nugini (Nieuw-Guinea Raad) pada 1961, meresmikan bendera Bintang Kejora, serta menyusun lagu kebangsaan tersendiri guna memisahkan wilayah tersebut secara permanen dari wilayah teritorial proklamasi RI.",
+      "lesson-two-kicker": "JEJAK 02 — MOBILISASI MILITER SKALA BESAR",
+      "lesson-two-title": "Tiga Komando Rakyat dan Pertempuran Heroik Laut Aru",
+      "lesson-two-text": "Merespons langkah sepihak Belanda membentuk Dewan Nugini, Presiden Sukarno mengumumkan Tri Komando Rakyat (Trikora) di hadapan rapat raksasa di Alun-Alun Utara Yogyakarta pada 19 Desember 1961. Sukarno menginstruksikan tiga amanat: gagalkan pembentukan negara boneka Papua buatan kolonial, kibarkan Sang Saka Merah Putih di seluruh tanah Irian Barat, dan bersiap mengadakan mobilisasi umum. Pemerintah membentuk Komando Mandala Pembebasan Irian Barat bermarkas di Makassar dengan Mayor Jenderal Soeharto ditunjuk sebagai Panglima.",
+      "lesson-two-list-a": "<b>1. Kredit Alutsista Soviet 2,5 Miliar USD:</b> Jenderal Nasution berhasil membeli alutsista mutakhir dari Nikita Khrushchev: kapal penjelajah KRI Irian, 12 kapal selam Whiskey, pengebom Tu-16, dan rudal SA-2.",
+      "lesson-two-list-b": "<b>2. Palagan Laut Aru (15 Jan 1962):</b> Konvoi kapal cepat torpedo TNI AL disergap kapal perusak Belanda Evertsen dan pesawat Neptune di Laut Aru saat membawa pasukan infiltrasi.",
+      "lesson-two-list-c": "<b>3. Pengorbanan Yos Sudarso:</b> Komodor Yos Sudarso di RI Macan Tutul bermanuver memotong tembakan musuh demi melindungi penarikan mundur kapal RI Harimau dan Macan Kumbang.",
+      "lesson-two-list-d": "<b>4. Pesan Abadi:</b> Yos Sudarso gugur bersama tenggelamnya kapal dengan seruan terakhir: 'Kobarkan semangat pertempuran!'",
+      "lesson-two-text-two": "Pengorbanan di Laut Aru membakar semangat prajurit Mandala untuk mempersiapkan serangan amfibi gabungan Operasi Jayawijaya menuju Biak.",
+      "lesson-three-kicker": "JEJAK 03 — KONSENSUS DIPLOMASI INTERNASIONAL",
+      "lesson-three-title": "Tekanan Gedung Putih Memaksa Belanda Menyerahkan Otoritas",
+      "lesson-three-text": "Gugurnya Yos Sudarso tidak menyurutkan gerak maju Komando Mandala. Rencana pendaratan operasi amfibi gabungan bersandi Operasi Jayawijaya yang melibatkan puluhan ribu pasukan siap digelar menuju sasaran pertahanan Belanda di Biak. Prospek meletusnya perang terbuka skala penuh di Pasifik membuat Presiden Amerika Serikat John F. Kennedy khawatir bahwa perang ini akan dimanfaatkan Uni Soviet untuk memperluas pangkalan militernya di Asia Tenggara.",
+      "thinker-comte-name": "1. Mediasi Ellsworth Bunker",
+      "thinker-comte-text": "Washington menunjuk diplomat senior Ellsworth Bunker menengahi perundingan rahasia antara delegasi Indonesia (Subandrio) dan Belanda.",
+      "thinker-durkheim-name": "2. Otoritas Transisi UNTEA",
+      "thinker-durkheim-text": "Belanda wajib menyerahkan seluruh pemerintahan Irian Barat kepada badan transisi PBB bernama UNTEA pada 1 Oktober 1962.",
+      "thinker-marx-name": "3. Penyerahan Penuh Kepada RI",
+      "thinker-marx-text": "UNTEA menyerahkan kekuasaan pemerintahan secara penuh kepada Republik Indonesia paling lambat pada 1 Mei 1963.",
+      "thinker-weber-name": "4. Mandat Pepera 1969",
+      "thinker-weber-text": "Indonesia menyelenggarakan Penentuan Pendapat Rakyat pada 1969 dengan hasil musyawarah bulat menyatakan Papua tetap bagian sah NKRI.",
+      "lesson-three-text-two": "Persetujuan New York 15 Agustus 1962 mengakhiri sengketa 13 tahun dengan Belanda dan menyatukan kembali Papua ke pangkuan Ibu Pertiwi.",
+      "lesson-four-kicker": "JEJAK 04 — PENENTANGAN PROYEK NEKOLIM",
+      "lesson-four-title": "Komando Ganyang Malaysia dan Pertempuran Rimba Kalimantan",
+      "lesson-four-text": "Kemenangan merebut kembali Irian Barat segera disusul oleh krisis regional baru di kawasan Asia Tenggara. Pada 1961, Perdana Menteri Federasi Malaya Tengku Abdul Rahman mengumumkan rencana penggabungan Malaya, Singapura, Sabah, Sarawak, dan Brunei ke dalam satu federasi bernama Federasi Malaysia. Sukarno menentang keras pembentukan negara federasi ini karena menilai federasi tersebut merupakan proyek Neo-Kolonialisme dan Imperialisme (Nekolim) rancangan Inggris untuk mempertahankan pangkalan militernya di Selat Malaka serta membendung pengaruh anti-imperialisme Indonesia.",
+      "lesson-four-text-two": "Kecurigaan Jakarta menguat setelah meletus pemberontakan rakyat di Brunei pimpinan A.M. Azahari pada Desember 1962 yang menentang penggabungan ke Malaysia. Pasukan kolonial Inggris menumpas pemberontakan tersebut secara brutal.",
+      "method-a-title": "1. Dwikora 3 Mei 1964",
+      "method-a-text": "Diumumkan di Jakarta: perhebat ketahanan revolusi Indonesia dan bantu perjuangan revolusioner rakyat Malaya, Singapura, Sabah, Sarawak menggagalkan Malaysia.",
+      "method-b-title": "2. Komando Siaga & Sukarelawan",
+      "method-b-text": "Pemerintah membentuk Komando Siaga pimpinan Marsekal Madya Omar Dhani, mengirim ribuan sukarelawan sipil dan prajurit TNI infiltrasi ke rimba Sarawak dan Sabah.",
+      "method-c-title": "3. Perang Rimba Asimetris",
+      "method-c-text": "Pertempuran sengit terjadi di perbatasan Kalimantan melawan pasukan gabungan Inggris, resimen Gurkha, tentara Australia, dan Selandia Baru.",
+      "lesson-five-kicker": "JEJAK 05 — RADIKALISASI POLITIK INTERNASIONAL",
+      "lesson-five-title": "Pembentukan Poros Jakarta-Peking dan Boikot Lembaga Dunia",
+      "lesson-five-text": "Konfrontasi dengan Malaysia mendorong Sukarno merombak total doktrin politik luar negeri Indonesia. Sukarno meninggalkan posisi netral non-blok konvensional dan mengintroduksi konsepsi pertarungan global antara dua kubu dunia: Oldefos (Old Established Forces—negara-negara kapitalis Barat imperialis) berhadapan dengan Nefos (New Emerging Forces—bangsa-bangsa merdeka baru di Asia, Afrika, Amerika Latin, dan negara sosialis).",
+      "object-material-title": "1. Penyelenggaraan GANEFO 1963",
+      "object-material-text": "Sebagai respon skorsing IOC, Indonesia menggelar pesta olahraga tandingan di Senayan diikuti 2.200 atlet dari 48 negara tanpa dominasi Barat.",
+      "object-formal-title": "2. Keluar dari PBB (Januari 1965)",
+      "object-formal-text": "Ketika Malaysia terpilih menjadi anggota tidak tetap DK PBB, Sukarno mengumumkan penarikan resmi Indonesia dari keanggotaan PBB, satu-satunya dalam sejarah.",
+      "lesson-six-kicker": "JEJAK 06 — SINTESIS & REFLEKSI 1E",
+      "lesson-six-title": "Keberhasilan Militer yang Mengorbankan Keseimbangan Ekonomi Domestik",
+      "lesson-six-text": "Kebijakan diplomasi radikal dan konfrontasi militer membuktikan daya gentar Indonesia di panggung geopolitik Asia Pasifik. Irian Barat berhasil disatukan kembali ke pangkuan republik, dan wibawa kepemimpinan Sukarno diakui di seluruh blok negara berkembang Dunia Ketiga.",
+      "lesson-six-text-two": "Keberhasilan martabat politik luar negeri tersebut harus dibayar dengan harga yang teramat mahal bagi rakyat di dalam negeri. Pengalihan lebih dari 60% anggaran belanja negara untuk pos pertahanan militer, pembelian alutsista Uni Soviet secara berutang, serta penghentian bantuan ekonomi negara-negara Barat menyebabkan kas negara terkuras habis dan neraca perdagangan lumpuh total.",
+      "lesson-six-quote": "\"Kedaulatan wilayah berhasil dipertahankan dengan senjata modern, namun fondasi ekonomi rakyat di dalam negeri dibiarkan rapuh menuju kehancuran moneter.\"",
       "reflection-kicker": "OUTRO BRIDGE & REFLEKSI SUB-MODUL 1E",
-      "reflection-title": "Jembatan Menuju Sub-Modul 1F: Menuju Puncak Pengakuan Kedaulatan",
-      "reflection-text": "Agresi Militer II yang diniatkan Belanda sebagai pukulan pamungkas justru menjadi bumerang geopolitik. Serangan Umum 1 Maret membongkar kepalsuan propaganda Belanda di Dewan Keamanan PBB, diperkuat oleh ancaman Amerika Serikat yang membekukan dana bantuan Marshall Plan. Momentum perlawanan fisik ini kemudian dikapitalisasi para diplomat Republik pada meja perundingan Roem-Royen hingga Konferensi Meja Bundar (Sub-Modul 1F).",
+      "reflection-title": "Jembatan Menuju Sub-Modul 1F: Pusaran Krisis Sosio-Ekonomi dan Tragedi 1965",
+      "reflection-text": "Beban anggaran operasi militer yang sangat besar menghantam ketahanan ekonomi rakyat. Pada pertengahan 1965, inflasi melonjak tidak terkendali mencapai angka ratusan persen. Di tengah kelangkaan pangan dan persaingan politik yang kian memanas antara pimpinan Angkatan Darat dan PKI, meletuslah peristiwa Gerakan 30 September yang menjadi titik balik berakhirnya kekuasaan Presiden Sukarno (Sub-Modul 1F).",
       "challenge-kicker": "ASESMEN SUB-MODUL 1E",
-      "challenge-title": "Siap Menguji Pemahaman PDRI & Serangan 1 Maret?",
-      "challenge-text": "Jawab 15 tantangan kuis interaktif HOTS Sub-Modul 1E.",
+      "challenge-title": "Siap Menguji Pemahaman Trikora, Dwikora, & Poros Global?",
+      "challenge-text": "Jawab 15 tantangan kuis interaktif HOTS yang dirancang khusus untuk menguji penalaran sejarah Sub-Modul 1E.",
       "start-quiz-button": "Mulai Kuis Sub-Modul 1E →",
       "quiz-kicker": "SUB-MODUL 1E — ASESMEN INTERAKTIF",
       "quiz-title": "15 Tantangan Sejarah Sub-Modul 1E",
-      "quiz-description": "Uji analisis penyelamatan kedaulatan negara 1948-1949.",
+      "quiz-description": "Uji analisis diakronis & kritis. Setiap soal dilengkapi pembahasan komprehensif latar belakang sejarah.",
       "score-label": "SKOR SUB-MODUL 1E",
       "progress-label": "KEMAJUAN PENGERJAAN",
       "check-quiz-button": "Periksa Jawaban Kuis",
       "result-kicker": "EVALUASI SUB-MODUL 1E",
       "result-title": "Analisis Hasil Penguasaan Sub-Modul 1E",
-      "result-text": "Ulas kembali jawabanmu dan pelajari pembahasannya.",
+      "result-text": "Ulas kembali jawabanmu dan pahami penjelasan sejarah di bawah setiap soal.",
       "retry-quiz-button": "Coba Lagi / Acak Soal 1E",
-      "footer-text": "© Lab Sejarah Interaktif — Sub-Modul 1E: PDRI & Serangan 1 Maret. Kurikulum Merdeka Fase F."
+      "footer-text": "© Lab Sejarah Interaktif — Sub-Modul 1E: Trikora & Dwikora. Kurikulum Merdeka Fase F."
     },
-    quizData: [
+    "quizData": [
       {
-        type: "single",
-        stimulus: "Pada 19 Desember 1948, Belanda melancarkan Agresi Militer II yang diawali penerjunan mendadak di Bandara Maguwo Yogyakarta. Serangan udara dan darat yang brutal ini berhasil mengepung ibu kota serta menawan Presiden Soekarno dan Wakil Presiden Moh. Hatta. Sebelum ditawan, Presiden Soekarno sempat mengirimkan telegram mandat darurat kepada Sjafruddin Prawiranegara di Bukittinggi untuk membentuk Pemerintah Darurat Republik Indonesia (PDRI).",
-        question: "Tujuan utama pengiriman telegram mandat pembentukan PDRI kepada Sjafruddin Prawiranegara adalah...",
-        options: [
-          "A. Menyerahkan kekuasaan negara secara permanen kepada militer Sumatra",
-          "B. Menjaga kontinuitas kedaulatan hukum dan pemerintahan RI di mata dunia internasional saat pimpinan nasional ditawan",
-          "C. Meminta bantuan modal dari pengusaha di Bukittinggi",
-          "D. Memindahkan ibu kota negara secara tetap ke luar Pulau Jawa",
-          "E. Membawa kasus agresi langsung ke Mahkamah Internasional"
+        "type": "single",
+        "stimulus": "Pasal 2 Piagam Penyerahan Kedaulatan KMB di Den Haag 1949 menetapkan bahwa penentuan status politik Irian Barat akan diselesaikan melalui perundingan bilateral antara Indonesia dan Belanda dalam jangka waktu satu tahun. Namun, hingga akhir tahun 1950, Kerajaan Belanda secara sepihak menolak menyerahkan kedaulatan wilayah tersebut dan justru memasukkannya ke dalam undang-undang dasar kerajaannya pada 1952. Sepanjang dekade 1950-an, diplomasi Indonesia membawa sengketa ini ke sidang Majelis Umum PBB selalu kandas karena terhalang lobi negara-negara Barat anggota NATO yang mendukung Belanda.",
+        "question": "Faktor geopolitik utama yang menyebabkan kegagalan diplomasi damai Indonesia di PBB terkait sengketa Irian Barat adalah...",
+        "options": [
+          "A. Penolakan dari negara-negara anggota Konferensi Asia Afrika untuk mengakui batas wilayah Hindia Belanda",
+          "B. Solidaritas pertahanan Blok Barat yang dipimpin Amerika Serikat untuk melindungi kepentingan Belanda sebagai sekutu strategis NATO di Eropa",
+          "C. Ketiadaan bukti dokumen arsip yang membuktikan keterikatan historis Papua dengan kesultanan-kesultanan di Maluku",
+          "D. Keinginan penduduk Irian Barat untuk bergabung dengan wilayah persemakmuran Australia",
+          "E. Larangan dari Dewan Keamanan PBB untuk memperdebatkan sengketa wilayah bekas jajahan"
         ],
-        answer: 1,
-        explanation: "Telegram mandat pembentukan PDRI bertujuan menjaga kontinuitas kedaulatan hukum dan pemerintahan RI saat pimpinan ditawan."
+        "answer": 1,
+        "explanation": "Dalam kalkulasi Perang Dingin, Amerika Serikat dan sekutunya memandang Belanda sebagai pilar penting pertahanan Atlantik Utara (NATO). Meskipun Indonesia memiliki klaim yuridis sah berdasarkan asas uti possidetis juris (wilayah merdeka mencakup seluruh bekas jajahan Hindia Belanda), blok Barat memboikot pemungutan suara di Majelis Umum PBB agar kuorum 2/3 suara pendukung Indonesia tidak pernah tercapai."
       },
       {
-        type: "single",
-        stimulus: "Sjafruddin Prawiranegara dengan sigap memproklamasikan berdirinya PDRI di pedalaman rimba Sumatra Barat. Di bawah ancaman gempuran patroli militer Belanda, pemerintahan darurat ini terus berpindah tempat sambil menyiarkan instruksi resmi negara. Keberadaan PDRI secara efektif meruntuhkan propaganda Belanda yang mengklaim di forum PBB bahwa Republik Indonesia telah musnah.",
-        question: "Arti penting keberadaan PDRI bagi eksistensi Republik Indonesia di forum diplomasi internasional adalah...",
-        options: [
-          "A. Membuktikan bahwa klaim propaganda Belanda 'Republik Indonesia telah musnah' adalah bohong besar",
-          "B. Menyebabkan penarikan mundur tentara Sekutu dari seluruh Indonesia",
-          "C. Mengubah bentuk pemerintahan RI menjadi monarki",
-          "D. Membantu Belanda menguasai tambang minyak di Sumatra",
-          "E. Membatalkan hasil perundingan Linggarjati secara sepihak"
+        "type": "single",
+        "stimulus": "Menyusul kegagalan pemungutan suara keempat di Majelis Umum PBB pada November 1957 untuk menekan Belanda, kemarahan rakyat Indonesia meledak. Pada awal Desember 1957, kaum buruh yang dimotori serikat-serikat pekerja mengambil alih kantor pusat maskapai pelayaran KPM, perbankan, serta perkebunan-perkebunan raksasa milik Belanda. Untuk mencegah anarki dan penguasaan sepihak oleh serikat buruh sayap kiri, KSAD Jenderal A.H. Nasution atas nama Penguasa Perang Pusat mengeluarkan surat perintah pengambilalihan seluruh aset perusahaan Belanda tersebut di bawah pengawasan perwira militer Angkatan Darat.",
+        "question": "Tujuan strategis pemerintah Indonesia menasionalisasi aset-aset ekonomi Belanda pada akhir 1957 adalah...",
+        "options": [
+          "A. Membantu Belanda melunasi sisa utang luar negerinya kepada Bank Dunia",
+          "B. Menghancurkan fondasi hegemoni ekonomi kolonial di tanah air sekaligus memberikan tekanan ekonomi riil agar Den Haag bersedia berunding mengenai Irian Barat",
+          "C. Menutup seluruh jalur pelayaran internasional di perairan Selat Malaka",
+          "D. Menyerahkan kepemilikan modal asing kepada perusahaan multinasional Amerika Serikat",
+          "E. Membiayai pembangunan fasilitas olahraga untuk Asian Games IV di Jakarta"
         ],
-        answer: 0,
-        explanation: "PDRI membuktikan kepada PBB dan dunia bahwa pemerintahan RI masih berdiri sah dan aktif."
+        "answer": 1,
+        "explanation": "Nasionalisasi massal melumpuhkan sumber keuntungan finansial terbesar Kerajaan Belanda. Belanda selama ini menikmati dividen miliaran gulden dari perkebunan dan perbankan di Jawa dan Sumatra. Dengan mencabut hak konsesi tersebut, Sukarno memberikan pukulan ekonomi telak: Belanda harus memilih mempertahankan tanah Irian Barat yang gersang dan merugi, atau kehilangan seluruh kepentingan bisnisnya di Indonesia."
       },
       {
-        type: "single",
-        stimulus: "Meskipun sedang menderita penyakit paru-paru yang parah, Panglima Besar Jenderal Soedirman menolak tawaran untuk menyerahkan diri kepada tentara Belanda. Ia memilih ditandu keluar kota Yogyakarta untuk memimpin langsung Perang Gerilya melintasi ribuan kilometer pedesaan Jawa. Keteguhan pimpinan tertinggi militer ini menjadi simbol moral utama yang membakar daya juang prajurit TNI dan rakyat di lapangan.",
-        question: "Peran utama kepemimpinan gerilya Jenderal Soedirman selama Agresi Militer II adalah...",
-        options: [
-          "A. Mengendalikan seluruh pasokan pangan pedagang di kota",
-          "B. Menjadi simbol perlawanan fisik militer yang menjaga ikatan TNI dengan rakyat di lapangan",
-          "C. Memimpin delegasi perundingan di PBB",
-          "D. Membantu Belanda melucuti senjata laskar lokal",
-          "E. Menghentikan seluruh aktivitas pertempuran di Jawa Tengah"
+        "type": "single",
+        "stimulus": "Ketika Indonesia berniat membeli persenjataan modern guna mengimbangi pengerahan kapal induk Belanda Hr. Ms. Karel Doorman ke perairan Papua, pemerintah Amerika Serikat menolak menjual senjata ofensif kepada Jakarta karena terikat pakta NATO. Menanggapi embargo senjata tersebut, Presiden Sukarno menugaskan KSAD Jenderal A.H. Nasution memimpin delegasi tingkat tinggi terbang ke Moskow pada Desember 1960. Pemimpin Uni Soviet Nikita Khrushchev menyambut delegasi dengan tangan terbuka dan menandatangani perjanjian pinjaman kredit militer senilai 2,5 miliar dolar AS untuk memodernisasi persenjataan TNI.",
+        "question": "Dampak langsung pembelian alutsista Uni Soviet tersebut terhadap perimbangan kekuatan militer di kawasan Asia Tenggara adalah...",
+        "options": [
+          "A. Kekuatan pertahanan Indonesia melemah drastis karena tentara tidak terbiasa mengoperasikan persenjataan Blok Timur",
+          "B. Indonesia bertransformasi menjadi kekuatan militer terkuat di belahan bumi selatan dengan kepemilikan armada kapal selam, pesawat pengebom strategis Tu-16, dan kapal penjelajah KRI Irian",
+          "C. Belanda segera memperkuat armadanya dengan membeli kapal penjelajah dari Inggris",
+          "D. Amerika Serikat memutuskan seluruh hubungan perdagangan minyak buminya dengan Indonesia",
+          "E. Negara-negara tetangga membentuk pakta pertahanan militer bersama untuk menginvasi Pulau Jawa"
         ],
-        answer: 1,
-        explanation: "Gerilya Soedirman menjadi simbol perlawanan militer dan moral yang menyatukan TNI dan rakyat."
+        "answer": 1,
+        "explanation": "Pasokan senjata Soviet mengubah perimbangan perang di Pasifik secara drastis. TNI menerima alutsista paling mutakhir pada zamannya: pesawat pengebom jarak jauh Tu-16 Badger yang mampu menembakkan rudal anti-kapal jarak jauh, 12 kapal selam armada kelas Whiskey, sistem rudal pertahanan udara SA-2 Guideline, serta kapal penjelajah tempur KRI Irian (bobot 16.000 ton). Persenjataan ini jauh melampaui kemampuan kapal perang dan armada udara Belanda di Papua."
       },
       {
-        type: "single",
-        stimulus: "Sri Sultan Hamengkubuwono IX secara rahasia mengusulkan strategi serangan mendadak berskala besar terhadap pasukan pendudukan Belanda di pusat kota Yogyakarta. Gagasan taktis ini disetujui komando gerilya dan dieksekusi dengan presisi tinggi oleh pasukan TNI di bawah pimpinan Letkol Soeharto pada 1 Maret 1949. Serangan fajar ini dirancang khusus untuk mematahkan klaim bohong Belanda kepada utusan PBB mengenai situasi keamanan Jawa.",
-        question: "Tujuan strategis utama dari pelaksanaan Serangan Umum 1 Maret 1949 adalah...",
-        options: [
-          "A. Merebut seluruh benteng Belanda di Pulau Jawa secara permanen",
-          "B. Membuktikan kepada PBB dan dunia bahwa TNI masih memiliki kekuatan tempur untuk melawan propaganda Belanda",
-          "C. Membebaskan tawanan Jepang di Maguwo",
-          "D. Memindahkan ibu kota negara kembali ke Jakarta",
-          "E. Menghentikan perundingan Roem-Royen"
+        "type": "single",
+        "stimulus": "Menyaksikan Belanda mempercepat pembentukan Dewan Nugini (Nieuw-Guinea Raad), meresmikan bendera Bintang Kejora, dan menciptakan lagu kebangsaan tersendiri untuk membentuk negara boneka Papua, Presiden Sukarno mengambil tindakan perlawanan terbuka. Pada 19 Desember 1961, di hadapan ratusan ribu rakyat yang memadati Alun-Alun Utara Yogyakarta, Sukarno mengumumkan komando mobilisasi nasional yang dikenal sebagai Tri Komando Rakyat (Trikora).",
+        "question": "Tiga instruksi mutlak yang tertuang dalam amanat Trikora Presiden Sukarno adalah...",
+        "options": [
+          "A. Bubarkan partai politik, batalkan perjanjian Renville, dan tangkap pimpinan militer Belanda",
+          "B. Gagalkan pembentukan negara boneka Papua buatan kolonial Belanda, kibarkan Sang Saka Merah Putih di seluruh tanah air Irian Barat, dan bersiap mengadakan mobilisasi umum",
+          "C. Putuskan hubungan dagang dengan Singapura, serang pangkalan militer Inggris, dan keluar dari PBB",
+          "D. Bentuk Dewan Nasional, sahkan UUD 1945, dan adakan pemilihan umum presiden seumur hidup",
+          "E. Tarik pasukan dari perbatasan Kalimantan, bubarkan UNTEA, dan adakan musyawarah antar-suku"
         ],
-        answer: 1,
-        explanation: "Serangan 1 Maret bertujuan mematahkan propaganda Belanda bahwa TNI sudah hancur."
+        "answer": 1,
+        "explanation": "Trikora menjadi payung hukum politik dan militer untuk operasi pembebasan Irian Barat. Tiga instruksi tegasnya: (1) Gagalkan pembentukan 'Negara Boneka Papua' buatan Belanda; (2) Kibarkan Sang Saka Merah Putih di Irian Barat tanah air Indonesia; (3) Bersiaplah untuk mobilisasi umum guna mempertahankan kemerdekaan dan kesatuan tanah air dan bangsa."
       },
       {
-        type: "single",
-        stimulus: "Pasukan gabungan TNI dan gerilyawan rakyat berhasil menguasai pusat kota Yogyakarta secara mutlak selama 6 jam pada 1 Maret 1949. Berita kemenangan taktis ini segera disiarkan menembus pemancar radio gerilya tersembunyi di Wonosari hingga ditangkap oleh perwakilan diplomatik asing. Kabar penyerbuan ini mengejutkan dunia internasional dan mendesak Dewan Keamanan PBB untuk segera menekan Belanda.",
-        question: "Dampak langsung siaran radio gerilya Wonosari mengenai Serangan Umum 1 Maret di forum PBB adalah...",
-        options: [
-          "A. PBB langsung mengesahkan pembubaran negara Belanda",
-          "B. Mengubah peta diplomasi PBB dan menekan Belanda menghentikan agresi serta membebaskan pimpinan RI",
-          "C. Menjelaskan kekalahan total pihak Indonesia di Yogyakarta",
-          "D. Menyebabkan penghentian dana bantuan Palang Merah Internasional",
-          "E. Memindahkan markas PBB ke Yogyakarta"
+        "type": "single",
+        "stimulus": "Untuk mengoordinasikan seluruh operasi militer perebutan Irian Barat, pemerintah membentuk Komando Siaga Mandala Pembebasan Irian Barat yang bermarkas di Makassar, dengan menunjuk Mayor Jenderal Soeharto sebagai Panglima Komando Mandala pada Januari 1962. Panglima Mandala menyusun rencana operasi bertahap yang matang guna melumpuhkan kekuatan pertahanan Belanda yang terkonsentrasi di Fakfak, Kaimana, Merauke, dan Biak.",
+        "question": "Urutan tahapan operasi militer yang dirancang oleh Panglima Komando Mandala Mayjen Soeharto adalah...",
+        "options": [
+          "A. Tahap Penyerangan Terbuka, Tahap Gencatan Senjata, dan Tahap Penandatanganan Traktat Damai",
+          "B. Tahap Infiltrasi (penyusupan pasukan gerilya), Tahap Eksploitasi (serangan terbuka amfibi berskala penuh), dan Tahap Konsolidasi (penegakan kedaulatan mutlak)",
+          "C. Tahap Embargo Ekonomi, Tahap Pengeboman Udara, dan Tahap Evakuasi Warga Asing",
+          "D. Tahap Negosiasi Meja Bundar, Tahap Pengerahan Pasukan Pengamat PBB, dan Tahap Pepera",
+          "E. Tahap Perang Gerilya Hutan, Tahap Pembentukan Partai Lokal, dan Tahap Pembagian Tanah"
         ],
-        answer: 1,
-        explanation: "Siaran radio Wonosari mengejutkan PBB dan mendesak Belanda menghentikan agresi serta membebaskan Soekarno-Hatta."
+        "answer": 1,
+        "explanation": "Doktrin Komando Mandala terbagi dalam tiga fase terencana: (1) Fase Infiltrasi (hingga akhir 1962): menerjunkan pasukan komando kecil ke pedalaman untuk menciptakan kantong gerilya dan mengikat pasukan Belanda; (2) Fase Eksploitasi (awal 1963): serangan amfibi dan lintas udara terbuka untuk menghancurkan pangkalan induk militer musuh; (3) Fase Konsolidasi: mendudukkan kekuasaan hukum Republik secara de facto di seluruh kota."
       },
       {
-        type: "single",
-        stimulus: "Pemerintah Amerika Serikat secara mengejutkan mengancam akan membekukan dana bantuan rekonstruksi ekonomi Marshall Plan bagi Kerajaan Belanda. Langkah tegas ini diambil Amerika karena khawatir aksi militer Belanda yang berkepanjangan akan memicu ketidakstabilan geopolitik di Asia Tenggara. AS tidak ingin krisis ini dimanfaatkan oleh kekuatan komunis Blok Timur untuk menanamkan pengaruhnya di Indonesia.",
-        question: "Faktor geopolitik yang memicu perubahan sikap keras Amerika Serikat terhadap Belanda pasca-Serangan 1 Maret adalah...",
-        options: [
-          "A. Keinginan AS membeli tambang emas di Yogyakarta",
-          "B. Kekhawatiran AS bahwa agresi Belanda akan mendorong Indonesia jatuh ke dalam pengaruh komunisme Blok Timur",
-          "C. Ancaman pembubaran Perserikatan Bangsa-Bangsa",
-          "D. Kekalahan angkatan laut Belanda di Teluk Jakarta",
-          "E. Janji pemerintah RI memberikan pangkalan militer untuk AS"
+        "type": "single",
+        "stimulus": "Pada malam 15 Januari 1962, empat kapal cepat torpedo TNI Angkatan Laut (RI Macan Tutul, RI Macan Kumbang, RI Harimau, dan RI Singa) menjalankan operasi infiltrasi rahasia membawa puluhan prajurit sukarelawan menuju pantai Kaimana. Di tengah kegelapan Laut Aru, konvoi ini disergap oleh dua kapal perusak Belanda berpeluru kendali (Hr. Ms. Evertsen dan Hr. Ms. Kortenaer) serta pesawat pengintai maritim Neptune. Komodor Yos Sudarso yang berada di atas kapal markas RI Macan Tutul menyadari armadanya kalah dalam jangkauan meriam.",
+        "question": "Tindakan heroik yang diambil oleh Komodor Yos Sudarso sebelum kapalnya tenggelam adalah...",
+        "options": [
+          "A. Memerintahkan seluruh awak kapal mengibarkan bendera putih tanda menyerah tanpa syarat",
+          "B. Bermanuver menghadapkan kapalnya langsung ke arah tembakan musuh guna mengalihkan perhatian armada Belanda agar dua kapal lainnya berhasil menyelamatkan diri",
+          "C. Memerintahkan pasukannya melompat ke air dan berenang menuju pangkalan pertahanan Australia",
+          "D. Menghubungi markas besar armada Uni Soviet untuk melancarkan serangan balasan nuklir",
+          "E. Membakar seluruh dokumen sandi militer dan menolak membalas tembakan musuh"
         ],
-        answer: 1,
-        explanation: "AS khawatir ketidakstabilan akibat agresi Belanda akan dimanfaatkan kekuatan komunis Blok Timur di Indonesia."
+        "answer": 1,
+        "explanation": "Menyadari bahwa kecepatan dan persenjataan RI Macan Tutul tidak seimbang dengan kapal perusak Belanda, Komodor Yos Sudarso mengambil keputusan berani berkorban (self-sacrifice). Kapalnya sengaja memotong haluan musuh dan menembakkan meriam kecilnya untuk memancing konsentrasi tembakan Belanda, memberikan waktu berharga bagi RI Harimau dan RI Macan Kumbang untuk bermanuver mundur meloloskan diri. Pesan radio terakhirnya yang legendaris berbunyi: 'Kobarkan semangat pertempuran!'"
       },
       {
-        type: "single",
-        stimulus: "Dalam perang gerilya menembus desa-desa, rakyat secara sukarela menyediakan bantuan makanan, obat-obatan, serta mengamankan kerahasiaan rute perjalanan prajurit TNI. Tanpa dukungan logistik dan informasi dari jelata, pasukan gerilya tidak akan mampu bertahan meladeni persenjataan modern Belanda. Pengalaman manunggal ini menjadi cikal bakal terbentuknya doktrin pertahanan rakyat semesta di Indonesia.",
-        question: "Sistem pertahanan militer Indonesia yang mengandalkan kemanunggalan TNI dan rakyat dalam gerilya dikenal sebagai...",
-        options: [
-          "A. Sistem Perang Terbuka Frontal",
-          "B. Sistem Pertahanan Keamanan Rakyat Semesta (Sishankamrata)",
-          "C. Strategi Pertahanan Benteng Laut",
-          "D. Taktik Serangan Udara Terpadu",
-          "E. Sistem Pertahanan Kido Butai"
+        "type": "single",
+        "stimulus": "Memasuki pertengahan 1962, Komando Mandala merampungkan persiapan Operasi Jayawijaya, sebuah operasi penyerbuan amfibi terbesar yang melibatkan 30.000 prajurit TNI, armada kapal selam, dan pesawat pengebom Tu-16 yang siap menghancurkan pangkalan utama Belanda di Biak. Menghadapi prospek meletusnya perang terbuka skala besar di Pasifik Barat yang dikhawatirkan menyeret campur tangan armada militer Uni Soviet, Presiden Amerika Serikat John F. Kennedy mengambil keputusan drastis dengan menekan Perdana Menteri Belanda Jan de Quay untuk segera melepaskan Irian Barat.",
+        "question": "Pertimbangan utama Presiden AS John F. Kennedy menekan sekutu Eropanya (Belanda) agar menyerahkan Irian Barat kepada Indonesia adalah...",
+        "options": [
+          "A. Keinginan Amerika Serikat untuk membeli pulau Irian Barat dari tangan pemerintah Kerajaan Belanda",
+          "B. Kekhawatiran bahwa meletusnya perang terbuka akan mendorong Indonesia jatuh sepenuhnya menjadi satelit komunis Uni Soviet di Asia Tenggara",
+          "C. Tuntutan serikat buruh pelabuhan di New York yang menolak membongkar kargo kapal Belanda",
+          "D. Adanya kesepakatan rahasia antara Kennedy dan pimpinan militer Angkatan Darat Belanda",
+          "E. Desakan Mahkamah Pidana Internasional atas pelanggaran batas wilayah laut teritorial"
         ],
-        answer: 1,
-        explanation: "Sishankamrata lahir dari pengalaman perang gerilya di mana TNI dan rakyat menyatu dalam pertahanan."
+        "answer": 1,
+        "explanation": "Presiden Kennedy menyadari bahwa jika perang terbuka meletus, armada Soviet akan terlibat aktif mendukung Indonesia. Kemenangan militer Indonesia dengan senjata Soviet akan memperkuat prestise komunisme di Asia dan mengubur pengaruh Barat. Oleh sebab itu, Kennedy mengirimkan diplomat Ellsworth Bunker sebagai penengah dan mengancam menghentikan bantuan ekonomi Rencana Marshall kepada Belanda jika Den Haag menolak menandatangani perundingan damai."
       },
       {
-        type: "single",
-        stimulus: "Taktik Wehrkreise yang diterapkan oleh Kolonel A.H. Nasution membagi seluruh wilayah pertahanan Jawa menjadi lingkaran-lingkaran militer otonom. Setiap sektor markas dibekali wewenang penuh untuk melancarkan serangan gerilya tanpa perlu menunggu perintah komando pusat yang terputus. Keunggulan taktis ini membuat pergerakan militer Indonesia sangat lincah dan sulit dilumpuhkan oleh Belanda.",
-        question: "Keunggulan taktis sistem Wehrkreise dalam perang gerilya melawan Belanda adalah...",
-        options: [
-          "A. Pasukan dapat melakukan serangan serentak dan fleksibel tanpa menggantungkan komando pusat yang terputus",
-          "B. Memudahkan tentara musuh mengawasi pergerakan pejuang",
-          "C. Membutuhkan pasokan kendaraan lapis baja yang besar",
-          "D. Menghentikan seluruh hubungan komunikasi dengan PDRI",
-          "E. Menyerahkan pertahanan daerah kepada kepolisian kolonial"
+        "type": "single",
+        "stimulus": "Pada 15 Agustus 1962, delegasi Indonesia yang dipimpin oleh Menteri Luar Negeri Subandrio dan delegasi Belanda menandatangani Persetujuan New York (New York Agreement) di markas besar PBB. Perjanjian ini menetapkan peta jalan peralihan kekuasaan secara bertahap: Belanda wajib menyerahkan administrasi pemerintahan Irian Barat kepada badan transisi Perserikatan Bangsa-Bangsa bernama UNTEA (United Nations Temporary Executive Authority) pada 1 Oktober 1962, yang kemudian diserahkan secara penuh kepada pemerintah Republik Indonesia pada 1 Mei 1963.",
+        "question": "Kewajiban demokratis yang wajib dipenuhi oleh pemerintah Indonesia setelah menerima kekuasaan penuh atas Irian Barat dari UNTEA adalah...",
+        "options": [
+          "A. Membayar kompensasi ganti rugi seluruh fasilitas gedung kolonial kepada pemerintah Belanda",
+          "B. Menyelenggarakan Penentuan Pendapat Rakyat (Pepera) sebelum akhir tahun 1969 guna memberikan hak bagi rakyat Papua untuk memilih tetap bersatu dengan NKRI atau merdeka",
+          "C. Mengizinkan pasukan militer Kerajaan Belanda mendirikan pangkalan pertahanan permanen di Fakfak",
+          "D. Mengganti seluruh pegawai administrasi pemerintahan dengan pejabat berkebangsaan Amerika Serikat",
+          "E. Mengalihkan hasil tambang emas dan tembaga secara cuma-cuma kepada kas Perserikatan Bangsa-Bangsa"
         ],
-        answer: 0,
-        explanation: "Sistem Wehrkreise membuat unit-unit militer daerah mampu bertempur mandiri dan melakukan koordinasi fleksibel."
+        "answer": 1,
+        "explanation": "Pasal-pasal dalam Persetujuan New York memuat klausul act of free choice (Penentuan Pendapat Rakyat/Pepera). Indonesia diwajibkan memberikan kesempatan bagi penduduk asli Irian Barat sebelum akhir 1969 untuk menentukan status kewarganegaraan mereka: apakah tetap menjadi bagian dari Negara Kesatuan Republik Indonesia atau memisahkan diri. Pada 1969, Pepera diselenggarakan dengan hasil bulat menyatakan rakyat Irian Barat tetap bersatu dalam NKRI."
       },
       {
-        type: "single",
-        stimulus: "Sjafruddin Prawiranegara memimpin Pemerintah Darurat Republik Indonesia (PDRI) dengan ketulusan dan pengabdian tinggi demi menyelamatkan kedaulatan bangsa. Begitu Presiden Soekarno dan Wakil Presiden Moh. Hatta dibebaskan dari pengasingan Bangka, Sjafruddin secara resmi mengembalikan mandat kepemimpinannya di Yogyakarta pada Juli 1949. Kerelaan melepas kekuasaan pimpinan ini mencerminkan jiwa kebangsaan dan keteladanan negarawan sejati.",
-        question: "Sikap Sjafruddin Prawiranegara menyerahkan kembali mandat PDRI kepada Soekarno pada Juli 1949 mencerminkan...",
-        options: [
-          "A. Keinginan mengasingkan diri dari dunia politik",
-          "B. Negarawan sejati yang mengutamakan konstitusi dan persatuan nasional di atas ambisi kekuasaan pribadi",
-          "C. Kekhawatiran akan ancaman militer Sekutu",
-          "D. Ketidakmampuan mengelola pemerintahan darurat",
-          "E. Tekanan dari pemerintah Kerajaan Belanda"
+        "type": "single",
+        "stimulus": "Pada 1961, Perdana Menteri Federasi Malaya Tengku Abdul Rahman mengumumkan rencana pembentukan Federasi Malaysia yang menggabungkan Malaya, Singapura, Sarawak, Brunei, dan Sabah. Presiden Sukarno menentang keras pembentukan federasi baru ini dan menyebutnya sebagai proyek Nekolim (Neo-Kolonialisme dan Imperialisme) bentukan imperialis Inggris. Sukarno menilai Inggris sengaja merancang federasi boneka tersebut untuk mengepung revolusi Indonesia (encirclement policy) dan mempertahankan pangkalan militernya di Singapura dan Selat Malaka guna mengendalikan jalur maritim Asia Tenggara.",
+        "question": "Alasan mendasar Presiden Sukarno mencap Federasi Malaysia sebagai proyek neo-kolonialisme Inggris adalah...",
+        "options": [
+          "A. Keengganan pemerintah Malaya untuk membeli minyak kelapa sawit dari perkebunan di Sumatra",
+          "B. Adanya perjanjian pertahanan militer AMDA yang menjamin hak Inggris menempatkan pasukan persemakmuran dan mempertahankan kendali strategis di perbatasan Indonesia",
+          "C. Penolakan masyarakat Singapura untuk menggunakan bahasa Melayu sebagai bahasa nasional",
+          "D. Larangan dari pemerintah Kuala Lumpur bagi warga negara Indonesia untuk menunaikan ibadah haji",
+          "E. Keinginan Indonesia untuk menguasai tambang minyak bumi di semenanjung Malaya secara sepihak"
         ],
-        answer: 1,
-        explanation: "Sjafruddin menunjukkan jiwa negarawan sejati dengan mengembalikan mandat kepemimpinan demi keutuhan konstitusi."
+        "answer": 1,
+        "explanation": "Kecurigaan Sukarno didasarkan pada fakta bahwa pembentukan Federasi Malaysia disertai perjanjian pertahanan Anglo-Malayan Defence Agreement (AMDA). Inggris tetap menempatkan pangkalan armada laut di Singapura dan pasukan militer di perbatasan Kalimantan. Bagi Sukarno, hal ini membuktikan bahwa kemerdekaan Malaysia bukan kemerdekaan sejati, melainkan strategi Inggris mengamankan kepentingan militernya di Asia Tenggara pasca-kolonial."
       },
       {
-        type: "single",
-        stimulus: "Serangan Umum 1 Maret 1949 diakui oleh sejarawan sebagai titik balik (turning point) terpenting dalam sejarah diplomasi dan militer Revolusi Indonesia. Keberhasilan taktis menguasai ibu kota selama 6 jam mematahkan klaim pendudukan Belanda secara telak di mata PBB. Peristiwa ini mengubah kedudukan Indonesia dari pihak terdesak menjadi pemegang kendali moral di meja perundingan.",
-        question: "Alasan utama Serangan 1 Maret dinamakan titik balik perjuangan revolusi adalah...",
-        options: [
-          "A. Belanda menyerah tanpa syarat pada tanggal 2 Maret 1949",
-          "B. Mengubah posisi Indonesia dari pihak terdesak menjadi pihak yang menguasai keunggulan diplomasi dan moral internasional",
-          "C. Berakhirnya seluruh perundingan meja hijau",
-          "D. Pembubaran pasukan TKR di seluruh Jawa",
-          "E. Pengangkatan Letkol Soeharto sebagai Presiden RI"
+        "type": "single",
+        "stimulus": "Kecurigaan Indonesia terhadap proyek pembentukan Malaysia semakin menguat ketika pada 8 Desember 1962 meletus pemberontakan bersenjata rakyat di Kesultanan Brunei pimpinan A.M. Azahari dan Tentara Nasional Kalimantan Utara (TNKU). Rakyat Brunei menolak bergabung ke dalam Federasi Malaysia dan memperjuangkan kemerdekaan Negara Kesatuan Kalimantan Utara. Pasukan militer kolonial Inggris bertindak represif dengan menerjunkan pasukan Gurkha untuk memadamkan pemberontakan tersebut secara berdarah. Sukarno secara terbuka menyatakan simpati dan memberikan bantuan perlindungan diplomatik kepada gerilyawan TNKU.",
+        "question": "Dampak penumpasan pemberontakan Brunei oleh pasukan Inggris terhadap hubungan diplomatik di Asia Tenggara adalah...",
+        "options": [
+          "A. Terjalinnya perjanjian aliansi militer bersama antara Indonesia, Malaya, dan Filipina",
+          "B. Hancurnya upaya rekonsiliasi damai konfederasi Maphilindo dan dimulainya konfrontasi militer terbuka Indonesia terhadap rencana pembentukan Malaysia",
+          "C. Bergabungnya Kesultanan Brunei ke dalam Negara Kesatuan Republik Indonesia",
+          "D. Penutupan seluruh kantor kedutaan besar negara-negara Asia Tenggara di London",
+          "E. Pembatalan sepihak kemerdekaan Republik Filipina oleh parlemen di Manila"
         ],
-        answer: 1,
-        explanation: "Serangan 1 Maret menjadi turning point karena meruntuhkan propaganda Belanda dan membalikkan dukungan internasional."
+        "answer": 1,
+        "explanation": "Sebelumnya, para pemimpin Indonesia, Malaya, dan Filipina sempat menggelar KTT di Manila (1963) dan menyepakati pembentukan konfederasi longgar non-imperialis bernama Maphilindo. Namun, tindakan Inggris menumpas pemberontakan Brunei dan memproklamasikan berdirinya Federasi Malaysia sebelum tim penyelidik PBB menyelesaikan surveinya dipandang Sukarno sebagai pelanggaran traktat Manila, memicu konfrontasi terbuka."
       },
       {
-        type: "single",
-        stimulus: "Penyerbuan pangkalan udara Maguwo pada 19 Desember 1948 diawali dengan penerjunan mendadak pasukan khusus Baret Merah Belanda (KST). Serangan mendadak ini dilancarkan Belanda tanpa deklarasi perang resmi demi mengagetkan pertahanan Republik di Yogyakarta. Kendati mengejutkan, agresi ilegal ini gagal melumpuhkan semangat perlawanan fisik dan diplomasi Indonesia.",
-        question: "Tindakan Agresi Militer II Belanda dilakukan secara mendadak dengan tujuan...",
-        options: [
-          "A. Menangkap pimpinan RI dan melumpuhkan pusat pemerintahan sebelum TNI sempat bereaksi",
-          "B. Membantu evakuasi warga asing dari Yogyakarta",
-          "C. Mengadakan latihan militer bersama TNI",
-          "D. Membagikan bantuan kemanusiaan PBB",
-          "E. Mengamankan pelaksanaan Pemilu 1948"
+        "type": "single",
+        "stimulus": "Pada 3 Mei 1964 di hadapan rapat raksasa sukarelawan di Jakarta, Presiden Sukarno mengumumkan amanat Dwi Komando Rakyat (Dwikora) dengan semboyan legendaris: 'Ganyang Malaysia!'. Dua isi pokok Dwikora adalah: perhebat ketahanan revolusi Indonesia, dan bantu perjuangan revolusioner rakyat Malaya, Singapura, Sarawak, dan Sabah untuk membubarkan negara boneka Malaysia. Pemerintah kemudian membentuk Komando Operasi Siaga dipimpin Marsekal Madya Omar Dhani, mengerahkan pasukan sukarelawan sipil bersama personel TNI melancarkan infiltrasi gerilya menembus perbatasan rimba Kalimantan.",
+        "question": "Karakteristik utama pertempuran bersenjata yang berlangsung sepanjang masa konfrontasi Dwikora di Pulau Kalimantan adalah...",
+        "options": [
+          "A. Perang laut terbuka antarkapal penjelajah di perairan Laut Jawa",
+          "B. Perang gerilya asimetris di pedalaman hutan lebat Kalimantan antara sukarelawan/TNI berhadapan dengan pasukan gabungan Inggris, Gurkha, Australia, dan Selandia Baru",
+          "C. Pengeboman pangkalan udara kota London oleh armada pesawat tempur Indonesia",
+          "D. Pengerahan tank-tank lapis baja berat di sepanjang jalan raya kota Kuala Lumpur",
+          "E. Pendaratan pasukan infanteri besar-besaran di pantai barat Semenanjung Malaya"
         ],
-        answer: 0,
-        explanation: "Agresi II dilancarkan mendadak dengan sasaran melumpuhkan jantung pemerintahan RI dan menawan pimpinan negara."
+        "answer": 1,
+        "explanation": "Konfrontasi Dwikora tidak pernah dinyatakan sebagai perang terbuka resmi antaranegara, melainkan perang gerilya perbatasan (undeclared border war). Ribuan sukarelawan Indonesia dan pasukan komando TNI menyusup ke wilayah Sarawak dan Sabah, terlibat kontak tembak sengit di tengah hutan rimba melawan pasukan komando elit Inggris (Special Air Service / SAS), resimen Gurkha, serta tentara Australia dan Selandia Baru."
       },
       {
-        type: "single",
-        stimulus: "Keberhasilan diplomasi wakil Indonesia L.N. Palar di forum PBB tidak lepas dari pasokan data konkret mengenai perlawanan gerilya dan eksistensi PDRI. L.N. Palar memanfaatkan fakta keberhasilan Serangan 1 Maret untuk memojokkan delegasi Belanda di ruang sidang internasional. Perjuangan gigih sang diplomat berhasil memicu disahkannya resolusi PBB yang memerintahkan pembebasan pimpinan RI.",
-        question: "Peran diplomat L.N. Palar di PBB selama Agresi Militer II adalah...",
-        options: [
-          "A. Membela argumen Belanda di sidang PBB",
-          "B. Menyuarakan fakta perlawanan RI dan mendesak pengesahan resolusi penghentian agresi Belanda",
-          "C. Menghentikan bantuan keuangan untuk PDRI",
-          "D. Menolak bertemu dengan utusan Amerika Serikat",
-          "E. Menyampaikan surat pengunduran diri pemerintah RI"
+        "type": "single",
+        "stimulus": "Konfrontasi menentang Malaysia mendorong Sukarno meradikalkan konsepsi politik luar negerinya dengan menolak doktrin netralitas konvensional. Dalam pidatonya di berbagai forum internasional, Sukarno membagi tatanan politik dunia menjadi dua kubu yang saling bertentangan: Oldefos (Old Established Forces) dan Nefos (New Emerging Forces). Sukarno menegaskan bahwa perdamaian abadi dunia tidak akan pernah tercapai selama kekuatan Oldefos masih menindas bangsa-bangsa merdeka baru.",
+        "question": "Kategori negara yang digolongkan oleh Presiden Sukarno ke dalam kelompok New Emerging Forces (Nefos) adalah...",
+        "options": [
+          "A. Negara-negara monarki absolut di kawasan Eropa Barat dan Amerika Utara",
+          "B. Bangsa-bangsa Asia, Afrika, dan Amerika Latin yang baru merdeka, negara-negara sosialis progresif, serta kekuatan rakyat yang menentang imperialisme dan kolonialisme",
+          "C. Negara-negara anggota pakta pertahanan militer NATO dan SEATO",
+          "D. Perhimpunan negara-negara pengekspor minyak bumi di Timur Tengah",
+          "E. Negara-negara pulau kecil yang tidak memiliki angkatan bersenjata reguler"
         ],
-        answer: 1,
-        explanation: "L.N. Palar secara gigih menyuarakan fakta perjuangan gerilya dan PDRI untuk mendesak resolusi PBB menekan Belanda."
+        "answer": 1,
+        "explanation": "Nefos merupakan konsep revolusioner tandingan terhadap tatanan dunia kapitalis. Nefos mencakup bangsa-bangsa Dunia Ketiga di Asia, Afrika, dan Amerika Latin yang sedang berjuang melepaskan diri dari sisa-sisa penjajahan, beraliansi dengan negara-negara blok sosialis yang mendukung kemerdekaan dan keadilan sosial menentang hegemoni modal Barat (Oldefos)."
       },
       {
-        type: "data_sufficiency",
-        stimulus: "Seorang sejarawan menilai efektivitas Serangan Umum 1 Maret 1949.<br><br>DATA SEJARAH:<br>(1) TNI menguasai Yogyakarta selama 6 jam dan menyiarkannya via Radio Wonosari.<br>(2) DK PBB mengeluarkan resolusi menuntut Belanda mengembalikan pemerintah RI ke Yogyakarta.",
-        question: "Apakah Data (1) dan (2) cukup membuktikan hubungan kausalitas Serangan 1 Maret terhadap keputusan PBB?",
-        options: [
-          "A. Data (1) dan (2) BERSAMA-SAMA cukup membuktikan kausalitas keberhasilan aksi militer terhadap dukungan PBB",
-          "B. Data (1) SAJA cukup",
-          "C. Data (2) SAJA cukup",
-          "D. Kedua data bertentangan",
-          "E. Data tidak relevan"
+        "type": "single",
+        "stimulus": "Sebagai manifestasi nyata perlawanan terhadap Oldefos di bidang kebudayaan dan olahraga, Indonesia menyelenggarakan Games of the New Emerging Forces (GANEFO I) di Jakarta pada 10–22 November 1963. Perhelatan akbar ini digelar menyusul skorsing yang dijatuhkan Komite Olimpiade Internasional (IOC) kepada Indonesia karena menolak memberikan visa masuk bagi delegasi Israel dan Taiwan dalam Asian Games IV 1962 di Jakarta. Dengan moto 'Onward! No Retreat', GANEFO berhasil menghadirkan 2.200 atlet dari 48 negara di Asia, Afrika, Amerika Latin, dan Eropa Timur.",
+        "question": "Pesan politik utama yang ditegaskan Presiden Sukarno melalui penyelenggaraan GANEFO di Kompleks Olahraga Senayan adalah...",
+        "options": [
+          "A. Olahraga harus dipisahkan secara kaku dan mutlak dari segala bentuk pemikiran ideologi politik",
+          "B. Olahraga merupakan instrumen perjuangan politik anti-imperialis yang sah guna membuktikan bahwa bangsa-bangsa berkembang sanggup berdiri di atas kaki sendiri tanpa didikte hegemoni Barat",
+          "C. Indonesia berniat mengambil alih status tuan rumah Olimpiade Musim Panas secara sepihak",
+          "D. Atlet dari negara-negara non-blok dilarang berkompetisi di luar kawasan benua Asia",
+          "E. Seluruh anggaran pembangunan fasilitas olahraga diperoleh dari sumbangan cuma-cuma PBB"
         ],
-        answer: 0,
-        explanation: "Data 1 membuktikan keunggulan aksi militer & fakta siaran, dan Data 2 membuktikan respon politik DK PBB."
+        "answer": 1,
+        "explanation": "Sukarno secara terbuka menentang klaim IOC bahwa olahraga harus steril dari politik. Bagi Sukarno, keputusan IOC menjatuhkan sanksi kepada Indonesia adalah tindakan politik imperialis Barat. Melalui GANEFO, Indonesia membuktikan kapasitas logistik dan kepemimpinannya mengorganisasi festival olahraga dunia tandingan yang merayakan persaudaraan antarbangsa tertindas tanpa dominasi negara-negara Barat."
       },
       {
-        type: "infographic",
-        stimulus: "Cermati alur penyelamatan negara 1948-1949:<br>1. 19 Des 1948: Agresi II & Telegram Mandat ➔ PDRI Bukittinggi<br>2. Des 1948 - Maret 1949: Perang Gerilya Soedirman ➔ Sishankamrata<br>3. 1 Maret 1949: Serangan Umum 6 Jam ➔ Resolusi DK PBB",
-        question: "Kesimpulan utama dari alur penyelamatan kedaulatan negara di atas adalah...",
-        options: [
-          "A. Sinergi antara kepemimpinan darurat (PDRI), pertahanan gerilya, dan kejelian momentum militer menyelamatkan eksistensi NKRI",
-          "B. Indonesia berhasil dikuasai secara permanen oleh Belanda",
-          "C. PDRI gagal menjalankan fungsi pemerintahan",
-          "D. Jenderal Soedirman menyerah kepada Belanda di Jogja",
-          "E. PBB menolak mencampuri urusan agresi Belanda"
+        "type": "single",
+        "stimulus": "Ketegangan konfrontasi mencapai puncaknya ketika pada akhir 1964 Perserikatan Bangsa-Bangsa memilih Federasi Malaysia sebagai anggota tidak tetap Dewan Keamanan PBB. Sukarno memandang pengakuan PBB terhadap negara yang sedang berkonflik dan dinilai sebagai boneka neo-kolonialisme sebagai penghinaan terhadap martabat bangsa Indonesia dan piagam perdamaian dunia. Pada rapat umum 7 Januari 1965 di Jakarta, Sukarno menyatakan secara resmi: 'Indonesia keluar dari Perserikatan Bangsa-Bangsa!'.",
+        "question": "Konsekuensi politik-diplomatik dari keputusan Sukarno menarik Indonesia keluar dari keanggotaan PBB adalah...",
+        "options": [
+          "A. Indonesia dijatuhi sanksi blokade total oleh seluruh kapal perang negara-negara Asia",
+          "B. Indonesia semakin terisolasi dari pergaulan diplomasi internasional dan bantuan lembaga-lembaga donor PBB (WHO, UNICEF, UNESCO), serta semakin condong ke kubu Republik Rakyat Tiongkok",
+          "C. Markas besar Perserikatan Bangsa-Bangsa segera dipindahkan dari New York ke kota Jakarta",
+          "D. Terhentinya seluruh operasi militer sukarelawan Dwikora di perbatasan Kalimantan",
+          "E. PBB secara otomatis membubarkan keanggotaan Federasi Malaysia dari Dewan Keamanan"
         ],
-        answer: 0,
-        explanation: "Sinergi triumvirat penyelamat (PDRI, Gerilya Soedirman, dan Serangan 1 Maret) terbukti menyelamatkan eksistensi NKRI."
+        "answer": 1,
+        "explanation": "Keputusan keluar dari PBB menjadikan Indonesia satu-satunya negara yang pernah mundur dari badan dunia tersebut. Langkah berani ini berharga mahal: Indonesia kehilangan akses bantuan pembangunan, dana kesehatan, dan jalur diplomasi multilateral. Keterisolasian ini memaksa Sukarno merapatkan barisan diplomasi ke poros radikal kiri bersama Beijing (RRT)."
       },
       {
-        type: "single",
-        stimulus: "Keteladanan kepemimpinan Jenderal Soedirman dan Sjafruddin Prawiranegara memberikan warisan kebangsaan yang sangat berharga bagi generasi penerus. Di saat krisis eksistensial melanda negara, mereka mengedepankan integritas, pengorbanan jiwa raga, dan ketaatan pada prinsip konstitusi di atas kepentingan pribadi. Perjuangan ini menginspirasi pengembangan karakter Profil Pelajar Pancasila yang bernalar kritis, mandiri, dan berjiwa patriotik.",
-        question: "Nilai Profil Pelajar Pancasila yang paling menonjol dari peristiwa Agresi II dan PDRI adalah...",
-        options: [
-          "A. Tanggung jawab, keteguhan iman kebangsaan, dan jiwa pantang menyerah dalam menghadapi krisis",
-          "B. Mengabaikan tugas demi keselamatan pribadi",
-          "C. Mengandalkan kekuasaan untuk kepentingan perorangan",
-          "D. Menyerahkan keputusan negara kepada musuh",
-          "E. Menolak bergotong royong dengan rakyat"
+        "type": "single",
+        "stimulus": "Pasca-keluar dari PBB, Indonesia membentuk aliansi internasional anti-imperialis yang dikenal sebagai Poros Jakarta-Phnom Penh-Hanoi-Peking-Pyongyang. Sukarno memproyeksikan berdirinya badan tandingan PBB yang dinamakan CONEFO (Conference of the New Emerging Forces) yang direncanakan bersidang di Jakarta pada 1966. Pemerintah mengalokasikan dana pembangunan raksasa untuk mendirikan Kompleks Gedung CONEFO di kawasan Senayan (kini menjadi Gedung DPR/MPR RI).",
+        "question": "Kritik para sejarawan terhadap pembentukan Poros Jakarta-Peking dalam kaitannya dengan doktrin politik luar negeri Indonesia adalah bahwa kebijakan tersebut...",
+        "options": [
+          "A. Mengabaikan kerja sama pertahanan maritim dengan negara-negara kepulauan Pasifik",
+          "B. Melenceng jauh dari prinsip dasar politik luar negeri 'Bebas Aktif' karena mengikatkan haluan diplomasi negara pada salah satu kubu ideologi komunis internasional",
+          "C. Mengakibatkan tentara Tiongkok menduduki seluruh pelabuhan dagang di Sumatra",
+          "D. Mengharuskan Indonesia mengganti ideologi Pancasila dengan ajaran Maoisme",
+          "E. Membatalkan rencana penyelenggaraan pesta olahraga GANEFO tahap kedua"
         ],
-        answer: 0,
-        explanation: "Kepemimpinan di masa Agresi II meneladani tanggung jawab penuh, keteguhan iman kebangsaan, dan daya tahan krisis."
+        "answer": 1,
+        "explanation": "Doktrin awal 'Mendayung di Antara Dua Karang' mengamanatkan Indonesia bersikap independen dan tidak menjadi satelit dari blok kekuatan mana pun. Aliansi poros Jakarta-Peking dinilai meninggalkan watak bebas aktif dan menyeret Indonesia ke dalam orbit politik Republik Rakyat Tiongkok, mempertajam friksi domestik antara pendukung komunis dan kalangan militer Angkatan Darat."
       }
     ]
   },
   "1F": {
-    heroImage: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80",
-    templateData: {
+    "heroImage": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1200&q=80",
+    "templateData": {
       "nav-kicker": "LAB SEJARAH INTERAKTIF — UNIT 1F",
-      "nav-brand": "Sub-Modul 1F — Perjuangan Diplomasi II (Roem-Royen, KMB, & Pengakuan Kedaulatan 1949)",
+      "nav-brand": "Sub-Modul 1F — Krisis Sosio-Ekonomi & Akhir Pemerintahan Sukarno (1965–1967)",
       "materi-tab-label": "1. Jejak Materi 1F",
       "kuis-tab-label": "2. Tantangan Kuis 1F",
-      "hero-kicker": "KURIKULUM MERDEKA — FASE F (KELAS XII) | PUNCAK KEDAULATAN INDONESIA",
-      "hero-title": "Kemenangan Akhir Diplomasi: KMB & Pengakuan Kedaulatan 1949",
-      "hero-description": "Pelajari babak penutup revolusi mempertahankan kemerdekaan melalui Perjanjian Roem-Royen, pengembalian mandat PDRI, Konferensi Inter-Indonesia, Konferensi Meja Bundar (KMB) Den Haag, hingga pengakuan kedaulatan de jure 27 Desember 1949.",
+      "hero-kicker": "KURIKULUM MERDEKA — FASE F (KELAS XII) | INDONESIA PADA MASA ORDE LAMA (1950–1965)",
+      "hero-title": "Hiperinflasi Ekonomi, Titik Kulminasi G30S, & Akhir Orde Lama (1965–1967)",
+      "hero-description": "Analisis menyeluruh hiperinflasi 650%, polemik pembentukan Angkatan Kelima, penculikan pimpinan teras TNI-AD pada malam 30 September 1965, aksi demonstrasi Tritura oleh mahasiswa, penerbitan Supersemar 1966, hingga penyerahan kekuasaan eksekutif kepada Jenderal Soeharto lewat Sidang Istimewa MPRS 1967.",
       "hero-note-title": "PANDUAN BELAJAR SUB-MODUL 1F",
-      "hero-note-text": "Telusuri Jejak 01 hingga 06 secara berurutan. Pelajari perundingan Moh. Roem & Van Royen, pengembalian Jogja, pengembalian mandat Sjafruddin, persatuan RI-BFO, kepemimpinan Hatta di Den Haag, hingga detik-detik proklamasi de jure 27 Desember 1949!",
+      "hero-note-text": "Pelajari Jejak 01 hingga 06 secara teratur. Amati bagaimana keterpurukan harga kebutuhan pokok memicu aksi massa jalanan, bagaimana perseteruan ideologi memuncak pada penculikan perwira tinggi militer, dan bagaimana dinamika Supersemar mentransformasikan kepemimpinan nasional menuju tatanan Orde Baru.",
       "overview-kicker": "PETA KONSEP SUB-MODUL 1F",
-      "overview-title": "Puncak Perjuangan Diplomasi Kemerdekaan",
-      "overview-text": "Peta jalan menuju pengakuan kedaulatan mutlak terdiri dari empat tahap kausalitas yang saling menentukan:",
-      "map-card-one-title": "1. Perjanjian Roem-Royen (7 Mei 1949)",
-      "map-card-one-text": "Desakan internasional pasca-Serangan 1 Maret memicu persetujuan Roem-Royen untuk memulihkan pemerintah RI di Yogyakarta dan menghentikan perang.",
-      "map-card-two-title": "2. Pengembalian Mandat PDRI (13 Juli 1949)",
-      "map-card-two-text": "Pulihnya Yogyakarta memungkinkan PDRI Sjafruddin Prawiranegara menyerahkan kembali mandat pemerintahan secara sah kepada Presiden Soekarno.",
-      "map-card-three-title": "3. Konferensi Inter-Indonesia (Juli–Agt 1949)",
-      "map-card-three-text": "Pemerintahan utuh RI kemudian menggalang Konferensi Inter-Indonesia untuk menyatukan suara dengan BFO menghadapi Belanda.",
-      "map-card-four-title": "4. KMB Den Haag & Pengakuan Kedaulatan",
-      "map-card-four-text": "Front persatuan RI-BFO mengunci kemenangan di KMB Den Haag pimpinan Moh. Hatta hingga pengakuan kedaulatan de jure 27 Desember 1949.",
-
-      "lesson-one-kicker": "JEJAK 01 — PERJANJIAN ROEM-ROYEN",
-      "lesson-one-title": "Kesepakatan Roem-Royen & Pemulihan Yogyakarta (1949)",
-      "lesson-one-text": "Dampak dahsyat Serangan Umum 1 Maret 1949 dan ancaman pembekuan dana Marshall Plan Amerika Serikat memaksa Belanda kembali ke meja perundingan. Perundingan digelar di Hotel Des Indes Jakarta sejak 14 April dan ditandatangani resmi pada 7 Mei 1949.",
-      "lesson-one-text-two": "Delegasi Republik Indonesia dipimpin oleh Mr. Mohammad Roem, sedangkan pihak Kerajaan Belanda dipimpin oleh Dr. J.H. van Royen di bawah pengawasan PBB (UNCI):",
-      "lesson-one-point-a-title": "1. Pernyataan Sikap Moh. Roem",
-      "lesson-one-point-a-text": "Pemerintah RI menyetujui penghentian perang gerilya, bekerja sama memulihkan perdamaian, serta bersedia menghadiri Konferensi Meja Bundar (KMB) di Den Haag.",
-      "lesson-one-point-b-title": "2. Pernyataan Kesepakatan Van Royen",
-      "lesson-one-point-b-text": "Belanda menyetujui pengembalian Pemerintah RI ke Yogyakarta, membebaskan seluruh tahanan politik Soekarno-Hatta tanpa syarat, serta menghentikan aksi militer. Pemenuhan janji Roem-Royen inilah yang membuka jalan bagi kembalinya kepemimpinan nasional ke ibu kota.",
-
-      "lesson-two-kicker": "JEJAK 02 — KEMBALINYA SOEKARNO-HATTA",
-      "lesson-two-title": "Pengembalian Mandat PDRI oleh Sjafruddin (13 Juli 1949)",
-      "lesson-two-text": "Pada 6 Juli 1949, Presiden Soekarno dan Wakil Presiden Moh. Hatta kembali ke Yogyakarta dari pengasingan di Bangka. Namun kembalinya pimpinan nasional belum menyelesaikan status hukum pemerintahan, sebab kedaulatan eksekutif masih dipegang sah oleh PDRI di Sumatra. Pada 13 Juli 1949 dalam Sidang Kabinet Darurat, Ketua PDRI Mr. Sjafruddin Prawiranegara menyerahkan kembali mandatnya kepada Presiden Soekarno. Peristiwa bersejarah ini menghasilkan 4 pilar pemulihan kedaulatan:",
-      "lesson-two-list-a": "<b>1. Keteladanan Negarawan Sjafruddin:</b> Penyerahan mandat PDRI mengakhiri masa darurat perang tanpa konflik kekuasaan, memulihkan hukum sipil konstitusional.",
-      "lesson-two-list-b": "<b>2. Kembalinya Komando Gerilya Soedirman:</b> Jenderal Soedirman memasuki Yogyakarta dan menyatukan kembali komando militer di bawah kepemimpinan presiden.",
-      "lesson-two-list-c": "<b>3. Konsolidasi Kabinet Hatta II:</b> Pemerintah RI memulihkan fungsi birokrasi pemerintahan dan menggalang kekuatan politik nasional menghadapi perundingan KMB.",
-      "lesson-two-list-d": "<b>4. Persiapan Front Diplomasi Den Haag:</b> Membentuk panitia kerja perundingan untuk merumuskan posisi hukum, politik, dan ekonomi Indonesia.",
-      "lesson-two-text-two": "Dengan pulihnya pemerintahan sipil dan komando militer secara utuh di Yogyakarta, tantangan terbesar RI berikutnya adalah memecah strategi adu domba Belanda yang mencoba memakai negara-negara bagian (BFO) untuk menyudutkan Republik di perundingan puncak Den Haag.",
-
-      "lesson-three-kicker": "JEJAK 03 — KONFERENSI INTER-INDONESIA",
-      "lesson-three-title": "Konsolidasi RI dan BFO (Juli – Agustus 1949)",
-      "lesson-three-text": "Sebelum berangkat ke Den Haag, pemerintah RI mengambil langkah diplomasi jenius dengan menyelenggarakan Konferensi Inter-Indonesia di Yogyakarta (19–22 Juli) dan Jakarta (31 Juli–2 Agustus 1949). Konferensi ini mengundang BFO (Bijeenkomst voor Federaal Overleg) — majelis negara-negara bagian bentukan Belanda pimpinan Sultan Hamid II. RI berhasil meyakinkan BFO bahwa kedaulatan sejati hanya bisa diraih jika seluruh kawasan Nusantara bersatu melawan kolonialisme.",
-      "lesson-three-text-two": "Strategi ini sukses total. Taktik politik adu domba (divide et impera) Belanda runtuh seketika ketika BFO berikrar mendukung penuh posisi Republik melalui 4 kesepakatan utama:",
-      "thinker-comte-name": "1. Pembentukan Front Perundingan Bersama",
-      "thinker-comte-text": "RI dan BFO sepakat membentuk satu komando diplomasi bersama untuk menuntut penyerahan kedaulatan penuh dan tanpa syarat dari Belanda di KMB.",
-      "thinker-durkheim-name": "2. Sepakat Menjaga Bentuk RIS",
-      "thinker-durkheim-text": "BFO menyetujui bahwa Negara Republik Indonesia Serikat (RIS) akan dipimpin oleh Presiden Soekarno dan Perdana Menteri Mohammad Hatta.",
-      "thinker-marx-name": "3. Simbol Identitas Nasional Bersama",
-      "thinker-marx-text": "Menyetujui bahwa Bendera Sang Merah Putih, Bahasa Indonesia, dan Lagu Indonesia Raya menjadi simbol nasional resmi seluruh wilayah RIS.",
-      "thinker-weber-name": "4. Penyatuan Militer APRIS",
-      "thinker-weber-text": "Menyetujui pembentukan Angkatan Perang Republik Indonesia Serikat (APRIS) dengan inti utama dari prajurit TNI. Berbekal kesepakatan bulat RI-BFO ini, front persatuan Nusantara siap melangkah ke meja perundingan puncak KMB di Den Haag.",
-
-      "lesson-four-kicker": "JEJAK 04 — KMB DEN HAAG",
-      "lesson-four-title": "Keputusan Puncak KMB di Den Haag (23 Agt – 2 Nov 1949)",
-      "lesson-four-text": "Konferensi Meja Bundar (KMB) dibuka di Ridderzaal (Gedung Ksatria) Den Haag pada 23 Agustus hingga 2 November 1949. Delegasi RIS dipimpin oleh Drs. Mohammad Hatta, delegasi BFO oleh Sultan Hamid II, dan Belanda oleh Mr. J.H. van Maarseveen. Karena RI dan BFO sudah bersatu, posisi tawar Indonesia sangat kuat. Namun perundingan berlangsung amat alot mengenai isu utang dan status Irian Barat, hingga melahirkan 3 keputusan kompromi historis:",
-      "method-a-title": "1. Pengakuan Kedaulatan Penuh Tanpa Syarat",
-      "method-a-text": "Kerajaan Belanda menyerahkan kedaulatan penuh dan tanpa syarat kepada Negara Republik Indonesia Serikat (RIS) paling lambat 30 Desember 1949.",
-      "method-b-title": "2. Kompromi Utang 4,3 Miliar Gulden",
-      "method-b-text": "Delegasi Moh. Hatta mengambil keputusan pahit menyetujui RIS menanggung utang bekas Hindia Belanda sebesar 4,3 miliar gulden demi mengunci pengakuan kedaulatan.",
-      "method-c-title": "3. Penundaan Status Irian Barat",
-      "method-c-text": "Penyelesaian status wilayah Irian Barat ditunda untuk dirundingkan kembali dalam jangka waktu satu tahun pasca-KMB.",
-      "lesson-four-text-two": "Keputusan kompromi KMB ini membuka pintu pelunasan janji kemerdekaan. Hatta berhasil mengamankan tujuan paling fundamental: menghentikan agresi militer Belanda dan memperoleh pengakuan hukum internasional atas kedaulatan Indonesia.",
-
-      "lesson-five-kicker": "JEJAK 05 — PENGAKUAN KEDAULATAN",
-      "lesson-five-title": "Detik-detik Penandatanganan De Jure (27 Desember 1949)",
-      "lesson-five-text": "Hasil KMB disahkan secara resmi pada Selasa, 27 Desember 1949. Penandatanganan akta pengakuan kedaulatan dilakukan secara serentak di dua ibu kota:",
-      "object-material-title": "1. Upacara di Paleis op de Dam Amsterdam",
-      "object-material-text": "Ratu Juliana, Perdana Menteri Willem Drees, dan Menteri Seberang Laut Sassen menandatangani dokumen penyerahan kedaulatan bersama Ketua Delegasi RIS Drs. Mohammad Hatta.",
-      "object-formal-title": "2. Upacara di Istana Merdeka Jakarta",
-      "object-formal-text": "Sri Sultan Hamengkubuwono IX dan Wakil Tinggi Mahkota Lovink menandatangani naskah penyerahan. Sang Merah Putih dikibarkan menggantikan bendera Belanda diiringi lagu Indonesia Raya dan isak tangis haru jutaan rakyat. Momen ini mengakhiri 4 tahun perang revolusi fisik.",
-
-      "lesson-six-kicker": "JEJAK 06 — SINTESIS 1F",
-      "lesson-six-title": "Sintesis Sub-Modul 1F: Kemenangan Total Revolusi Kemerdekaan",
-      "lesson-six-text": "Dari proklamasi darurat pada 17 Agustus 1945 hingga pengakuan dunia pada 27 Desember 1949, Indonesia membuktikan satu kebenaran mutlak: kemerdekaan tidak pernah diberikan, ia harus direbut. Tanpa peluru di Surabaya dan gerilya Soedirman, diplomasi kita akan remuk. Tanpa kelincahan diplomat di Linggarjati dan Renville, peluru hanya akan menghasilkan pertumpahan darah tanpa akhir.",
-      "lesson-six-text-two": "Kombinasi dwitunggal senjata dan diplomasi inilah yang memaksa Belanda angkat kaki. Pengakuan kedaulatan 1949 bukan sekadar tanda tangan, melainkan kemenangan total revolusi rakyat. Dan pada 17 Agustus 1950, warisan KMB berupa negara serikat (RIS) akhirnya dibubarkan oleh rakyat sendiri, mengembalikan Indonesia menjadi Negara Kesatuan Republik Indonesia (NKRI) seutuhnya.",
-      "lesson-six-quote": "\"Indonesia merdeka bukan tujuan akhir kita. Kemerdekaan adalah jembatan emas untuk mewujudkan keadilan sosial dan kemakmuran bagi seluruh rakyat Indonesia!\" — Drs. Mohammad Hatta (1949)",
-      "reflection-kicker": "REFLEKSI HISTORIS & PENUTUP UNIT 1",
-      "reflection-title": "Menjaga Warisan Kedaulatan Bangsa (1945–1949)",
-      "reflection-text": "Pengakuan kedaulatan 27 Desember 1949 adalah buah manis dari perpaduan dwitunggal perlawanan fisik dan kecerdasan perundingan diplomasi selama 4 tahun. Kemerdekaan ini diraih dengan genangan darah pahlawan, keteguhan hati para pemimpin darurat, dan keberanian rakyat di seluruh pelosok desa. Tugas kita sebagai Pelajar Pancasila adalah mengisi kemerdekaan ini dengan bernalar kritis, menjaga persatuan NKRI, dan berkontribusi nyata bagi kemajuan bangsa!",
+      "overview-title": "Empat Gelombang Runtuhnya Rezim Demokrasi Terpimpin",
+      "overview-text": "Berakhirnya era pemerintahan Presiden Sukarno dipicu oleh perpaduan empat krisis beruntun:",
+      "map-card-one-title": "1. Kebangkrutan Finansial & Inflasi 650%",
+      "map-card-one-text": "Kebijakan mencetak uang tanpa jaminan devisa untuk membiayai proyek mercusuar menghancurkan daya beli uang rupiah di pasar rakyat.",
+      "map-card-two-title": "2. Friksi Tajam Angkatan Darat vs PKI",
+      "map-card-two-text": "Usulan pembentukan Angkatan Kelima dan isu Dokumen Gilchrist menciptakan ketegangan tak terdamaikan antara markas tentara dan kubu komunis.",
+      "map-card-three-title": "3. Tragedi Gerakan 30 September 1965",
+      "map-card-three-text": "Gugurnya enam jenderal dan seorang perwira pertama TNI-AD memicu operasi penumpasan militer dan penghancuran struktur fisik partai komunis.",
+      "map-card-four-title": "4. Dekonsentrasi Kekuasaan via Supersemar",
+      "map-card-four-text": "Gelombang aksi Tritura mahasiswa memaksa Presiden Sukarno menandatangani surat perintah pengamanan negara yang menjadi pintu masuk kekuasaan Jenderal Soeharto.",
+      "lesson-one-kicker": "JEJAK 01 — TITIK NADIR PEREKONOMIAN NASIONAL",
+      "lesson-one-title": "Dari Sanering yang Gagal Menuju Antrean Beras Sepanjang Jalan",
+      "lesson-one-text": "Menjelang tahun 1965, sistem Ekonomi Terpimpin menemui jalan buntu. Pengeluaran anggaran belanja untuk membiayai mobilisasi militer konfrontasi Dwikora dan pembangunan proyek-proyek prestise mercusuar (seperti Stadion Utama Senayan, Monumen Nasional, Wisma Nusantara, dan Hotel Indonesia) menelan lebih dari 70% penerimaan negara. Pemerintah menambal defisit anggaran ini dengan cara mencetak uang kertas baru tanpa batas tanpa didukung cadangan emas atau devisa yang memadai.",
+      "lesson-one-text-two": "Hasilnya adalah gelombang hiperinflasi terburuk dalam sejarah Indonesia modern, menembus angka 650% pada akhir tahun 1965. Harga beras melonjak ratusan kali lipat dalam hitungan minggu, minyak tanah menghilang dari pasaran, dan antrean warga miskin mengambil jatah ransum makanan pokok mengular di depan kantor-kantor kelurahan.",
+      "lesson-one-point-a-title": "Devaluasi & Sanering 13 Des 1965",
+      "lesson-one-point-a-text": "Menteri Jusuf Muda Dalam memotong nilai uang Rp1.000 menjadi Rp1 baru. Kebijakan ini justru memicu kepanikan: pedagang menaikkan harga sepuluh kali lipat karena hilang kepercayaan pada rupiah.",
+      "lesson-one-point-b-title": "Kenaikan Tarif Bahan Bakar 400%",
+      "lesson-one-point-b-text": "Pemerintah menaikkan tarif bensin dan transportasi umum empat kali lipat guna menutup biaya operasional BUMN, memicu lonjakan serentak seluruh komoditas primer.",
+      "lesson-two-kicker": "JEJAK 02 — POLARISASI DUA KEKUATAN",
+      "lesson-two-title": "Persaingan Terbuka TNI-AD Melawan Partai Komunis Indonesia",
+      "lesson-two-text": "Di tengah kelesuan ekonomi, persaingan politik antara pimpinan Angkatan Darat dan PKI memasuki fase kritis. PKI di bawah pimpinan D.N. Aidit menikmati kedekatan luar biasa dengan Presiden Sukarno melalui payung doktrin persatuan nasional Nasakom (Nasionalis, Agama, Komunis). PKI memanfaatkan kedudukan ini untuk memperkuat posisi politiknya dalam mematangkan situasi revolusioner.",
+      "lesson-two-list-a": "<b>1. Usul Angkatan Kelima (Januari 1965):</b> Aidit mengusulkan 15 juta buruh dan tani dipersenjatai untuk membentuk matra baru di luar 4 angkatan bersenjata, didukung PM Tiongkok Zhou Enlai.",
+      "lesson-two-list-b": "<b>2. Penolakan Keras Letjen Ahmad Yani:</b> Pimpinan Markas Besar Angkatan Darat menolak mentah-mentah rencana ini karena khawatir milisi buruh akan dipakai PKI melancarkan kudeta politik.",
+      "lesson-two-list-c": "<b>3. Isu Dewan Jenderal:</b> PKI menyebarkan desas-desus mengenai komplotan jenderal Angkatan Darat yang diduga disiapkan CIA untuk menggulingkan Sukarno pada Hari Angkatan Perang 5 Oktober 1965.",
+      "lesson-two-list-d": "<b>4. Dokumen Gilchrist:</b> Selebaran telegram palsu Dubes Inggris Andrew Gilchrist yang menyebut koordinasi dengan 'our local army friends' semakin memperkeruh kecurigaan istana.",
+      "lesson-two-text-two": "Kecurigaan antarfaksi memuncak pada pertengahan 1965 ketika kondisi kesehatan Presiden Sukarno sempat dilaporkan memburuk.",
+      "lesson-three-kicker": "JEJAK 03 — MALAM PENCULIKAN PARA JENDERAL",
+      "lesson-three-title": "Aksi Militer Pasukan G30S di Bawah Pimpinan Letkol Untung",
+      "lesson-three-text": "Ketegangan politik meledak pada Kamis malam, 30 September 1965 menuju dini hari Jumat, 1 Oktober 1965. Pasukan bersenjata gabungan yang menamakan diri Gerakan 30 September di bawah pimpinan Letnan Kolonel Untung Samsuri (Komandan Batalyon I Kawal Kehormatan Resimen Tjakrabirawa) bergerak menculik para perwira tinggi teras Angkatan Darat. Gerakan ini mengklaim bertindak mendahului guna menyelamatkan Presiden Sukarno dari rencana kudeta Dewan Jenderal.",
+      "thinker-comte-name": "1. Korban Penculikan",
+      "thinker-comte-text": "Enam jenderal (Ahmad Yani, Suprapto, M.T. Haryono, S. Parman, D.I. Pandjaitan, Sutoyo) dan Lettu Pierre Tendean diculik dan dibunuh.",
+      "thinker-durkheim-name": "2. Lolosnya Jenderal Nasution",
+      "thinker-durkheim-text": "Jenderal Nasution melompati tembok kedutaan Irak dan selamat, meskipun putrinya Ade Irma Suryani dan ajudannya gugur tertembak.",
+      "thinker-marx-name": "3. Sumur Maut Lubang Buaya",
+      "thinker-marx-text": "Para korban dibawa ke perkebunan karet dekat Halim dan dimasukkan ke dalam sumur tua sempit berkedalaman 12 meter.",
+      "thinker-weber-name": "4. Maklumat RRI Letkol Untung",
+      "thinker-weber-text": "Pukul 07.15 WIB, G30S menguasai RRI dan menyiarkan pembentukan Dewan Revolusi Indonesia serta mendemisionerkan kabinet Dwikora.",
+      "lesson-three-text-two": "Pengumuman mendemisionerkan kabinet secara hukum membingungkan publik dan memicu kemarahan Sukarno sendiri karena wewenangnya dilangkahi.",
+      "lesson-four-kicker": "JEJAK 04 — KONTRA-OPERASI MILITER",
+      "lesson-four-title": "Langkah Cepat Mayor Jenderal Soeharto Mengambil Alih Komando",
+      "lesson-four-text": "Panglima Komando Cadangan Strategis Angkatan Darat (Kostrad), Mayor Jenderal Soeharto, yang tidak masuk dalam daftar target penculikan, segera bertindak mengisi kekosongan pimpinan Angkatan Darat setelah mengetahui hilangnya Letjen Ahmad Yani. Berdasarkan prosedur tetap komando militer, Soeharto mengambil alih kendali operasi militer dari Markas Kostrad di Medan Merdeka Barat.",
+      "lesson-four-text-two": "Dalam tempo kurang dari 24 jam, pasukan RPKAD di bawah pimpinan Kolonel Sarwo Edhie Wibowo merebut kembali gedung RRI dan Kantor Pusat Telekomunikasi tanpa pertumpahan darah besar.",
+      "method-a-title": "1. Pengangkatan Jenazah 4 Oktober",
+      "method-a-text": "Atas petunjuk polisi Sukitman, sumur Lubang Buaya ditemukan. Jenazah para pahlawan revolusi diangkat secara resmi di depan sorotan kamera TVRI.",
+      "method-b-title": "2. Pemakaman Pahlawan Kalibata",
+      "method-b-text": "Pada 5 Oktober 1965, jenazah para perwira dimakamkan di TMP Kalibata diiringi lautan tangis warga dan dianugerahi gelar Pahlawan Revolusi.",
+      "method-c-title": "3. Dampak Kemanusiaan Massal",
+      "method-c-text": "Peristiwa ini memicu kampanye penumpasan massal terhadap struktur dan simpatisan PKI sepanjang akhir 1965-1966 di berbagai pelosok daerah.",
+      "lesson-five-kicker": "JEJAK 05 — GERAKAN MORAL MAHASISWA & TRANSISI",
+      "lesson-five-title": "Tiga Tuntutan Rakyat dan Terbitnya Surat Perintah 11 Maret 1966",
+      "lesson-five-text": "Kelesuan ekonomi yang dibarengi ketidaktegasan Presiden Sukarno membubarkan PKI memicu kemarahan generasi muda. Pada 10 Januari 1966, ribuan mahasiswa yang tergabung dalam Kesatuan Aksi Mahasiswa Indonesia (KAMI) bersama pelajar (KAPPI) dan ormas buruh menggelar demonstrasi besar di halaman gedung DPR-GR mengajukan Tri Tuntutan Rakyat (Tritura):",
+      "object-material-title": "1. Tiga Tuntutan Tritura",
+      "object-material-text": "1. Bubarkan PKI beserta ormas-ormasnya; 2. Bersihkan Kabinet Dwikora dari unsur G30S; 3. Turunkan harga kebutuhan pokok dan perbaiki ekonomi.",
+      "object-formal-title": "2. Terbitnya Mandat Supersemar",
+      "object-formal-text": "11 Maret 1966 di Bogor, Sukarno menandatangani Supersemar memberi wewenang penuh kepada Letjen Soeharto memulihkan keamanan. Keesokan harinya PKI resmi dibubarkan.",
+      "lesson-six-kicker": "JEJAK 06 — SINTESIS & REFLEKSI 1F",
+      "lesson-six-title": "Berakhirnya Era Orde Lama dan Warisan Berharga Bagi Bangsa",
+      "lesson-six-text": "Terbitnya Supersemar menandai pergeseran kekuasaan riil secara bertahap dari tangan Sukarno ke tangan Soeharto. Pada Sidang Istimewa MPRS Maret 1967, pidato pertanggungjawaban Presiden Sukarno berjudul 'Nawaksara' ditolak oleh MPRS. Melalui Ketetapan MPRS No. XXXIII/MPRS/1967, MPRS secara resmi mencabut kekuasaan pemerintahan negara dari Presiden Sukarno dan mengangkat Jenderal Soeharto sebagai Pejabat Presiden Republik Indonesia. Era Orde Lama resmi berakhir.",
+      "lesson-six-text-two": "Penelusuran sejarah Orde Lama kurun 1950–1965 memberikan pelajaran berharga mengenai arti penting kehati-hatian mengelola keragaman ideologis, perlunya keseimbangan kekuasaan antara cabang-cabang pemerintahan, dan bahaya memaksakan pemusatan kekuasaan politik dengan mengabaikan hukum-hukum fundamental kestabilan ekonomi rakyat.",
+      "lesson-six-quote": "\"Suatu bangsa yang merdeka harus mampu menjaga martabat harga dirinya di mata dunia internasional tanpa pernah menelantarkan hak rakyatnya untuk hidup makmur dan sejahtera.\"",
+      "reflection-kicker": "OUTRO BRIDGE & REFLEKSI SUB-MODUL 1F",
+      "reflection-title": "Sintesis Akhir Portal: Mengambil Pelajaran Kritis dari Dinamika Orde Lama",
+      "reflection-text": "Perjalanan sejarah Indonesia masa pemerintahan Presiden Sukarno (1950–1965) memperlihatkan pasang surut perjuangan bangsa dalam mencari sistem ketatanegaraan yang tepat. Dari eksperimen demokrasi parlementer yang bebas tetapi rapuh, sentralisasi kekuasaan Demokrasi Terpimpin, kebanggaan diplomasi Asia-Afrika dan pembebasan Irian Barat, hingga pusaran krisis ekonomi dan tragedi 1965, seluruh peristiwa ini menjadi fondasi pembelajaran berharga dalam merawat demokrasi dan keutuhan Negara Kesatuan Republik Indonesia masa kini.",
       "challenge-kicker": "ASESMEN SUB-MODUL 1F",
-      "challenge-title": "Siap Menguji Pemahaman KMB & Pengakuan Kedaulatan?",
-      "challenge-text": "Jawab 15 tantangan kuis interaktif HOTS Sub-Modul 1F.",
+      "challenge-title": "Siap Menguji Pemahaman Krisis 1965 & Transisi Orde Baru?",
+      "challenge-text": "Jawab 15 tantangan kuis interaktif HOTS yang dirancang khusus untuk menguji penalaran sejarah Sub-Modul 1F.",
       "start-quiz-button": "Mulai Kuis Sub-Modul 1F →",
       "quiz-kicker": "SUB-MODUL 1F — ASESMEN INTERAKTIF",
       "quiz-title": "15 Tantangan Sejarah Sub-Modul 1F",
-      "quiz-description": "Uji analisis puncak diplomasi KMB & pengakuan kedaulatan 1949.",
+      "quiz-description": "Uji analisis diakronis & kritis. Setiap soal dilengkapi pembahasan komprehensif latar belakang sejarah.",
       "score-label": "SKOR SUB-MODUL 1F",
       "progress-label": "KEMAJUAN PENGERJAAN",
       "check-quiz-button": "Periksa Jawaban Kuis",
       "result-kicker": "EVALUASI SUB-MODUL 1F",
       "result-title": "Analisis Hasil Penguasaan Sub-Modul 1F",
-      "result-text": "Ulas kembali jawabanmu dan pelajari pembahasannya.",
+      "result-text": "Ulas kembali jawabanmu dan pahami penjelasan sejarah di bawah setiap soal.",
       "retry-quiz-button": "Coba Lagi / Acak Soal 1F",
-      "footer-text": "© Lab Sejarah Interaktif — Sub-Modul 1F: KMB & Pengakuan Kedaulatan 1949. Kurikulum Merdeka Fase F."
+      "footer-text": "© Lab Sejarah Interaktif — Sub-Modul 1F: Krisis 1965 & Transisi Orde Baru. Kurikulum Merdeka Fase F."
     },
-    quizData: [
+    "quizData": [
       {
-        type: "single",
-        stimulus: "Perjanjian Roem-Royen yang disepakati pada 7 Mei 1949 menjadi titik terang bagi penyelesaian konflik bersenjata antara Indonesia dan Belanda. Pihak Republik Indonesia bersedia menghentikan perlawanan perang gerilya, sementara Kerajaan Belanda menyetujui pembebasan Soekarno-Hatta dan pengembalian ibu kota ke Yogyakarta. Kesepakatan diplomasi ini menjadi pembuka jalan utama menuju penyelenggaraan Konferensi Meja Bundar.",
-        question: "Dampak langsung dari disepakatinya Perjanjian Roem-Royen bagi kepemimpinan nasional RI adalah...",
-        options: [
-          "A. Pembubaran seluruh partai politik di Indonesia",
-          "B. Kehadiran kembali Presiden Soekarno dan Wapres Moh. Hatta di Yogyakarta serta pengembalian mandat PDRI",
-          "C. Pengangkatan J.H. van Royen sebagai Gubernur Jenderal",
-          "D. Penyerahan armada laut Indonesia kepada Sekutu",
-          "E. Pembatalan seluruh hasil Sidang PPKI 1945"
+        "type": "single",
+        "stimulus": "Pada pertengahan dekade 1960-an, keuangan negara Republik Indonesia mengalami kebangkrutan struktural. Lebih dari 65% anggaran belanja negara tersedot untuk membiayai operasi militer konfrontasi Dwikora dan pembelian suku cadang alutsista Soviet. Di saat yang sama, Presiden Sukarno bersikukuh mendanai proyek-proyek prestise politik yang dikenal sebagai Proyek Mercusuar—seperti pembangunan Monumen Nasional (Monas), Stadion Utama Senayan, Wisma Nusantara, Hotel Indonesia, Jembatan Ampera, dan Gedung CONEFO—dengan tujuan membangkitkan kebanggaan nasional bahwa Indonesia bukan bangsa kelas dua.",
+        "question": "Cara yang ditempuh pemerintah era Demokrasi Terpimpin untuk menutupi defisit anggaran raksasa tersebut adalah...",
+        "options": [
+          "A. Meminjam dana talangan darurat kepada Dana Moneter Internasional (IMF)",
+          "B. Mencetak uang kertas baru tanpa batas tanpa didukung cadangan emas atau penerimaan devisa yang memadai di bank sentral",
+          "C. Menjual pulau-pulau kecil di perbatasan kepada perusahaan maskapai asing",
+          "D. Membubarkan seluruh badan usaha milik negara di sektor pertanian perkebunan",
+          "E. Mewajibkan seluruh pegawai negeri mendonasikan tabungan emas pribadinya kepada kas negara"
         ],
-        answer: 1,
-        explanation: "Roem-Royen berdampak langsung pada pembebasan Soekarno-Hatta kembali ke Jogja dan penyerahan kembali mandat PDRI."
+        "answer": 1,
+        "explanation": "Ketika devisa ekspor anjlok akibat terhentinya perdagangan dengan Malaysia dan Singapura serta hilangnya bantuan Barat, pemerintah tidak memiliki sumber penerimaan riil. Jalan pintas yang diambil Menteri Urusan Bank Sentral adalah menjalankan mesin cetak uang secara terus-menerus untuk mendanai proyek mercusuar dan logistik tentara, menciptakan banjir likuiditas tanpa jaminan barang riil."
       },
       {
-        type: "single",
-        stimulus: "Pada 13 Juli 1949, Mr. Sjafruddin Prawiranegara secara resmi menyerahkan kembali mandat pemerintahan PDRI kepada Presiden Soekarno di sidang kabinet Yogyakarta. Peristiwa bersejarah ini menandai kembalinya kepemimpinan konstitusional sipil setelah berbulan-bulan mengendalikan negara dari darurat gerilya. Penyerahan mandat ini membuktikan tingginya kesadaran hukum dan kekompakan antarelite pimpinan nasional.",
-        question: "Makna ketatanegaraan dari peristiwa penyerahan kembali mandat PDRI kepada Soekarno adalah...",
-        options: [
-          "A. Menandai berakhirnya masa darurat perang dan berfungsinya kembali kabinet resmi pemerintah RI",
-          "B. Pembentukan negara bagian baru di Sumatra Barat",
-          "C. Kekalahan diplomasi Republik Indonesia di PBB",
-          "D. Penolakan TNI terhadap kepemimpinan Soekarno",
-          "E. Pengangkatan Sjafruddin sebagai Perdana Menteri RIS"
+        "type": "single",
+        "stimulus": "Kebijakan mencetak uang tanpa jaminan cadangan devisa berujung pada malapetaka moneter: laju inflasi melonjak tidak terkendali mencapai angka sekitar 650% pada akhir tahun 1965. Nilai uang rupiah merosot drastis hingga kehilangan fungsinya sebagai penyimpan nilai. Harga beras, minyak tanah, dan gula pasir melonjak ratusan persen dalam hitungan pekan. Di berbagai kota besar, rakyat jelata harus mengantre berjam-jam sejak fajar di depan gudang-gudang distribusi pamong praja hanya untuk memperoleh jatah beberapa liter beras berkualitas buruk.",
+        "question": "Dampak sosial-politik paling kritis dari fenomena hiperinflasi 650% tersebut adalah...",
+        "options": [
+          "A. Keberhasilan sistem ekonomi terpimpin membagi kekayaan secara merata kepada petani miskin",
+          "B. Runtuhnya legitimasi kepemimpinan politik rezim di mata rakyat jelata dan terbukanya ruang bagi gerakan protes mahasiswa menuntut reformasi ekonomi total",
+          "C. Terhentinya pemogokan buruh dan meningkatnya produksi beras di pedesaan",
+          "D. Penutupan seluruh pasar tradisional di Pulau Jawa dan Sumatra",
+          "E. Penyerahan kedaulatan moneter Indonesia kepada lembaga perbankan Belanda"
         ],
-        answer: 0,
-        explanation: "Penyerahan mandat PDRI menandai beroperasinya kembali pemerintahan resmi RI secara utuh pasca-masa darurat."
+        "answer": 1,
+        "explanation": "Retorika revolusioner dan pidato anti-imperialis Bung Karno tidak lagi sanggup menutupi perut rakyat yang lapar. Ketidakmampuan pemerintah menjamin ketersediaan bahan makanan pokok menghancurkan wibawa moral Demokrasi Terpimpin, mengubah keresahan perut menjadi amunisi politik bagi gerakan mahasiswa dan militer untuk meruntuhkan kekuasaan Orde Lama."
       },
       {
-        type: "single",
-        stimulus: "Konferensi Inter-Indonesia menggelar serangkaian pertemuan intensif antara delegasi Republik Indonesia dan BFO (Bijeenkomst voor Federaal Overleg) di Yogyakarta dan Jakarta pada Juli-Agustus 1949. Forum ini dirancang khusus untuk menyelaraskan pandangan politik antara negara Republik dan negara-negara bagian buatan Belanda. Konsolidasi internal ini terbukti efektif dalam membangun front perundingan bersama yang solid menjelang Konferensi Meja Bundar.",
-        question: "Tujuan utama penyelenggaraan Konferensi Inter-Indonesia sebelum menghadapi KMB Den Haag adalah...",
-        options: [
-          "A. Menyerahkan wilayah Jawa kepada BFO",
-          "B. Menyatu-padukan sikap dan tuntutan bersama antara RI dan BFO agar tidak diadu domba oleh Belanda di KMB",
-          "C. Membatalkan bentuk negara federasi RIS",
-          "D. Memilih Ratu Belanda sebagai kepala negara permanen",
-          "E. Menghapus penggunaan bahasa Indonesia"
+        "type": "single",
+        "stimulus": "Dalam upaya putus asa mengendalikan hiperinflasi, pada 13 Desember 1965 Menteri Urusan Bank Sentral Jusuf Muda Dalam mengeluarkan kebijakan sanering mata uang. Uang lama pecahan Rp1.000 dinyatakan ditarik dan diganti dengan uang baru bernilai nominal Rp1 (pemotongan seribu menjadi satu). Bersamaan dengan itu, pemerintah menaikkan tarif bensin dan angkutan umum hingga empat kali lipat. Namun, kebijakan moneter darurat ini tidak disertai ketersediaan pasokan barang kebutuhan di pasar.",
+        "question": "Penyebab kebijakan penarikan uang pecahan lama tersebut justru memperparah kekacauan ekonomi adalah...",
+        "options": [
+          "A. Pedagang menolak menerima uang baru dan masyarakat panik memborong barang kebutuhan pokok, sehingga harga-harga melambung sepuluh kali lipat",
+          "B. Bank Indonesia menolak mencetak lembaran uang kertas baru bernilai Rp1",
+          "C. Buruh pelabuhan menolak membongkar kargo beras bantuan dari luar negeri",
+          "D. Nilai tukar rupiah terhadap dolar Amerika mendadak mengalami penguatan drastis",
+          "E. Terjadinya penyitaan seluruh tabungan warga negara asing di perbankan swasta"
         ],
-        answer: 1,
-        explanation: "Konferensi Inter-Indonesia bertujuan menyatukan persepsi RI dan BFO agar memiliki front diplomasi bersama di KMB."
+        "answer": 0,
+        "explanation": "Sanering dilakukan di tengah hilangnya kepercayaan masyarakat terhadap pemerintah. Pedagang menolak bertransaksi dengan uang baru karena langkanya uang pecahan kecil di pasar. Mereka merespons kenaikan tarif bensin dengan menaikkan harga jual komoditas berkali-kali lipat, sehingga daya beli uang baru jatuh seketika dan antrean kebutuhan pokok semakin parah."
       },
       {
-        type: "single",
-        stimulus: "Konferensi Meja Bundar (KMB) berlangsung alot di Den Haag, Belanda, sejak 23 Agustus hingga 2 November 1949. Delegasi Republik Indonesia Serikat (RIS) dipimpin secara piawai oleh Drs. Mohammad Hatta yang terus memperjuangkan penyerahan kedaulatan tanpa syarat. Puncak perundingan ini menghasilkan pengakuan kedaulatan penuh Kerajaan Belanda atas RIS yang disahkan pada akhir Desember 1949.",
-        question: "Keputusan paling fundamental hasil Konferensi Meja Bundar (KMB) bagi bangsa Indonesia adalah...",
-        options: [
-          "A. Pengakuan kedaulatan penuh tanpa syarat kepada RIS oleh Kerajaan Belanda pada akhir Desember 1949",
-          "B. Pembentukan tentara gabungan KNIL dan TNI di bawah perwira Belanda",
-          "C. Penyerahan langsung Irian Barat pada 2 November 1949",
-          "D. Pembatalan seluruh utang luar negeri bekas Hindia Belanda",
-          "E. Pengangkatan Sultan Hamid II sebagai Presiden RIS"
+        "type": "single",
+        "stimulus": "Pada Januari 1965, Ketua Comite Central PKI D.N. Aidit secara terbuka mengusulkan kepada Presiden Sukarno pembentukan Angkatan Kelima di samping empat matra angkatan bersenjata yang sudah ada (Angkatan Darat, Angkatan Laut, Angkatan Udara, dan Kepolisian). Aidit menuntut agar pemerintah mempersenjatai 15 juta buruh dan tani yang terorganisasi guna memperkuat ketahanan revolusi menghadapi agresi militer Nekolim Inggris di Malaysia. Gagasan ini mendapat dukungan dari Perdana Menteri Tiongkok Zhou Enlai yang menawarkan bantuan cuma-cuma 100.000 pucuk senapan semi-otomatis ringan.",
+        "question": "Alasan mendasar pimpinan Angkatan Darat di bawah Letjen Ahmad Yani menolak mentah-mentah usulan pembentukan Angkatan Kelima adalah...",
+        "options": [
+          "A. Indonesia telah memiliki perjanjian rahasia dengan pasukan persemakmuran Inggris",
+          "B. Kekhawatiran militer profesional bahwa milisi buruh dan tani bersenjata akan dijadikan instrumen kekuatan militer oleh PKI untuk melancarkan perebutan kekuasaan politik sepihak (kudeta)",
+          "C. Ketiadaan amunisi yang sesuai dengan kaliber senapan buatan Tiongkok",
+          "D. Larangan dari Perserikatan Bangsa-Bangsa bagi warga sipil memegang senjata api",
+          "E. Keinginan tentara agar seluruh buruh dan tani dipindahkan ke wilayah Irian Barat"
         ],
-        answer: 0,
-        explanation: "Keputusan puncak KMB adalah pengakuan kedaulatan penuh dan tanpa syarat kepada RIS pada akhir Desember 1949."
+        "answer": 1,
+        "explanation": "Bagi pimpinan TNI-AD, monopoli penggunaan senjata sah negara hanya boleh berada di tangan tentara reguler profesional. Mempersenjatai 15 juta buruh dan tani yang berada di bawah pengaruh ormas sayap kiri (BTI dan SOBSI) dinilai sebagai persiapan matang PKI untuk membentuk tentara merah partai guna mengimbangi dan menyingkirkan hegemoni perwira Angkatan Darat."
       },
       {
-        type: "single",
-        stimulus: "Salah satu klausul hasil KMB yang memicu perdebatan politik paling sengit adalah penetapan penundaan status wilayah Irian Barat. Belanda menolak menyerahkan Irian Barat secara langsung dan menuntut agar masalah tersebut dirundingkan kembali dalam waktu satu tahun. Penundaan sepihak ini kemudian berlanjut menjadi sengketa politik dan militer berkepanjangan hingga pecahnya operasi Trikora pada 1960-an.",
-        question: "Dampak jangka panjang dari penundaan penyelesaian status Irian Barat dalam KMB adalah...",
-        options: [
-          "A. Irian Barat langsung menjadi negara merdeka tersendiri",
-          "B. Berlanjutnya perjuangan pembebasan Irian Barat hingga era Trikora 1960-an akibat penundaan Belanda",
-          "C. Pembubaran organisasi Perserikatan Bangsa-Bangsa",
-          "D. Penyerahan Irian Barat kepada pemerintah Amerika Serikat",
-          "E. Pembatalan hasil pengakuan kedaulatan RIS"
+        "type": "single",
+        "stimulus": "Memasuki pertengahan 1965, iklim politik di ibu kota dicemari oleh perang urat saraf intelijen. Di kalangan istana dan pers sayap kiri beredar selebaran rahasia yang dikenal sebagai Dokumen Gilchrist, sebuah surat ketikan telegram yang diatribusikan kepada Duta Besar Inggris Sir Andrew Gilchrist kepada Kantor Luar Negeri di London. Dokumen tersebut memuat kalimat provokatif mengenai koordinasi kedutaan Barat dengan 'our local army friends' (teman-teman tentara setempat). Isu ini memperkuat desas-desus yang disebarkan PKI mengenai keberadaan komplotan 'Dewan Jenderal' di tubuh Angkatan Darat yang diduga merencanakan kudeta militer menggulingkan Sukarno pada Hari Angkatan Perang 5 Oktober 1965.",
+        "question": "Tujuan strategis penyebaran desas-desus keberadaan 'Dewan Jenderal' tersebut adalah...",
+        "options": [
+          "A. Mendorong para perwira Angkatan Darat untuk segera membeli persenjataan dari Amerika Serikat",
+          "B. Merusak kepercayaan Presiden Sukarno terhadap pimpinan teras TNI-AD dan melegitimasi tindakan penyerangan preventif terhadap jajaran pimpinan jenderal Angkatan Darat",
+          "C. Menuntut pembubaran seluruh pangkalan militer Inggris di kawasan Selat Malaka",
+          "D. Mempercepat pengangkatan Jenderal Nasution sebagai perdana menteri eksekutif",
+          "E. Membujuk pemerintah Kerajaan Belanda menanamkan kembali modalnya di Indonesia"
         ],
-        answer: 1,
-        explanation: "Penundaan Irian Barat dalam KMB memicu konfrontasi diplomasi dan militer panjang (Trikora) hingga reintegrasi 1963."
+        "answer": 1,
+        "explanation": "Isu Dewan Jenderal sengaja ditiupkan untuk menciptakan kecurigaan akut di antara Presiden Sukarno dan para jenderal Angkatan Darat. Dengan menuduh Letjen Ahmad Yani dan jajarannya berkhianat menjadi antek Nekolim CIA, kelompok konspirator membenarkan tindakan penculikan fisik terhadap para pimpinan tentara dengan dalih menyelamatkan Pemimpin Besar Revolusi dari kudeta militer."
       },
       {
-        type: "single",
-        stimulus: "Pada 27 Desember 1949, penandatanganan naskah akta pengakuan kedaulatan dilakukan secara resmi di dua lokasi berbeda. Di Istana Paleis op de Dam Amsterdam, Ratu Juliana menandatangani akta penyerahan bersama Drs. Mohammad Hatta, sementara di Istana Merdeka Jakarta disahkan oleh Sultan HB IX dan Lovink. Peristiwa bersejarah ini menandai lahirnya status hukum Indonesia yang merdeka secara de jure di mata dunia.",
-        question: "Makna peristiwa 27 Desember 1949 bagi status hukum internasional Republik Indonesia adalah...",
-        options: [
-          "A. Berakhirnya perjuangan diplomasi Indonesia",
-          "B. Diakuinya kedaulatan Indonesia secara de jure oleh Kerajaan Belanda dan masyarakat internasional",
-          "C. Dimulainya masa pendudukan baru oleh Sekutu",
-          "D. Penggabungan Indonesia ke dalam Kerajaan Belanda",
-          "E. Pembentukan UUD Sementara 1950"
+        "type": "single",
+        "stimulus": "Pada Kamis malam menjelang dini hari Jumat, 1 Oktober 1965, pasukan bersenjata gabungan yang menamakan diri Gerakan 30 September bergerak di bawah komando Letnan Kolonel Untung Samsuri (Komandan Batalyon I Kawal Kehormatan Resimen Tjakrabirawa). Operasi penculikan menyasar kediaman para perwira tinggi teras Angkatan Darat di Jakarta. Enam jenderal diculik dan dibunuh (Letjen Ahmad Yani, Mayjen R. Suprapto, Mayjen M.T. Haryono, Mayjen S. Parman, Brigjen D.I. Pandjaitan, dan Brigjen Sutoyo Siswomiharjo), serta seorang perwira pertama, Lettu Pierre Tendean. Menko Hankam/KSAB Jenderal A.H. Nasution berhasil meloloskan diri melompati tembok kedutaan Irak, meskipun putrinya, Ade Irma Suryani, dan ajudannya menjadi korban penembakan.",
+        "question": "Para korban penculikan dan penembakan tersebut dibawa oleh kelompok G30S menuju kawasan...",
+        "options": [
+          "A. Pangkalan Udara Halim Perdanakusuma di kawasan perkebunan karet Lubang Buaya",
+          "B. Kompleks pelabuhan peti kemas Tanjung Priok di Jakarta Utara",
+          "C. Istana Kepresidenan Cipanas di kawasan perbukitan Jawa Barat",
+          "D. Barak resimen kavaleri infanteri lapis baja di Bandung",
+          "E. Gedung pemancar Radio Republik Indonesia di kawasan Medan Merdeka"
         ],
-        answer: 1,
-        explanation: "27 Desember 1949 menandai pengakuan de jure kedaulatan Indonesia secara resmi oleh Belanda dan internasional."
+        "answer": 0,
+        "explanation": "Pusat konsentrasi pasukan penculik dan penampungan para korban berada di Lubang Buaya, sebuah kawasan perkebunan karet di dekat Pangkalan Udara Halim Perdanakusuma, Jakarta Timur. Di lokasi ini jenazah para perwira Angkatan Darat dimasukkan ke dalam sumur tua sempit sedalam 12 meter yang kemudian ditimbun tanah dan dedaunan pohon pisang untuk menyembunyikan jejak pembunuhan."
       },
       {
-        type: "single",
-        stimulus: "Dalam ruang perundingan KMB, pihak Belanda mengajukan syarat keuangan berat agar RIS menanggung utang bekas Hindia Belanda sebesar 4,3 miliar gulden. Delegasi Mohammad Hatta harus mengambil keputusan kompromi yang sangat sulit di tengah tekanan alot diplomasi. Langkah kompromi beban utang ini terpaksa disetujui demi mengamankan tujuan puncak yang lebih besar, yakni penyerahan kedaulatan negara.",
-        question: "Alasan delegasi Moh. Hatta akhirnya menyetujui pengambilalihan utang Hindia Belanda dalam KMB adalah...",
-        options: [
-          "A. Menghindari pembatalan pengakuan kedaulatan utama yang menjadi tujuan puncak perjuangan",
-          "B. Keinginan membantu keuangan Kerajaan Belanda",
-          "C. Adanya jaminan bantuan dari bank dunia",
-          "D. Utang tersebut digunakan seluruhnya untuk pembangunan RI",
-          "E. Perintah langsung dari dewan keamanan PBB"
+        "type": "single",
+        "stimulus": "Pada pukul 07.15 WIB tanggal 1 Oktober 1965, pasukan Gerakan 30 September menguasai pemancar pusat Radio Republik Indonesia (RRI) di Jalan Medan Merdeka Barat dan Kantor Telekomunikasi. Penyiar RRI membacakan maklumat resmi Letkol Untung yang menyatakan bahwa G30S telah bertindak mendahului untuk menggagalkan rencana kudeta Dewan Jenderal binaan CIA. Pada siaran siang pukul 14.00 WIB, Letkol Untung mengumumkan pembentukan Dewan Revolusi Indonesia beranggotakan 45 orang, menghapuskan pangkat jenderal di atas letkol, dan menyatakan bahwa Kabinet Dwikora didemisionerkan.",
+        "question": "Kecerobohan politik fatal dari pengumuman maklumat Dewan Revolusi Letkol Untung adalah...",
+        "options": [
+          "A. Menolak mengakui Pancasila sebagai dasar filsafat Negara Kesatuan Republik Indonesia",
+          "B. Mendemisionerkan kabinet pemerintahan secara sepihak dan menyingkirkan otoritas kepresidenan Sukarno tanpa kejelasan status kepala negara",
+          "C. Mengundang pasukan militer Amerika Serikat untuk mengamankan kawasan ibu kota Jakarta",
+          "D. Mewajibkan seluruh prajurit militer berpangkat bintara meletakkan senjata api mereka",
+          "E. Memerintahkan pembubaran seluruh kantor cabang perbankan nasional di daerah"
         ],
-        answer: 0,
-        explanation: "Hatta mengambil keputusan kompromi sulit mengenai utang demi mengamankan gol puncak yaitu penyerahan kedaulatan."
+        "answer": 1,
+        "explanation": "Pernyataan mendemisionerkan kabinet secara hukum tata negara berarti membubarkan pemerintahan yang sah di mana Sukarno bertindak sebagai Perdana Menteri dan Presiden. Pengumuman ini membingungkan masyarakat dan para perwira militer netral, serta memicu kemarahan Sukarno sendiri karena merasa wewenang kepresidenannya telah dilangkahi dan direbut oleh dewan revolusi liar bentukan perwira menengah tersebut."
       },
       {
-        type: "single",
-        stimulus: "Bentuk negara Republik Indonesia Serikat (RIS) hasil kesepakatan KMB ternyata hanya bertahan singkat selama delapan bulan (Desember 1949 - Agustus 1950). Gelombang demonstrasi dan tuntutan rakyat di berbagai daerah menolak keberadaan negara-negara bagian yang dianggap sebagai alat pemecah belah kolonial. Gerakan rakyat ini mendesak penggabungan kembali seluruh wilayah federal ke dalam bingkai Negara Kesatuan Republik Indonesia.",
-        question: "Faktor utama yang mendorong pembubaran RIS dan kembalinya bentuk Negara Kesatuan Republik Indonesia (NKRI) pada 17 Agustus 1950 adalah...",
-        options: [
-          "A. Perintah langsung dari Ratu Juliana Belanda",
-          "B. Tuntutan rakyat di negara-negara bagian yang menolak bentuk federasi buatan Belanda dan menginginkan NKRI",
-          "C. Kekalahan militer TNI di Jawa Barat",
-          "D. Desakan dari Komisi Tiga Negara PBB",
-          "E. Pembatalan UUD 1945 oleh Soekarno"
+        "type": "single",
+        "stimulus": "Panglima Komando Cadangan Strategis Angkatan Darat (Kostrad), Mayor Jenderal Soeharto, yang tidak menjadi sasaran penculikan, tiba di Markas Kostrad di seberang Monas pada pagi hari 1 Oktober 1965. Mengetahui Menpangad Letjen Ahmad Yani hilang dan tidak berada di tempat, berdasarkan prosedur tetap kemiliteran, Soeharto mengambil inisiatif mengambil alih pimpinan komando Angkatan Darat untuk mengisi kekosongan hierarki militer.",
+        "question": "Langkah taktis militer kilat yang dijalankan Mayjen Soeharto untuk melumpuhkan Gerakan 30 September di Jakarta adalah...",
+        "options": [
+          "A. Menunggu kedatangan pasukan bantuan dari pangkalan persemakmuran Inggris di Singapura",
+          "B. Mengerahkan pasukan RPKAD di bawah Kolonel Sarwo Edhie Wibowo merebut kembali Gedung RRI dan Kantor Telekomunikasi tanpa kontak senjata besar, serta menyadarkan batalyon infanteri yang tersesat",
+          "C. Memerintahkan armada kapal perang KRI Irian memborbardir kawasan Pangkalan Udara Halim",
+          "D. Menyerahkan kendali keamanan ibu kota kepada pimpinan ormas pemuda partai politik",
+          "E. Mengungsikan seluruh korps diplomatik asing menuju pangkalan laut Surabaya"
         ],
-        answer: 1,
-        explanation: "Rakyat di negara-negara bagian menolak bentuk RIS karena dianggap taktik devide et impera Belanda, menuntut kembali ke NKRI."
+        "answer": 1,
+        "explanation": "Soeharto bertindak taktis dan tenang. Pasukan Batalyon 530 (Brawijaya) dan Batalyon 454 (Diponegoro) yang menduduki Lapangan Merdeka berhasil dipersuasi untuk melapor ke Kostrad setelah dijelaskan duduk perkara penculikan para jenderal. Menjelang petang, pasukan RPKAD Sarwo Edhie merebut Gedung RRI dalam hitungan menit, memutus corong propaganda Untung, dan mengamankan ibu kota sebelum bergerak menyisir Lubang Buaya."
       },
       {
-        type: "single",
-        stimulus: "Tokoh bangsa Mohammad Natsir menyampaikan gagasan bersejarah yang dikenal sebagai Mosi Integral di parlemen RIS pada April 1950. Mosi cerdik ini menawarkan mekanisme perundang-undangan untuk menyatukan kembali negara-negara bagian RIS tanpa konflik bersenjata. Keberhasilan mosi ini melicinkan jalan kembalinya konstitusi Indonesia ke Negara Kesatuan Republik Indonesia pada 17 Agustus 1950.",
-        question: "Peran strategis Mosi Integral Natsir 1950 dalam sejarah ketatanegaraan Indonesia adalah...",
-        options: [
-          "A. Mengubah sistem pemerintahan menjadi monarki",
-          "B. Merajut kembali persatuan negara-negara bagian RIS secara damai dan konstitusional menuju NKRI",
-          "C. Memperpanjang masa jabatan Presiden RIS",
-          "D. Mengembalikan kekuasaan kolonial NICA",
-          "E. Membubarkan seluruh partai politik"
+        "type": "single",
+        "stimulus": "Pada 3 Oktober 1965, berkat petunjuk seorang anggota polisi bernama Sukitman yang sempat ditawan gerilyawan di Lubang Buaya, lokasi sumur maut berhasil ditemukan. Pada 4 Oktober 1965, disaksikan langsung oleh Mayjen Soeharto di depan sorotan kamera televisi TVRI, jenazah para perwira tinggi teras Angkatan Darat diangkat dari dalam sumur. Pada 5 Oktober 1965, tepat pada peringatan Hari Angkatan Bersenjata, jenazah para perwira dimakamkan di Taman Makam Pahlawan Kalibata diiringi lautan tangis ratusan ribu warga, dan pemerintah menganugerahi mereka gelar Pahlawan Revolusi.",
+        "question": "Penayangan bukti fisik pengangkatan jenazah para jenderal dari sumur Lubang Buaya memicu dampak sosial-politik berupa...",
+        "options": [
+          "A. Meningkatnya simpati rakyat perkotaan terhadap perjuangan buruh dan tani sayap kiri",
+          "B. Gelombang kemarahan publik yang luar biasa terhadap PKI yang dituding sebagai dalang pembunuhan berdarah, memicu kampanye penumpasan massal terhadap struktur partai di seluruh daerah",
+          "C. Keputusan Presiden Sukarno membubarkan institusi Resimen Para Komando Angkatan Darat",
+          "D. Penutupan seluruh siaran berita televisi TVRI dan radio swasta oleh kejaksaan militer",
+          "E. Penyerahan diri secara massal dari seluruh pimpinan partai politik di gedung parlemen"
         ],
-        answer: 1,
-        explanation: "Mosi Integral Natsir menjadi solusi brilian yang menyatukan kembali negara-negara bagian RIS menjadi NKRI secara damai."
+        "answer": 1,
+        "explanation": "Bukti otentik penganiayaan dan pembunuhan para pimpinan tentara di Lubang Buaya menghancurkan legitimasi politik PKI dalam sekejap. Emosi publik dan korps militer meledak. Peristiwa ini membuka gelombang kekerasan massal, penangkapan, dan pembunuhan terhadap ratusan ribu kader, simpatisan, dan organisasi sayap PKI sepanjang akhir 1965 hingga 1966 di Jawa Tengah, Jawa Timur, dan Bali."
       },
       {
-        type: "single",
-        stimulus: "Kehadiran Sultan Hamid II sebagai ketua BFO dalam KMB memperlihatkan keterlibatan nyata pimpinan daerah dalam menentukan arah kedaulatan bangsa. Meskipun awalnya dibentuk oleh Belanda, mayoritas anggota BFO menyadari betapa pentingnya persatuan nasional dengan Republik Indonesia. Sinergi diplomasi antara RI dan BFO di Den Haag berhasil meruntuhkan dominasi perundingan pihak Kerajaan Belanda.",
-        question: "Peran BFO dalam Konferensi Inter-Indonesia dan KMB adalah...",
-        options: [
-          "A. Mendukung penuh pengakuan kedaulatan dan menyepakati pembentukan RIS bersama RI",
-          "B. Menolak perundingan dengan delegasi Moh. Hatta",
-          "C. Membantu Belanda memperpanjang agresi militer",
-          "D. Meminta perlindungan militer Inggris",
-          "E. Membubarkan komando gerilya TNI"
+        "type": "single",
+        "stimulus": "Kelesuan ekonomi akibat hiperinflasi yang dibarengi keengganan Presiden Sukarno membubarkan PKI memicu kemarahan generasi muda. Pada 10 Januari 1966, ribuan mahasiswa yang tergabung dalam Kesatuan Aksi Mahasiswa Indonesia (KAMI) bersama pelajar (KAPPI) menggelar demonstrasi besar mengepung gedung DPR-GR di Senayan. Mereka mengumandangkan manifesto bersejarah yang dikenal sebagai Tri Tuntutan Rakyat (Tritura).",
+        "question": "Tiga tuntutan mutlak yang tertuang dalam Tritura mahasiswa 1966 adalah...",
+        "options": [
+          "A. Batalkan hasil pemilu 1955, bubarkan parlemen DPR-GR, dan adakan pemilihan presiden baru",
+          "B. Bubarkan PKI beserta ormas-ormasnya, bersihkan Kabinet Dwikora dari unsur-unsur G30S/PKI, dan turunkan harga kebutuhan pokok / perbaiki ekonomi",
+          "C. Turunkan tarif listrik, batalkan proyek pembangunan Monas, dan kembali ke keanggotaan PBB",
+          "D. Bebaskan para tokoh tahanan politik PRRI, bubarkan MPRS, dan hapuskan ajaran Pancasila",
+          "E. Serahkan kepemimpinan tentara kepada mahasiswa, hapuskan pajak penghasilan, dan buka hubungan dengan Taiwan"
         ],
-        answer: 0,
-        explanation: "Delegasi BFO bersatu dengan RI menuntut penyerahan kedaulatan penuh dan tanpa syarat dari Kerajaan Belanda."
+        "answer": 1,
+        "explanation": "Tritura merangkum aspirasi politik dan ekonomi rakyat: (1) Bubarkan PKI (tuntutan ideologis); (2) Bersihkan Kabinet Dwikora dari menteri-menteri yang terlibat G30S (tuntutan tata kelola pemerintahan); (3) Turunkan harga barang dan perbaiki ekonomi rakyat (tuntutan perut rakyat jelata). Tritura menjadi motor pendorong gerakan mahasiswa meruntuhkan hegemoni kepemimpinan Sukarno."
       },
       {
-        type: "single",
-        stimulus: "Pengakuan kedaulatan 27 Desember 1949 secara resmi mengakhiri konfrontasi senjata selama empat tahun (1945-1949) yang memakan banyak pengorbanan. Keberhasilan ini membuktikan efektivitas kombinasi antara strategi perlawanan gerilya di lapangan dan kecerdasan perundingan di meja diplomasi. Dwitunggal perjuangan fisik dan diplomasi ini menjadi pilar tegaknya kemerdekaan Indonesia di mata dunia.",
-        question: "Pelajaran utama dari perjuangan diplomasi KMB adalah...",
-        options: [
-          "A. Kedaulatan bangsa diraih melalui perpaduan keteguhan pertahanan fisik dan kecerdasan berdiplomasi",
-          "B. Diplomasi tidak memerlukan dukungan kekuatan militer",
-          "C. Perjuangan senjata selalu lebih penting daripada diplomasi",
-          "D. Kompromi diplomasi selalu merugikan bangsa",
-          "E. Pengakuan internasional tidak diperlukan bagi suatu negara"
+        "type": "single",
+        "stimulus": "Menanggapi desakan mahasiswa membersihkan kabinet, Presiden Sukarno justru merombak susunan menteri menjadi Kabinet Dwikora yang Disempurnakan pada 21 Februari 1966. Kabinet yang memiliki lebih dari seratus menteri ini dijuluki rakyat sebagai Kabinet 100 Menteri, namun di dalamnya masih bercokol tokoh-tokoh sayap kiri yang ditentang mahasiswa. Pada hari pelantikan menteri di Istana Merdeka, 24 Februari 1966, ribuan demonstran memblokade jalan dan mengempeskan ban mobil dinas para menteri. Pasukan pengawal presiden Resimen Tjakrabirawa melepaskan tembakan peluru tajam yang menewaskan seorang mahasiswa Fakultas Kedokteran Universitas Indonesia bernama Arif Rahman Hakim.",
+        "question": "Dampak historis dari gugurnya Arif Rahman Hakim terhadap eskalasi gerakan mahasiswa adalah...",
+        "options": [
+          "A. Mahasiswa menghentikan seluruh aksi demonstrasi dan kembali mengikuti perkuliahan normal",
+          "B. Menjadikan figur Arif Rahman Hakim sebagai martir perjuangan moral Angkatan 66 yang memperkeras perlawanan rakyat terhadap kepemimpinan Presiden Sukarno",
+          "C. Presiden Sukarno segera memenuhi seluruh tuntutan mahasiswa dan mengundurkan diri",
+          "D. Pembubaran seluruh universitas negeri dan swasta di wilayah Jakarta dan Bandung",
+          "E. Pimpinan militer Angkatan Darat menyatakan mundur dari keterlibatan politik praktis"
         ],
-        answer: 0,
-        explanation: "Kemenangan 1949 membuktikan dwitunggal perjuangan: ketangguhan gerilya militer dan kecerdasan perundingan diplomasi."
+        "answer": 1,
+        "explanation": "Kematian Arif Rahman Hakim menjadi titik kulminasi kemarahan publik. Ribuan mahasiswa dan warga mengantar jenazahnya ke pemakaman Karet dengan mengenakan jaket kuning bernoda darah. Ia diangkat sebagai pahlawan ampera (Amanat Penderitaan Rakyat). Gugurnya mahasiswa kedokteran ini menutup pintu kompromi antara istana kepresidenan dan gerakan pemuda."
       },
       {
-        type: "single",
-        stimulus: "Sikap tenang dan wawasan rasional yang ditunjukkan Drs. Mohammad Hatta selama KMB di Den Haag berhasil menembus kebiasaan diplomasi kolonial Belanda. Hatta mampu berdebat menggunakan argumen hukum internasional secara berwibawa demi mempertahankan kehormatan bangsa. Kepemimpinan rasional ini menjadi bukti keunggulan intelektual para diplomat pendiri Republik Indonesia.",
-        question: "Karakter kepemimpinan Moh. Hatta dalam KMB Den Haag mencerminkan...",
-        options: [
-          "A. Kepemimpinan rasional, bernalar kritis, dan berwawasan luas demi masa depan kedaulatan bangsa",
-          "B. Sikap emosional yang mengabaikan realistis politik",
-          "C. Ketergantungan pada instruksi negara asing",
-          "D. Penolakan terhadap musyawarah mufakat",
-          "E. Mengutamakan kepentingan kelompok tertentu"
+        "type": "single",
+        "stimulus": "Pada 11 Maret 1966, Presiden Sukarno memimpin sidang paripurna Kabinet Dwikora di Istana Merdeka. Di tengah persidangan, Brigjen Sabur (Komandan Tjakrabirawa) mengirimkan nota peringatan bahwa istana telah dikepung oleh pasukan liar tanpa tanda pengenal (diketahui sebagai pasukan RPKAD berpakaian preman). Sukarno menyerahkan pimpinan sidang kepada Dr. Leimena dan terbang menggunakan helikopter kepresidenan menuju Istana Bogor. Tiga perwira tinggi Angkatan Darat (Mayjen Basuki Rachmat, Brigjen M. Jusuf, dan Brigjen Amir Machmud) segera menyusul ke Bogor menemui Sukarno. Setelah perundingan tegang selama beberapa jam, Presiden Sukarno menandatangani surat perintah pengamanan negara yang dikenal sebagai Supersemar.",
+        "question": "Mandat pokok yang diberikan Presiden Sukarno kepada Letnan Jenderal Soeharto dalam naskah Supersemar adalah...",
+        "options": [
+          "A. Mengumumkan pengunduran diri Sukarno dan menyerahkan kekuasaan presiden kepada MPRS",
+          "B. Mengambil segala tindakan yang dianggap perlu untuk menjamin keamanan, ketenangan, kestabilan jalannya pemerintahan, dan keselamatan pribadi Presiden",
+          "C. Membubarkan institusi Dewan Perwakilan Rakyat dan memberlakukan darurat militer permanen",
+          "D. Menangkap seluruh perwira Angkatan Udara yang bertugas di Pangkalan Udara Halim",
+          "E. Mengangkat Mohammad Hatta kembali sebagai Perdana Menteri Republik Indonesia"
         ],
-        answer: 0,
-        explanation: "Moh. Hatta menampilkan keteladanan kepemimpinan yang rasional, bernalar kritis, dan berpandangan jauh ke depan."
+        "answer": 1,
+        "explanation": "Naskah resmi Supersemar memberikan wewenang diskresioner yang sangat luas kepada Letjen Soeharto atas nama Presiden untuk mengambil tindakan pemulihan keamanan dan wibawa kepresidenan. Namun, wewenang ini diinterpretasikan secara luas oleh Soeharto bukan sekadar memulihkan ketertiban jalanan, melainkan sebagai penyerahan mandat politik penuh untuk merombak struktur kekuasaan negara."
       },
       {
-        type: "data_sufficiency",
-        stimulus: "Seorang sejarawan mengkaji legitimasi KMB 1949.<br><br>DATA SEJARAH:<br>(1) Belanda menandatangani dokumen penyerahan kedaulatan kepada RIS pada 27 Desember 1949.<br>(2) PBB dan negara-negara dunia memberikan pengakuan de jure resmi kepada RIS.",
-        question: "Apakah Data (1) dan (2) cukup membuktikan sahnya pengakuan kedaulatan Indonesia 1949?",
-        options: [
-          "A. Data (1) dan (2) BERSAMA-SAMA cukup membuktikan legitimasi hukum de jure pengakuan kedaulatan RI",
-          "B. Data (1) SAJA cukup",
-          "C. Data (2) SAJA cukup",
-          "D. Kedua data tidak relevan",
-          "E. Data bertentangan"
+        "type": "single",
+        "stimulus": "Menerima salinan naskah Supersemar yang dibawa dari Istana Bogor, Letjen Soeharto bertindak cepat tanpa membuang waktu. Kurang dari 24 jam setelah surat perintah ditandatangani, tepatnya pada Sabtu pagi 12 Maret 1966, Soeharto atas nama Presiden menerbitkan Keputusan Presiden No. 1/3/1966 yang membubarkan Partai Komunis Indonesia (PKI) beserta seluruh ormas yang bernaung di bawahnya dan menyatakannya sebagai organisasi terlarang di seluruh wilayah Indonesia. Beberapa hari berselang, Soeharto menahan 15 menteri kabinet yang terindikasi dekat dengan gerakan sayap kiri, termasuk Wakil Perdana Menteri I Dr. Subandrio.",
+        "question": "Makna politik terpenting dari tindakan cepat Letjen Soeharto membubarkan PKI adalah...",
+        "options": [
+          "A. Memenuhi tuntutan pertama Tritura mahasiswa dan melumpuhkan pilar penyangga utama kekuasaan politik Presiden Sukarno",
+          "B. Membatalkan berlakunya Undang-Undang Dasar 1945 di seluruh wilayah kekuasaan Republik",
+          "C. Mengembalikan seluruh aset perusahaan perkebunan kepada para pemegang saham asing",
+          "D. Menolak mandat kepemimpinan militer yang diberikan oleh Markas Komando Kostrad",
+          "E. Menyerahkan administrasi kementerian luar negeri kepada dinas diplomatik PBB"
         ],
-        answer: 0,
-        explanation: "Data 1 membuktikan penyerahan resmi penjajah dan Data 2 membuktikan legitimasi hukum internasional PBB."
+        "answer": 0,
+        "explanation": "Langkah Soeharto membubarkan PKI secara sepihak memutus kaki utama segitiga kekuasaan Demokrasi Terpimpin. Selama ini Sukarno bersikukuh menolak membubarkan PKI karena memegang doktrin Nasakom. Dengan membubarkan PKI dan memenjarakan menteri-menteri loyalis Sukarno, Soeharto secara de facto memegang kendali pemerintahan riil dan mengisolasi posisi Sukarno di istana."
       },
       {
-        type: "infographic",
-        stimulus: "Cermati alur puncak diplomasi 1949:<br>1. Mei 1949: Roem-Royen ➔ Gencatan Senjata & Jogja Pulih<br>2. Jul-Agt 1949: Konferensi Inter-Indonesia ➔ Consolidasi RI & BFO<br>3. Nov 1949: KMB Den Haag ➔ Kesepakatan Pengakuan Kedaulatan<br>4. 27 Des 1949: Penandatanganan Dokument ➔ Indonesia Merdeka De Jure",
-        question: "Kesimpulan analisis kronologis alur puncak diplomasi di atas adalah...",
-        options: [
-          "A. Rangkaian perundingan berjenjang yang sukses mengantarkan Indonesia memperoleh pengakuan kedaulatan penuh secara de jure",
-          "B. Seluruh perundingan mengalami kegagalan total",
-          "C. Indonesia tetap menjadi koloni jajahan Belanda",
-          "D. KMB dibatalkan oleh Dewan Keamanan PBB",
-          "E. Penyerahan kedaulatan dilakukan tanpa keterlibatan PBB"
+        "type": "single",
+        "stimulus": "Pada Sidang Umum IV MPRS pada Juni 1966 di bawah pimpinan Jenderal A.H. Nasution, MPRS mengukuhkan kedudukan hukum Supersemar melalui Ketetapan MPRS No. IX/MPRS/1966, mencabut gelar Presiden Seumur Hidup, serta menugaskan Soeharto membentuk Kabinet Ampera. Presiden Sukarno berusaha mempertahankan pertanggungjawaban politiknya dengan menyampaikan pidato sembilan pokok yang berjudul 'Nawaksara' pada 22 Juni 1966 dan menyusulkan surat pelengkapnya pada 10 Januari 1967. MPRS menolak pertanggungjawaban pidato tersebut karena Sukarno dinilai tidak memberikan penjelasan tuntas mengenai sebab-sebab terjadinya peristiwa G30S serta krisis kemerosotan ekonomi dan moral bangsa.",
+        "question": "Puncak penolakan terhadap kepemimpinan Presiden Sukarno terjadi pada Sidang Istimewa MPRS Maret 1967 yang menghasilkan...",
+        "options": [
+          "A. Ketetapan MPRS membubarkan negara kesatuan dan membentuk federasi republik baru",
+          "B. Ketetapan MPRS No. XXXIII/MPRS/1967 yang mencabut kekuasaan pemerintahan negara dari Presiden Sukarno dan mengangkat Jenderal Soeharto sebagai Pejabat Presiden",
+          "C. Keputusan Mahkamah Konstitusi untuk mengadakan pemilihan umum langsung presiden dalam tempo 30 hari",
+          "D. Pengangkatan Jenderal A.H. Nasution sebagai Presiden Republik Indonesia definitif",
+          "E. Penyerahan urusan pertahanan nasional kepada Dewan Keamanan Perserikatan Bangsa-Bangsa"
         ],
-        answer: 0,
-        explanation: "Alur kronologis memperlihatkan suksesnya tahapan diplomasi yang berujung pada pengakuan kedaulatan de jure 27 Desember 1949."
+        "answer": 1,
+        "explanation": "Tap MPRS No. XXXIII/MPRS/1967 merupakan lonceng kematian politik bagi rezim Demokrasi Terpimpin. Majelis secara yuridis mencabut mandat eksekutif Sukarno atas pertimbangan tidak terpenuhinya pertanggungjawaban Nawaksara dan melarang Sukarno melakukan kegiatan politik hingga pemilu. Majelis mengangkat Jenderal Soeharto sebagai Pejabat Presiden, menandai dimulainya era transisi menuju Orde Baru."
       },
       {
-        type: "single",
-        stimulus: "Kemerdekaan penuh dan pengakuan kedaulatan 1949 yang kita nikmati saat ini merupakan buah perjuangan keras dan pengorbanan jiwa para pahlawan. Tanggung jawab besar kini berada di pundak para pelajar untuk menjaga keutuhan Negara Kesatuan Republik Indonesia dari ancaman pemecah belah. Generasi muda dituntut meneladani semangat 1945 melalui pemikiran kritis, karya nyata, dan kontribusi aktif bagi bangsa.",
-        question: "Tanggung jawab utama siswa sebagai Pelajar Pancasila dalam mengisi kemerdekaan hasil perjuangan 1945-1949 adalah...",
-        options: [
-          "A. Menjaga persatuan NKRI, belajar tekun, dan berkontribusi positif bagi kemajuan masyarakat dan bangsa",
-          "B. Memecah belah keharmonisan antar sesama warga",
-          "C. Menolak menghargai jasa para pahlawan kemerdekaan",
-          "D. Pasrah terhadap perkembangan teknologi global",
-          "E. Menimbulkan konflik di lingkungan sekolah"
+        "type": "single",
+        "stimulus": "Kurun waktu 1950 hingga 1965 merupakan laboratorium eksperimen ketatanegaraan yang sangat kaya dalam sejarah Indonesia. Bangsa ini pernah merasakan kebebasan multipartai parlemen tanpa batas yang berujung pada instabilitas pemerintahan, kemudian beralih ke sistem pemusatan kekuasaan otokratis Demokrasi Terpimpin yang melumpuhkan mekanisme saling kontrol antarcabang kekuasaan (checks and balances). Retorika kejayaan di panggung internasional yang mengabaikan kaidah-kaidah kestabilan ekonomi makro rakyat jelata pada akhirnya berujung pada krisis moneter akut dan tragedi kemanusiaan yang memilukan.",
+        "question": "Kesimpulan reflektif paling berharga bagi generasi penerus bangsa dalam merawat masa depan Negara Kesatuan Republik Indonesia adalah bahwa...",
+        "options": [
+          "A. Sistem demokrasi parlementer liberal adalah satu-satunya sistem yang paling sempurna bagi bangsa Indonesia",
+          "B. Pembangunan bangsa yang berdaulat harus menjaga keseimbangan antara martabat kedaulatan politik di mata dunia, penegakan hukum dan demokrasi konstitusional yang sehat, serta pemenuhan kesejahteraan ekonomi yang nyata bagi seluruh rakyat",
+          "C. Negara berkembang harus selalu mengorbankan kesejahteraan rakyat demi membeli persenjataan modern dari luar negeri",
+          "D. Oposisi politik harus dilarang secara permanen demi menjaga kelangsungan kepemimpinan kepala negara seumur hidup",
+          "E. Sejarah masa lalu tidak memiliki relevansi apa pun dalam merumuskan kebijakan publik di era modern"
         ],
-        answer: 0,
-        explanation: "Amanat utama generasi muda adalah menjaga persatuan NKRI, menuntut ilmu, dan berkontribusi bagi kemajuan Indonesia."
+        "answer": 1,
+        "explanation": "Pelajaran terbesar dari era Orde Lama adalah pentingnya keseimbangan (equilibrium). Kejayaan diplomasi internasional, persatuan teritorial, dan kebanggaan nasional akan kehilangan maknanya apabila hak-hak dasar demokrasi warga dibungkam dan kesejahteraan ekonomi rakyat ditelantarkan. Bangsa yang matang adalah bangsa yang mampu memadukan kedaulatan politik, keadilan hukum, dan kemakmuran sosial secara harmonis."
       }
     ]
   }
