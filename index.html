@@ -1326,6 +1326,27 @@
        </div>
       </div>
 
+      <!-- WARNING BOX IF GAS DEPLOYMENT NOT UPDATED WITH NEW VERSION -->
+      <div id="t-activation-gas-warning" class="hidden rounded-2xl bg-[#ee824b]/15 border border-[#ee824b]/40 p-4 text-xs font-semibold text-[#17211d] flex items-start gap-3">
+       <i data-lucide="alert-triangle" class="h-5 w-5 text-[#ee824b] shrink-0 mt-0.5"></i>
+       <div class="space-y-1">
+        <strong class="font-bold text-[#ee824b] text-xs sm:text-sm">⚠️ Info Sinkronisasi Realtime: Web App Google Apps Script Perlu Penerapan Versi Baru</strong>
+        <p class="text-[11px] text-[#405047] leading-relaxed">
+         Data pendaftaran siswa sudah sukses tersimpan di Google Sheet Anda! Namun backend Google Apps Script masih menjalankan deployment versi lama sehingga belum merespons permintaan daftar siswa realtime ke Dashboard Guru ini.
+        </p>
+        <div class="rounded-xl bg-white/80 p-2.5 text-[11px] text-[#174d3a] border border-[#d8d3c4] space-y-1">
+         <p class="font-bold">Langkah cepat mengaktifkan:</p>
+         <ol class="list-decimal pl-4 space-y-0.5 text-[#405047]">
+          <li>Buka Google Spreadsheet Anda &gt; menu <strong>Ekstensi &gt; Apps Script</strong>.</li>
+          <li>Pastikan isi file <code>google_apps_script_Code.gs</code> terbaru sudah disimpan.</li>
+          <li>Klik tombol biru <strong>Terapkan (Deploy) &gt; Kelola Penerapan (Manage Deployments)</strong>.</li>
+          <li>Klik ikon <strong>Pensil (Edit)</strong> &gt; pada baris Versi pilih <strong>Versi Baru (New Version)</strong>.</li>
+          <li>Klik <strong>Terapkan (Deploy)</strong>. Peringatan ini akan otomatis hilang dan data siswa muncul seketika!</li>
+         </ol>
+        </div>
+       </div>
+      </div>
+
       <!-- TABLE OF REGISTERED STUDENTS FOR ACTIVATION -->
       <div class="rounded-2xl border border-[#d8d3c4] bg-[#fffdf7] overflow-hidden shadow-xs">
        <div class="overflow-x-auto">
@@ -5925,8 +5946,8 @@
  </script>
 
  <!-- ENGINE MODUL: Data & Logic dari modul pengantar.html -->
- <script src="modulesData.js?v=20"></script>
- <script src="app.js?v=20"></script>
+ <script src="modulesData.js?v=25"></script>
+ <script src="app.js?v=25"></script>
 </body>
 
 </html>
