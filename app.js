@@ -2724,35 +2724,187 @@ document.addEventListener("DOMContentLoaded", () => {
       fetch(`${gasUrl}?action=getRegisteredStudents`)
         .then(res => res.json())
         .then(data => {
-          if (data && data.status === "SUCCESS" && Array.isArray(data.students)) {
-            const emailMap = {};
-            // Cloud is primary source of truth
-            data.students.forEach(s => {
-              if (s.email) emailMap[s.email.toLowerCase()] = s;
-            });
-            // Retain local records not yet uploaded
-            registeredStudents.forEach(s => {
-              if (s.email && !emailMap[s.email.toLowerCase()]) {
-                emailMap[s.email.toLowerCase()] = s;
-              }
-            });
-            const merged = Object.values(emailMap);
-            // Sort: pending first, then by timestamp
-            merged.sort((a, b) => {
-              const aPend = (a.status === "PENDING_ACTIVATION" || a.status === "PENDING");
-              const bPend = (b.status === "PENDING_ACTIVATION" || b.status === "PENDING");
-              if (aPend && !bPend) return -1;
-              if (!aPend && bPend) return 1;
-              return (b.timestamp || "").localeCompare(a.timestamp || "");
-            });
+          if (data && data.status === "SUCCESS") {
+            const warningBox = document.getElementById("t-activation-gas-warning");
+            if (Array.isArray(data.students)) {
+              if (warningBox) warningBox.classList.add("hidden");
 
-            setStoredArray("sejarah_registered_students", merged);
-            renderRows(merged);
-            updateBadges(merged);
+              const emailMap = {};
+              // Cloud is primary source of truth
+              data.students.forEach(s => {
+                if (s.email) emailMap[s.email.toLowerCase()] = s;
+              });
+              // Retain local records not yet uploaded
+              registeredStudents.forEach(s => {
+                if (s.email && !emailMap[s.email.toLowerCase()]) {
+                  emailMap[s.email.toLowerCase()] = s;
+                }
+              });
+              const merged = Object.values(emailMap);
+              // Sort: pending first, then by timestamp
+              merged.sort((a, b) => {
+                const aPend = (a.status === "PENDING_ACTIVATION" || a.status === "PENDING");
+                const bPend = (b.status === "PENDING_ACTIVATION" || b.status === "PENDING");
+                if (aPend && !bPend) return -1;
+                if (!aPend && bPend) return 1;
+                return (b.timestamp || "").localeCompare(a.timestamp || "");
+              });
+
+              setStoredArray("sejarah_registered_students", merged);
+              renderRows(merged);
+              updateBadges(merged);
+            } else if (data.message === "GAS Teacher Control Center Active") {
+              // Web App is still running the old Apps Script deployment
+              if (warningBox) warningBox.classList.remove("hidden");
+            }
           }
         })
         .catch(err => console.warn("Cloud student sync background note:", err));
     }
+
+    // Automatically ensure realtime polling loop is active
+    if (typeof window.startTeacherRealtimePolling === "function") {
+      window.startTeacherRealtimePolling();
+    }
+  };
+
+  // Real-time Chime Notification Engine (Web Audio API - No External Files Needed)
+  function playTeacherNotificationChime() {
+    try {
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      if (!AudioCtx) return;
+      const ctx = new AudioCtx();
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(587.33, ctx.currentTime); // Note D5
+      osc.frequency.setValueAtTime(880, ctx.currentTime + 0.12); // Note A5
+      gain.gain.setValueAtTime(0.12, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.45);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.45);
+    } catch(e) {}
+  }
+
+  // Real-time Cloud Polling Timer for Teacher Dashboard
+  let _teacherRealtimePollTimer = null;
+  let _knownStudentEmails = new Set();
+
+  window.startTeacherRealtimePolling = function() {
+    if (_teacherRealtimePollTimer) return; // Already running
+
+    _teacherRealtimePollTimer = setInterval(() => {
+      const isTeacher = sessionStorage.getItem("isTeacherActive") === "true";
+      if (!isTeacher) {
+        clearInterval(_teacherRealtimePollTimer);
+        _teacherRealtimePollTimer = null;
+        return;
+      }
+
+      const gasUrl = window.GAS_API_URL || localStorage.getItem("sejarah_gas_url");
+      if (!gasUrl || !gasUrl.startsWith("http")) return;
+
+      fetch(`${gasUrl}?action=getRegisteredStudents`)
+        .then(res => res.json())
+        .then(data => {
+          if (data && data.status === "SUCCESS") {
+            const warningBox = document.getElementById("t-activation-gas-warning");
+            if (Array.isArray(data.students)) {
+              if (warningBox) warningBox.classList.add("hidden");
+
+              // Detect new pending students that weren't known before
+              let newPendingStudent = null;
+              data.students.forEach(s => {
+                const em = (s.email || "").toLowerCase();
+                const isPend = (s.status === "PENDING_ACTIVATION" || s.status === "PENDING");
+                if (isPend && em && !_knownStudentEmails.has(em)) {
+                  newPendingStudent = s;
+                }
+                if (em) _knownStudentEmails.add(em);
+              });
+
+              // If new pending student arrived in real-time, alert teacher!
+              if (newPendingStudent) {
+                playTeacherNotificationChime();
+                showTeacherToast(`🔔 Pendaftar Baru: ${newPendingStudent.nama || 'Siswa'} (${newPendingStudent.kelas || '-'}) Menunggu Aktivasi!`);
+              }
+
+              // Update data store and UI if list size changed or statuses updated
+              const prev = getStoredArray("sejarah_registered_students");
+              const isDifferent = JSON.stringify(prev) !== JSON.stringify(data.students);
+              if (isDifferent) {
+                setStoredArray("sejarah_registered_students", data.students);
+                // Re-render table silently
+                const activationTbodyList = [
+                  ...Array.from(document.querySelectorAll(".t-activation-tbody-pane")),
+                  document.getElementById("t-activation-tbody")
+                ].filter((el, idx, arr) => el && arr.indexOf(el) === idx);
+
+                if (activationTbodyList.length > 0) {
+                  // Direct DOM update
+                  const isActivatedFn = s => s.status === "ACTIVATED" || s.status === "APPROVED";
+                  activationTbodyList.forEach(tbody => {
+                    tbody.innerHTML = data.students.map((s, idx) => `
+                      <tr class="hover:bg-[#f6f3e9]/50 transition border-b border-[#d8d3c4]/60">
+                        <td class="p-3 text-[11px] text-[#718277] font-mono">${s.timestamp || "Terdaftar"}</td>
+                        <td class="p-3 font-bold text-[#174d3a] text-xs">
+                          ${escapeHtml(s.nama || "-")}
+                          ${s.nisn && s.nisn !== "-" ? `<span class="block text-[10px] text-[#718277] font-normal font-mono">NISN: ${escapeHtml(s.nisn)}</span>` : ""}
+                        </td>
+                        <td class="p-3 font-semibold text-[#405047] text-xs">${escapeHtml(s.kelas || "-")}</td>
+                        <td class="p-3 text-[#174d3a] font-medium text-xs font-mono">${escapeHtml(s.email || "-")}</td>
+                        <td class="p-3 font-mono font-bold text-[#ee824b] text-xs">${escapeHtml(s.token || "IDEM")}</td>
+                        <td class="p-3">
+                          <span class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[10px] font-extrabold ${isActivatedFn(s) ? 'bg-[#174d3a]/15 text-[#174d3a] border border-[#174d3a]/30' : 'bg-[#ee824b]/15 text-[#ee824b] border border-[#ee824b]/30 animate-pulse'}">
+                            ${isActivatedFn(s) ? '🟢 AKTIF' : '🟡 MENUNGGU'}
+                          </span>
+                        </td>
+                        <td class="p-3 text-center">
+                          <div class="flex items-center justify-center gap-1.5 flex-wrap">
+                            <button type="button" onclick="toggleStudentActivationStatus(${idx})" class="rounded-lg px-2.5 py-1 text-[10px] font-bold transition shadow-xs cursor-pointer ${isActivatedFn(s) ? 'border border-[#a53e24]/40 bg-[#fffdf7] text-[#a53e24] hover:bg-[#fff1e9]' : 'bg-[#174d3a] text-[#d8ee93] hover:bg-[#123d2e]'}">
+                              ${isActivatedFn(s) ? '⛔ Nonaktifkan' : '✅ Setujui'}
+                            </button>
+                            <button type="button" onclick="appResetStudentToken('${escapeHtml(s.email || s.nama)}')" title="Reset Token Akses Siswa" class="rounded-lg border border-[#174d3a]/30 bg-[#fffdf7] px-2 py-1 text-[10px] font-bold text-[#174d3a] hover:bg-[#f6f3e9] transition shadow-xs cursor-pointer">
+                              <i data-lucide="key" class="h-3 w-3 inline"></i> Reset
+                            </button>
+                            <button type="button" onclick="deleteStudentAccess('${escapeHtml(s.email)}')" title="Hapus Akun Siswa Ini Secara Permanen" class="rounded-lg border border-[#a53e24]/40 bg-[#fffdf7] p-1 text-[#a53e24] hover:bg-[#fee2e2] transition shadow-xs cursor-pointer">
+                              <i data-lucide="trash-2" class="h-3.5 w-3.5 inline"></i>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    `).join("");
+                  });
+                  if (window.lucide) window.lucide.createIcons();
+                }
+
+                // Update tab badge counters
+                const pendingCount = data.students.filter(s => s.status === "PENDING_ACTIVATION" || s.status === "PENDING" || (!s.status && s.status !== "APPROVED")).length;
+                [document.getElementById("v6-btn-activation"), document.getElementById("teacher-tab-activation")].forEach(btn => {
+                  if (!btn) return;
+                  let badge = btn.querySelector(".activation-pending-badge");
+                  if (pendingCount > 0) {
+                    if (!badge) {
+                      badge = document.createElement("span");
+                      badge.className = "activation-pending-badge ml-1.5 inline-flex items-center justify-center rounded-full bg-[#ee824b] px-2 py-0.5 text-[10px] font-bold text-white shadow-xs animate-bounce";
+                      btn.appendChild(badge);
+                    }
+                    badge.textContent = `${pendingCount} Menunggu`;
+                    badge.style.display = "inline-flex";
+                  } else if (badge) {
+                    badge.style.display = "none";
+                  }
+                });
+              }
+            } else if (data.message === "GAS Teacher Control Center Active") {
+              if (warningBox) warningBox.classList.remove("hidden");
+            }
+          }
+        })
+        .catch(() => {});
+    }, 4000);
   };
 
   // Manual Trigger for Cloud Refresh
@@ -2766,12 +2918,19 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(`${gasUrl}?action=getRegisteredStudents`)
       .then(res => res.json())
       .then(data => {
-        if (data && data.status === "SUCCESS" && Array.isArray(data.students)) {
-          setStoredArray("sejarah_registered_students", data.students);
-          window.renderTeacherActivationData();
-          if (showToast) showTeacherToast(`✅ Sinkronisasi Berhasil: ${data.students.length} data siswa terhubung dari Google Sheets!`);
-        } else {
-          if (showToast) showTeacherToast("ℹ️ Respon diterima, belum ada data pendaftar baru di Google Sheets.");
+        const warningBox = document.getElementById("t-activation-gas-warning");
+        if (data && data.status === "SUCCESS") {
+          if (Array.isArray(data.students)) {
+            if (warningBox) warningBox.classList.add("hidden");
+            setStoredArray("sejarah_registered_students", data.students);
+            window.renderTeacherActivationData();
+            if (showToast) showTeacherToast(`✅ Sinkronisasi Berhasil: ${data.students.length} data siswa terhubung dari Google Sheets!`);
+          } else if (data.message === "GAS Teacher Control Center Active") {
+            if (warningBox) warningBox.classList.remove("hidden");
+            if (showToast) alert("⚠️ PERINGATAN GURU:\n\nGoogle Apps Script masih menjalankan versi lama (belum di-deploy Versi Baru).\n\nCara Memperbarui:\n1. Buka Spreadsheet Google Anda > Ekstensi > Apps Script.\n2. Klik Terapkan (Deploy) > Kelola Penerapan.\n3. Klik ikon Pensil (Edit) > pilih Versi: Versi Baru.\n4. Klik Terapkan.");
+          } else {
+            if (showToast) showTeacherToast("ℹ️ Respon diterima, belum ada data pendaftar baru di Google Sheets.");
+          }
         }
       })
       .catch(err => {
