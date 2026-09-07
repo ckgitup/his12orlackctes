@@ -1303,8 +1303,13 @@
          modul.</p>
        </div>
        <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+        <button type="button" onclick="refreshTeacherActivationFromCloud(true)"
+         class="shrink-0 flex items-center gap-1.5 rounded-full border border-[#174d3a]/30 bg-[#fffdf7] px-3.5 py-2 text-xs font-bold text-[#174d3a] shadow-xs hover:bg-[#e8efd9] transition cursor-pointer" title="Periksa pendaftar baru dari Google Sheets">
+         <i data-lucide="refresh-cw" class="h-4 w-4 text-[#ee824b]"></i>
+         <span>🔄 Sinkronkan Cloud</span>
+        </button>
         <button type="button" onclick="exportRegisteredStudentsCSV()"
-         class="shrink-0 flex items-center gap-1.5 rounded-full border border-[#174d3a]/30 bg-white px-3.5 py-2 text-xs font-bold text-[#174d3a] shadow-sm hover:bg-[#e8efd9] transition">
+         class="shrink-0 flex items-center gap-1.5 rounded-full border border-[#174d3a]/30 bg-white px-3.5 py-2 text-xs font-bold text-[#174d3a] shadow-sm hover:bg-[#e8efd9] transition cursor-pointer">
          <i data-lucide="download" class="h-4 w-4 text-[#ee824b]"></i>
          <span>📥 Ekspor CSV</span>
         </button>
@@ -3530,13 +3535,18 @@
          modul.</p>
        </div>
        <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+        <button type="button" onclick="refreshTeacherActivationFromCloud(true)"
+         class="shrink-0 flex items-center gap-1.5 rounded-full border border-[#174d3a]/30 bg-white px-3.5 py-2 text-xs font-bold text-[#174d3a] shadow-xs hover:bg-[#e8efd9] transition cursor-pointer" title="Periksa pendaftar baru dari Google Sheets">
+         <i data-lucide="refresh-cw" class="h-4 w-4 text-[#ee824b]"></i>
+         <span>🔄 Sinkronkan Cloud</span>
+        </button>
         <button type="button" onclick="exportRegisteredStudentsCSV()"
-         class="shrink-0 flex items-center gap-1.5 rounded-full border border-[#174d3a]/30 bg-white px-4 py-2 text-xs font-bold text-[#174d3a] shadow-sm hover:bg-[#e8efd9] transition">
+         class="shrink-0 flex items-center gap-1.5 rounded-full border border-[#174d3a]/30 bg-white px-4 py-2 text-xs font-bold text-[#174d3a] shadow-sm hover:bg-[#e8efd9] transition cursor-pointer">
          <i data-lucide="download" class="h-4 w-4 text-[#ee824b]"></i>
          <span>📥 Ekspor CSV Pendaftar</span>
         </button>
         <button type="button" onclick="bulkApproveAllStudents()"
-         class="shrink-0 flex items-center gap-1.5 rounded-full bg-[#174d3a] px-4 py-2 text-xs font-bold text-[#d8ee93] shadow-md hover:bg-[#123d2e] transition">
+         class="shrink-0 flex items-center gap-1.5 rounded-full bg-[#174d3a] px-4 py-2 text-xs font-bold text-[#d8ee93] shadow-md hover:bg-[#123d2e] transition cursor-pointer">
          <i data-lucide="check-circle-2" class="h-4 w-4 text-[#ee824b]"></i>
          <span>⚡ Setujui Semua Siswa (Bulk Activate)</span>
         </button>
@@ -3558,7 +3568,7 @@
            <th class="p-3 text-center">Aksi Guru</th>
           </tr>
          </thead>
-         <tbody id="t-activation-tbody" class="divide-y divide-[#d8d3c4] bg-white font-medium">
+         <tbody id="t-activation-tbody" class="t-activation-tbody-pane divide-y divide-[#d8d3c4] bg-white font-medium">
           <!-- Filled dynamically via renderTeacherActivationData() -->
          </tbody>
         </table>
@@ -3810,13 +3820,14 @@
    // Post registration data immediately to Google Sheets if GAS URL is configured
    const DEFAULT_GAS_URL = "https://script.google.com/macros/s/AKfycbxnl3rQrvTdeW1BpnizsAnEl7H1V_6zdi01CY3KBzq8pyRlh--ASW7U1t-LDGVhTtdJ/exec";
    const gasUrl = localStorage.getItem("sejarah_gas_url") || DEFAULT_GAS_URL;
-   if (gasUrl) {
+   if (gasUrl && gasUrl.startsWith("http")) {
+    // 1. Primary POST request with safe MIME
     fetch(gasUrl, {
      method: "POST",
      mode: "no-cors",
-     headers: { "Content-Type": "application/json" },
+     headers: { "Content-Type": "text/plain;charset=utf-8" },
      body: JSON.stringify({
-      action: "VERIFY_STUDENT",
+      action: "registerStudent",
       requestToken: "SEJARAH_SECURE_TOKEN_2026",
       email: currentStudent.email,
       nama: currentStudent.nama,
@@ -3824,9 +3835,16 @@
       token: currentStudent.token,
       status: currentStudent.status,
       sessionId: sessionId,
-      nisn: nisn
+      nisn: nisn,
+      deviceToken: deviceToken
      })
     }).catch(err => console.error("GAS Registration Sync Error:", err));
+
+    // 2. Fallback GET query (guarantees data registration even on browsers restricting POST redirects)
+    try {
+     const regGetUrl = `${gasUrl}?action=registerStudent&email=${encodeURIComponent(currentStudent.email)}&nama=${encodeURIComponent(currentStudent.nama)}&kelas=${encodeURIComponent(currentStudent.kelas)}&nisn=${encodeURIComponent(nisn)}&token=${encodeURIComponent(currentStudent.token)}&deviceToken=${encodeURIComponent(deviceToken)}&requestToken=SEJARAH_SECURE_TOKEN_2026`;
+     fetch(regGetUrl).catch(() => {});
+    } catch(eGet) {}
    }
 
    if (errEl) errEl.classList.add('hidden');
@@ -5622,6 +5640,42 @@
   function startStudentActivationPolling() {
    if (studentPollingInterval) clearInterval(studentPollingInterval);
 
+   const markStudentApprovedInUI = (active) => {
+    active.status = "APPROVED";
+    window.secureStorage.setItem("activeStudent", active);
+
+    try {
+     let regLogs = window.secureStorage.getItem("sejarah_registered_students") || [];
+     const idx = regLogs.findIndex(s => s.email === active.email);
+     if (idx !== -1) {
+      regLogs[idx].status = "APPROVED";
+      window.secureStorage.setItem("sejarah_registered_students", regLogs);
+     }
+    } catch(e) {}
+
+    enableEnterModuleButton();
+
+    const modal = document.getElementById("activation-pending-modal");
+    if (modal && !modal.classList.contains("hidden")) {
+     const statusBox = modal.querySelector(".bg-amber-50\\/80, .bg-[#ee824b]\\/10, .bg-\\[\\#ee824b\\]\\/10");
+     if (statusBox) {
+      statusBox.className = "rounded-2xl border border-[#174d3a]/30 bg-[#174d3a]/10 p-4 space-y-1.5 animate-pulse";
+      statusBox.innerHTML = `
+        <p class="text-xs font-bold text-[#174d3a] flex items-center gap-1.5">
+          <i data-lucide="check-circle-2" class="h-4 w-4 text-[#ee824b]"></i>
+          <span>🎉 AKUN BERHASIL DIAKTIFKAN GURU!</span>
+        </p>
+        <p class="text-[11px] text-[#405047] leading-relaxed">
+          Email Anda (<strong>${active.email}</strong>) telah disetujui oleh Guru. Anda sekarang dapat langsung menutup dialog ini dan masuk ke ruang pembelajaran modul!
+        </p>
+      `;
+     }
+     const actActionBox = document.getElementById("act-approved-action-box");
+     if (actActionBox) actActionBox.classList.remove("hidden");
+     if (window.lucide) window.lucide.createIcons();
+    }
+   };
+
    studentPollingInterval = setInterval(() => {
     const active = window.secureStorage.getItem("activeStudent");
     if (!active || !active.email) return;
@@ -5631,39 +5685,32 @@
      return;
     }
 
+    // 1. Check local storage first
     let regLogs = [];
     try {
      regLogs = window.secureStorage.getItem("sejarah_registered_students") || [];
     } catch (e) { }
 
     const match = regLogs.find(s => s.email === active.email);
-    if (match && match.status === "APPROVED") {
-     active.status = "APPROVED";
-     window.secureStorage.setItem("activeStudent", active);
-
-     enableEnterModuleButton();
-
-     const modal = document.getElementById("activation-pending-modal");
-     if (modal && !modal.classList.contains("hidden")) {
-      const statusBox = modal.querySelector(".bg-amber-50\\/80, .bg-[#ee824b]\\/10");
-      if (statusBox) {
-       statusBox.className = "rounded-2xl border border-[#174d3a]/30 bg-[#174d3a]/10 p-4 space-y-1.5 animate-pulse";
-       statusBox.innerHTML = `
-                <p class="text-xs font-bold text-[#174d3a] flex items-center gap-1.5">
-                  <i data-lucide="check-circle-2" class="h-4 w-4 text-[#ee824b]"></i>
-                  <span>🎉 AKUN BERHASIL DIAKTIFKAN GURU!</span>
-                </p>
-                <p class="text-[11px] text-[#405047] leading-relaxed">
-                  Email Anda (<strong>${active.email}</strong>) telah disetujui. Anda sekarang dapat menutup dialog ini dan langsung masuk ke ruang pembelajaran modul!
-                </p>
-              `;
-       const actActionBox = document.getElementById("act-approved-action-box");
-       if (actActionBox) actActionBox.classList.remove("hidden");
-       if (window.lucide) window.lucide.createIcons();
-      }
-     }
+    if (match && (match.status === "APPROVED" || match.status === "ACTIVATED")) {
+     markStudentApprovedInUI(active);
+     return;
     }
-   }, 2500);
+
+    // 2. Real-Time Cloud Polling from Google Apps Script / Google Sheets
+    const DEFAULT_GAS_URL = "https://script.google.com/macros/s/AKfycbxnl3rQrvTdeW1BpnizsAnEl7H1V_6zdi01CY3KBzq8pyRlh--ASW7U1t-LDGVhTtdJ/exec";
+    const gasUrl = localStorage.getItem("sejarah_gas_url") || DEFAULT_GAS_URL;
+    if (gasUrl && gasUrl.startsWith("http")) {
+     fetch(`${gasUrl}?action=checkStudentStatus&email=${encodeURIComponent(active.email)}`)
+      .then(res => res.json())
+      .then(data => {
+       if (data && data.status === "SUCCESS" && (data.isApproved || data.studentStatus === "APPROVED" || data.studentStatus === "ACTIVATED")) {
+        markStudentApprovedInUI(active);
+       }
+      })
+      .catch(() => {});
+    }
+   }, 3000);
   }
   window.startStudentActivationPolling = startStudentActivationPolling;
 
