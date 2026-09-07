@@ -7,9 +7,10 @@
 // =========================================================================
 // CONFIGURATION: Tempelkan URL Web App Google Apps Script Anda di bawah ini
 // =========================================================================
-const NEW_GAS_URL = "https://script.google.com/macros/s/AKfycbyl2GCbLXzRo3ScExbUzJsCun-h4T7k8oKfFYxeBTwnSxapcRufT_KrObdfj0KuyIji/exec";
+const NEW_GAS_URL = "https://script.google.com/macros/s/AKfycbxnl3rQrvTdeW1BpnizsAnEl7H1V_6zdi01CY3KBzq8pyRlh--ASW7U1t-LDGVhTtdJ/exec";
 localStorage.setItem("sejarah_gas_url", NEW_GAS_URL);
 let GAS_API_URL = NEW_GAS_URL;
+window.GAS_API_URL = NEW_GAS_URL;
 
 // =========================================================================
 // SECURITY & SANITIZATION ENGINE (XSS PROTECTION & CRYPTO AUTH)
@@ -200,6 +201,7 @@ let isQuizChecked = false;
 // GOVERNANCE & CONTROL VARIABLES (FIX MISSING GLOBALS)
 // =========================================================================
 let kkmThreshold = parseInt(localStorage.getItem("sejarah_kkm_threshold") || "80", 10);
+let sessionActiveKkm = kkmThreshold;
 let quizTimerMinutes = parseInt(localStorage.getItem("sejarah_quiz_timer") || "20", 10);
 let unlockedModules = JSON.parse(localStorage.getItem("unlockedModules") || '["1A"]');
 let classControlMatrix = JSON.parse(localStorage.getItem("sejarah_class_control_matrix") || JSON.stringify({
@@ -227,30 +229,37 @@ window.unlockedModules = unlockedModules;
 // GLOSARIUM INTERAKTIF SEJARAH (DICTIONARY & POPUP ENGINE)
 // =========================================================================
 const GLOSSARY_DICTIONARY = {
-  "PPKI": "Panitia Persiapan Kemerdekaan Indonesia yang bertugas merumuskan UUD 1945, memilih Presiden/Wapres, dan membentuk KNIP.",
-  "BPUPKI": "Badan Penyelidik Usaha-Usaha Persiapan Kemerdekaan Indonesia yang dibentuk 1 Maret 1945 untuk merumuskan dasar negara dan rancangan UUD.",
-  "Vacuum of Power": "Kondisi kosongnya kekuasaan di Indonesia pasca-penyerahan Jepang tanpa syarat pada 14 Agustus 1945 sebelum kedatangan tentara Sekutu.",
-  "Janji Koiso": "Pernyataan PM Kuniaki Koiso (7 Sept 1944) yang menjanjikan kemerdekaan bagi bangsa Indonesia di kemudian hari.",
-  "Golongan Tua": "Tokoh senior kebangsaan (Soekarno, Hatta, Achmad Soebardjo) yang menghendaki pelaksanaan proklamasi secara cermat via PPKI.",
-  "Golongan Muda": "Kelompok pejuang muda (Sjahrir, Chaerul Saleh, Wikana, Sukarni) yang menuntut proklamasi dilaksanakan murni tanpa campur tangan Jepang.",
-  "Peristiwa Rengasdengklok": "Aksi pengamanan Soekarno-Hatta ke Rengasdengklok pada 16 Agustus 1945 oleh pemuda agar terbebas dari provokasi militer Jepang.",
-  "Piagam Jakarta": "Dokumen rumusan dasar negara 22 Juni 1945 yang kemudian disempurnakan Sila Pertamanya menjadi 'Ketuhanan Yang Maha Esa' demi persatuan nasional.",
-  "AFNEI": "Allied Forces Netherlands East Indies - Pasukan Sekutu pimpinan Sir Philip Christison yang bertugas melucuti tentara Jepang dan membebaskan tawanan APWI.",
-  "NICA": "Netherlands Indies Civil Administration - Pemerintahan sipil Belanda yang memboncengi AFNEI untuk menegakkan kembali kekuasaan kolonial di Indonesia.",
-  "KNIP": "Komite Nasional Indonesia Pusat - Badan pembantu Presiden yang kemudian diserahi fungsi legislatif melalui Maklumat No. X.",
-  "Sutan Sjahrir": "Perdana Menteri pertama Republik Indonesia yang memimpin kabinet parlementer pertama pada 14 November 1945.",
-  "BKR": "Badan Keamanan Rakyat - Organisasi pertahanan awal bertugas menjaga keselamatan umum yang dibentuk PPKI pada 22 Agustus 1945.",
-  "TKR": "Tentara Keamanan Rakyat - Angkatan perang resmi pertama RI yang dibentuk 5 Oktober 1945 melalui Maklumat No. 6, dipimpin Jenderal Soedirman.",
-  "Insiden Hotel Yamato": "Aksi perobekan warna biru bendera Belanda di Hotel Yamato Surabaya pada 19 September 1945 oleh pemuda Hariyono dan Kusno Wibowo.",
-  "Ultimatum 10 November": "Instruksi Mayor Jenderal Robert Mansergh yang menuntut penyerahan senjata rakyat Surabaya tanpa syarat paling lambat 10 November 1945.",
-  "Hari Pahlawan": "Peringatan nasional setiap 10 November untuk mengabadikan perlawanan total rakyat dan pemuda Surabaya membela kedaulatan RI.",
-  "Supit Urang": "Taktik pengepungan jepit ganda dari dua sisi secara serentak yang dirancang Kolonel Soedirman untuk memutus logistik Sekutu di Ambarawa.",
-  "Hari Juang Kartika": "Hari peringatan TNI Angkatan Darat setiap 15 Desember untuk mengenang kemenangan taktis TKR membebaskan Kota Ambarawa (1945).",
-  "PDRI": "Pemerintah Darurat Republik Indonesia - Pemerintahan darurat di Bukittinggi, Sumatra yang dipimpin Sjafruddin Prawiranegara saat Soekarno-Hatta ditawan.",
-  "Serangan Umum 1 Maret": "Serangan TNI 6 jam di Yogyakarta pada 1 Maret 1949 yang membuktikan kepada dunia internasional bahwa RI masih berdiri tegak.",
-  "KMB": "Konferensi Meja Bundar - Perundingan di Den Haag (1949) yang berujung pada penyerahan kedaulatan dari Belanda kepada RIS.",
-  "BFO": "Bijeenkomst voor Federaal Overleg - Majelis permusyawaratan negara-negara bagian (negara boneka bentukan Belanda) di Indonesia.",
-  "KTN": "Komisi Tiga Negara - Badan mediasi bentukan PBB yang beranggotakan wakil Australia, Belgia, dan Amerika Serikat untuk menyelesaikan konflik Indonesia-Belanda.",
+  "Demokrasi Parlementer": "Sistem pemerintahan 1950–1959 di mana kabinet dipimpin Perdana Menteri dan bertanggung jawab kepada parlemen (DPR).",
+  "UUDS 1950": "Undang-Undang Dasar Sementara yang berlaku di Indonesia sejak pembubaran RIS pada 17 Agustus 1950 hingga Dekrit Presiden 5 Juli 1959.",
+  "Mosi Tidak Percaya": "Hak parlemen untuk menjatuhkan kabinet yang berkuasa akibat ketidakpuasan politik, memicu seringnya pergantian kabinet di era 1950-an.",
+  "Gunting Syafruddin": "Kebijakan sanering Menkeu Syafruddin Prawiranegara (1950) memotong nilai uang NICA di atas Rp2,50 untuk menekan inflasi dan defisit kas negara.",
+  "Nasionalisasi De Javasche Bank": "Pengambilalihan bank sirkulasi kolonial Belanda menjadi Bank Indonesia (UU No. 11/1953) sebagai bank sentral berdaulat milik Republik Indonesia.",
+  "Sistem Gerakan Benteng": "Kebijakan Menperdag Sumitro Djojohadikusumo memberi lisensi impor & kredit modal kepada pengusaha pribumi demi menumbuhkan borjuasi nasional.",
+  "Sistem Ali-Baba": "Kebijakan kemitraan ekonomi antara pengusaha pribumi (Ali) dan pengusaha non-pribumi (Baba) pada masa Kabinet Ali Sastroamidjojo I.",
+  "Pemilihan Umum 1955": "Pesta demokrasi perdana Republik Indonesia yang diselenggarakan bebas, jujur, dan adil dalam dua tahap (DPR dan Badan Konstituante).",
+  "The Big Four Pemilu 1955": "Empat partai politik peraih suara terbesar Pemilu 1955: PNI (kaum nasionalis), Masyumi (Islam modernis), NU (Islam tradisionalis), dan PKI (komunis).",
+  "Badan Konstituante": "Lembaga pembuat undang-undang dasar permanen hasil Pemilu 1955 yang bertugas menggantikan UUDS 1950.",
+  "Peristiwa 17 Oktober 1952": "Aksi demonstrasi militer dipimpin KSAD A.H. Nasution menuntut pembubaran parlemen yang dinilai terlalu mencampuri urusan internal Angkatan Darat.",
+  "PRRI / Permesta": "Pemberontakan daerah di Sumatra dan Sulawesi (1958) menuntut otonomi daerah, perimbangan keuangan, didukung perwira militer dan rahasia CIA.",
+  "DI/TII": "Gerakan Darul Islam / Tentara Islam Indonesia yang diproklamasikan S.M. Kartosoewirjo dengan tujuan mendirikan Negara Islam Indonesia (NII).",
+  "Operasi Pagar Betis": "Strategi militer TNI menyertakan ribuan rakyat mengepung gerilyawan DI/TII di pegunungan Jawa Barat hingga tertangkapnya Kartosoewirjo (1962).",
+  "Kudeta APRA": "Pemberontakan Angkatan Perang Ratu Adil pimpinan mantan Kapten KNIL Raymond Westerling di Bandung (Januari 1950).",
+  "Konferensi Asia-Afrika (KAA)": "Konferensi antarbangsa non-kulit putih di Bandung (18–24 April 1955) yang menggalang solidaritas anti-kolonialisme di Asia dan Afrika.",
+  "Dasasila Bandung": "Sepuluh prinsip piagam perdamaian internasional hasil KAA 1955 mengenai penghormatan kedaulatan, integritas wilayah, dan kesetaraan antarbangsa.",
+  "Deklarasi Djuanda": "Deklarasi PM Djuanda Kartawidjaja pada 13 Desember 1957 yang menetapkan wilayah laut antarpulau sebagai laut pedalaman integral Republik Indonesia.",
+  "UNCLOS": "United Nations Convention on the Law of the Sea - Konvensi Hukum Laut PBB yang mengakui secara resmi asas negara kepulauan (Archipelagic State) rintisan Indonesia.",
+  "Dekrit Presiden 5 Juli 1959": "Tindakan hukum luar biasa Presiden Soekarno membubarkan Konstituante, memberlakukan kembali UUD 1945, dan menandai awal era Demokrasi Terpimpin.",
+  "Manipol-USDEK": "Manifesto Politik Republik Indonesia bersumber dari pidato Soekarno 17 Agustus 1959: UUD 1945, Sosialisme, Demokrasi Terpimpin, Ekonomi Terpimpin, Kepribadian Indonesia.",
+  "Nasakom": "Konsep ideologi politik penyatuan tiga aliran kekuatan nasional (Nasionalis, Agama, dan Komunis) yang dicanangkan Presiden Soekarno.",
+  "MPRS dan DPAS": "Lembaga negara ekstra-konstitusional di era Demokrasi Terpimpin yang anggotanya ditunjuk langsung oleh Presiden Soekarno tanpa pemilu.",
+  "Politik Mercusuar": "Kebijakan pembangunan monumen megah (Monas, GBK Senayan, Hotel Indonesia) untuk mengangkat martabat dan kebanggaan bangsa di mata dunia.",
+  "Ganefo": "Games of the New Emerging Forces - Pesta olahraga tandingan Olimpiade bentukan Soekarno (1963) untuk menghimpun kekuatan negara-negara berkembang.",
+  "Trikora": "Tri Komando Rakyat - Komando Presiden Soekarno di Yogyakarta (19 Desember 1961) untuk membebaskan Irian Barat dari penjajahan Belanda.",
+  "Dwikora": "Dwi Komando Rakyat - Komando Presiden Soekarno (3 Mei 1964) untuk menggagalkan pembentukan Federasi Malaysia yang dinilai sebagai proyek Nekolim Inggris.",
+  "Nekolim": "Neokolonialisme, Kolonialisme, dan Imperialisme - Istilah ciptaan Bung Karno merujuk pada dominasi terselubung negara-negara kapitalis Barat atas bangsa berkembang.",
+  "Poros Jakarta-Peking": "Kerja sama politik luar negeri Indonesia dengan Republik Rakyat Tiongkok pada masa Demokrasi Terpimpin yang menjauh dari prinsip Bebas Aktif.",
+  "Hiperinflasi 1965": "Krisis ekonomi parah di penghujung era Demokrasi Terpimpin dengan laju inflasi mencapai lebih dari 600% akibat pembiayaan proyek mercusuar dan konfrontasi militer.",
+  "Peristiwa G30S/PKI": "Tragedi penculikan dan pembunuhan perwira tinggi Angkatan Darat pada 30 September 1965 yang mengakhiri keseimbangan politik kekuasaan Presiden Soekarno."
 };
 
 function renderGlossaryChips(filterQuery = "") {
@@ -361,7 +370,7 @@ function toggleAudioPodSummary(textSummary) {
   }
 
   window.speechSynthesis.cancel();
-  const textToRead = textSummary || "Selamat datang di modul Sejarah Indonesia 1945-1949. Mari pelajari dinamika revolusi fisik dan diplomasi mempertahankan kemerdekaan.";
+  const textToRead = textSummary || "Selamat datang di modul Sejarah Indonesia 1950-1965. Mari pelajari dinamika politik dan ekonomi era Demokrasi Liberal dan Terpimpin serta diplomasi kedaulatan bangsa.";
   
   currentUtterance = new SpeechSynthesisUtterance(textToRead);
   currentUtterance.lang = "id-ID";
@@ -414,46 +423,46 @@ window.jumpToMateriJejak = jumpToMateriJejak;
 // =========================================================================
 const FLASHCARD_DATA = {
   "1A": [
-    { category: "Sidang PPKI", front: "PPKI & UUD 1945", back: "Sidang PPKI (18-19 Agt 1945) mengesahkan UUD 1945, memilih Soekarno-Hatta, dan membagi 8 Provinsi." },
-    { category: "Pasukan Asing", front: "AFNEI & NICA", back: "AFNEI melucuti tentara Jepang tetapi diboncengi NICA yang bermaksud menguasai kembali Indonesia." },
-    { category: "Insiden Bendera", front: "Hotel Yamato", back: "Pemuda Surabaya merobek bagian biru bendera Belanda di Hotel Yamato pada 19 September 1945." },
-    { category: "Perubahan Sistem", front: "Maklumat 14 Nov 1945", back: "Perubahan sistem pemerintahan RI dari Presidensial ke Parlementer dengan PM Sutan Sjahrir." },
-    { category: "Militer RI", front: "Tentara Keamanan Rakyat", back: "Dibentuk 5 Oktober 1945 dari BKR, dipimpin Jenderal Soedirman sebagai Panglima Besar." }
+    { category: "Sistem Politik", front: "Demokrasi Parlementer (Liberal)", back: "Sistem pemerintahan 1950–1959 di mana kabinet bertanggung jawab kepada parlemen (DPR), memicu instabilitas kabinet akibat mosi tidak percaya antarpartai." },
+    { category: "Ekonomi Moneter", front: "Gunting Syafruddin (1950)", back: "Kebijakan sanering Menkeu Syafruddin Prawiranegara menggunting uang kertas NICA di atas Rp2,50 menjadi dua untuk memangkas inflasi dan menutup defisit APBN." },
+    { category: "Ekonomi Kolonial", front: "Nasionalisasi De Javasche Bank", back: "Transformasi bank sirkulasi kolonial Belanda menjadi Bank Indonesia (UU No. 11/1953) sebagai bank sentral berdaulat untuk mengendalikan moneter nasional." },
+    { category: "Pemberdayaan Pribumi", front: "Sistem Ekonomi Gerakan Benteng", back: "Program Sumitro Djojohadikusumo memberi lisensi impor & kredit modal kepada pengusaha pribumi, namun gagal akibat praktik makelar politik (fenomena Ali-Baba)." },
+    { category: "Hukum Tata Negara", front: "UUDS 1950", back: "Konstitusi sementara yang berlaku sejak 17 Agustus 1950 dengan sistem kabinet parlementer semu, berlaku hingga dibubarkan lewat Dekrit Presiden 5 Juli 1959." }
   ],
   "1B": [
-    { category: "Revolusi Fisik", front: "Pertempuran 10 Nov 1945", back: "Puncak perlawanan rakyat Surabaya dipicu gugurnya Jend. Mallaby, dipimpin Bung Tomo." },
-    { category: "Taktik Militer", front: "Palagan Ambarawa", back: "TKR dipimpin Kolonel Soedirman menggunakan taktik Supit Urang mengurung musuh (15 Des 1945)." },
-    { category: "Hari Nasional", front: "Hari Juang Kartika", back: "Peringatan kemenangan TKR atas Sekutu dalam Pertempuran Ambarawa 15 Desember 1945." },
-    { category: "Pertempuran Daerah", front: "Pertempuran 5 Hari Semarang", back: "Bentrokan pemuda Semarang vs pasukan Jepang Kido Butai pasca gugurnya dr. Kariadi." },
-    { category: "Strategi Perang", front: "Taktik Supit Urang", back: "Strategi pengepungan rangkap dari kedua sisi untuk memutuskan komunikasi dan suplai musuh." }
+    { category: "Pesta Demokrasi", front: "Pemilihan Umum 1955", back: "Pemilu demokratis perdana RI diselenggarakan Kabinet Burhanuddin Harahap dalam 2 tahap: 29 Sept (DPR) dan 15 Des (Konstituante) dengan partisipasi >90%." },
+    { category: "Peta Politik", front: "Empat Besar (The Big Four) Pemilu 1955", back: "Empat partai peraih suara terbanyak Pemilu 1955: PNI (kaum nasionalis), Masyumi (Islam modernis), NU (Islam tradisionalis), dan PKI (komunis/buruh-tani)." },
+    { category: "Institusi Negara", front: "Badan Konstituante", back: "Lembaga perumus konstitusi permanen hasil Pemilu 1955 yang menemui jalan buntu akibat perdebatan alot dasar negara antara Pancasila versus dasar Islam." },
+    { category: "Krisis Politik", front: "Peristiwa 17 Oktober 1952", back: "Aksi demonstrasi militer dipimpin KSAD A.H. Nasution menghadapkan moncong meriam ke Istana menuntut Soekarno membubarkan parlemen yang kerap mencampuri urusan internal AD." },
+    { category: "Kebijakan Ekonomi", front: "Sistem Ali-Baba (Kabinet Ali I)", back: "Kebijakan ekonomi kemitraan pengusaha pribumi (Ali) dan non-pribumi (Baba), namun gagal karena pribumi hanya dijadikan kedok perizinan lisensi dagang." }
   ],
   "1C": [
-    { category: "Bumi Hangus", front: "Bandung Lautan Api", back: "Pembumihanjutan Bandung Selatan (24 Mar 1946) oleh pejuang agar tidak dijadikan markas Sekutu." },
-    { category: "Sumatra", front: "Pertempuran Medan Area", back: "Perlawanan rakyat Sumatra Utara diawali insiden penginjakan lencana Merah Putih oleh Sekutu." },
-    { category: "Bali", front: "Puputan Margarana", back: "Perang habis-habisan pasukan Ciung Wanara dipimpin I Gusti Ngurah Rai di Bali (20 Nov 1946)." },
-    { category: "Pahlawan Nasional", front: "I Gusti Ngurah Rai", back: "Komandan pasukan Ciung Wanara yang gugur bersama seluruh pasukannya dalam Puputan Margarana." },
-    { category: "Lagu Perjuangan", front: "Halo-Halo Bandung", back: "Lagu ciptaan Ismail Marzuki yang mengabadikan peristiwa Bandung Lautan Api." }
+    { category: "Pemberontakan Daerah", front: "PRRI / Permesta (1958)", back: "Pemberontakan daerah di Sumatra dan Sulawesi menuntut otonomi daerah & perimbangan keuangan, didukung perwira militer serta intervensi rahasia CIA Amerika Serikat." },
+    { category: "Gerakan Separatis", front: "DI/TII Kartosoewirjo (Jawa Barat)", back: "Gerakan Negara Islam Indonesia yang menolak Perjanjian Renville, bergerilya di pegunungan Jawa Barat hingga tumpas lewat Operasi Pagar Betis TNI (1962)." },
+    { category: "Konflik Ideologi", front: "DI/TII Kahar Muzakkar & Daud Beureueh", back: "Pemberontakan di Sulawesi Selatan akibat penolakan laskar ke APRIS, serta di Aceh akibat peleburan provinsi Aceh ke Sumatra Utara." },
+    { category: "Operasi Militer", front: "Operasi Tegas & Merdeka", back: "Operasi gabungan TNI dipimpin Ahmad Yani untuk menumpas PRRI di Sumatra Tengah dan Permesta di Indonesia Timur guna menjaga integritas kedaulatan NKRI." },
+    { category: "Kudeta Militer", front: "Kudeta APRA Westerling (1950)", back: "Pemberontakan milisi bentukan eks-kapten KNIL Raymond Westerling di Bandung yang memanfaatkan mitos Ratu Adil untuk mempertahankan negara bagian federal Pasundan." }
   ],
   "1D": [
-    { category: "Diplomasi", front: "Perjanjian Linggarjati", back: "Perundingan pertama (Nov 1946) di mana Belanda mengakui de facto RI atas Jawa, Sumatra, Madura." },
-    { category: "Agresi Militer", front: "Agresi Militer Belanda I", back: "Serangan Belanda (21 Juli 1947) melanggar Linggarjati untuk merebut kawasan ekonomi penting." },
-    { category: "Peran PBB", front: "Komisi Tiga Negara (KTN)", back: "Komisi PBB (Australia, Belgia, AS) yang menengahi konflik Indonesia-Belanda pasca Agresi I." },
-    { category: "Diplomasi Kapal", front: "Perjanjian Renville", back: "Perundingan di atas kapal USS Renville (Jan 1948) yang merugikan RI karena Garis Van Mook." },
-    { category: "Garis Demarkasi", front: "Garis Van Mook", back: "Garis perbatasan buatan Belanda yang memotong wilayah kekuasaan RI pasca Agresi Militer I." }
+    { category: "Diplomasi Global", front: "Konferensi Asia-Afrika (KAA 1955)", back: "Konferensi antarbangsa non-kulit putih di Bandung yang melahirkan Dasasila Bandung serta menjadi tonggak lahirnya Gerakan Non-Blok menentang kolonialisme." },
+    { category: "Prinsip Diplomasi", front: "Dasasila Bandung", back: "Sepuluh prinsip piagam perdamaian dunia hasil KAA 1955, menegaskan kedaulatan wilayah, penyelesaian damai sengketa, dan larangan intervensi negara adidaya." },
+    { category: "Hukum Maritim", front: "Deklarasi Djuanda 13 Des 1957", back: "Deklarasi hukum laut yang menyatukan wilayah kepulauan Indonesia menjadi satu kesatuan utuh tanpa laut bebas di antara pulau, diakui PBB lewat UNCLOS 1982." },
+    { category: "Aksi Radikal", front: "Nasionalisasi Massal Aset Belanda (1957–1958)", back: "Pengambilalihan perusahaan-perusahaan vital Belanda (KPM, perbankan, perkebunan) pasca kegagalan jalur diplomasi PBB mengenai pengembalian Irian Barat." },
+    { category: "Peristiwa Sejarah", front: "Peristiwa Cikini (30 Nov 1957)", back: "Upaya percobaan pembunuhan terhadap Presiden Soekarno menggunakan granat tangan saat menghadiri bazaar Perguruan Cikini, memicu eskalasi keamanan nasional." }
   ],
   "1E": [
-    { category: "Agresi Militer", front: "Agresi Militer Belanda II", back: "Serangan Belanda ke Yogyakarta (19 Des 1948) serta menawan Presiden Soekarno & Hatta." },
-    { category: "Pemerintahan Darurat", front: "PDRI Bukittinggi", back: "Pemerintah Darurat RI dipimpin Sjafruddin Prawiranegara menjaga kontinuitas negara saat Ibu Kota jatuh." },
-    { category: "Gerilya", front: "Perang Gerilya Soedirman", back: "Perjuangan Panglima Besar Soedirman menembus hutan & desa meski dalam kondisi sakit parah." },
-    { category: "Militer & Diplomasi", front: "Serangan Umum 1 Maret 1949", back: "Serangan TNI 6 jam di Jogja dipimpin Letkol Soeharto membuktikan RI dan TNI masih ada." },
-    { category: "Pahlawan PDRI", front: "Sjafruddin Prawiranegara", back: "Ketua PDRI yang menjalankan roda pemerintahan RI dari pedalaman Sumatra Barat." }
+    { category: "Hukum Tata Negara", front: "Dekrit Presiden 5 Juli 1959", back: "Tindakan luar biasa Soekarno membubarkan Konstituante, memberlakukan kembali UUD 1945, membubarkan UUDS 1950, dan menandai awal era Demokrasi Terpimpin." },
+    { category: "Doktrin Ideologi", front: "Manifesto Politik (Manipol-USDEK)", back: "Doktrin resmi kenegaraan bersumber dari pidato Soekarno 17 Agustus 1959: UUD 1945, Sosialisme Indonesia, Demokrasi Terpimpin, Ekonomi Terpimpin, Kepribadian Indonesia." },
+    { category: "Institusi Ekstra-Konstitusional", front: "DPAS dan MPRS", back: "Lembaga-lembaga tinggi negara di era Demokrasi Terpimpin yang anggotanya ditunjuk langsung oleh Presiden Soekarno tanpa melalui mekanisme pemilihan umum." },
+    { category: "Penyatuan Kekuatan", front: "Nasakom (Nasionalis, Agama, Komunis)", back: "Konsep politik Soekarno menyatukan tiga aliran politik utama demi persatuan revolusi nasional, yang justru memberikan angin segar bagi eskalasi kekuatan PKI." },
+    { category: "Politik Mercusuar", front: "Proyek Mercusuar & Ganefo (1963)", back: "Pembangunan monumen megah (Monas, Senayan, Hotel Indonesia) dan pesta olahraga Ganefo untuk menunjukkan kehebatan Indonesia kepada dunia internasional." }
   ],
   "1F": [
-    { category: "Diplomasi", front: "Perjanjian Roem-Royen", back: "Kesepakatan (Mei 1949) penghentian gerilya & pengembalian Soekarno-Hatta ke Yogyakarta." },
-    { category: "Konsolidasi", front: "Konferensi Inter-Indonesia", back: "Musyawarah antara RI dan BFO (negara bagian) menyepakati bentuk negara Indonesia Serikat." },
-    { category: "Puncak Diplomasi", front: "Konferensi Meja Bundar (KMB)", back: "Perundingan Den Haag (Agu-Nov 1949) yang berujung pengakuan kedaulatan Indonesia." },
-    { category: "Sejarah RIS", front: "Pengakuan Kedaulatan 1949", back: "Penandatanganan di Amsterdam & Jakarta (27 Des 1949) menandai pengakuan resmi kedaulatan RIS." },
-    { category: "Peran Tokoh", front: "Mohammad Hatta (KMB)", back: "Ketua Delegasi RI dalam KMB Den Haag yang berhasil memperjuangkan pengakuan kedaulatan penuh." }
+    { category: "Operasi Militer", front: "Trikora (Tri Komando Rakyat 1961)", back: "Komando Soekarno di Yogyakarta untuk menggagalkan pembentukan negara boneka Papua Belanda, mengibarkan Sang Merah Putih di Irian Barat, dan mobilisasi umum." },
+    { category: "Konflik Regional", front: "Dwikora & Konfrontasi Malaysia (1963–1966)", back: "Komando penentangan pembentukan Federasi Malaysia yang dianggap sebagai proyek neo-kolonialisme Inggris (Nekolim) yang mengepung kedaulatan Indonesia." },
+    { category: "Polarisasi Global", front: "Poros Jakarta-Peking & Keluar dari PBB", back: "Pergeseran politik luar negeri Sukarno ke blok sosialis dan keputusan keluar dari PBB (1965) sebagai protes atas masuknya Malaysia menjadi anggota DK PBB." },
+    { category: "Tragedi Sejarah", front: "Peristiwa G30S / PKI (1965)", back: "Penculikan dan gugurnya para perwira tinggi Angkatan Darat pada 30 September 1965 di Lubang Buaya yang mengakhiri keseimbangan politik era Orde Lama." },
+    { category: "Krisis Moneter", front: "Hiperinflasi 600% & Sanering 1965", back: "Krisis ekonomi parah akibat pencetakan uang pembiayaan konfrontasi dan proyek mercusuar, berujung pada devaluasi Rp1.000 lama menjadi Rp1 baru pada Desember 1965." }
   ]
 };
 
@@ -861,6 +870,7 @@ function showTeacherToast(msg) {
 
 function startQuizTimer() {
   stopQuizTimer();
+  sessionActiveKkm = kkmThreshold; // KKM Non-Retroaktif: Snapshot KKM saat siswa menekan tombol Mulai Kuis
   remainingSeconds = quizTimerMinutes * 60;
   updateTimerDisplay();
 
@@ -982,7 +992,7 @@ function switchSubModule(subId) {
   if (heroImg && data[subId].heroImage) {
     heroImg.style.display = 'block';
     heroImg.src = data[subId].heroImage;
-    heroImg.alt = "Ilustrasi Sejarah Perjuangan Kemerdekaan Indonesia 1945-1949";
+    heroImg.alt = "Ilustrasi Sejarah Indonesia Era Demokrasi Liberal dan Terpimpin 1950-1965";
     heroImg.onerror = function() {
       this.style.display = 'none';
     };
@@ -1467,7 +1477,8 @@ function checkQuiz(forceSubmit = false) {
   }
 
   const pct = Math.round((score / totalQ) * 100);
-  const isPassed = pct >= kkmThreshold;
+  const evalKkm = sessionActiveKkm || kkmThreshold;
+  const isPassed = pct >= evalKkm;
 
   if (scoreDisplay) scoreDisplay.textContent = score;
 
@@ -1477,9 +1488,9 @@ function checkQuiz(forceSubmit = false) {
   const resultLevelMsg = document.getElementById("result-level-message");
   if (resultLevelMsg) {
     if (isPassed) {
-      resultLevelMsg.textContent = `🎉 LULUS KKM (${kkmThreshold}%)! Anda berhasil menguasai Sub-Modul ${currentSubModule}. Silakan amati ulasan jawaban di bawah ini.`;
+      resultLevelMsg.textContent = `🎉 LULUS KKM (${evalKkm}%)! Anda berhasil menguasai Sub-Modul ${currentSubModule}. Silakan amati ulasan jawaban di bawah ini.`;
     } else {
-      resultLevelMsg.textContent = `⚠️ BELUM LULUS KKM (${kkmThreshold}%). Silakan pelajari kembali Jejak Materi Sub-Modul ${currentSubModule} dan ulangi kuis untuk membuka modul berikutnya.`;
+      resultLevelMsg.textContent = `⚠️ BELUM LULUS KKM (${evalKkm}%). Silakan pelajari kembali Jejak Materi Sub-Modul ${currentSubModule} dan ulangi kuis untuk membuka modul berikutnya.`;
     }
   }
 
@@ -1503,7 +1514,7 @@ function checkQuiz(forceSubmit = false) {
     const continueNextBtn = document.getElementById("continue-next-mod-button");
 
     if (unlockCard && unlockText) {
-      unlockText.textContent = `Selamat! Nilai ${pct}% memenuhi batas KKM (${kkmThreshold}%). Sub-Modul ${nextSubModule} sekarang resmi TERBUKA!`;
+      unlockText.textContent = `Selamat! Nilai ${pct}% memenuhi batas KKM (${evalKkm}%). Sub-Modul ${nextSubModule} sekarang resmi TERBUKA!`;
       unlockCard.classList.remove("hidden");
     }
 
@@ -1554,17 +1565,22 @@ function checkQuiz(forceSubmit = false) {
     // Sync to GAS Backend if URL configured
     if (GAS_API_URL && activeStudent) {
       const payload = {
-        action: "SUBMIT_QUIZ",
+        action: "submitQuizLog",
         requestToken: "SEJARAH_SECURE_TOKEN_2026",
         email: activeStudent.email,
         nama: activeStudent.nama,
         kelas: activeStudent.kelas,
+        subId: currentSubModule,
         subModule: currentSubModule,
         score: score,
+        totalQ: totalQ,
         total: totalQ,
+        pct: pct,
+        isPassed: isPassed,
         tabSwitchCount: tabSwitchCount,
         durationSec: durationSec,
-        token: activeStudent.token || "idem"
+        token: activeStudent.token || "idem",
+        timestamp: new Date().toLocaleString("id-ID")
       };
       if (navigator.onLine) {
         fetch(GAS_API_URL, {
@@ -1842,10 +1858,11 @@ document.addEventListener("DOMContentLoaded", () => {
           }
 
           if (typeof GAS_API_URL !== 'undefined' && GAS_API_URL && GAS_API_URL.startsWith("http")) {
+            // 1. Primary POST sync with safe MIME
             fetch(GAS_API_URL, {
               method: "POST",
               mode: "no-cors",
-              headers: { "Content-Type": "application/json" },
+              headers: { "Content-Type": "text/plain;charset=utf-8" },
               body: JSON.stringify({
                 action: "registerStudent",
                 requestToken: "SEJARAH_SECURE_TOKEN_2026",
@@ -1853,9 +1870,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 nama: nama,
                 kelas: kelas,
                 token: token,
-                status: "PENDING_ACTIVATION"
+                status: "PENDING_ACTIVATION",
+                deviceToken: deviceToken
               })
             }).catch(err => console.error("GAS Reg Sync Error:", err));
+
+            // 2. Guaranteed Fallback GET sync (surpasses any POST redirect/CORS restriction)
+            try {
+              const regGetUrl = `${GAS_API_URL}?action=registerStudent&email=${encodeURIComponent(email)}&nama=${encodeURIComponent(nama)}&kelas=${encodeURIComponent(kelas)}&token=${encodeURIComponent(token)}&deviceToken=${encodeURIComponent(deviceToken)}&requestToken=SEJARAH_SECURE_TOKEN_2026`;
+              fetch(regGetUrl).catch(() => {});
+            } catch(eFallback) {}
           }
 
           // 4. Hide auth form & trigger Activation Pending Status Modal (MENUNGGU AKTIVASI GURU)
@@ -2103,6 +2127,26 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (certModalEl) certModalEl.classList.remove("hidden");
+
+    // Sync certificate claim activity to GAS
+    if (GAS_API_URL && GAS_API_URL.startsWith("http") && student && student.email) {
+      try {
+        fetch(GAS_API_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            action: "registerStudent",
+            requestToken: "SEJARAH_SECURE_TOKEN_2026",
+            email: student.email,
+            nama: student.nama,
+            kelas: student.kelas,
+            status: "LULUS_BERSERTIFIKAT",
+            lastSession: `Klaim Sertifikat: ${new Date().toLocaleString("id-ID")}`
+          })
+        }).catch(() => {});
+      } catch(e) {}
+    }
   };
 
   if (claimCertBtn) {
@@ -2522,7 +2566,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.renderMonitoringDashboard = renderMonitoringDashboard;
   window.__teacherMonitoringRenderer = window.renderMonitoringDashboard;
   window.renderTeacherMonitoringData = renderMonitoringDashboard;
-  window.calculateQuizScore = function() { return typeof checkAnswers === 'function' ? checkAnswers() : null; };
+  window.calculateQuizScore = function() { return typeof checkQuiz === 'function' ? checkQuiz() : (typeof checkAnswers === 'function' ? checkAnswers() : null); };
   window.generateStudentCertificate = function(n, k) { return typeof window.appGenerateCertificate === 'function' ? window.appGenerateCertificate(n, k) : null; };
 
   // Global Teacher Tab Switcher (v6 Bypass Duplicates)
@@ -2568,7 +2612,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (typeof window.renderTeacherActivationData === "function") window.renderTeacherActivationData();
     } else if (targetTab === "gas") {
       const urlInput = document.getElementById("t-set-gasurl");
-      const defaultUrl = "https://script.google.com/macros/s/AKfycbyl2GCbLXzRo3ScExbUzJsCun-h4T7k8oKfFYxeBTwnSxapcRufT_KrObdfj0KuyIji/exec";
+      const defaultUrl = "https://script.google.com/macros/s/AKfycbxnl3rQrvTdeW1BpnizsAnEl7H1V_6zdi01CY3KBzq8pyRlh--ASW7U1t-LDGVhTtdJ/exec";
       if (urlInput) {
         urlInput.value = window.GAS_API_URL || localStorage.getItem("sejarah_gas_url") || defaultUrl;
       }
@@ -2585,75 +2629,163 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   window.__teacherTabSwitcher = window.switchTeacherTab;
 
-  // TAB 4: Activation & Student Access Management Engine
+  // TAB 4: Activation & Student Access Management Engine (Cloud-Synced)
   window.renderTeacherActivationData = function() {
-    const activationTbodyList = document.querySelectorAll(".t-activation-tbody-pane");
-    if (!activationTbodyList || activationTbodyList.length === 0) return;
+    const activationTbodyList = [
+      ...Array.from(document.querySelectorAll(".t-activation-tbody-pane")),
+      document.getElementById("t-activation-tbody")
+    ].filter((el, idx, arr) => el && arr.indexOf(el) === idx);
+
+    if (activationTbodyList.length === 0) return;
 
     let registeredStudents = getStoredArray("sejarah_registered_students");
-    
-    if (registeredStudents.length === 0) {
-      const logs = getStoredArray("sejarah_monitoring_logs");
-      const map = {};
-      logs.forEach(l => {
-        if (l.email && !map[l.email]) {
-          map[l.email] = {
-            timestamp: l.timestamp || new Date().toISOString(),
-            nama: l.nama,
-            kelas: l.kelas,
-            email: l.email,
-            token: "IDEM",
-            status: "APPROVED"
-          };
+
+    // Helper to render table rows into all activation tbodies
+    const renderRows = (students) => {
+      activationTbodyList.forEach(tbody => {
+        if (!students || students.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="7" class="p-6 text-center text-[#718277] italic text-xs">
+            <div class="flex flex-col items-center justify-center gap-2 py-4">
+              <i data-lucide="inbox" class="h-8 w-8 text-[#718277]/40"></i>
+              <span>Belum ada siswa yang mendaftar di portal. Siswa yang mendaftar di formulir awal akan muncul di sini secara otomatis.</span>
+              <button type="button" onclick="refreshTeacherActivationFromCloud(true)" class="mt-2 inline-flex items-center gap-1.5 rounded-full border border-[#174d3a]/30 bg-[#fffdf7] px-3 py-1 text-xs font-bold text-[#174d3a] hover:bg-[#e8efd9] transition shadow-xs cursor-pointer">
+                <i data-lucide="refresh-cw" class="h-3.5 w-3.5 text-[#ee824b]"></i>
+                <span>Cek Pendaftar Baru dari Google Sheets</span>
+              </button>
+            </div>
+          </td></tr>`;
+        } else {
+          tbody.innerHTML = students.map((s, idx) => {
+            const isActivated = s.status === "ACTIVATED" || s.status === "APPROVED";
+            return `
+              <tr class="hover:bg-[#f6f3e9]/50 transition border-b border-[#d8d3c4]/60">
+                <td class="p-3 text-[11px] text-[#718277] font-mono">${s.timestamp || "Terdaftar"}</td>
+                <td class="p-3 font-bold text-[#174d3a] text-xs">
+                  ${escapeHtml(s.nama || "-")}
+                  ${s.nisn && s.nisn !== "-" ? `<span class="block text-[10px] text-[#718277] font-normal font-mono">NISN: ${escapeHtml(s.nisn)}</span>` : ""}
+                </td>
+                <td class="p-3 font-semibold text-[#405047] text-xs">${escapeHtml(s.kelas || "-")}</td>
+                <td class="p-3 text-[#174d3a] font-medium text-xs font-mono">${escapeHtml(s.email || "-")}</td>
+                <td class="p-3 font-mono font-bold text-[#ee824b] text-xs">${escapeHtml(s.token || "IDEM")}</td>
+                <td class="p-3">
+                  <span class="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[10px] font-extrabold ${isActivated ? 'bg-[#174d3a]/15 text-[#174d3a] border border-[#174d3a]/30' : 'bg-[#ee824b]/15 text-[#ee824b] border border-[#ee824b]/30 animate-pulse'}">
+                    ${isActivated ? '🟢 AKTIF' : '🟡 MENUNGGU'}
+                  </span>
+                </td>
+                <td class="p-3 text-center">
+                  <div class="flex items-center justify-center gap-1.5 flex-wrap">
+                    <button type="button" onclick="toggleStudentActivationStatus(${idx})" class="rounded-lg px-2.5 py-1 text-[10px] font-bold transition shadow-xs cursor-pointer ${isActivated ? 'border border-[#a53e24]/40 bg-[#fffdf7] text-[#a53e24] hover:bg-[#fff1e9]' : 'bg-[#174d3a] text-[#d8ee93] hover:bg-[#123d2e]'}">
+                      ${isActivated ? '⛔ Nonaktifkan' : '✅ Setujui'}
+                    </button>
+                    <button type="button" onclick="appResetStudentToken('${escapeHtml(s.email || s.nama)}')" title="Reset Token Akses Siswa" class="rounded-lg border border-[#174d3a]/30 bg-[#fffdf7] px-2 py-1 text-[10px] font-bold text-[#174d3a] hover:bg-[#f6f3e9] transition shadow-xs cursor-pointer">
+                      <i data-lucide="key" class="h-3 w-3 inline"></i> Reset
+                    </button>
+                    <button type="button" onclick="deleteStudentAccess('${escapeHtml(s.email)}')" title="Hapus Akun Siswa Ini Secara Permanen" class="rounded-lg border border-[#a53e24]/40 bg-[#fffdf7] p-1 text-[#a53e24] hover:bg-[#fee2e2] transition shadow-xs cursor-pointer">
+                      <i data-lucide="trash-2" class="h-3.5 w-3.5 inline"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            `;
+          }).join("");
         }
       });
-      registeredStudents = Object.values(map);
-    }
+      if (window.lucide) window.lucide.createIcons();
+    };
 
-    activationTbodyList.forEach(tbody => {
-      if (registeredStudents.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="7" class="p-6 text-center text-[#718277] italic text-xs">Belum ada siswa yang mendaftar di portal. Siswa yang mendaftar di formulir awal akan muncul di sini.</td></tr>`;
-      } else {
-        tbody.innerHTML = registeredStudents.map((s, idx) => {
-          const isActivated = s.status === "ACTIVATED" || s.status === "APPROVED";
-          return `
-            <tr class="hover:bg-[#f6f3e9]/50 transition">
-              <td class="p-3 text-[11px] text-[#718277] font-mono">${s.timestamp ? new Date(s.timestamp).toLocaleString("id-ID") : "Terdaftar"}</td>
-              <td class="p-3 font-bold text-[#174d3a] text-xs">${escapeHtml(s.nama)}</td>
-              <td class="p-3 font-semibold text-[#405047] text-xs">${escapeHtml(s.kelas)}</td>
-              <td class="p-3 text-[#174d3a] font-medium text-xs">${escapeHtml(s.email || "-")}</td>
-              <td class="p-3 font-mono font-bold text-[#ee824b] text-xs">${escapeHtml(s.token || "IDEM")}</td>
-              <td class="p-3">
-                <span class="inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-[10px] font-extrabold ${isActivated ? 'bg-[#174d3a]/10 text-[#174d3a] border border-[#174d3a]/30' : 'bg-[#ee824b]/15 text-[#ee824b] border border-[#ee824b]/30'}">
-                  ${isActivated ? '🟢 AKTIF' : '🟡 PENDING'}
-                </span>
-              </td>
-              <td class="p-3 text-center">
-                <div class="flex items-center justify-center gap-1.5 flex-wrap">
-                  <button type="button" onclick="toggleStudentActivationStatus(${idx})" class="rounded-lg px-2.5 py-1 text-[10px] font-bold transition shadow-xs ${isActivated ? 'border border-[#a53e24]/40 bg-[#fffdf7] text-[#a53e24] hover:bg-[#fff1e9]' : 'bg-[#174d3a] text-[#d8ee93] hover:bg-[#123d2e]'}">
-                    ${isActivated ? '⛔ Nonaktifkan' : '✅ Setujui'}
-                  </button>
-                  <button type="button" onclick="appResetStudentToken('${escapeHtml(s.email || s.nama)}')" title="Reset Token Akses Siswa" class="rounded-lg border border-[#174d3a]/30 bg-[#fffdf7] px-2 py-1 text-[10px] font-bold text-[#174d3a] hover:bg-[#f6f3e9] transition shadow-xs">
-                    <i data-lucide="key" class="h-3 w-3 inline"></i> Reset Token
-                  </button>
-                  <button type="button" onclick="deleteStudentAccess('${escapeHtml(s.email)}')" title="Hapus Akun Siswa Ini Secara Permanen" class="rounded-lg border border-[#a53e24]/40 bg-[#fffdf7] p-1 text-[#a53e24] hover:bg-[#fee2e2] transition shadow-xs">
-                    <i data-lucide="trash-2" class="h-3.5 w-3.5 inline"></i>
-                  </button>
-                </div>
-              </td>
-            </tr>
-          `;
-        }).join("");
-      }
-    });
-    if (window.lucide) window.lucide.createIcons();
+    // Update pending badge on tab buttons
+    const updateBadges = (students) => {
+      const pendingCount = (students || []).filter(s => s.status === "PENDING_ACTIVATION" || s.status === "PENDING" || (!s.status && s.status !== "APPROVED")).length;
+      const tabBtns = [document.getElementById("v6-btn-activation"), document.getElementById("teacher-tab-activation")];
+      tabBtns.forEach(btn => {
+        if (!btn) return;
+        let badge = btn.querySelector(".activation-pending-badge");
+        if (pendingCount > 0) {
+          if (!badge) {
+            badge = document.createElement("span");
+            badge.className = "activation-pending-badge ml-1.5 inline-flex items-center justify-center rounded-full bg-[#ee824b] px-2 py-0.5 text-[10px] font-bold text-white shadow-xs animate-bounce";
+            btn.appendChild(badge);
+          }
+          badge.textContent = `${pendingCount} Menunggu`;
+          badge.style.display = "inline-flex";
+        } else if (badge) {
+          badge.style.display = "none";
+        }
+      });
+    };
+
+    // 1. Render immediately from local cache
+    renderRows(registeredStudents);
+    updateBadges(registeredStudents);
+
+    // 2. Background Cloud Sync from Google Sheets
+    const gasUrl = window.GAS_API_URL || localStorage.getItem("sejarah_gas_url");
+    if (gasUrl && gasUrl.startsWith("http")) {
+      fetch(`${gasUrl}?action=getRegisteredStudents`)
+        .then(res => res.json())
+        .then(data => {
+          if (data && data.status === "SUCCESS" && Array.isArray(data.students)) {
+            const emailMap = {};
+            // Cloud is primary source of truth
+            data.students.forEach(s => {
+              if (s.email) emailMap[s.email.toLowerCase()] = s;
+            });
+            // Retain local records not yet uploaded
+            registeredStudents.forEach(s => {
+              if (s.email && !emailMap[s.email.toLowerCase()]) {
+                emailMap[s.email.toLowerCase()] = s;
+              }
+            });
+            const merged = Object.values(emailMap);
+            // Sort: pending first, then by timestamp
+            merged.sort((a, b) => {
+              const aPend = (a.status === "PENDING_ACTIVATION" || a.status === "PENDING");
+              const bPend = (b.status === "PENDING_ACTIVATION" || b.status === "PENDING");
+              if (aPend && !bPend) return -1;
+              if (!aPend && bPend) return 1;
+              return (b.timestamp || "").localeCompare(a.timestamp || "");
+            });
+
+            setStoredArray("sejarah_registered_students", merged);
+            renderRows(merged);
+            updateBadges(merged);
+          }
+        })
+        .catch(err => console.warn("Cloud student sync background note:", err));
+    }
+  };
+
+  // Manual Trigger for Cloud Refresh
+  window.refreshTeacherActivationFromCloud = function(showToast) {
+    const gasUrl = window.GAS_API_URL || localStorage.getItem("sejarah_gas_url");
+    if (!gasUrl || !gasUrl.startsWith("http")) {
+      alert("⚠️ URL Google Apps Script belum dikonfigurasi di Tab Integrasi Cloud GAS!");
+      return;
+    }
+    if (showToast) showTeacherToast("⏳ Menghubungkan ke Google Sheets...");
+    fetch(`${gasUrl}?action=getRegisteredStudents`)
+      .then(res => res.json())
+      .then(data => {
+        if (data && data.status === "SUCCESS" && Array.isArray(data.students)) {
+          setStoredArray("sejarah_registered_students", data.students);
+          window.renderTeacherActivationData();
+          if (showToast) showTeacherToast(`✅ Sinkronisasi Berhasil: ${data.students.length} data siswa terhubung dari Google Sheets!`);
+        } else {
+          if (showToast) showTeacherToast("ℹ️ Respon diterima, belum ada data pendaftar baru di Google Sheets.");
+        }
+      })
+      .catch(err => {
+        console.error("Manual refresh error:", err);
+        if (showToast) showTeacherToast("❌ Gagal terhubung ke Google Sheets. Periksa URL Web App.");
+      });
   };
 
   window.toggleStudentActivationStatus = function(studentIdx) {
     let registeredStudents = getStoredArray("sejarah_registered_students");
     if (!registeredStudents[studentIdx]) return;
 
-    const currentStatus = registeredStudents[studentIdx].status;
+    const student = registeredStudents[studentIdx];
+    const currentStatus = student.status;
     const newStatus = (currentStatus === "ACTIVATED" || currentStatus === "APPROVED") ? "REJECTED" : "APPROVED";
     registeredStudents[studentIdx].status = newStatus;
 
@@ -2661,14 +2793,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let active = null;
     try { active = window.secureStorage.getItem("activeStudent"); } catch(e) {}
-    if (active && active.email === registeredStudents[studentIdx].email) {
+    if (active && active.email === student.email) {
       active.status = newStatus;
       if (window.secureStorage) window.secureStorage.setItem("activeStudent", active);
       if (typeof enableEnterModuleButton === 'function') enableEnterModuleButton();
     }
 
     renderTeacherActivationData();
-    showTeacherToast(`Status siswa ${registeredStudents[studentIdx].nama} diubah menjadi: ${newStatus}`);
+    showTeacherToast(`Status siswa ${student.nama} diubah menjadi: ${newStatus}`);
+
+    // Sync status change directly to Google Sheets
+    const gasUrl = window.GAS_API_URL || localStorage.getItem("sejarah_gas_url");
+    if (gasUrl && gasUrl.startsWith("http")) {
+      // Primary POST
+      fetch(gasUrl, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({
+          action: "APPROVE_STUDENT",
+          requestToken: "SEJARAH_SECURE_TOKEN_2026",
+          email: student.email,
+          status: newStatus,
+          newStatus: newStatus
+        })
+      }).catch(err => console.error("GAS approve POST error:", err));
+
+      // Fallback GET
+      fetch(`${gasUrl}?action=approveStudent&email=${encodeURIComponent(student.email)}&status=${encodeURIComponent(newStatus)}&requestToken=SEJARAH_SECURE_TOKEN_2026`).catch(() => {});
+    }
   };
 
   window.bulkApproveAllStudents = function() {
@@ -2690,6 +2843,58 @@ document.addEventListener("DOMContentLoaded", () => {
 
     renderTeacherActivationData();
     showTeacherToast(`✅ Berhasil menyetujui seluruh (${registeredStudents.length}) akun siswa!`);
+
+    // Sync bulk approval directly to Google Sheets
+    const gasUrl = window.GAS_API_URL || localStorage.getItem("sejarah_gas_url");
+    if (gasUrl && gasUrl.startsWith("http")) {
+      fetch(gasUrl, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({
+          action: "APPROVE_STUDENT",
+          requestToken: "SEJARAH_SECURE_TOKEN_2026",
+          isBulk: true,
+          status: "APPROVED",
+          newStatus: "APPROVED"
+        })
+      }).catch(err => console.error("GAS bulk approve POST error:", err));
+
+      fetch(`${gasUrl}?action=approveStudent&isBulk=true&status=APPROVED&requestToken=SEJARAH_SECURE_TOKEN_2026`).catch(() => {});
+    }
+  };
+
+  window.deleteStudentAccess = function(email) {
+    if (!confirm(`⚠️ Konfirmasi Hapus Data:\nApakah Anda yakin ingin MENGHAPUS pendaftar (${email}) secara permanen?`)) return;
+
+    let registeredStudents = getStoredArray("sejarah_registered_students");
+    registeredStudents = registeredStudents.filter(s => s.email !== email);
+    setStoredArray("sejarah_registered_students", registeredStudents);
+
+    let active = null;
+    try { active = window.secureStorage.getItem("activeStudent"); } catch(e) {}
+    if (active && active.email === email) {
+      if (window.secureStorage) window.secureStorage.removeItem("activeStudent");
+      if (typeof enableEnterModuleButton === 'function') enableEnterModuleButton();
+    }
+
+    renderTeacherActivationData();
+    showTeacherToast(`🗑️ Data pendaftar (${email}) berhasil dihapus.`);
+
+    // Sync deletion directly to Google Sheets
+    const gasUrl = window.GAS_API_URL || localStorage.getItem("sejarah_gas_url");
+    if (gasUrl && gasUrl.startsWith("http")) {
+      fetch(gasUrl, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({
+          action: "DELETE_STUDENT",
+          requestToken: "SEJARAH_SECURE_TOKEN_2026",
+          email: email
+        })
+      }).catch(() => {});
+    }
   };
 
   window.exportRegisteredStudentsCSV = function() {
@@ -2698,9 +2903,9 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Belum ada data pendaftar untuk diekspor.");
       return;
     }
-    let csv = "Waktu,Nama,Kelas,Email,Token,Status\n";
+    let csv = "Waktu,Nama,Kelas,NISN,Email,Token,Status\n";
     registeredStudents.forEach(s => {
-      csv += `"${s.timestamp || ''}","${s.nama}","${s.kelas}","${s.email || ''}","${s.token || 'IDEM'}","${s.status || 'PENDING'}"\n`;
+      csv += `"${s.timestamp || ''}","${s.nama || ''}","${s.kelas || ''}","${s.nisn || ''}","${s.email || ''}","${s.token || 'IDEM'}","${s.status || 'PENDING'}"\n`;
     });
     const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
     const link = document.createElement("a");
@@ -3157,8 +3362,8 @@ document.addEventListener("DOMContentLoaded", () => {
       </head>
       <body>
         <div class="header">
-          <h1>LAPORAN EVALUASI HASIL BELAJAR SEJARAH INDONESIA (1945–1949)</h1>
-          <p>Platform Pembelajaran Digital Sejarah Indonesia Fase F (Kelas XII)</p>
+          <h1>LAPORAN EVALUASI HASIL BELAJAR SEJARAH INDONESIA (1950–1965)</h1>
+          <p>Platform Pembelajaran Digital Sejarah Indonesia Fase F (Kelas XII) — sosiologi.eu.org</p>
         </div>
 
         <table class="meta-table">
@@ -3291,19 +3496,19 @@ document.addEventListener("DOMContentLoaded", () => {
       <body>
         <div class="border-box">
           <h2>SERTIFIKAT KELULUSAN DIGITAL VERIFIKATIF</h2>
-          <h1>SEJARAH INDONESIA FASE F</h1>
+          <h1>SEJARAH INDONESIA — ERA DEMOKRASI LIBERAL & TERPIMPIN (1950–1965)</h1>
           <p class="presented">Sertifikat Resmi Kelulusan Modul Diberikan Kepada:</p>
           <div class="name">${studentNama}</div>
           <p style="font-family:sans-serif; font-weight:bold; color:#64748b;">Rombongan Belajar: ${studentKelas}</p>
-          <p class="desc">Telah berhasil menyelesaikan seluruh modul evaluasi dan kuis interaktif dengan skor rata-rata ketuntasan minimal <strong>${avgScore}%</strong> pada Platform Pembelajaran Sejarah Indonesia Digital.</p>
+          <p class="desc">Telah berhasil menyelesaikan seluruh modul evaluasi dan kuis interaktif dengan skor rata-rata ketuntasan minimal <strong>${avgScore}%</strong> pada Platform Pembelajaran Sejarah Indonesia Digital (sosiologi.eu.org).</p>
           <div>
             <div class="seal">LULUS KKM</div>
           </div>
           <div class="signatures">
             <div style="text-align:left;">
-              <p>Pengampu Sejarah Indonesia:</p>
+              <p>Guru Pengampu Sejarah Indonesia:</p>
               <br><br>
-              <strong>Guru Master Sejarah</strong>
+              <strong>Cornel Kaban, S.Pd.</strong>
             </div>
             
             <div class="qr-box">
@@ -3613,6 +3818,10 @@ window.addEventListener("storage", (e) => {
 });
 
 window.saveMatrixState = function() {
+  if (sessionStorage.getItem("isTeacherActive") !== "true") {
+    console.warn("🔒 Akses Tata Kelola Terproteksi: Perubahan matriks diblokir karena sesi bukan Guru Aktif.");
+    return false;
+  }
   classControlMatrix.configVersion++;
   localStorage.setItem("sejarah_class_control_matrix", JSON.stringify(classControlMatrix));
   const saveStatus = document.getElementById("matrix-save-status");
@@ -4165,12 +4374,15 @@ window.toggleStudentPreviewMode = function() {
 // SMART POLLING ENGINE (REAL-TIME TEACHER-STUDENT SYNC 3-5s & GAS CLOUD SYNC)
 // =========================================================================
 let pollingInterval = null;
+let isCloudSyncing = false;
 
 window.syncCloudMatrixNow = async function(showAlert = false) {
+  if (isCloudSyncing) return false;
   if (!GAS_API_URL || !GAS_API_URL.startsWith("http")) {
     if (showAlert) alert("⚠️ URL Deployment Google Apps Script (GAS) belum diset.\n\nSilakan masukkan URL Web App di Tab '🔗 Integrasi GAS Cloud' terlebih dahulu.");
     return false;
   }
+  isCloudSyncing = true;
   try {
     const res = await fetch(`${GAS_API_URL}?action=getControlMatrix`);
     if (res.ok) {
@@ -4203,6 +4415,8 @@ window.syncCloudMatrixNow = async function(showAlert = false) {
     }
   } catch(e) {
     if (showAlert) alert("⚠️ Gagal terhubung ke Cloud Google Sheets. Memulai mode fallback lokal.");
+  } finally {
+    isCloudSyncing = false;
   }
   return false;
 };
@@ -4230,12 +4444,12 @@ window.renderGovernancePanel = function() {
 
   const subIds = ["1A", "1B", "1C", "1D", "1E", "1F"];
   const subNames = {
-    "1A": "Sub-Modul 1A: Proklamasi & Fondasi Negara (1945)",
-    "1B": "Sub-Modul 1B: Perjuangan Fisik I (Surabaya & Ambarawa)",
-    "1C": "Sub-Modul 1C: Perjuangan Fisik II (Perlawanan Daerah)",
-    "1D": "Sub-Modul 1D: Perjuangan Diplomasi I (Linggarjati & Renville)",
-    "1E": "Sub-Modul 1E: Agresi II, PDRI, & Serangan Umum 1 Maret",
-    "1F": "Sub-Modul 1F: Perjuangan Diplomasi II (KMB & Pengakuan Kedaulatan)"
+    "1A": "Sub-Modul 1A: Demokrasi Parlementer & Instabilitas Kabinet (1950–1955)",
+    "1B": "Sub-Modul 1B: Pemilu 1955 & Polarisasi Ideologis",
+    "1C": "Sub-Modul 1C: Krisis Konstituante & Ancaman Disintegrasi (1956–1958)",
+    "1D": "Sub-Modul 1D: Diplomasi Global: KAA 1955 & Deklarasi Djuanda",
+    "1E": "Sub-Modul 1E: Dekrit Presiden 5 Juli 1959 & Demokrasi Terpimpin",
+    "1F": "Sub-Modul 1F: Pembebasan Irian Barat, Dwikora & Akhir Orde Lama"
   };
 
   const rows = [];
@@ -4679,9 +4893,10 @@ window.showPreCheckModal = function(subId, onConfirm) {
   if (!modal) {
     modal = document.createElement("div");
     modal.id = "precheck-modal";
-    modal.className = "fixed inset-0 z-[200] flex items-center justify-center bg-black/70 backdrop-blur-sm p-4";
     document.body.appendChild(modal);
   }
+  modal.className = "fixed inset-0 z-[200] flex items-center justify-center bg-black/70 backdrop-blur-sm p-4";
+  modal.classList.remove("hidden");
 
   modal.innerHTML = `
     <div class="w-full max-w-md rounded-3xl border-2 border-[#d8ee93] bg-[#fffdf7] p-6 shadow-2xl animate-reveal space-y-4">
@@ -4710,7 +4925,7 @@ window.showPreCheckModal = function(subId, onConfirm) {
       </div>
       <p id="precheck-warn" class="hidden text-[11px] font-bold text-[#a53e24] bg-[#a53e24]/10 p-2 rounded-xl text-center">⚠️ Centang semua pernyataan terlebih dahulu!</p>
       <div class="flex gap-3 pt-2">
-        <button type="button" onclick="document.getElementById('precheck-modal').remove()" class="flex-1 rounded-xl border border-[#d8d3c4] py-2.5 text-xs font-bold text-[#405047] hover:bg-[#f6f3e9] transition">Batal</button>
+        <button type="button" id="precheck-cancel-btn" class="flex-1 rounded-xl border border-[#d8d3c4] py-2.5 text-xs font-bold text-[#405047] hover:bg-[#f6f3e9] transition">Batal</button>
         <button type="button" id="precheck-confirm-btn" class="flex-1 rounded-xl bg-[#174d3a] py-2.5 text-xs font-bold text-[#d8ee93] hover:bg-[#123d2e] transition flex items-center justify-center gap-2">
           <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           Mulai Kuis Sekarang
@@ -4719,8 +4934,10 @@ window.showPreCheckModal = function(subId, onConfirm) {
     </div>
   `;
 
-  // modal is freshly created via createElement — no need to remove 'hidden'
-  // Just ensure it's visible (it is by default as a new element)
+  document.getElementById("precheck-cancel-btn").addEventListener("click", function() {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  });
 
   document.getElementById("precheck-confirm-btn").addEventListener("click", function() {
     const checkboxes = modal.querySelectorAll(".precheck-cb");
@@ -4730,7 +4947,8 @@ window.showPreCheckModal = function(subId, onConfirm) {
       if (warn) warn.classList.remove("hidden");
       return;
     }
-    modal.remove();
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
     if (typeof onConfirm === "function") onConfirm();
   });
 };
